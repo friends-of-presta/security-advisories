@@ -28,14 +28,14 @@ The method `abcdeModuleFrontController::initContent()` has sensitive SQL calls t
 
 ## CVSS base metrics
 
-**Attack vector**: network
-**Attack complexity**: low
-**Privilege required**: none
-**User interaction**: none
-**Scope**: unchanged
-**Confidentiality**: high
-**Integrity**: high
-**Availability**: low
+* **Attack vector**: network
+* **Attack complexity**: low
+* **Privilege required**: none
+* **User interaction**: none
+* **Scope**: unchanged
+* **Confidentiality**: high
+* **Integrity**: high
+* **Availability**: low
 
 **Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L
 
