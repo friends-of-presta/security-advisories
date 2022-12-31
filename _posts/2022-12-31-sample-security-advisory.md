@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This post demonstrates post content a security advisory"
+title: "Improper neutralization of an SQL parameter in PrestaShop XXXXX module"
 categories: CVE
 author:
 - Friends-Of-Presta.org
@@ -8,16 +8,18 @@ meta: "CVE,PrestaShop"
 ---
 
 
-# Improper neutralization of an SQL parameter in PrestaShop XXXXX module
+The PrestaShop e-commerce platform module XXXXX contains a Blind SQL injection vulnerability up to version a.b.c. This module is widely deployed and is a “Best seller” on the add-ons store.
 
-**CVE ID**: *Requested*
-**Advisory author**: Friends-of-presta.org
-**Vendor**: PrestaShop
-**Product**: XXXXX
-**Impacted release**: < 4.5.3 (4.5.3 fixed the vulnerability)
-**Product author**: ZZZZZ
-**Weakness**: CW-89
-**Severity**: critical (9.4)
+## Summary
+
+* **CVE ID**: *Requested*
+* **Advisory author**: Friends-of-presta.org
+* **Vendor**: PrestaShop
+* **Product**: XXXXX
+* **Impacted release**: < a.b.d (a.b.d fixed the vulnerability)
+* **Product author**: ZZZZZ
+* **Weakness**: CW-89
+* **Severity**: critical (9.4)
 
 ## Description
 
@@ -52,8 +54,8 @@ curl -v -X POST -d 'abcdef' 'https://domain.tld/'
 ## Patch of release a.b.c to a.b.d
 
 ```diff
---- 4.5.2/XXXXX/controllers/front/abcde.php
-+++ 4.5.3/XXXXX/controllers/front/abcde.php
+--- a.b.c/XXXXX/controllers/front/abcde.php
++++ a.b.d/XXXXX/controllers/front/abcde.php
 ```
 
 
