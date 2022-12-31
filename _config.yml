@@ -1,9 +1,9 @@
 title: FOP Security Advisories
 author:
   name: Friends Of Presta
-  email: security@friends-of-presta.org
+  email: security@friendsofpresta.org
 description: > # this means to ignore newlines until "show_excerpts:"
-  Friends Of Presta is a none profit organization that promote  publishes security advisories about PrestaShop module.
+  [Friends Of Presta](https://friendsofpresta.org/) is a none profit organization that promote the open-source ecommerce platform PrestaShop.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
