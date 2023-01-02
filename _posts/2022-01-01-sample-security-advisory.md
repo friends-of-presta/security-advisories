@@ -13,7 +13,8 @@ The PrestaShop e-commerce platform module XXXXX contains a Blind SQL injection v
 ## Summary
 
 * **CVE ID**: *Requested*
-* **Advisory author**: Friends-of-presta.org
+* **Published at**: 2022-01-01
+* **Advisory source**: Friends-of-presta.org
 * **Vendor**: PrestaShop
 * **Product**: XXXXX
 * **Impacted release**: < a.b.d (a.b.d fixed the vulnerability)
