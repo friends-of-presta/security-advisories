@@ -71,10 +71,10 @@ The technical description of the vulnerability
 
 ## Patch 
 
-```diff
+``diff
 --- xxx.php
 +++ x.php
-```
+``
 
 ## Other recommandations
 
