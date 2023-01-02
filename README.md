@@ -83,7 +83,7 @@ Optionnaly add a recommandation to help.
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/xxx/dddd-xxxxxxx.html)
-* [National Vulerability Database](https://nvd.nist.gov/vuln/detail/CVE-YYYY-XXXX)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-YYYY-XXXX)
 * other links
 
 ```
