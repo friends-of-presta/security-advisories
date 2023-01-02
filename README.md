@@ -74,7 +74,6 @@ The technical description of the vulnerability
 ```diff
 --- xxx.php
 +++ x.php
-
 ```
 
 ## Other recommandations
