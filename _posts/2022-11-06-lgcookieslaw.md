@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Blind SQL injection vulnerability in PrestaShop lgcookieslaw module"
-categories: CVE
+title: "[CVE-2022-44727] Blind SQL injection vulnerability in PrestaShop lgcookieslaw module"
+categories: modules
 author:
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop"
@@ -20,7 +20,7 @@ The PrestaShop e-commerce platform module EU Cookie Law GDPR (Banner + Blocker) 
 * **Product**: lgcookieslaw
 * **Impacted release**: >= 1.5.0, < 2.1.3 (2.1.3 fixed the vulnerability)
 * **Product author**: Línea Gráfica
-* **Weakness**: CW-89
+* **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.4)
 
 ## Description
@@ -103,4 +103,4 @@ It’s recommended to upgrade to the lastest version of the module **lgcookiesla
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/legal/8734-eu-cookie-law-gdpr-banner-blocker.html)
-* https://nvd.nist.gov/vuln/detail/CVE-2022-44727
+* [National Vulerability Database](https://nvd.nist.gov/vuln/detail/CVE-2022-44727)

@@ -10,3 +10,7 @@ In order to protect the greatest number of PrestaShop stores, [Friends Of Presta
 * A critical vulnerability is not detectable by a WAF.
 
 For more information, please contact: security/at/friendsofpresta.org
+
+Join us on [Friends Of Presta Slack](https://friends-of-presta.slack.com/)
+
+[Github repository](https://github.com/friends-of-presta/security-advisories)
