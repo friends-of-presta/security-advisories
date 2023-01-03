@@ -17,7 +17,7 @@ meta: "CVE,PrestaShop,blockwishlist"
 * **Vendor**: PrestaShop
 * **Product**: blockwishlist
 * **Impacted release**: >=2.0.0, 2.1.1
-* **Product author**: NTS
+* **Product author**: PrestaShop
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: high (8.1)
 
