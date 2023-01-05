@@ -82,7 +82,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  					'.Shop::addSqlAssociation('product', 'p').'
  					LEFT JOIN `'._DB_PREFIX_.'category_product` cp ON p.`id_product` = cp.`id_product`
 -					WHERE cp.`id_category` IN ('.$list_cat.')
-+					WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat)).')
++					WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat))).')
  				AND product_shop.`visibility` IN ("both", "catalog")
  				AND product_shop.`active` = 1
  				GROUP BY cp.`id_category`';
@@ -126,7 +126,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
          $where = '';
          if (strpos($manuid, ',') !== false) {
 -            $where = ' WHERE `id_manufacturer` IN(' . $manuid . ')';
-+            $where = ' WHERE `id_manufacturer` IN(' . implode(', ', array_map('intval', explode(',', $manuid)) . ')';
++            $where = ' WHERE `id_manufacturer` IN(' . implode(', ', array_map('intval', explode(',', $manuid))) . ')';
          } else {
              $where = ' WHERE `id_manufacturer` = ' . (int) $manuid;
          }
@@ -135,7 +135,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  
          $id_lang = Context::getContext()->language->id;
 -        $where = ' WHERE i.`id_product` IN ('.$list_pro.') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
-+        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro)).') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
++        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro))).') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
          $order = ' ORDER BY i.`id_product`,`position`';
          $limit = ' LIMIT 0,1';
          //get product info 
@@ -144,7 +144,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
          $id_lang = Context::getContext()->language->id;
          $image_product = Tools::getValue('image_product');
 -        $where = ' WHERE i.`id_product` IN ('.$list_pro.') AND i.`id_image` NOT IN ('.$image_product.') AND ish.`id_shop` = '.Context::getContext()->shop->id;
-+        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro)).') AND i.`id_image` NOT IN ('.implode(', ', array_map('intval', explode(',', $image_product)).') AND ish.`id_shop` = '.Context::getContext()->shop->id;
++        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro))).') AND i.`id_image` NOT IN ('.implode(', ', array_map('intval', explode(',', $image_product))).') AND ish.`id_shop` = '.Context::getContext()->shop->id;
          $order = ' ORDER BY i.`id_product`,`position`';
          $limit = ' LIMIT 0,1';
          //get product info
@@ -214,7 +214,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  					'.Shop::addSqlAssociation('product', 'p').'
  					LEFT JOIN `'._DB_PREFIX_.'category_product` cp ON p.`id_product` = cp.`id_product`
 -					WHERE cp.`id_category` IN ('.$list_cat.')
-+					WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat)).')
++					WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat))).')
  				AND product_shop.`visibility` IN ("both", "catalog")
  				AND product_shop.`active` = 1
  				GROUP BY cp.`id_category`';
@@ -226,7 +226,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  		LEFT JOIN `'._DB_PREFIX_.'product_comment_criterion` pcc ON (pcc.`id_product_comment_criterion` = pcg.`id_product_comment_criterion`)
  		LEFT JOIN `'._DB_PREFIX_.'product_comment_criterion_lang` pccl ON (pccl.`id_product_comment_criterion` = pcg.`id_product_comment_criterion`)
 -		WHERE pc.`id_product` in ('.$list_product.')
-+		WHERE pc.`id_product` in ('.implode(', ', array_map('intval', explode(',', $list_product)).')
++		WHERE pc.`id_product` in ('.implode(', ', array_map('intval', explode(',', $list_product))).')
  		AND pccl.`id_lang` = '.(int)$id_lang.
                          ($validate == '1' ? ' AND pc.`validate` = 1' : '')));
      }
@@ -235,7 +235,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  		SELECT COUNT(pc.`id_product`) AS nbr, pc.`id_product` 
  		FROM `'._DB_PREFIX_.'product_comment` pc
 -		WHERE `id_product` in ('.$list_product.')'.($validate == '1' ? ' AND `validate` = 1' : '').'
-+		WHERE `id_product` in ('.implode(', ', array_map('intval', explode(',', $list_product)).')'.($validate == '1' ? ' AND `validate` = 1' : '').'
++		WHERE `id_product` in ('.implode(', ', array_map('intval', explode(',', $list_product))).')'.($validate == '1' ? ' AND `validate` = 1' : '').'
  		AND `grade` > 0 GROUP BY pc.`id_product`');
          return $result;
      }
@@ -244,7 +244,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  
          $id_lang = Context::getContext()->language->id;
 -        $where = ' WHERE i.`id_product` IN ('.$list_pro.') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
-+        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro)).') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
++        $where = ' WHERE i.`id_product` IN ('.implode(', ', array_map('intval', explode(',', $list_pro))).') AND (ish.`cover`=0 OR ish.`cover` IS NULL) AND ish.`id_shop` = '.Context::getContext()->shop->id;
          $order = ' ORDER BY i.`id_product`,`position`';
          $limit = ' LIMIT 0,1';
          //get product info
@@ -260,7 +260,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
                      '.Shop::addSqlAssociation('product', 'p').'
                      LEFT JOIN `'._DB_PREFIX_.'category_product` cp ON p.`id_product` = cp.`id_product`
 -                    WHERE cp.`id_category` IN ('.$list_cat.')
-+                    WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat)).')
++                    WHERE cp.`id_category` IN ('.implode(', ', array_map('intval', explode(',', $list_cat))).')
                  AND product_shop.`visibility` IN ("both", "catalog")
                  AND product_shop.`active` = 1
                  GROUP BY cp.`id_category`';
@@ -304,13 +304,13 @@ This advisory try to do its best to be useful for everyone who want to fix criti
              if (isset($params['category_type']) && $params['category_type'] == 'default') {
                  $where .= ' AND product_shop.`id_category_default` '.(strpos($id_categories, ',') === false ?
 -                                '= '.(int)$id_categories : 'IN ('.$id_categories.')');
-+                                '= '.(int)$id_categories : 'IN ('.implode(', ', array_map('intval', explode(',', $id_categories)).')');
++                                '= '.(int)$id_categories : 'IN ('.implode(', ', array_map('intval', explode(',', $id_categories))).')');
              } else {
                  $sql_join .= ' INNER JOIN '._DB_PREFIX_.'category_product cp		ON (cp.id_product= p.`id_product` )';
                  
                  $where .= ' AND cp.`id_category` '.(strpos($id_categories, ',') === false ?
 -                                '= '.(int)$id_categories : 'IN ('.$id_categories.')');
-+                                '= '.(int)$id_categories : 'IN ('.implode(', ', array_map('intval', explode(',', $id_categories)).')');
++                                '= '.(int)$id_categories : 'IN ('.implode(', ', array_map('intval', explode(',', $id_categories))).')');
  
                  $sql_group = ' GROUP BY p.id_product';
  
@@ -319,7 +319,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
          if ($value_by_supplier && isset($params['supplier'])) {
              $id_suppliers = $params['supplier'];
 -            $where .= ' AND p.id_supplier '.(strpos($id_suppliers, ',') === false ? '= '.(int)$id_suppliers : 'IN ('.$id_suppliers.')');
-+            $where .= ' AND p.id_supplier '.(strpos($id_suppliers, ',') === false ? '= '.(int)$id_suppliers : 'IN ('.implode(', ', array_map('intval', explode(',', $id_suppliers)).')');
++            $where .= ' AND p.id_supplier '.(strpos($id_suppliers, ',') === false ? '= '.(int)$id_suppliers : 'IN ('.implode(', ', array_map('intval', explode(',', $id_suppliers))).')');
          }
          $value_by_product_id = isset($params['value_by_product_id']) ? $params['value_by_product_id'] : 0;
          if ($value_by_product_id && isset($params['product_id'])) {
@@ -328,14 +328,14 @@ This advisory try to do its best to be useful for everyone who want to fix criti
  
              $product_id = implode(',', $temp);
 -            $where .= ' AND p.id_product '.(strpos($product_id, ',') === false ? '= '.(int)$product_id : 'IN ('.$product_id.')');
-+            $where .= ' AND p.id_product '.(strpos($product_id, ',') === false ? '= '.(int)$product_id : 'IN ('.implode(', ', array_map('intval', explode(',', $product_id)).')');
++            $where .= ' AND p.id_product '.(strpos($product_id, ',') === false ? '= '.(int)$product_id : 'IN ('.implode(', ', array_map('intval', explode(',', $product_id))).')');
          }
  
          $value_by_manufacture = isset($params['value_by_manufacture']) ? $params['value_by_manufacture'] : 0;
          if ($value_by_manufacture && isset($params['manufacture'])) {
              $id_manufactures = $params['manufacture'];
 -            $where .= ' AND p.id_manufacturer '.(strpos($id_manufactures, ',') === false ? '= '.(int)$id_manufactures : 'IN ('.$id_manufactures.')');
-+            $where .= ' AND p.id_manufacturer '.(strpos($id_manufactures, ',') === false ? '= '.(int)$id_manufactures : 'IN ('.implode(', ', array_map('intval', explode(',', $id_manufactures)).')');
++            $where .= ' AND p.id_manufacturer '.(strpos($id_manufactures, ',') === false ? '= '.(int)$id_manufactures : 'IN ('.implode(', ', array_map('intval', explode(',', $id_manufactures))).')');
          }
          $product_type = isset($params['product_type']) ? $params['product_type'] : '';
          $value_by_product_type = isset($params['value_by_product_type']) ? $params['value_by_product_type'] : 0;
