@@ -17,8 +17,11 @@ layout: default
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+      {%- if page.categories -%}
+        • <span>#{{ page.categories }}</span>
+      {%- endif -%}
       {%- if page.author -%}
-        • {% for author in page.author %}
+        &nbsp;• {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
