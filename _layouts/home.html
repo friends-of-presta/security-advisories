@@ -27,7 +27,7 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}
         {%- if post.categories -%}
-          • #{{ post.categories }}
+          &nbsp;• #{{ post.categories }}
         {%- endif -%}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
