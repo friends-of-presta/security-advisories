@@ -23,13 +23,13 @@ PrestaShop Ap Pagebuilder module versions 2.4.5 and below suffer from several re
 * **Impacted release**: <=2.4.5
 * **Product author**: apollotheme / leo theme
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: critical (9.4)
+* **Severity**: critical (9.8)
 
 ## Description
 
 On AP PAGEBUILDER Prestashop module <= 2.4.5 contents many improper neutralization parameters including 'product_all_one_img' and 'image_product'.
 
-WARNING : Be aware that versions from 2.0.0 to 2.3.x+ (exact release is not determined) own another sql injection which will certainly bypass your WAF (full base64) so you should upgrade asap to 2.4.5.
+WARNING : Be aware that versions from 2.0.0 to 2.4.3+ (exact release is not determined) own another sql injection which will certainly bypass your WAF (full base64) so you should upgrade asap to 2.4.5.
 
 
 ## CVSS base metrics
@@ -41,9 +41,9 @@ WARNING : Be aware that versions from 2.0.0 to 2.3.x+ (exact release is not dete
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
-* **Availability**: low
+* **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L
+**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 
 ## Possible malicious usage
 
