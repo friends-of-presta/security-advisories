@@ -20,6 +20,9 @@ layout: default
       {%- if page.categories -%}
         • <span>#{{ page.categories }}</span>
       {%- endif -%}
+      {%- if page.severity -%}
+          &nbsp;• <span style="color:#ff5e17">{{ page.severity }}</span>
+      {%- endif -%}
       {%- if page.author -%}
         &nbsp;• {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
