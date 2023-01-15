@@ -5,6 +5,7 @@ categories: modules
 author:
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop"
+severity: "critical (9.4)"
 ---
 
 
