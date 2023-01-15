@@ -28,6 +28,9 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}
         {%- if post.categories -%}
           &nbsp;• #{{ post.categories }}
+        {%- endif -%}
+        {%- if post.severity -%}
+          &nbsp;• {{ post.severity }}
         {%- endif -%}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
