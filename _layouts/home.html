@@ -30,7 +30,7 @@ layout: default
           &nbsp;• #{{ post.categories }}
         {%- endif -%}
         {%- if post.severity -%}
-          &nbsp;• {{ post.severity }}
+          &nbsp;• <span style="color:#ff5e17">{{ post.severity }}</span>
         {%- endif -%}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
