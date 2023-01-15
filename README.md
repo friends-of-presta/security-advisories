@@ -16,14 +16,16 @@ categories: module
 author:
 - Friends-Of-Presta.org
 meta: "module,PrestaShop"
+severity: "high (8.1)"
 ---
 ```
 Instructions:
 * layout: DO NOT CHANGE "post"
 * title: Choose an explicit title with the type of exploit and the application (module name, ...)
-* categories: Choose on of modules|core|deplendancies
-* author: Your name or by default "Friends-Of-Presta.org"
+* categories: Choose one of modules|core|dependancies
+* author: by default "Friends-Of-Presta.org" and credit the discoverer of the vulnerability, the one who exchange with the author of the module and the editor who document this advisory
 * meta: Not mandatory
+* severity: CVSS values
 
 Sample body of an advisory file.
 ```MD
@@ -86,6 +88,17 @@ Optionnaly add a recommandation to help.
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-YYYY-XXXX)
 * other links
 
+## Timeline
+
+If the CVE is published by Friends of Presta.
+
+| Date | Action |
+| -- | -- |
+| YYYY-MM-DD | Discovery of the vulnerability |
+| YYYY-MM-DD | Contact the author |
+| YYYY-MM-DD | Other important milestone like contacts with PrestaShop team |
+| YYYY-MM-DD | Request of a CVE ID |
+| YYYY-MM-DD | Publish this security advisory and the CVE |
 ```
 
 4. Publish a Pull Request.
