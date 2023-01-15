@@ -5,6 +5,7 @@ categories: modules
 author:
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,blockwishlist"
+severity: "high (8.1)"
 ---
 
 **blockwishlist** is a prestashop extension which adds a block containing the customer's wishlists. In affected versions an authenticated customer can perform SQL injection. This issue is fixed in version 2.1.1. Users are advised to upgrade. There are no known workarounds for this issue. 
