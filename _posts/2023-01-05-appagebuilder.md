@@ -7,6 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,appagebuilder"
+severity: "critical (9.8)"
 ---
 
 PrestaShop Ap Pagebuilder module versions 2.4.5 and below suffer from several remote SQL injection vulnerability.
