@@ -18,7 +18,7 @@ WARNING : This vulnerability will bypass some WAF.
 
 ## Summary
 
-* **CVE ID**: [CVE-2023-22498](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31181)
+* **CVE ID**: [CVE-2023-22498](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22498)
 * **Published at**: 2023-01-17
 * **Advisory source**: none
 * **Vendor**: PrestaShop
