@@ -32,7 +32,7 @@ WARNING : This vulnerability will bypass some WAF.
 
 The method `SmplTools::getMatchingRedirectionsFromParts()` hold a sensitive SQL calls that can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
-The large scope of URL exposed to the vulnerability increases its severity and the risk that a pattern of URL is in withlist of a WAF.
+The large scope of URL exposed to the vulnerability increases its severity and the risk that a pattern of URL is in whitelist of a WAF.
 
 
 ## CVSS base metrics
