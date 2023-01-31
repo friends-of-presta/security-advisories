@@ -4,7 +4,7 @@ title: "[CVE-2022-46639] Directory traversal in the descarga_etiqueta.php compon
 categories: modules
 author:
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,totadminstrativemandate"
+meta: "CVE,PrestaShop,correosoficial"
 severity: "high (7.5)"
 ---
 
@@ -13,7 +13,7 @@ From version v1.1.0.0 and v1.2.x+ correosoficial Module for Prestashop 1.7.x all
 ## Summary
 
 * **CVE ID**: [CVE-2022-46639](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46639)
-* **Published at**: 2023-01-17
+* **Published at**: 2023-01-23
 * **Advisory source**: [ia-informatica.com](https://ia-informatica.com/it/CVE-2022-46639)
 * **Vendor**: PrestaShop
 * **Product**: correosoficial
@@ -50,9 +50,7 @@ Remote users can read all files inside and outside the document root, credential
 * Technical data leak like a database configuration, logs, ...
 * Personnal data leak stored in files
 
-
 ## Proof of concept
-
 
 ```bash
 curl -v 'http://domain.tld/modules/correosoficial/descarga_etiqueta.php?path=X&filename=X.'
@@ -83,7 +81,6 @@ An official patch is not yet published by the author of the module. Please note,
  header('Content-Disposition: attachment; filename="'.$filename.'"');
 
 ```
-
 
 ## Other recommandations
 
