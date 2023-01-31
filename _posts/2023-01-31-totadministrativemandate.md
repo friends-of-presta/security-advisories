@@ -6,11 +6,11 @@ author:
 - Touch Web
 - 202 ecommerce
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,totadminstrativemandate"
+meta: "CVE,PrestaShop,totadministrativemandate"
 severity: "high (8.3)"
 ---
 
-In the module "Administrative Mandate" (totadminstrativemandate), an authenticated user can perform SQL injection in affected versions.
+In the module "Administrative Mandate" (totadministrativemandate), an authenticated user can perform SQL injection in affected versions.
 
 ## Summary
 
@@ -18,7 +18,7 @@ In the module "Administrative Mandate" (totadminstrativemandate), an authenticat
 * **Published at**: 2023-01-28
 * **Advisory source**: [202 ecommerce](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-hg7m-23j3-rf56)
 * **Vendor**: PrestaShop
-* **Product**: totadminstrativemandate
+* **Product**: totadministrativemandate
 * **Impacted release**: >= 1.2.1, < 1.7.2
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
