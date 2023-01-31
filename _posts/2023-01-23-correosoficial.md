@@ -69,7 +69,7 @@ An official patch is not yet published by the author of the module. Please note,
  header('Content-Type: application/pdf');
  
  $filename = $_REQUEST['filename'];
--$path = $_REQUEST['path'];
+-$path = basename($_REQUEST['path']);
 +$path = 'pdftmp';
 +
 +$pathinfo = pathinfo($path . "/" . $filename);
