@@ -19,7 +19,7 @@ From version v1.1.0.0 and v1.2.x+ correosoficial Module for Prestashop 1.7.x all
 * **Product**: correosoficial
 * **Impacted release**: >= 1.1.0, < 1.2.0
 * **Product author**: Grupo Correos
-* **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
+* **Weakness**: [CWE-23](https://cwe.mitre.org/data/definitions/23.html)
 * **Severity**: high (7.5)
 
 ## Description
