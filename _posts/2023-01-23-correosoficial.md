@@ -68,8 +68,9 @@ An official patch is not yet published by the author of the module. Please note,
 @@ -8,7 +8,12 @@
  header('Content-Type: application/pdf');
  
- $filename = $_REQUEST['filename'];
--$path = basename($_REQUEST['path']);
+-$filename = $_REQUEST['filename'];
++$filename = basename($_REQUEST['filename')];
+-$path = $_REQUEST['path'];
 +$path = 'pdftmp';
 +
 +$pathinfo = pathinfo($path . "/" . $filename);
