@@ -62,7 +62,7 @@ Validate all user input, block all paths outside the your PDF folder, add an aut
 
 An official patch is not yet published by the author of the module. Please note, this proposal to filter pdf to display and limit access to the pdftmp path.
 
-```bash
+```diff
 --- a/descarga_etiqueta.php
 +++ b/descarga_etiqueta.php
 @@ -8,7 +8,12 @@
