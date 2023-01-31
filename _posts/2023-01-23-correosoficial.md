@@ -85,7 +85,7 @@ An official patch is not yet published by the author of the module. Please note,
 
 ## Other recommandations
 
-* At the date of the CVE publication, the module was not fixed !
+* At the date of the CVE publication, the module is not fixed.
 * Remove this module if it is not useful.
 
 ## Links
