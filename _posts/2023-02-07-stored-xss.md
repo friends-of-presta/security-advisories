@@ -50,7 +50,7 @@ We will call them: [CWE-79](https://cwe.mitre.org/data/definitions/79.html) / T2
 
 In summary, if you can inject a XSS from FRONT as guest (or assimilated), which will be stored in database then interprated on BACK, then it's a critical vulnerability which must be scored CVSS 3 : 9.5+/10 since it unlocks design's vulnerabilities (users's administration / modules's administration / any admin's controllers)
 
-For all others XSS including Type 0/1 and Type 2 F2F/B2B/B2F, you can preserve a low to medium gravity score.
+For all others XSS including Type 0/1 and Type 2 F2F/B2B/B2F, you can preserve a low to medium gravity score specificaly on Prestashop. Nevertheless, be warn that on other solutions, XSS of type 1 can be critical (like Wordpress which suffer of a predictible backoffice's link).
 
 ### Module presentation
 
