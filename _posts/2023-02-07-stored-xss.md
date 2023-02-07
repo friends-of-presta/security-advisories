@@ -26,9 +26,9 @@ The most dangerous are XSS of type 2 according to their official CWE ([CWE-79](h
 
 We will call them: [CWE-79](https://cwe.mitre.org/data/definitions/79.html) / T2-F2B (Type 2 : Stored XSS AND from Front office to Back office).
 
-In summary, if you can inject a XSS from FRONT as guest (or assimilated), which will be stored in database then interprated on BACK, then it's a critical vulnrability which must be scored CVSS 3 : 9.5+/10 since it unlocks design's vulnerabilities (users's administration / modules's administration / any admin's controllers)
+In summary, if you can inject a XSS from FRONT as guest (or assimilated), which will be stored in database then interprated on BACK, then it's a critical vulnerability which must be scored CVSS 3 : 9.5+/10 since it unlocks design's vulnerabilities (users's administration / modules's administration / any admin's controllers)
 
-For all others XSS including Type 0/1 and Type 2 F2F/B2B, you can preserve a low to medium gravity score.
+For all others XSS including Type 0/1 and Type 2 F2F/B2B/B2F, you can preserve a low to medium gravity score.
 
 ### Module presentation
 
