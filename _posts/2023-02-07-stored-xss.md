@@ -1,22 +1,44 @@
 ---
 layout: post
-title: "Danger of stored XSS vulnerability in CMS especially for PrestaShop"
+title: "CWE-79 Danger of stored XSS vulnerability in CMS especially for PrestaShop"
 categories: modules
 author:
 - 202 ecommerce
 - TouchWeb
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop"
-severity: "critical (9.8)"
+severity: "critical (9.6)"
 ---
 
-
 As a developer, the severity level is often considered to be low. By underestimating the gravity, we lower our guard against these vulnerabilities. However, some types of vulnerabilities called "stored XSS" are particularly critical when they spread from the front office to the back office.
+
+## Summary
+
+* **Published at**: 2023-02-07
+* **Vendor**: All CMS. 
+* **Weakness**: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
+* **Severity**: critical (9.6)
+
+Vulnerability by design applied on PrestaShop qualified on productcomments module suffering of [CVE-2022-35933](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-35933)
+
+## Description
 
 This publication is a summary of Touchweb's work studying the impact of XSS vulnerabilities in the context of the PrestaShop CMS. 
 
 To highlight the criticality of XSS and give us the means to mitigate their effects, Touch Web conducted its research based on the vulnerability of the [productcomments module](https://github.com/PrestaShop/productcomments/security/advisories/GHSA-prrh-qvhf-x788), which in version 5.0.1 has a stored XSS.
 
+## CVSS base metrics
+
+* **Attack vector**: network
+* **Attack complexity**: low
+* **Privilege required**: none
+* **User interaction**: none
+* **Scope**: changed
+* **Confidentiality**: high
+* **Integrity**: high
+* **Availability**: high
+
+**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
 
 ### How to know if a XSS is critical ?
 
