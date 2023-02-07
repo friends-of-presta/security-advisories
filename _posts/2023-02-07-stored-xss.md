@@ -32,13 +32,13 @@ To highlight the criticality of XSS and give us the means to mitigate their effe
 * **Attack vector**: network
 * **Attack complexity**: low
 * **Privilege required**: none
-* **User interaction**: none
+* **User interaction**: required
 * **Scope**: changed
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
 
 ### How to know if a XSS is critical ?
 
