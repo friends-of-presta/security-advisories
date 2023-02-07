@@ -90,9 +90,8 @@ DO NOT TEST IT IN PRODUCTION.
 
 In the face of a Stored XSS vulnerability targeting the back office, it is impossible to undo all the effects. However, the most dangerous exploits can be limited.
 
-* Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters: 
-** Smarty: `{$value.comment|escape:'html':'UTF-8'}`
-** Twig: `{{ value.comment|e }}`
+* Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters : 
+> Smarty: `{$value.comment|escape:'html':'UTF-8'}` | Twig: `{{ value.comment|e }}`
 * Configure CSP headers (content security policies) by listing  externals domains allowed to load assets (such as js files).
 * If applicable: check against all your frontoffice's uploaders, uploading files which will be served by your server with mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
 * Activate OWASP 941's rules on your WAF (Web application firewall) - be warn that you will probably break your backoffice and you will need to preconfigure some bypasses against these set of rules.
