@@ -51,6 +51,7 @@ From then on, it is possible to inject malicious JavaScript, for example: `<scri
 Touchweb provides two benign JavaScript scripts that highlight the vulnerability for PrestaShop 1.7+ (we tested for 1.7.7.8).
 * Script A allows injecting a blockwishlist module containing a backdoor without the knowledge of a moderator, i.e. an administrator with rights.
 * Script B allows injecting an administrator in the specific case where it is disabled.
+
 DO NOT TEST IT IN PRODUCTION.
 
 
@@ -73,7 +74,6 @@ In the face of a Stored XSS vulnerability targeting the back office, it is impos
 * Configure CSP headers (content security policies) by listing  externals domains allowed to load assets (such as js files).
 * If applicable: check against all your frontoffice's uploaders, uploading files which will be served by your server with mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
 * Activate OWASP 941's rules on your WAF (Web application firewall) - be warn that you will probably break your backoffice and you will need to preconfigure some bypasses against these set of rules.
-* Be sure to encode guest's input when you use it on backoffice : 
 
 
 ### How to know if I'm already infected by a XSS of type 2 (Stored-XSS)?
