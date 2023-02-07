@@ -390,4 +390,4 @@ We highly recommand to remove from your server this module if not used, or upgra
 * [PrestaShop marketplace product page](https://addons.prestashop.com/en/page-customization/20111-ap-page-builder.html)
 * [POC](https://packetstormsecurity.com/files/168148/PrestaShop-Ap-Pagebuilder-2.4.4-SQL-Injection.html)
 * [Partial patch](https://blog.leotheme.com/security-issue-with-the-module-appagebuilder-v-2-2-4.html)
-* [National Vulerability Database](https://nvd.nist.gov/vuln/detail/CVE-2022-22897)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2022-22897)
