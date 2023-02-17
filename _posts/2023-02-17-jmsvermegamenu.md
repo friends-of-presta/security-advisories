@@ -47,7 +47,7 @@ ajax_jmsvermegamenu.php hold sensitives SQL calls that can be executed with a tr
 
 This vulnerability permits altering the shop’s database.
 
-## Patch of release 2.5.6
+## Patch
 
 ```diff
 --- a/ajax_jmsvermegamenu.php
@@ -62,6 +62,7 @@ This vulnerability permits altering the shop’s database.
 | Date | Action |
 |--|--|
 | 2022-09-01 | Issue discovered during a pentest |
+| 2023-02-17 | Contact the autor |
 | 2023-02-17 | Publish this security advisory |
 
 ## Other recommandations
