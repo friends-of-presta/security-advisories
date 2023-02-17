@@ -20,7 +20,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **Advisory source**: none
 * **Vendor**: PrestaShop
 * **Product**: jmsmegamenu
-* **Impacted release**: at least 2.5.5 and 2.5.6
+* **Impacted release**: at least 1.1.x and 2.0.x
 * **Product author**: Joommasters
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
