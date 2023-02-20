@@ -3,7 +3,7 @@ layout: post
 title: "[CVE-2022-46965] Improper neutralization of an SQL parameter in Administrative Mandate module for PrestaShop"
 categories: modules
 author:
-- Touch Web
+- TouchWeb
 - 202 ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,totadministrativemandate"
@@ -100,7 +100,7 @@ curl -v --cookie cookie.txt 'https://domain.tld/modules/totadministrativemandate
             !Validate::isLoadedObject($order)
 ```
 
-202 ecommerce thanks Touch Web for its courtesy and its help after the vulnerability disclosure.
+202 ecommerce thanks TouchWeb for its courtesy and its help after the vulnerability disclosure.
 
 ## Other recommandations
 
