@@ -4,7 +4,7 @@ title: "CWE-79 Danger of stored XSS vulnerability in CMS especially for PrestaSh
 categories: modules
 author:
 - 202 ecommerce
-- TouchWeb
+- TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop"
 severity: "critical (9.6)"
