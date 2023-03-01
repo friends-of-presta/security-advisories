@@ -55,14 +55,14 @@ curl -v -F "data_image=@test.php" "https://preprod.XXX/modules/jmsslider/ajax_jm
 ```
 
 ## Patch
-
-Not provided for now.
+Provided by the editor
+https://www.joommasters.com/index.php/blog/tutorials-and-case-studies/how-to-fix-security-bug-of-slider-security-breach-of-theme.html
 
 ## Timeline
 
 | Date | Action |
 |--|--|
-| 2022-09-01 | Issue discovered during a pentest |
+| 2019-09-04 | Vulnerability publish by the editor |
 | 2023-02-17 | Contact the autor |
 | 2023-03-01 | Publish this security advisory |
 
@@ -73,3 +73,4 @@ None
 ## Links
 
 * [Joom masters web site](https://www.joommasters.com/)
+* [Joom masters blog post on the vulnerability](https://www.joommasters.com/index.php/blog/tutorials-and-case-studies/how-to-fix-security-bug-of-slider-security-breach-of-theme.html)
