@@ -91,7 +91,6 @@ Last refresh date : 2023-03-02
 /admimm/
 /_admin/
 /admin@@@/
-/admin0/
 /admin002/
 /admin005hudmhi/
 /admin007/
