@@ -11,7 +11,7 @@ author:
 
 Be warned that your random table's prefix are completely useless against blackhat with senior DBA skill because of a design vulnerability in DBMS.
 
-This logical weakness is shared by most popular CMS which invests in accessibility to the detriment of security.
+This logical weakness is shared by most popular CMS which invests in accessibility/features to the detriment of security.
 
 Security is constraint. The lower the constraint, the lower the security.
 
