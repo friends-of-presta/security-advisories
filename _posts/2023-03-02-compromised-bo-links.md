@@ -10647,9 +10647,6 @@ Last refresh date : 2023-03-02
 /lmi5d3sp0reewhl7/
 /logme/
 /logowanie-sklep-admin/
-/logs/access
-/logs/dev.log
-/logs/prod.log
 /lr5fwbinldnwbype/
 /lsb0xgmue788b5fr/
 /ltxuqsmarzelphec/
