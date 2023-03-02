@@ -89,7 +89,7 @@ Last refresh date : 2023-03-02
 /admin@@@/
 /admin0/
 /admin002/
-/admin005hudmhi//
+/admin005hudmhi/
 /admin007/
 /admin007007/
 /admin01/
@@ -201,7 +201,7 @@ Last refresh date : 2023-03-02
 /admin1087/
 /admin1088/
 /admin1089/
-/admin108iwxxmz//
+/admin108iwxxmz/
 /admin109/
 /admin1090/
 /admin1091/
@@ -8287,7 +8287,7 @@ Last refresh date : 2023-03-02
 /admin8327/
 /admin8328/
 /admin8329/
-/admin832vdx2k3//
+/admin832vdx2k3/
 /admin833/
 /admin8330/
 /admin8331/
