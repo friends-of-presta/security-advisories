@@ -15,7 +15,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 
 ## Summary
 
-* **CVE ID**: To request
+* **CVE ID**: Awaiting from MITRE.org
 * **Published at**: 2023-02-17
 * **Advisory source**: none
 * **Vendor**: PrestaShop
