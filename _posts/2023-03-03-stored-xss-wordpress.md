@@ -7,7 +7,7 @@ author:
 - 202 ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,Wordpress"
-severity: "critical (9.6)"
+severity: "critical (9.0)"
 ---
 
 As a developer, the severity level is often considered to be low. By underestimating the gravity, we lower our guard against these vulnerabilities. However, some types of vulnerabilities called "stored XSS" are particularly critical when they spread from the front office to the back office.
