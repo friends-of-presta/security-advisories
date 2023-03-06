@@ -108,3 +108,12 @@ You must check every tables within your database which could store guest's input
 You can find a list of potential hijacked events on [PrestaShop method Validate::isCleanHtml()](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L507)
 
 Be warn that you will probably face falses positives alerts which can be time consumming.
+
+
+### How CMS's core team can help ecosystem about CSP headers ?
+
+If you already setup CSP headers, you already know that it's a plague on our E-Commerce ecosystem with tens externals dependancies (cariers / banks / tracking / remarketing / ...), to setup and more over to maintain over time.
+
+This chaos generate front/back breaks on updates which make it stressfull for all professionnals trying to strength their protection against XSS.
+
+It would be very appreciated if core team constrains plugins developpers to list with strictness their externals dependancies in a normative way which permit a professional generation of CSP headers - not based on chaotic front/back exploration.
