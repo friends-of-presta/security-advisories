@@ -92,6 +92,7 @@ In the face of a Stored XSS vulnerability targeting the back office, it is impos
 
 * Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters : 
 > Smarty: `{$value.comment|escape:'html':'UTF-8'}`  Twig: `{\{value.comment|e\}}`(without backslashes)
+> * Limit to the strict minimum the length's value in database - a database field which allow 10 characters (`varchar(10)`) is far less dangerous than a field which allow 40+ characters (use cases which can exploit fragmented XSS payloads are very rare)
 * Configure CSP headers (content security policies) by listing  externals domains allowed to load assets (such as js files).
 * If applicable: check against all your frontoffice's uploaders, uploading files which will be served by your server with mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
 * Activate OWASP 941's rules on your WAF (Web application firewall) - be warn that you will probably break your backoffice and you will need to preconfigure some bypasses against these set of rules.
@@ -103,3 +104,12 @@ You must check every tables within your database which could store guest's input
 You can find a list of potential hijacked events on [PrestaShop method Validate::isCleanHtml()](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L507)
 
 Be warn that you will probably face falses positives alerts which can be time consumming.
+
+
+### How CMS's core team can help ecosystem about CSP headers ?
+
+If you already setup CSP headers, you already know that it's a plague on our E-Commerce ecosystem with tens externals dependancies (cariers / banks / tracking / remarketing / ...), to setup and more over to maintain over time.
+
+This chaos generate front/back breaks on updates which make it stressfull for all professionnals trying to strength their protection against XSS.
+
+It would be very appreciated if core team constrains plugins developpers to list with strictness their externals dependancies in a normative way which permit a professional generation of CSP headers - not based on chaotic front/back exploration.
