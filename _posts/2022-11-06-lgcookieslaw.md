@@ -5,7 +5,7 @@ categories: modules
 author:
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop"
-severity: "critical (9.4)"
+severity: "critical (9.8)"
 ---
 
 
@@ -22,7 +22,7 @@ The PrestaShop e-commerce platform module EU Cookie Law GDPR (Banner + Blocker) 
 * **Impacted release**: >= 1.5.0, < 2.1.3 (2.1.3 fixed the vulnerability)
 * **Product author**: Línea Gráfica
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: critical (9.4)
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -38,9 +38,9 @@ The EU Cookie Law GDPR (Banner + Blocker) module before 2.1.3 for PrestaShop all
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
-* **Availability**: low
+* **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L
+**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 
 ## Possible malicious usage
 
@@ -99,7 +99,10 @@ For older versions set the `__lglaw cookie to 1,2,3,4) AND SLEEP(5)--`.
 
 ## Other recommandations
 
-It’s recommended to upgrade to the lastest version of the module **lgcookieslaw**.
+* It’s recommended to upgrade to the lastest version of the module **lgcookieslaw**.
+* Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Links
 
