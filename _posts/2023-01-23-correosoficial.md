@@ -39,10 +39,10 @@ The descarga_etiqueta.php component of Correos use the PHP function `readfile`, 
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: low
-* **Availability**: low
+* **Integrity**: none
+* **Availability**: none
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
 
 ## Possible malicious usage
 
