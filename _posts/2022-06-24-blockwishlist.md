@@ -88,7 +88,7 @@ Issue is fixed in 2.1.1 in this [patch](https://github.com/PrestaShop/blockwishl
 
 * It’s recommended to upgrade to the lastest version of the module **blockwishlist** up to 2.1.1.
 
-Please note, blockwishlist is often forked to be custumized.
+Please note, blockwishlist is often forked to be customized.
 
 * Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
