@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,dpdfrance"
 severity: "critical (9.8)"
 ---
 
-In the module "DPD France" (dpdfrance) for PrestaShop, an remote attaker can perform a blind SQL injection in affected versions. Release 6.1.3 fixed vulnerabilities.
+In the module "DPD France" (dpdfrance) for PrestaShop, a remote attaker can perform a blind SQL injection in affected versions. Release 6.1.3 fixed vulnerabilities.
 
 ## Summary
 
@@ -39,7 +39,7 @@ In dpdfrance module for PrestaShop up to 6.1.3, multiple sensitives SQL calls in
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
