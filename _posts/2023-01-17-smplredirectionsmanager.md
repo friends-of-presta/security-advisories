@@ -46,7 +46,7 @@ The large scope of URL exposed to the vulnerability increases its severity and t
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
@@ -84,7 +84,10 @@ This vulnerability permits altering the shop’s database.
 
 ## Other recommandations
 
-It’s recommended to upgrade to the lastest version of the module **smplredirectionsmanager**.
+*It’s recommended to upgrade to the lastest version of the module **smplredirectionsmanager**.
+* Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Links
 
