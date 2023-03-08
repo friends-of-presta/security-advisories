@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-25207] Multiple improper neutralizations of an SQL parameters in DPD France module for PrestaShop"
+title: "[CVE-2023-25207] Multiple improper neutralization of SQL parameters in DPD France module for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
