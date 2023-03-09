@@ -12,8 +12,6 @@ severity: "critical (9.8)"
 
 In the module "DPD France" (dpdfrance) for PrestaShop, a remote attaker can perform a blind SQL injection in affected versions. Release 6.1.3 fixed vulnerabilities.
 
-**WARNING** Be aware that the version 6.1.3 come with a new sensible problem so you must stay in alert to apply without delay future versions.
-
 ## Summary
 
 * **CVE ID**: [CVE-2023-25207](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25207)
@@ -73,6 +71,8 @@ curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73
 ```
 
 ## Other recommandations
+
+**WARNING** Be aware that the version 6.1.3 come with a new sensible problem so you must stay in alert to apply without delay future versions.
 
 * It’s recommended to upgrade the module beyond 6.1.3.
 * For PrestaShop 1.6, you need to apply the patch manually.
