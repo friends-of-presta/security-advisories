@@ -41,11 +41,14 @@ ajax_jmsvermegamenu.php hold sensitives SQL calls that can be executed with a tr
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
-This vulnerability permits altering the shop’s database.
+* Technical and personal data leaks
+* Obtain admin access
+* Remove all data of the linked PrestaShop
+* Display sensitives tables to front-office to unlock potential admin's ajax scripts of modules protected by token on the ecosystem
 
 ## Patch
 
@@ -67,7 +70,9 @@ This vulnerability permits altering the shop’s database.
 
 ## Other recommandations
 
-None
+* Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Links
 
