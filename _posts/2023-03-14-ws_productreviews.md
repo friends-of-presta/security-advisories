@@ -15,7 +15,7 @@ In the module "Advanced Reviews: Photos, Reminder, Google Snippets" (ws_productr
 ## Summary
 
 * **CVE ID**: [CVE-2023-25206](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25206)
-* **Published at**: 2023-03-13
+* **Published at**: 2023-03-14
 * **Advisory source**: Friends-of-Presta.org
 * **Vendor**: PrestaShop
 * **Product**: ws_productreviews
@@ -192,7 +192,7 @@ curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_so
 | 2022-01-11 | Contact the author to fix others vulnerabilities |
 | 2023-01-26 | Last fixes from the author |
 | 2023-02-01 | Request a CVE ID |
-| 2023-03-13 | Publication of this security advisory |
+| 2023-03-14 | Publication of this security advisory |
 
 ## Links
 
