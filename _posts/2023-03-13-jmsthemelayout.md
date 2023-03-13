@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blind SQL injection vulnerability in Jms Page Builder (jmspagebuilder) PrestaShop module"
+title: "Blind SQL injection vulnerability in Jms Theme Layout (jmsthemelayout) PrestaShop module"
 categories: modules
 author:
 - Creabilis.com
@@ -10,24 +10,24 @@ meta: "CVE,PrestaShop"
 severity: "critical (9.8)"
 ---
 
-The module Jms Page Builder (jmspagebuilder) from Joommasters contains a Blind SQL injection vulnerability.
+The module Jms Theme Layout (jmsthemelayout) from Joommasters contains a Blind SQL injection vulnerability.
 This module is for the PrestaShop e-commerce platform and mainly provided with joo masters PrestaShop themes
 
 ## Summary
 
 * **CVE ID**: Awaiting from MITRE.org
-* **Published at**: 2023-02-17
+* **Published at**: 2023-03-13
 * **Advisory source**: none
 * **Vendor**: PrestaShop
-* **Product**: jmspagebuilder
-* **Impacted release**: at least 3.x
+* **Product**: jmsthemelayout
+* **Impacted release**: at least 2.5.5
 * **Product author**: Joommasters
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-ajax_jmspagebuilder.php hold sensitives SQL calls that can be executed with a trivial http call and exploited to forge a blind SQL injection.
+ajax_jmsvermegamenu.php hold sensitives SQL calls that can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
@@ -50,11 +50,13 @@ This vulnerability permits altering the shop’s database.
 ## Patch
 
 ```diff
---- a/ajax_jmspagebuilder.php
-+++ b/ajax_jmspagebuilder.php
-@@ -611,1 +611,1 @@ function getPosts
--        $where  = ' WHERE i.`id_product` IN ('.$productids.') AND (i.`cover` IS NULL OR i.`cover` = 0)';
-+        $where  = ' WHERE i.`id_product` IN ('.implode(',', array_map('intval', explode(',', $productids))).') AND (i.`cover` IS NULL OR i.`cover` = 0)';
+--- a/ajax_jmsthemelayout.php.php
++++ b/ajax_jmsthemelayout.php.php
+@@ -102,2 +102,2 @@ function getPosts
+-        $query = 'UPDATE `'._DB_PREFIX_.'jmsadv_position` SET `col_lg` = '.$pos_obj[1].', `col_md` = '.$pos_obj[2].', `col_sm` = '.$pos_obj[3].', `col_xs` = '.$pos_obj[4].
+-		'	WHERE `id_position` = '.$pos_obj[0];
++        $query = 'UPDATE `'._DB_PREFIX_.'jmsadv_position` SET `col_lg` = '. (int)$pos_obj[1].', `col_md` = '. (int)$pos_obj[2].', `col_sm` = '. (int)$pos_obj[3].', `col_xs` = '. (int)$pos_obj[4].
++		'	WHERE `id_position` = '. (int)$pos_obj[0];
 ```
 
 ## Timeline
@@ -63,7 +65,7 @@ This vulnerability permits altering the shop’s database.
 |--|--|
 | 2022-09-01 | Issue discovered during a pentest |
 | 2023-02-17 | Contact the author |
-| 2023-03-xx | Publish this security advisory |
+| 2023-03-13 | Publish this security advisory |
 
 ## Other recommandations
 
