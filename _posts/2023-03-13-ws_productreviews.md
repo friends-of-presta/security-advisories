@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-25206] Multiple improper neutralizations of an SQL parameters in ws_productreviews module for PrestaShop"
+title: "[CVE-2023-25206] Multiple improper neutralization of SQL parameters in ws_productreviews module for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
@@ -39,12 +39,14 @@ In ws_productreviews module for PrestaShop up to 3.6.2, multiple sensitives SQL 
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
+* Technical and personal data leaks
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove all data of the linked PrestaShop
+* Display sensitives tables to front-office to unlock potential admin's ajax scripts of modules protected by token on the ecosystem
 
 ## Proof of concept
 
