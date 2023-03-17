@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blind SQL injection vulnerability in Redirections Manager (smplredirectionsmanager) PrestaShop module"
+title: "[CVE-2023-26864] Blind SQL injection vulnerability in Redirections Manager (smplredirectionsmanager) PrestaShop module"
 categories: modules
 author:
 - Creabilis.com
@@ -18,7 +18,7 @@ WARNING : This vulnerability will bypass some WAF.
 
 ## Summary
 
-* **CVE ID**: To request
+* **CVE ID**: [CVE-2023-26864](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
 * **Published at**: 2023-01-17
 * **Advisory source**: none
 * **Vendor**: PrestaShop
@@ -92,3 +92,4 @@ This vulnerability permits altering the shop’s database.
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/url-redirects/21428-redirections-manager-manage-301-302-and-404-urls.html)
+* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
