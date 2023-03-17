@@ -76,7 +76,7 @@ This vulnerability permits altering the shop’s database.
 
 | Date | Action |
 |--|--|
-| 2022-10-10 | Issue discovered during a pentest |
+| 2022-10-10 | Issue discovered by TouchWeb.fr's auto-pentesting bots |
 | 2022-10-11 | Contact the author |
 | 2022-11-14 | Fix published on addons PrestaShop marketplace |
 | 2023-01-12 | Request CVE ID |
