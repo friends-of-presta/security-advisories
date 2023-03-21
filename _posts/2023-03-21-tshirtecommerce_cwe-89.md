@@ -14,7 +14,7 @@ In the module Custom Product Designer (tshirtecommerce), an anonymous user can p
 
 ## Summary
 
-* **CVE ID**: CVE-2023-27637 / CVE-2023-27638
+* **CVE ID**: [CVE-2023-27637](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27637) / [CVE-2023-27638](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27638)
 * **Published at**: 2023-03-21
 * **Advisory source**: Friends-Of-Presta
 * **Vendor**: PrestaShop
@@ -22,7 +22,7 @@ In the module Custom Product Designer (tshirtecommerce), an anonymous user can p
 * **Impacted release**: <= 2.1.4 (latest version)
 * **Product author**: Tshirtecommerce Team
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: critical (9.8) // based on CVSS base metrics
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -59,6 +59,7 @@ https://example.com/module/tshirtecommerce/designer?product_id=900982561&parent_
 ## Patch 
 
 Due to the number of vulnerabilities discovered, we advise removing the module and `tshirtecommerce` directory in root directory.
+
 Patches listed below concerns the two SQL injections discovered.
 
 ```diff
@@ -91,9 +92,14 @@ Patches listed below concerns the two SQL injections discovered.
                         `id_cart`                                               = '.(int)$id_cart.' AND
 ```
 
-## Timeline
+## Other recommandations
 
-If the CVE is published by Friends of Presta.
+* It’s recommended to completely remove the tshirtecommerce module as long as the module is not updated
+* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+
+## Timeline
 
 | Date | Action |
 | -- | -- |
@@ -107,13 +113,6 @@ If the CVE is published by Friends of Presta.
 | 2023-03-16 | Email reminder to the editor tshirtecommerce (no reply) + Contact form in tshirtecommerce site (not working) |
 | 2023-03-16 | Contacting again codecanyon / envato market |
 | 2023-03-21 | Publish this security advisory |
-
-## Other recommandations
-
-* It’s recommended to completely remove the tshirtecommerce module as long as the module is not updated
-* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
-* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Links
 
