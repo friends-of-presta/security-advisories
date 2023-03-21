@@ -119,5 +119,5 @@ If the CVE is published by Friends of Presta.
 
 * [Module Custom Product Designer (tshirtecommerce)](https://codecanyon.net/item/prestashop-custom-product-designer/19202018)
 * [Editor Website : T-Shirt eCommerce](https://tshirtecommerce.com/)
-* [National Vulnerability Database CVE-2023-27639](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27639)
-* [National Vulnerability Database CVE-2023-27640](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27640)
+* [National Vulnerability Database CVE-2023-27637](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27637)
+* [National Vulnerability Database CVE-2023-27638](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27638)
