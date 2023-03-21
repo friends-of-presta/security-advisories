@@ -103,8 +103,8 @@ If the CVE is published by Friends of Presta.
 | 2023-03-04 | Contacting codecanyon / envato market (no reply) |
 | 2023-03-07 | Email reminder to the editor tshirtecommerce (no reply) |
 | 2023-03-07 | Email reminder to the editor tshirtecommerce by another channel (no reply) |
-| 2023-03-09 | Email reminder to the editor tshirtecommerce |
-| 2023-03-16 | Email reminder to the editor tshirtecommerce + Contact form in tshirtecommerce site (not working) |
+| 2023-03-09 | Email reminder to the editor tshirtecommerce (no reply) |
+| 2023-03-16 | Email reminder to the editor tshirtecommerce (no reply) + Contact form in tshirtecommerce site (not working) |
 | 2023-03-16 | Contacting again codecanyon / envato market |
 | 2023-03-21 | Publish this security advisory |
 
