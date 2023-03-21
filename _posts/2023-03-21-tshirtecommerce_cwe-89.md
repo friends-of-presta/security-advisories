@@ -70,7 +70,7 @@ Patches listed below concerns the two SQL injections discovered.
  
                         // Get data from ps_product table
 -                       $settings = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS("SELECT `design_product_id` FROM `"._DB_PREFIX_."product` WHERE `id_product`=".$parent_id);
-+                       $settings = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS("SELECT `design_product_id` FROM `"._DB_PREFIX_."product` WHERE `id_product`='".pSQL($parent_id)."'");
++                       $settings = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS("SELECT `design_product_id` FROM `"._DB_PREFIX_."product` WHERE `id_product`=".(int)$parent_id);
  
                 if (isset($settings[0]) && isset($settings[0]['design_product_id'])) {
                      $design_product_id = $settings[0]['design_product_id'];
@@ -118,5 +118,5 @@ Patches listed below concerns the two SQL injections discovered.
 
 * [Module Custom Product Designer (tshirtecommerce)](https://codecanyon.net/item/prestashop-custom-product-designer/19202018)
 * [Editor Website : T-Shirt eCommerce](https://tshirtecommerce.com/)
-* [National Vulnerability Database CVE-2023-27637](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27637)
-* [National Vulnerability Database CVE-2023-27638](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27638)
+* [National Vulnerability Database CVE-2023-27637](https://nvd.nist.gov/vuln/detail/CVE-2023-27637)
+* [National Vulnerability Database CVE-2023-27638](https://nvd.nist.gov/vuln/detail/CVE-2023-27638)
