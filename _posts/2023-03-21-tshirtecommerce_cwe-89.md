@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,tshirtecommerce"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
 In the module Custom Product Designer (tshirtecommerce), an anonymous user can perform an SQL injection attack. The vulnerability is actively exploited by bots. As the module doesn't seems to be maintained since 2019, it's strongly suggested to remove it.
