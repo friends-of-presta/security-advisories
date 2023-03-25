@@ -3,8 +3,8 @@ layout: post
 title: "[CVE-2022-46965] Improper neutralization of an SQL parameter in Administrative Mandate module for PrestaShop"
 categories: modules
 author:
-- TouchWeb.fr
 - 202 ecommerce
+- TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,totadministrativemandate"
 severity: "high (8.3)"
