@@ -6,7 +6,7 @@ author:
 - Profileo
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,tshirtecommerce"
-severity: "critical (9.8)"
+severity: "high (7.5)"
 ---
 
 In the Custom Product Designer (tshirtecommerce) module for PrestaShop, HTTP requests can be forged using POST and GET parameters enabling a remote attacker to perform directory traversal on the system and view the contents of code files. Since the module appears not to have been maintained since 2019, it is strongly recommended to remove it.
@@ -21,7 +21,7 @@ In the Custom Product Designer (tshirtecommerce) module for PrestaShop, HTTP req
 * **Impacted release**: <= 2.1.4 (latest version)
 * **Product author**: Tshirtecommerce Team
 * **Weakness**: [CWE-22](https://www.cvedetails.com/cwe-details/22/cwe.html)
-* **Severity**: critical (9.8)
+* **Severity**: high (7.5)
 
 ## Description
 
@@ -37,10 +37,11 @@ The following issues have been seen in the latest version of the Prestashop Cust
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: high
-* **Availability**: high
+* **Integrity**: none
+* **Availability**: none
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CCVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
+
 
 ## Possible malicious usage
 
