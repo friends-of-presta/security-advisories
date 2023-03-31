@@ -123,19 +123,17 @@ In the function `getSVG`.
 
 ## Timeline
 
-If the CVE is published by Friends of Presta.
-
 | Date | Action |
 | -- | -- |
 | 2022-10-23 | First detection in Apache logs of an exploitation of this module |
 | 2023-03-04 | Discovery of the vulnerability by Profileo |
 | 2023-03-04 | Contacting the editor (no reply) |
-| 2023-03-04 | Contacting codecanyon / envato market |
+| 2023-03-04 | Contacting codecanyon / envato market (no reply) |
 | 2023-03-07 | Email reminder to the editor (no reply) |
 | 2023-03-07 | Email reminder to the editor by another channel (no reply) |
 | 2023-03-09 | Email reminder to the editor (no reply) |
 | 2023-03-16 | Contacting again codecanyon / envato market |
-| 2023-03-21 | Publish this security advisory |
+| 2023-03-30 | Publish this security advisory |
 
 ## Links
 
