@@ -93,7 +93,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 | 2023-02-19 | Contact PrestaShop Addons security Team |
 | 2023-02-19 | Request CVE ID |
 | 2023-02-27 | Addons security Team confirm author provide a patch for PS 1.6 and PS 1.7/8.0 |
-| 2023-04-06 | Publication of the security advisory without delay proposed since exploit is actively used |
+| 2023-04-06 | Publication of the security advisory without delay : exploit is actively used |
 
 ## Links
 
