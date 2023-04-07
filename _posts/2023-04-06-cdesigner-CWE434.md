@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,cdesigner"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
 In the module "Cdesigner" (cdesigner), a guest can upload files with extensions \.php.+ (like .php7)
@@ -23,7 +23,7 @@ Note : .php extension is correctly block so it will be harmless for most servers
 * **Impacted release**: <= 3.2.1
 * **Product author**: Prestaeg
 * **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
