@@ -37,7 +37,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 
 **This exploit is actively exploited in the wild**
 
-**WARNING** : If you service is vulnerable, be warn that this exploit will bypass some WAF (base64 payloads)
+**WARNING** : If your service is vulnerable, be warn that this exploit will bypass some WAF (base64 payloads)
 
 
 ## CVSS base metrics
