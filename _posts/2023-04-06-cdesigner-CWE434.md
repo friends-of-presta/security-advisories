@@ -16,7 +16,7 @@ Note : .php extension is correctly block so it will be harmless for most servers
 
 ## Summary
 
-* **CVE ID**: [CVE-2023-27033]
+* **CVE ID**: [CVE-2023-27033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27033)
 * **Published at**: 2023-04-06
 * **Vendor**: PrestaShop
 * **Product**: cdesigner
@@ -98,4 +98,4 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/declinaisons-personnalisation/22677-personnalisation-de-produit-product-customize.html)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27847)
+* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27033)
