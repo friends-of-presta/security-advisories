@@ -51,7 +51,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CCVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
