@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,cdesigner"
 severity: "critical (9.8)"
 ---
 
-In the module "Cdesigner" (cdesigner), a guest can upload files with extensions \.php.+ (like .php7)
+In the module "Cdesigner" (cdesigner) up to 3.2.1 (3.2.2 fix the issue), a guest can upload files with extensions \.php.+ (like .php7)
 
 Note : .php extension is correctly block so it will be harmless for most servers's setups.
 
@@ -20,7 +20,7 @@ Note : .php extension is correctly block so it will be harmless for most servers
 * **Published at**: 2023-04-06
 * **Vendor**: PrestaShop
 * **Product**: cdesigner
-* **Impacted release**: <= 3.2.1
+* **Impacted release**: > 3.1.3, <= 3.2.1 (3.2.2 fix the issue)
 * **Product author**: Prestaeg
 * **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
 * **Severity**: critical (9.8)
@@ -59,7 +59,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 * Remove data on the associated PrestaShop
 * Steal datas
 
-## Patch from 3.1.8
+## Patch
 
 ```diff
 --- 3.1.8/cdesigner/controllers/front/saverotate.php
@@ -99,3 +99,4 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/declinaisons-personnalisation/22677-personnalisation-de-produit-product-customize.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-27033)
+
