@@ -98,4 +98,5 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/declinaisons-personnalisation/22677-personnalisation-de-produit-product-customize.html)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27033)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-27033)
+
