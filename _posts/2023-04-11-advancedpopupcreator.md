@@ -93,7 +93,7 @@ The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be exec
 | 2023-02-17 | Contact Addons security Team |
 | 2022-02-17 | Fix published within 4 hours by author on addons PrestaShop marketplace |
 | 2023-02-17 | Request CVE ID |
-| 2023-04-06 | Publication of the security advisory without delay proposed since exploit can be too easily seen |
+| 2023-04-06 | Publication of the security advisory without delay since exploit can be too easily seen |
 
 ## Links
 
