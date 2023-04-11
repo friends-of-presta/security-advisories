@@ -27,7 +27,7 @@ In the module "Advanced Popup Creator" (advancedpopupcreator), a guest can perfo
 
 The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-**WARNING** : Can be easily detected by blind sql injection pentest, so blackhat already know it - and will certainly bypass some WAF
+**WARNING** : Can be easily detected by blind sql injection pentest, so blackhat already know it - and will certainly bypass some WAF. For this reason, POC is not given as usal.
 
 ## CVSS base metrics
 
