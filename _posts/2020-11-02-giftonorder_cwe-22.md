@@ -2,7 +2,7 @@
 layout: post
 title: "[CVE-2020-9368][CWE-22] Path traversal in Olea Gift On Order module (giftonorder) module for PrestaShop"
 categories: module
-author:
+author:Intrinsec
 meta: "CVE,PrestaShop,giftonorder"
 severity: "high (7.5)"
 ---
@@ -23,7 +23,7 @@ The Module Olea Gift On Order module through 5.0.8 for PrestaShop enables an una
 
 ## Description
 
-Olea Gift On Order module through 5.0.8 for PrestaShop enables an unauthenticated user to read arbitrary files on the server via getfile.php?file=/.. directory traversal.
+Olea Gift On Order module through 5.0.8 for PrestaShop enable an unauthenticated user to read arbitrary files on the server via getfile.php?file=/.. directory traversal.
 
 As there is no access control over the getfile.php page, any unauthenticated user can call this file in their browser to retrieve the content of any page in any (sub)folder of the Prestashop folder.
 This is done by making a GET request to getfile.php with file parameter set to the file the user wants to retrieve.
