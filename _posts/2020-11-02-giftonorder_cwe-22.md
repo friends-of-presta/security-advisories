@@ -2,7 +2,8 @@
 layout: post
 title: "[CVE-2020-9368][CWE-22] Path traversal in Olea Gift On Order module (giftonorder) module for PrestaShop"
 categories: module
-author:Intrinsec
+author:
+- Intrinsec
 meta: "CVE,PrestaShop,giftonorder"
 severity: "high (7.5)"
 ---
@@ -32,8 +33,8 @@ The _PS_ROOT_DIR (root of the Prestashop folder) variable is prepended to the fi
 
 ## Solutions
 
-Manual removal of the getfile.php file as suggested by Oleacorner.
-No patch will be provided by the publisher.
+* Manual removal of the getfile.php file as suggested by Oleacorner.
+* No patch will be provided by the publisher.
 
 ## CVSS base metrics
 
