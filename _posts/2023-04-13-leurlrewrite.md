@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-27844] Improper neutralization of an SQL parameter in leurlrewrite for PrestaShop"
+title: "[CVE-2023-27844] Improper neutralization of SQL parameter in leurlrewrite for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,leurlrewrite"
 severity: "critical (9.8)"
 ---
 
-In the module "LitExtension Url Plugin" (leurlrewrite) for PrestaShop, an atacker can perform SQL injection up to 1.0. Even though the module has been patched in version 1.0, the version number was not incremented at the time. We consider the issue resolved in versions after 1.0.
+In the module "LitExtension Url Plugin" (leurlrewrite) for PrestaShop, an attacker can perform SQL injection up to 1.0. Even though the module has been patched in version 1.0, the version number was not incremented at the time. We consider the issue resolved in versions after 1.0.
 
 ## Summary
 
@@ -51,7 +51,7 @@ A sensitive SQL calls the overrided class `Dispatcher::getController()` can be e
 
 ## Patch
 
-*IMPORTANT*: apply the patch and reset the module or update the override/classes/Dispatcher.php of teh PrestaShop manually.
+*IMPORTANT*: apply the patch and reset the module or update the override/classes/Dispatcher.php of the PrestaShop manually.
 
 ```diff
 --- a/leurlrewrite/override/classes/Dispatcher.php
