@@ -54,8 +54,21 @@ A sensitive SQL call the overrided class `Dispatcher::getController()` can be ex
 *IMPORTANT*: apply the patch and reset the module or update the override/classes/Dispatcher.php of the PrestaShop manually.
 
 ```diff
---- a/leurlrewrite/override/classes/Dispatcher.php
-+++ b/leurlrewrite/override/classes/Dispatcher.php
+--- a/modules/leurlrewrite/override/classes/Dispatcher.php
++++ b/modules/leurlrewrite/override/classes/Dispatcher.php
+@@ -88,7 +88,7 @@ class Dispatcher extends DispatcherCore {
+                if ($controller == 'pagenotfound' || $controller == '404' || $controller === false) {
+             //$url_rewrite = preg_replace('#^' . preg_quote(Context::getContext()->shop->getBaseURI(), '#') . '#i', '', $_SERVER['REQUEST_URI']);
+             $url_rewrite = trim($this->request_uri, '/');
+-            $results = Db::getInstance()->executeS("SELECT id_desc, type, lang_code FROM " . _DB_PREFIX_ . "lecm_rewrite WHERE link_rewrite = '" . $url_rewrite . "'");
++            $results = Db::getInstance()->executeS("SELECT id_desc, type, lang_code FROM " . _DB_PREFIX_ . "lecm_rewrite WHERE link_rewrite = '" . pSQL($url_rewrite) . "'");
+             if ($results) {
+                 $rewrite = array_pop($results);
+                 $controller = $rewrite['type'];
+```
+```diff
+--- a/override/classes/Dispatcher.php
++++ b/override/classes/Dispatcher.php
 @@ -88,7 +88,7 @@ class Dispatcher extends DispatcherCore {
                 if ($controller == 'pagenotfound' || $controller == '404' || $controller === false) {
              //$url_rewrite = preg_replace('#^' . preg_quote(Context::getContext()->shop->getBaseURI(), '#') . '#i', '', $_SERVER['REQUEST_URI']);
