@@ -66,6 +66,7 @@ A sensitive SQL call the overrided class `Dispatcher::getController()` can be ex
                  $rewrite = array_pop($results);
                  $controller = $rewrite['type'];
 ```
+
 ```diff
 --- a/override/classes/Dispatcher.php
 +++ b/override/classes/Dispatcher.php
