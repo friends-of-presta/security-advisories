@@ -87,5 +87,5 @@ From 1.4.0 to 1.8.2 (1.8.3 fix the issue), a sensitive SQL call in `Shoppingfeed
 ## Links
 
 * [Github repository](https://github.com/202ecommerce/shoppingfeed/security/advisories/GHSA-66pc-8gh8-mx7m)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name= CVE-2023-28839)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-28839)
 
