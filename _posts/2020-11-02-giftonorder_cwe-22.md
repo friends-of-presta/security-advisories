@@ -15,7 +15,7 @@ The Module Olea Gift On Order module through 5.0.8 for PrestaShop enables an una
 * **CVE ID**: [CVE-2020-9368](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9368)
 * **Published at**: 2020-11-02
 * **Advisory source**: Intrinsec
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: giftonorder
 * **Impacted release**: <= 5.0.8
 * **Product author**: Oleacorner

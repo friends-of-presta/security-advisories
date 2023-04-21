@@ -18,7 +18,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **CVE ID**: Awaiting from MITRE.org
 * **Published at**: 2023-03-13
 * **Advisory source**: none
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: jmsmegamenu
 * **Impacted release**: at least 1.1.x and 2.0.x
 * **Product author**: Joommasters

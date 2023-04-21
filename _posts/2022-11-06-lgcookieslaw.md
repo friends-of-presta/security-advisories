@@ -17,7 +17,7 @@ The PrestaShop e-commerce platform module EU Cookie Law GDPR (Banner + Blocker) 
 * **CVE ID**: CVE-2022-44727
 * **Published at**: 2022-11-06
 * **Advisory source**: [securityandstuff.com](https://securityandstuff.com/posts/cve-2022-44727/)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: lgcookieslaw
 * **Impacted release**: >= 1.5.0, < 2.1.3 (2.1.3 fixed the vulnerability)
 * **Product author**: Línea Gráfica

@@ -15,7 +15,7 @@ As a developer, the severity level is often considered to be low. By underestima
 ## Summary
 
 * **Published at**: 2023-03-03
-* **Vendor**: All CMS. 
+* **Platform**: All CMS. 
 * **Weakness**: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
 * **Severity**: critical (9.0)
 

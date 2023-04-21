@@ -15,7 +15,7 @@ From version v1.1.0.0 and v1.2.x+ correosoficial Module for Prestashop 1.7.x all
 * **CVE ID**: [CVE-2022-46639](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46639)
 * **Published at**: 2023-01-23
 * **Advisory source**: [ia-informatica.com](https://ia-informatica.com/it/CVE-2022-46639)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: correosoficial
 * **Impacted release**: >= 1.1.0, < 1.2.0
 * **Product author**: Grupo Correos
@@ -92,4 +92,4 @@ An official patch is not yet published by the author of the module. Please note,
 
 * [ia-informatica.com security advisory post](https://ia-informatica.com/it/CVE-2022-46639)
 * [Product page](https://www.correos.es/es/es/empresas/ecommerce/agiliza-la-gestion-de-tus-pedidos/prestashop)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46639)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2022-46639)

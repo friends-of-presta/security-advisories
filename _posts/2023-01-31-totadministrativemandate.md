@@ -17,7 +17,7 @@ In the module "Administrative Mandate" (totadministrativemandate), an authentica
 * **CVE ID**: [CVE-2022-46965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46965)
 * **Published at**: 2023-01-28
 * **Advisory source**: [202 ecommerce](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-hg7m-23j3-rf56)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: totadministrativemandate
 * **Impacted release**: >= 1.2.1, < 1.7.2
 * **Product author**: 202 ecommerce
@@ -113,4 +113,4 @@ curl -v --cookie cookie.txt 'https://domain.tld/modules/totadministrativemandate
 
 * [202 ecommerce security advisory post](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-hg7m-23j3-rf56)
 * [PrestaShop addons product page](https://addons.prestashop.com/en/bank-transfer-payment/6297-administrative-mandate.html)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46965)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2022-46965)

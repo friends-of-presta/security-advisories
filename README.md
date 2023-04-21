@@ -37,7 +37,7 @@ Excerpt of the advisory
 * **CVE ID**: CVE-YYYY-XXXXXX (or "pending" if submitted or "none" if not )
 * **Published at**: YYYY-MM-DD
 * **Advisory source**: [related post](https://related_URL/)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: module directory
 * **Impacted release**: >= 1.5.0, < 2.1.3 (2.1.3 fixed the vulnerability)
 * **Product author**: Author of the product

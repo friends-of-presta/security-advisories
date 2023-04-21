@@ -19,7 +19,7 @@ PrestaShop Ap Pagebuilder module versions 2.4.5 and below suffer from several re
 * **Published at**: 2022-09-25
 * **Updated at**: 2023-01-05
 * **Advisory source**: Friends-Of-Presta
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: appagebuilder
 * **Impacted release**: <=2.4.5
 * **Product author**: apollotheme / leo theme

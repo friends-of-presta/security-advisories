@@ -16,7 +16,7 @@ In the Custom Product Designer (tshirtecommerce) module for PrestaShop, HTTP req
 * **CVE ID**: [CVE-2023-27639](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27639) / [CVE-2023-27640](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27640)
 * **Published at**: 2023-03-30
 * **Advisory source**: Friends-Of-Presta
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: tshirtecommerce
 * **Impacted release**: <= 2.1.4 (latest version)
 * **Product author**: Tshirtecommerce Team

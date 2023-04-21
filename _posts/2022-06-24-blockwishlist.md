@@ -15,7 +15,7 @@ severity: "high (8.8)"
 * **CVE ID**: [CVE-2022-31101](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31101)
 * **Published at**: 2022-06-24
 * **Advisory source**: PrestaShop
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: blockwishlist
 * **Impacted release**: >=2.0.0, 2.1.1
 * **Product author**: PrestaShop
