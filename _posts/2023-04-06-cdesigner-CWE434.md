@@ -18,7 +18,7 @@ Note : .php extension is correctly block so it will be harmless for most servers
 
 * **CVE ID**: [CVE-2023-27033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27033)
 * **Published at**: 2023-04-06
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: cdesigner
 * **Impacted release**: > 3.1.3, <= 3.2.1 (3.2.2 fix the issue)
 * **Product author**: Prestaeg

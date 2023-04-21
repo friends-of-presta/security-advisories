@@ -17,7 +17,7 @@ In the module Custom Product Designer (tshirtecommerce), an anonymous user can p
 * **CVE ID**: [CVE-2023-27637](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27637) / [CVE-2023-27638](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27638)
 * **Published at**: 2023-03-21
 * **Advisory source**: Friends-Of-Presta
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: tshirtecommerce
 * **Impacted release**: <= 2.1.4 (latest version)
 * **Product author**: Tshirtecommerce Team

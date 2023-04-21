@@ -16,7 +16,7 @@ SQL injection vulnerability found in the module "Shoppingfeed Prestashop Plugin 
 * **CVE ID**: [CVE-2023-28839](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28839)
 * **Published at**: 2023-04-18
 * **Advisory source**: [Github repository of Shoppingfeed Prestashop Plugin](https://github.com/shoppingflux/module-prestashop/security/advisories/GHSA-vfmq-w777-qvcf)
-* **Vendor**: Shoppingfeed
+* **Platform**: Shoppingfeed
 * **Product**: shoppingfeed
 * **Impacted release**: from 1.4.0 to 1.8.2 (1.8.3 fix the issue).
 * **Product author**: 202 ecommerce

@@ -21,7 +21,7 @@ WARNING : This vulnerability will bypass some WAF.
 * **CVE ID**: [CVE-2023-26864](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
 * **Published at**: 2023-01-17
 * **Advisory source**: none
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: smplredirectionsmanager
 * **Impacted release**: < 1.1.19 (1.1.19 fixed the vulnerability)
 * **Product author**: Smart Plugs
@@ -92,4 +92,4 @@ This vulnerability permits altering the shop’s database.
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/url-redirects/21428-redirections-manager-manage-301-302-and-404-urls.html)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-26864)

@@ -17,7 +17,7 @@ In the module "LitExtension Url Plugin" (leurlrewrite) for PrestaShop, an attack
 * **CVE ID**: [CVE-2023-27844](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27844)
 * **Published at**: 2023-04-13
 * **Advisory source**: Friends-Of-Presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: leurlrewrite
 * **Impacted release**: < 1.0
 * **Product author**: LitExtension

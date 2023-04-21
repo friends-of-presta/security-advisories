@@ -17,7 +17,7 @@ In the module "DPD France" (dpdfrance) for PrestaShop, a remote attaker can perf
 * **CVE ID**: [CVE-2023-25207](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25207)
 * **Published at**: 2023-03-09
 * **Advisory source**: Friends-of-Presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: dpdfrance
 * **Impacted release**: < 6.1.3
 * **Product author**: DPD France SAS
@@ -96,4 +96,4 @@ curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/shipping-carriers/19414-dpd-france-delivery.html)
 * [DPD France module page](https://www.dpd.com/fr/fr/faq/prestashop/)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25207)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-25207)

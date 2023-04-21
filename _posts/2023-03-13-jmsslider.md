@@ -18,7 +18,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **CVE ID**: Awaiting from MITRE.org
 * **Published at**: 2023-03-13
 * **Advisory source**: Joomasters
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: jmsslider
 * **Impacted release**: at least 1.6.0
 * **Product author**: Joommasters

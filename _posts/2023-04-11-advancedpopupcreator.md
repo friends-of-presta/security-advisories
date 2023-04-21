@@ -16,7 +16,7 @@ In the module "Advanced Popup Creator" (advancedpopupcreator), a guest can perfo
 
 * **CVE ID**: [CVE-2023-27032](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27032)
 * **Published at**: 2023-04-11
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: advancedpopupcreator
 * **Impacted release**: <= 1.1.24 (1.1.25 fixed the vulnerability)
 * **Product author**: Idnovate
