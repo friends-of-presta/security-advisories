@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,askforaquote"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
 In the module "Ask for a Quote - Convert to order, messaging system" (askforaquote) for PrestaShop, an anonymous user can perform SQL injection before 5.4.3. Release 5.4.3 fixed this security issue.
@@ -17,30 +17,30 @@ In the module "Ask for a Quote - Convert to order, messaging system" (askforaquo
 * **CVE ID**: [CVE-2023-27843](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27843)
 * **Published at**: 2023-04-xx
 * **Advisory source**: Friends-Of-Presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: askforaquote
 * **Impacted release**: < 5.4.3
 * **Product author**: Presta FABRIQUE
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
-Up to 5.4.2, a sensitive SQL calls in class `QuotesProduct::deleteProduct()` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "item_id" variable.
+Up to 5.4.2, a sensitive SQL call in class `QuotesProduct::deleteProduct()` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "item_id" variable.
 
 
 ## CVSS base metrics
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
