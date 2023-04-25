@@ -113,8 +113,8 @@ curl -v -X POST -d 'action=delete_from_cart&item_id=2_9%3Bdelete+from+0test+wher
 
 ## Other recommandations
 
-* It’s recommended to upgrade the module beyong 5.0.
-* Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* It’s recommended to upgrade the module beyond 5.4.2.
+* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
@@ -122,7 +122,7 @@ curl -v -X POST -d 'action=delete_from_cart&item_id=2_9%3Bdelete+from+0test+wher
 
 | Date | Action |
 |--|--|
-| 2022-10-09 | Issue discovered during a code reviews by 202 ecommerce and Touchweb|
+| 2022-10-09 | Issue discovered during a code review by 202 ecommerce and Touchweb |
 | 2023-02-12 | Request a CVE ID |
 | 2023-02-28 | Contact the author |
 | 2023-03-01 | The author confirm the issue |
