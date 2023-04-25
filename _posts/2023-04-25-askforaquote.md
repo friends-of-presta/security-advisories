@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-27843] Improper neutralization of an SQL parameter in askforaquote module for PrestaShop"
+title: "[CVE-2023-27843] Improper neutralization of a SQL parameter in askforaquote module for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
@@ -135,4 +135,3 @@ curl -v -X POST -d 'action=delete_from_cart&item_id=2_9%3Bdelete+from+0test+wher
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/quotes/3725-ask-for-a-quote-convert-to-order-messaging-system.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-27843)
-
