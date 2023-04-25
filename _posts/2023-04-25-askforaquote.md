@@ -15,7 +15,7 @@ In the module "Ask for a Quote - Convert to order, messaging system" (askforaquo
 ## Summary
 
 * **CVE ID**: [CVE-2023-27843](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27843)
-* **Published at**: 2023-04-xx
+* **Published at**: 2023-04-25
 * **Advisory source**: Friends-Of-Presta.org
 * **Platform**: PrestaShop
 * **Product**: askforaquote
