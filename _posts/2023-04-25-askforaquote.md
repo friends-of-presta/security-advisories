@@ -44,10 +44,10 @@ Up to 5.4.2, a sensitive SQL call in class `QuotesProduct::deleteProduct()` can 
 
 ## Possible malicious usage
 
-* It’s recommended to upgrade the module beyong 5.0.
-* Upgrade PrestaShop beyong 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
-* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+* Technical and personal data leaks
+* Obtain admin access
+* Remove all data of the linked PrestaShop
+* Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
 ## Proof of concept
 
