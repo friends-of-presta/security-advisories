@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unrestricted upload vulnerability in Jms Slider (jmsslider) PrestaShop module"
+title: "[CVE-2023-29631] Unrestricted upload vulnerability in Jms Slider (jmsslider) PrestaShop module"
 categories: modules
 author:
 - Creabilis.com
@@ -15,7 +15,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 
 ## Summary
 
-* **CVE ID**: Awaiting from MITRE.org
+* **CVE ID**: [CVE-2023-29631](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29631)
 * **Published at**: 2023-03-13
 * **Advisory source**: Joomasters
 * **Platform**: PrestaShop

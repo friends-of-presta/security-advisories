@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blind SQL injection vulnerability in Jms MegaMenu (jmsmegamenu) PrestaShop module"
+title: "[CVE-2023-29630] Blind SQL injection vulnerability in Jms MegaMenu (jmsmegamenu) PrestaShop module"
 categories: modules
 author:
 - Creabilis.com
@@ -15,7 +15,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 
 ## Summary
 
-* **CVE ID**: Awaiting from MITRE.org
+* **CVE ID**: [CVE-2023-29630](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29630)
 * **Published at**: 2023-03-13
 * **Advisory source**: none
 * **Platform**: PrestaShop
