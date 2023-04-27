@@ -12,7 +12,7 @@ severity: "critical (9.8)"
 
 In the module "Posthemes Static Blocks" (posstaticblocks), a guest can perform SQL injection in affected versions.
 
-Note : if ajax.php do not exist in the root module directory, you are not concerned.
+Note : if ajax.php do not exists in the root module directory, you are not concerned.
 
 ## Summary
 
