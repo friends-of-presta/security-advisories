@@ -15,8 +15,8 @@ In the module "SC Export Customers" (scexportcustomers), a guest can download pe
 ## Summary
 
 * **CVE ID**: [CVE-2023-30282](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30282)
-* **Published at**: 2023-05-
-* **Platform**:PrestaShop
+* **Published at**: 2023-05-02
+* **Platform**: PrestaShop
 * **Product**: scexportcustomers
 * **Impacted release**: <= 3.6.1
 * **Product author**: Store Commander
@@ -39,7 +39,7 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 * **Integrity**: none
 * **Availability**: none
 
-**Vector string**: [CCVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
 
 ## Possible malicious usage
 
