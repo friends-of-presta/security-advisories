@@ -55,6 +55,7 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 | 2022-12-12 | Author provide patch |
 | 2023-03-30 | Request a CVE ID |
 | 2023-04-27 | Received CVE ID |
+| 2023-05-02 | Publish this security advisory |
 
 ## Other recommandations
 
