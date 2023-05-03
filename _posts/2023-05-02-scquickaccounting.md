@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-WAITING] Exposure of Private Personal Information to an Unauthorized Actor in SC Quick Accounting module for PrestaShop"
+title: "[CVE-2023-30281] Exposure of Private Personal Information to an Unauthorized Actor in SC Quick Accounting module for PrestaShop"
 categories: modules
 author:
 - Store Commander
@@ -15,7 +15,7 @@ In the module "SC Quick Accounting" (scquickaccounting), a guest can download pe
 ## Summary
 
 * **CVE ID**: [CVE-2023-30281](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30281)
-* **Published at**: 2023-05-02
+* **Published at**: 2023-05-04
 * **Platform**: PrestaShop
 * **Product**: scquickaccounting
 * **Impacted release**: <= 3.7.3
@@ -54,7 +54,7 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 | 2022-12-12 | Author provide patch                                |
 | 2023-03-30 | Request a CVE ID                                    |
 | 2023-05-02 | Received CVE ID                                     |
-| 2023-05-02 | Publish this security advisory                      |
+| 2023-05-04 | Publish this security advisory                      |
 
 ## Other recommandations
 
