@@ -111,5 +111,5 @@ Be warned that there is other sensitives SQL calls inside this module accessible
 
 * [Posthemes product page on Themes Forest](https://themeforest.net/user/posthemes/portfolio)
 * [Posthemes website](https://posthemes.com/)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-30189)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-30189)
 
