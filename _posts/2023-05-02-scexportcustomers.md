@@ -67,4 +67,4 @@ Store Commander thanks TouchWeb.fr for its courtesy and its help after the vulne
 ## Links
 
 * [Store Commander export customer module product page](https://www.storecommander.com/fr/modules-complementaires/480-export-clients-pro.html)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-30282)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-30282)
