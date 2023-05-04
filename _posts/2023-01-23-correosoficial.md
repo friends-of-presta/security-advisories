@@ -92,4 +92,4 @@ An official patch is not yet published by the author of the module. Please note,
 
 * [ia-informatica.com security advisory post](https://ia-informatica.com/it/CVE-2022-46639)
 * [Product page](https://www.correos.es/es/es/empresas/ecommerce/agiliza-la-gestion-de-tus-pedidos/prestashop)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2022-46639)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2022-46639)
