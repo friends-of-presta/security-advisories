@@ -197,4 +197,4 @@ curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_so
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/customer-reviews/22373-advanced-reviews-photos-reminder-google-snippets.html)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-25206)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-25206)
