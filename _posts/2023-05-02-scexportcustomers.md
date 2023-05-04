@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,scexportcustomers"
-severity: "high (7.5)"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "SC Export Customers" (scexportcustomers), a guest can download personnal informations without restriction.
@@ -21,7 +21,7 @@ In the module "SC Export Customers" (scexportcustomers), a guest can download pe
 * **Impacted release**: <= 3.6.1
 * **Product author**: Store Commander
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: high (7.5)
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
