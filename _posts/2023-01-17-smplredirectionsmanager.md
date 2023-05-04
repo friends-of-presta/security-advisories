@@ -92,4 +92,4 @@ This vulnerability permits altering the shop’s database.
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/url-redirects/21428-redirections-manager-manage-301-302-and-404-urls.html)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-26864)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-26864)
