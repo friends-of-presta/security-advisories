@@ -84,7 +84,7 @@ curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73
 
 | Date | Action |
 |--|--|
-| 2022-12-05 | Issue discovered during a code review by 202 Ecommerce and TouchWeb |
+| 2022-12-05 | Issue discovered during a code review by 202 Ecommerce and [TouchWeb](https://www.touchweb.fr) |
 | 2022-12-05 | Contact the author |
 | 2022-12-20 | Never received a response from the author |
 | 2022-12-20 | Contact PrestaShop Addons Team |
