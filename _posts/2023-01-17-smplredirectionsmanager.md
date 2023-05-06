@@ -18,7 +18,7 @@ This module is for the PrestaShop e-commerce platform.
 
 * **CVE ID**: [CVE-2023-26864](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
 * **Published at**: 2023-01-17
-* **Advisory source**: none
+* **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: smplredirectionsmanager
 * **Impacted release**: < 1.1.19 (1.1.19 fixed the vulnerability)
