@@ -89,7 +89,7 @@ The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be exec
 
 | Date | Action |
 |--|--|
-| 2023-02-17 | Issue discovered during a security audit by TouchWeb.fr |
+| 2023-02-17 | Issue discovered during a security audit by [TouchWeb](https://www.touchweb.fr) |
 | 2023-02-17 | Contact Addons security Team |
 | 2022-02-17 | Fix published within 4 hours by author on addons PrestaShop marketplace |
 | 2023-02-17 | Request CVE ID |
