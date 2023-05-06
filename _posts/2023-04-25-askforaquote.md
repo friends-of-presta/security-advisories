@@ -122,7 +122,7 @@ curl -v -X POST -d 'action=delete_from_cart&item_id=2_9%3Bdelete+from+0test+wher
 
 | Date | Action |
 |--|--|
-| 2022-10-09 | Issue discovered during a code review by 202 ecommerce and Touchweb |
+| 2022-10-09 | Issue discovered during a code review by 202 ecommerce and [TouchWeb](https://www.touchweb.fr) |
 | 2023-02-12 | Request a CVE ID |
 | 2023-02-28 | Contact the author |
 | 2023-03-01 | The author confirm the issue |
