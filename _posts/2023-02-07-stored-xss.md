@@ -25,7 +25,7 @@ Vulnerability by design applied on PrestaShop qualified on productcomments modul
 
 This publication is a summary of Touchweb's work studying the impact of XSS vulnerabilities in the context of the PrestaShop CMS. 
 
-To highlight the criticality of XSS and give us the means to mitigate their effects, Touch Web conducted its research based on the vulnerability of the [productcomments module](https://github.com/PrestaShop/productcomments/security/advisories/GHSA-prrh-qvhf-x788), which in version 5.0.1 has a stored XSS.
+To highlight the criticality of XSS and give us the means to mitigate their effects, [TouchWeb](https://www.touchweb.fr) conducted its research based on the vulnerability of the [productcomments module](https://github.com/PrestaShop/productcomments/security/advisories/GHSA-prrh-qvhf-x788), which in version 5.0.1 has a stored XSS.
 
 ## CVSS base metrics
 
