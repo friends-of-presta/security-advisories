@@ -14,8 +14,6 @@ severity: "critical (9.8)"
 The module Redirections Manager (smplredirectionsmanager) from Smart Plugs contains a Blind SQL injection vulnerability up to version 1.1.19.
 This module is for the PrestaShop e-commerce platform.
 
-**WARNING** : This vulnerability will bypass some WAF.
-
 ## Summary
 
 * **CVE ID**: [CVE-2023-26864](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26864)
@@ -34,6 +32,7 @@ The method `SmplTools::getMatchingRedirectionsFromParts()` hold a sensitive SQL 
 
 The large scope of URL exposed to the vulnerability increases its severity and the risk that a pattern of URL is in whitelist of a WAF.
 
+**WARNING** : This vulnerability will bypass some WAF, for this reason, POC is not given.
 
 ## CVSS base metrics
 
