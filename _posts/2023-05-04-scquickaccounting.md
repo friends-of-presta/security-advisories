@@ -49,7 +49,7 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 
 | Date       | Action                                              |
 |------------|-----------------------------------------------------|
-| 2022-12-08 | Issue discovered after a security audit by TouchWeb |
+| 2022-12-08 | Issue discovered after a security audit by [TouchWeb](https://www.touchweb.fr) |
 | 2022-12-08 | Contact Author                                      |
 | 2022-12-12 | Author provide patch                                |
 | 2023-03-30 | Request a CVE ID                                    |
@@ -61,7 +61,7 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 * It's recommended to delete the module if not used or contact Store Commander
 * You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist
 
-Store Commander thanks TouchWeb.fr for its courtesy and its help after the vulnerability disclosure.
+Store Commander thanks [TouchWeb](https://www.touchweb.fr) for its courtesy and its help after the vulnerability disclosure.
 
 ## Links
 
