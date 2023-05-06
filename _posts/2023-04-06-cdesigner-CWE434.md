@@ -90,7 +90,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 
 | Date | Action |
 |--|--|
-| 2023-02-19 | Issue discovered after a security audit by TouchWeb.fr |
+| 2023-02-19 | Issue discovered after a security audit by [TouchWeb](https://www.touchweb.fr) |
 | 2023-02-19 | Contact PrestaShop Addons security Team |
 | 2023-02-19 | Request CVE ID |
 | 2023-02-27 | Addons security Team confirm author provide a patch for PS 1.6 and PS 1.7/8.0 |
