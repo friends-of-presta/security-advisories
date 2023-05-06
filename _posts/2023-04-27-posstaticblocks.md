@@ -100,7 +100,7 @@ Be warned that there is other sensitives SQL calls inside this module accessible
 
 | Date | Action |
 |--|--|
-| 2023-03-12 | Issue discovered during a code review by TouchWeb.fr |
+| 2023-03-12 | Issue discovered during a code review by [TouchWeb](https://www.touchweb.fr) |
 | 2023-03-21 | Contact Author to confirm versions scope |
 | 2023-03-21 | A member of Friends of Presta (FX) provide another version which need a new patch |
 | 2023-03-25 | Request a CVE ID |
