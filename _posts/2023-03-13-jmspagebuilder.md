@@ -17,7 +17,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 
 * **CVE ID**: [CVE-2023-29632](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29632)
 * **Published at**: 2023-03-13
-* **Advisory source**: none
+* **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: jmspagebuilder
 * **Impacted release**: at least 3.x
