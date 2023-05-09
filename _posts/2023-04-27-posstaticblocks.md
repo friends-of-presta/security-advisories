@@ -20,9 +20,9 @@ Note : if ajax.php do not exists in the root module directory, you are not conce
 * **Published at**: 2023-04-27
 * **Advisory source**: Friends-Of-Presta.org
 * **Platform**: PrestaShop
-* **Product**: posthemes
+* **Product**: posstaticblocks
 * **Impacted release**: <= 1.0 (1.0.0 seems not concerned - no semver versionning)
-* **Product author**: posstaticblocks
+* **Product author**: posthemes
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
