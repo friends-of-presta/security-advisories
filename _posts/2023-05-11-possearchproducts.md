@@ -71,9 +71,6 @@ WHERE c.`active` = 1
 +        '.($id_category !=  0 ? 'AND c.`id_category` = '.(int) $id_category.'':'').'
 ```
 
-Be warn that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousand of injection SQL accessible to administrators on the Prestashop's ecosystem, these vulnerabilities are ignored until author provide a patch.
-
-
 ## Other recommandations
 
 * It’s recommended to apply patch given or delete the module (NB : disabled it is useless)
