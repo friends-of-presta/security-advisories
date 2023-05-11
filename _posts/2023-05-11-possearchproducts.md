@@ -83,7 +83,7 @@ WHERE c.`active` = 1
 
 | Date | Action |
 |--|--|
-| 2023-03-23 |Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
+| 2023-03-23 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-03-23 | Contact Author to confirm versions scope |
 | 2023-05-11 | Author never answer and exploit is used to massively stole credit cards |
 | 2023-05-11 | Publication of this security advisory without delay due to emergency |
