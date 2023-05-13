@@ -100,7 +100,7 @@ For older versions set the `__lglaw cookie to 1,2,3,4) AND SLEEP(5)--`.
 ## Other recommandations
 
 * It’s recommended to upgrade to the lastest version of the module **lgcookieslaw**.
-* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by ";").
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
