@@ -86,7 +86,7 @@ Issue is fixed in 2.1.1 in this [patch](https://github.com/PrestaShop/blockwishl
 
 ## Other recommandations
 
-* It’s recommended to upgrade to the lastest version of the module **blockwishlist** up to 2.1.1.
+* It’s recommended to upgrade to the latest version of the module **blockwishlist** up to 2.1.1.
 
 Please note, blockwishlist is often forked to be customized.
 
