@@ -14,7 +14,7 @@ In the module "Custom Exporter" (customexporter), a guest can download personnal
 
 ## Summary
 
-* **CVE ID**: [CVE-2023-30199]
+* **CVE ID**: [CVE-2023-30199](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30199)
 * **Published at**: 2023-05-16
 * **Platform**: PrestaShop
 * **Product**: customexporter
