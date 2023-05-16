@@ -48,7 +48,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 
 * Stealing secrets to unlock admin controllers based on ajax script
 * Exfiltrate all modules with all versions to facilited pentesting
-* Stealing table_prefix to greatly facilite SQL injections for kiddies who don't known how exploit DBMS design's vulnerabilities
+* Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't known how exploit DBMS design's vulnerabilities or stealing database access to login in exposed PHPMyAdmin/Adminer/etc.
 * Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictible paths of banks's modules inside /var/log/)
 
 
@@ -88,6 +88,7 @@ if(strpos($file,'?')!==false){
 
 * It’s recommended to upgrade to the latest version of the module **customexporter**.
 * You should consider to restrict the access of modules/customexporter/ to a whitelist
+* NEVER exposed a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
 * Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
 
 ## Links
