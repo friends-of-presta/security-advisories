@@ -68,6 +68,7 @@ if(strpos($file,'?')!==false){
 -
 +if((strpos($file, './') === false) && (substr($file,-4) === '.csv') || substr($file,-4) === '.txt'){
 ...
+-
 +}
 ?>
 ```
