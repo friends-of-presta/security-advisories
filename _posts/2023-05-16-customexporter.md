@@ -73,6 +73,13 @@ if(strpos($file,'?')!==false){
 ?>
 ```
 
+## Other recommandations
+
+* It’s recommended to upgrade to the latest version of the module **customexporter**.
+* You should consider to restrict the access of modules/customexporter/ to a whitelist
+* NEVER exposed a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
+* Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
+
 ## Timeline
 
 | Date | Action |
@@ -84,13 +91,6 @@ if(strpos($file,'?')!==false){
 | 2023-04-24 | Received CVE ID |
 | 2023-05-02 | Author publish a new version which fix the leak |
 | 2023-05-16 | Publish this security advisory |
-
-## Other recommandations
-
-* It’s recommended to upgrade to the latest version of the module **customexporter**.
-* You should consider to restrict the access of modules/customexporter/ to a whitelist
-* NEVER exposed a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
-* Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
 
 ## Links
 
