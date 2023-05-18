@@ -45,6 +45,11 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 
 * Steal personnal datas
 
+## Other recommandations
+
+* It's recommended to delete the module if not used or contact Store Commander
+* You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist
+
 ## Timeline
 
 | Date       | Action                                              |
@@ -56,10 +61,6 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 | 2023-05-02 | Received CVE ID                                     |
 | 2023-05-04 | Publish this security advisory                      |
 
-## Other recommandations
-
-* It's recommended to delete the module if not used or contact Store Commander
-* You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist
 
 Store Commander thanks [TouchWeb](https://www.touchweb.fr) for its courtesy and its help after the vulnerability disclosure.
 
