@@ -21,7 +21,7 @@ In the module "Custom Exporter" (customexporter), a guest can download personnal
 * **Impacted release**: <= 1.7.20 (1.7.21 fixed the vulnerability)
 * **Product author**: Webbax
 * **Weakness**: [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
-* **Severity**: high (7.5)
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
