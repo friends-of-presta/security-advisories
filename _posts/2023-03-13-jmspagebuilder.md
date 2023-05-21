@@ -29,6 +29,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 
 ajax_jmspagebuilder.php hold sensitives SQL calls that can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
+**WARNING** : This exploit is actively used to deploy webskimmer to massively stole credit cards. 
 
 ## CVSS base metrics
 
