@@ -57,6 +57,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ```diff
 --- 1.7.20/modules/customexporter/downloads/download.php
 +++ 1.7.21/modules/customexporter/downloads/download.php
+...
 - $file = Tools::getValue('file');
 + $file = basename(Tools::getValue('file'));
 
@@ -70,7 +71,6 @@ if(strpos($file,'?')!==false){
 ...
 -
 +}
-?>
 ```
 
 ## Other recommandations
