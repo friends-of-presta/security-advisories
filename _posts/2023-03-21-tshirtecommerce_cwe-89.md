@@ -30,6 +30,8 @@ The following issues have been seen in the last version of the Prestashop Custom
 - an HTTP request can be forged with a compromised product_id GET parameter in order to exploit an insecure parameter in front controller file `designer.php`, which could lead to a SQL injection.
 - and we also suspect that an HTTP request can be potentially forged with a compromised tshirtecommerce_design_cart_id GET parameter in order to exploit an insecure parameter in function `hookActionCartSave` and `updateCustomizationTable`, which could eventually lead to a SQL injection.
 
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+
 ## CVSS base metrics
 
 * **Attack vector**: network
