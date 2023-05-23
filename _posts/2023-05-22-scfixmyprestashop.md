@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scfixmyprestashop"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can perform SQL injection. The module is obsolete and must be deleted.
+In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can perform an SQL injection. The module is obsolete and must be deleted.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can p
 
 ## Description
 
-In scfixmyprestashop module for PrestaShop (all versions), a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soon as possible), a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
