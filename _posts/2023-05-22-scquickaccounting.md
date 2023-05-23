@@ -11,7 +11,7 @@ meta: "CVE,PrestaShop,scquickaccounting"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can perform SQL injection. The module have been patched in version 3.7.4.
+In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can perform an SQL injection. The module have been patched in version 3.7.4.
 
 ## Summary
 
@@ -26,7 +26,7 @@ In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can p
 
 ## Description
 
-In scexportcustomers module for PrestaShop up to 3.7.3, multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scexportcustomers module for PrestaShop up to 3.7.3 (fixed in version 3.7.4), multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
