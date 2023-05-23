@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scexportcustomers"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform SQL injection. The module have been patched in version 3.6.2.
+In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform an SQL injection. The module have been patched in version 3.6.2.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "SC Export Customers" (scexportcustomers), an anonymous user can p
 
 ## Description
 
-In scexportcustomers module for PrestaShop up to 3.6.1, a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scexportcustomers module for PrestaShop up to 3.6.1 (fixed in version 3.6.2), a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
