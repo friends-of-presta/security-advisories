@@ -27,7 +27,6 @@ In the module "SC Export Customers" (scexportcustomers), an anonymous user can p
 
 In scexportcustomers module up to 3.6.1 for PrestaShop, a sensitive SQL call can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
-
 ## CVSS base metrics
 
 * **Attack vector**: network
@@ -48,6 +47,13 @@ In scexportcustomers module up to 3.6.1 for PrestaShop, a sensitive SQL call can
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
+## Other recommandations
+
+* It's recommended to delete the module if not used or contact Store Commander
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
+* Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+
 ## Timeline
 
 | Date | Action |
@@ -57,13 +63,6 @@ In scexportcustomers module up to 3.6.1 for PrestaShop, a sensitive SQL call can
 | 2022-12-09 | Author provide patch |
 | 2023-05-15 | Request a CVE ID |
 | 2023-05-22 | Received CVE ID |
-
-## Other recommandations
-
-* It's recommended to delete the module if not used or contact Store Commander
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
-* Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 Store Commander thanks [202-ecommerce](https://www.202-ecommerce.com) for its courtesy and its help after the vulnerability disclosure.
 
