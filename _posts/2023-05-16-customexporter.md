@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30199] Improper Limitation of a Pathname to a Restricted Directory in Custom Exporter"
+title: "[CVE-2023-30199] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Custom Exporter"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,customexporter"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Custom Exporter" (customexporter), a guest can download personnal informations without restriction.
+In the module "Custom Exporter" (customexporter) from Webbax, a guest can download personnal informations without restriction.
 
 ## Summary
 
