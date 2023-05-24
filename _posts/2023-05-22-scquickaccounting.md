@@ -11,7 +11,7 @@ meta: "CVE,PrestaShop,scquickaccounting"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can perform an SQL injection. The module have been patched in version 3.7.4.
+In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can perform a SQL injection. The module have been patched in version 3.7.4.
 
 ## Summary
 
@@ -19,14 +19,14 @@ In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can p
 * **Published at**: 2023-
 * **Platform**: PrestaShop
 * **Product**: scquickaccounting
-* **Impacted release**: <= 3.7.3
+* **Impacted release**: <= 3.7.3 (3.7.4 fixed the vulnerability)
 * **Product author**: Store Commander
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-In scexportcustomers module for PrestaShop up to 3.7.3 (fixed in version 3.7.4), multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scexportcustomers module up to 3.7.3 for PrestaShop, multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a SQL injection.
 
 
 ## CVSS base metrics
@@ -49,6 +49,14 @@ In scexportcustomers module for PrestaShop up to 3.7.3 (fixed in version 3.7.4),
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
+## Other recommandations
+
+* It's recommended to delete the module if not used or contact Store Commander
+* You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+
 ## Timeline
 
 | Date       | Action |
@@ -58,11 +66,6 @@ In scexportcustomers module for PrestaShop up to 3.7.3 (fixed in version 3.7.4),
 | 2022-12-09 | Author provide patch |
 | 2023-05-15 | Request a CVE ID |
 | 2023-05-22 | Received CVE ID |
-
-## Other recommandations
-
-* It's recommended to delete the module if not used or contact Store Commander
-* You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist
 
 Store Commander thanks [TouchWeb](https://www.touchweb.fr) and  [202-ecommerce](https://www.202-ecommerce.com) for their courtesy and their help after the vulnerability disclosure.
 
