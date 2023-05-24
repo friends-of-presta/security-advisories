@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scexportcustomers"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform a SQL injection. The module have been patched in version 3.6.2.
+In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform SQL injections. The module have been patched in version 3.6.2.
 
 ## Summary
 
