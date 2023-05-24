@@ -4,13 +4,13 @@ title: "[CVE-2023-33279] Improper neutralization of multiple SQL parameters in t
 categories: modules
 author:
 - Store Commander
-- TouchWeb
+- TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,scfixmyprestashop"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can perform an SQL injection. The module is obsolete and must be deleted.
+In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can perform a SQL injection. **The module is obsolete and must be deleted.**
 
 ## Summary
 
@@ -18,14 +18,14 @@ In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can p
 * **Published at**: 2023-
 * **Platform**: PrestaShop
 * **Product**: scfixmyprestashop
-* **Impacted release**: All versions
+* **Impacted release**: ALL VERSIONS **DANGER**
 * **Product author**: Store Commander
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soon as possible), a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soon as possible), a sensitive SQL call can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
@@ -60,7 +60,7 @@ In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soo
 ## Other recommandations
 
 * It's recommended to delete the module
-* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by “;”).
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
 * Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
