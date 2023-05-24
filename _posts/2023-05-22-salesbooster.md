@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30196] Improper Limitation of a Pathname to a Restricted Directory in Sales Booster module for PrestaShop"
+title: "[CVE-2023-30196] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Sales Booster"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,salesbooster"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Sales Booster" (salesbooster), a guest can download personnal informations without restriction.
+In the module "Sales Booster" (salesbooster) from Webbax, a guest can download personnal informations without restriction.
 
 ## Summary
 
