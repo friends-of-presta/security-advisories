@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scexportcustomers"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform an SQL injection. The module have been patched in version 3.6.2.
+In the module "SC Export Customers" (scexportcustomers), an anonymous user can perform a SQL injection. The module have been patched in version 3.6.2.
 
 ## Summary
 
@@ -18,14 +18,14 @@ In the module "SC Export Customers" (scexportcustomers), an anonymous user can p
 * **Published at**: 2023-
 * **Platform**: PrestaShop
 * **Product**: scexportcustomers
-* **Impacted release**: <= 3.6.1
+* **Impacted release**: <= 3.6.1 (3.6.2 fixed the vulnerability)
 * **Product author**: Store Commander
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-In scexportcustomers module for PrestaShop up to 3.6.1 (fixed in version 3.6.2), a sensitive SQL calls can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In scexportcustomers module up to 3.6.1 for PrestaShop, a sensitive SQL call can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 
 ## CVSS base metrics
@@ -48,7 +48,6 @@ In scexportcustomers module for PrestaShop up to 3.6.1 (fixed in version 3.6.2),
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
-
 ## Timeline
 
 | Date | Action |
@@ -62,7 +61,7 @@ In scexportcustomers module for PrestaShop up to 3.6.1 (fixed in version 3.6.2),
 ## Other recommandations
 
 * It's recommended to delete the module if not used or contact Store Commander
-* Upgrade PrestaShop beyond 1.7.8.8 (and 8.0.1) to disable multiquery executions (separated by “;”).
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
 * Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
