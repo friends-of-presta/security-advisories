@@ -48,6 +48,13 @@ In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soo
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
+## Other recommandations
+
+* It's recommended to delete the module
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
+* Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+
 ## Timeline
 
 | Date  | Action |
@@ -56,13 +63,6 @@ In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soo
 | 2022-09-21 | Contact Author |
 | 2023-05-15 | Request a CVE ID |
 | 2023-05-22 | Received CVE ID |
-
-## Other recommandations
-
-* It's recommended to delete the module
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix ps_ by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
-* Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 Store Commander thanks [TouchWeb](https://www.touchweb.fr) for its courtesy and its help after the vulnerability disclosure.
 
