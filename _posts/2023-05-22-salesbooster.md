@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30196] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Sales Booster"
+title: "[CVE-2023-30196] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Sales Booster for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
