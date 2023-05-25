@@ -15,7 +15,7 @@ In the module "SC Export Customers" (scfixmyprestashop), an anonymous user can p
 ## Summary
 
 * **CVE ID**: [CVE-2023-33279](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33279)
-* **Published at**: 2023-
+* **Published at**: 2023-05-25
 * **Platform**: PrestaShop
 * **Product**: scfixmyprestashop
 * **Impacted release**: ALL VERSIONS **DANGER**
