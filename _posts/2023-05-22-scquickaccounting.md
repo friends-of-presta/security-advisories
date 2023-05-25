@@ -67,7 +67,7 @@ In scexportcustomers module up to 3.7.3 for PrestaShop, multiple sensitive SQL c
 | 2023-05-15 | Request a CVE ID |
 | 2023-05-22 | Received CVE ID |
 
-Store Commander thanks [TouchWeb](https://www.touchweb.fr) and  [202-ecommerce](https://www.202-ecommerce.com) for their courtesy and their help after the vulnerability disclosure.
+Store Commander thanks [TouchWeb](https://www.touchweb.fr) and [202-ecommerce](https://www.202-ecommerce.com) for their courtesy and their help after the vulnerability disclosure.
 
 ## Links
 
