@@ -16,7 +16,7 @@ In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can p
 ## Summary
 
 * **CVE ID**: [CVE-2023-33280](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33280)
-* **Published at**: 2023-
+* **Published at**: 2023-05-25
 * **Platform**: PrestaShop
 * **Product**: scquickaccounting
 * **Impacted release**: <= 3.7.3 (3.7.4 fixed the vulnerability)
