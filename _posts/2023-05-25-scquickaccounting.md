@@ -26,7 +26,7 @@ In the module "SC Quick Accounting" (scquickaccounting), an anonymous user can p
 
 ## Description
 
-In scexportcustomers module up to 3.7.3 for PrestaShop, multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a SQL injection.
+In scquickaccounting module up to 3.7.3 for PrestaShop, multiple sensitive SQL calls can be executed with a trivial http call and exploited to forge a SQL injection.
 
 
 ## CVSS base metrics
