@@ -4,8 +4,8 @@ title: "[CVE-2023-33280] Improper neutralization of multiple SQL parameters in t
 categories: modules
 author:
 - Store Commander
-- TouchWeb
 - 202 ecommerce
+- TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,scquickaccounting"
 severity: "critical (9.8)"
@@ -61,13 +61,13 @@ In scquickaccounting module up to 3.7.3 for PrestaShop, multiple sensitive SQL c
 
 | Date       | Action |
 |------------|--|
-| 2022-09-21 | Issue discovered after a security audit by [TouchWeb](https://www.touchweb.fr) and [202-ecommerce](https://www.202-ecommerce.com) |
+| 2022-09-21 | Issue discovered after a security audit by [202-ecommerce](https://www.202-ecommerce.com) and [TouchWeb](https://www.touchweb.fr) |
 | 2022-09-21 | Contact Author |
 | 2022-12-09 | Author provide patch |
 | 2023-05-15 | Request a CVE ID |
 | 2023-05-22 | Received CVE ID |
 
-Store Commander thanks [TouchWeb](https://www.touchweb.fr) and [202-ecommerce](https://www.202-ecommerce.com) for their courtesy and their help after the vulnerability disclosure.
+Store Commander thanks [202-ecommerce](https://www.202-ecommerce.com) and [TouchWeb](https://www.touchweb.fr) for their courtesy and their help after the vulnerability disclosure.
 
 ## Links
 
