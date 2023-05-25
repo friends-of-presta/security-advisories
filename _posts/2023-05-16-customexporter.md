@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30199] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Custom Exporter"
+title: "[CVE-2023-30199] Improper Limitation of a Pathname to a Restricted Directory in Webbax module : Custom Exporter for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
