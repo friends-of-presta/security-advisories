@@ -69,4 +69,4 @@ Store Commander thanks [202-ecommerce](https://www.202-ecommerce.com) for its co
 ## Links
 
 * [Store Commander export customer module product page](https://www.storecommander.com/fr/modules-complementaires/480-export-clients-pro.html)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-33278)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-33278)
