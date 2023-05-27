@@ -68,4 +68,4 @@ Store Commander thanks [TouchWeb](https://www.touchweb.fr) for its courtesy and 
 
 ## Links
 
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/name=CVE-2023-33279)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-33279)
