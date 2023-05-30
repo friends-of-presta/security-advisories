@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,myinventory"
-severity: "high (7.5)"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "My inventory" (myinventory) from Webbax for PrestaShop, a guest can download personnal informations without restriction.
@@ -21,7 +21,7 @@ In the module "My inventory" (myinventory) from Webbax for PrestaShop, a guest c
 * **Impacted release**: <= 1.6.6 (1.6.7 fixed the vulnerability)
 * **Product author**: Webbax
 * **Weakness**: [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
-* **Severity**: high (7.5)
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
