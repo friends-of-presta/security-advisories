@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30189] Improper neutralization of SQL parameter in Posthemes Static Blocks module for PrestaShop"
+title: "[CVE-2023-30189] Improper neutralization of SQL parameter in Posthemes - Static Blocks module for PrestaShop"
 categories: modules
 author:
 - Touchweb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,posstaticblocks"
 severity: "critical (9.8)"
 ---
 
-In the module "Posthemes Static Blocks" (posstaticblocks), a guest can perform SQL injection in affected versions.
+In the module "Static Footer" (posstaticfooter) from PosThemes for PrestaShop, a guest can perform SQL injection in affected versions.
 
 Note : if ajax.php do not exists in the root module directory, you are not concerned.
 
