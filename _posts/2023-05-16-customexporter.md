@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,customexporter"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Custom Exporter" (customexporter) from Webbax for PrestaShop, a guest can download personnal informations without restriction.
+In the module "Custom Exporter" (customexporter) from Webbax for PrestaShop, a guest can download personnal informations without restriction by performing a path traversal attack.
 
 ## Summary
 
