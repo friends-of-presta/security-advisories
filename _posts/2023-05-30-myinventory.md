@@ -62,6 +62,7 @@ WARNING : We are forced to tag it as a medium gravity due to the CWE type 22 but
 +if((strpos($file, './') === false) && substr($file,-4) == '.csv'){
 ...
 +}
+```
 
 ## Other recommandations
 
