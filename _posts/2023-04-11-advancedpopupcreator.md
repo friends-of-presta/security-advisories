@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-27032] Improper neutralization of SQL parameter in AdvancedPopupCreator module for PrestaShop"
+title: "[CVE-2023-27032] Improper neutralization of SQL parameter in Idnovate - AdvancedPopupCreator module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,advancedpopupcreator"
 severity: "critical (9.8)"
 ---
 
-In the module "Advanced Popup Creator" (advancedpopupcreator), a guest can perform SQL injection in affected versions.
+In the module "Advanced Popup Creator" (advancedpopupcreator) from Idnovate for PrestaShop, a guest can perform SQL injection in affected versions.
 
 ## Summary
 
