@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,salesbooster"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Sales Booster" (salesbooster) from Webbax for Prestashop, a guest can download personnal informations without restriction.
+In the module "Sales Booster" (salesbooster) from Webbax for PrestaShop, a guest can download personnal informations without restriction.
 
 ## Summary
 
