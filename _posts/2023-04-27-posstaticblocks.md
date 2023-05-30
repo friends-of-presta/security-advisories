@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,posstaticblocks"
 severity: "critical (9.8)"
 ---
 
-In the module "Static Footer" (posstaticfooter) from PosThemes for PrestaShop, a guest can perform SQL injection in affected versions.
+In the module "Static Blocks" (posstaticblocks) from PosThemes for PrestaShop, a guest can perform SQL injection in affected versions.
 
 Note : if ajax.php do not exists in the root module directory, you are not concerned.
 
