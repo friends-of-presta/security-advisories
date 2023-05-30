@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30192] Improper neutralization of SQL parameter in Posthemes Search Products for PrestaShop"
+title: "[CVE-2023-30192] Improper neutralization of SQL parameter in PosThemes - Search Products for PrestaShop"
 categories: modules
 author:
 - Touchweb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,possearchproducts"
 severity: "critical (9.8)"
 ---
 
-In the module "Search Products" (possearchproducts), a guest can perform SQL injection in affected versions.
+In the module "Search Products" (possearchproducts) from PosThemes for PrestaShop, a guest can perform SQL injection in affected versions.
 
 ## Summary
 
