@@ -142,5 +142,5 @@ https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;selec
 
 ## Links
 
-* [Module City Autocomplete on addons](https://addons.prestashop.com/en/registration-ordering-process/6097-city-autocomplete.html)
+* [PrestaShop addons product page](https://addons.prestashop.com/en/registration-ordering-process/6097-city-autocomplete.html)
 * [National Vulnerability Database CVE-2023-30149](https://nvd.nist.gov/vuln/detail/CVE-2023-30149)
