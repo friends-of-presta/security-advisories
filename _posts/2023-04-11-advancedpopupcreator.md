@@ -47,7 +47,7 @@ The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be exec
 
 * Obtain admin access
 * Remove data on the associated PrestaShop
-* Copy/past datas from sensibles tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijacked emails
 
 ## Patch from 1.1.24
