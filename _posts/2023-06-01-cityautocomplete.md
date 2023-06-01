@@ -50,7 +50,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * Obtain admin access
 * Remove data on the associated PrestaShop
-* Copy/paste data from sensible tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijacked emails
 
 ## Proof of concept
@@ -123,7 +123,7 @@ https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;selec
 ## Other recommandations
 
 * Upgrade the module to the most recent version
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
