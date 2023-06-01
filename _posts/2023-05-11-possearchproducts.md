@@ -49,7 +49,7 @@ The exploit can be used even if the module is not activated.
 
 * Obtain admin access
 * Remove data on the associated PrestaShop
-* Copy/past datas from sensibles tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijacked emails
 
 
