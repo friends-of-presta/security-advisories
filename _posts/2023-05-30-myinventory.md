@@ -27,7 +27,7 @@ In the module "My inventory" (myinventory) from Webbax for PrestaShop, a guest c
 
 Due to a lack of permissions's control and a lack of control in the path name's construction, a guest can perform a path traversal to view all files on the information system.
 
-WARNING : We are forced to tag it as a medium gravity due to the CWE type 22 but be warned that on our ecosystem, it must be considered critical since it unlocks hundreds admin's ajax script of modules  due to [this](https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247)
+Note : We are forced to tag it as a medium gravity due to the CWE type 22 but be warned that on our ecosystem, it must be considered critical since it unlocks hundreds admin's ajax script of modules  due to [this](https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247)
 
 
 ## CVSS base metrics
