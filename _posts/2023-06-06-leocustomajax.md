@@ -14,7 +14,7 @@ Multiple SQL injection vulnerabilities in the Leo Custom Ajax (leocustomajax) mo
 ## Summary
 
 * **CVE ID**: [CVE-2023-30150](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30150)
-* **Published at**: none
+* **Published at**: 2023-06-06
 * **Advisory source**: Friends-Of-Presta
 * **Vendor**: PrestaShop
 * **Product**: leocustomajax
