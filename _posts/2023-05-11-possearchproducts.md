@@ -30,7 +30,7 @@ The method `PosSearch::find()` has sensitive SQL calls that can be executed with
 
 The exploit can be used even if the module is not activated.
 
-**WARNING** : This exploit is actively used to deploy webskimmer to massively stole credit cards.
+**WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards.
 
 ## CVSS base metrics
 
