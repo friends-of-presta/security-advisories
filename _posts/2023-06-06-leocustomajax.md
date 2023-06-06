@@ -27,7 +27,7 @@ Multiple SQL injection vulnerabilities in the Leo Custom Ajax (leocustomajax) mo
 
 In the Leo Custom Ajax (leocustomajax) module for PrestaShop, in version 1.0 and 1.0.0 (no other versions have been published since), an HTTP request can be manipulated using multiple GET parameters (`cat_list`, `pro_info`, `pro_add`, `pro_cdown` and `pro_color`), in the `/modules/leocustomajax/leoajax.php` endpoint, enabling a remote attacker to perform an SQL injection.
 
-**WARNING** : This vulnerability can be exploited even if the module is disabled or uninstalled, and is actively used to deploy webskimmer to massively stole credit cards..
+**WARNING** : This vulnerability can be exploited even if the module is disabled or uninstalled, and is actively used to deploy webskimmer to massively stole credit cards.
 
 ## CVSS base metrics
 
