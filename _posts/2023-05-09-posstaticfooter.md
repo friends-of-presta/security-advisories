@@ -32,7 +32,7 @@ The method `posstaticfooter::getPosCurrentHook()` has sensitive SQL calls that c
 
 The exploit can be used even if the module is not activated.
 
-**WARNING** : This exploit is actively used to deploy webskimmer to massively stole credit cards.
+**WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards.
 
 ## CVSS base metrics
 
