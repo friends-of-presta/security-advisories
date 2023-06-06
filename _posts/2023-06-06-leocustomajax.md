@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,leocustomajax"
 severity: "critical (9.8)"
 ---
 
-Multiple SQL injection vulnerabilities in the Leo Custom Ajax (leocustomajax) module from LeoTheme for PrestaShop, in version 1.0, allows remote attackers to execute arbitrary SQL commands via the `cat_list`, `pro_info`, `pro_add`, `pro_cdown` or `pro_color` parameter in `leoajax.php`.
+Multiple SQL injection vulnerabilities in the Leo Custom Ajax (leocustomajax) module from LeoTheme for PrestaShop, in version 1.0, allow remote attackers to execute arbitrary SQL commands via the `cat_list`, `pro_info`, `pro_add`, `pro_cdown` or `pro_color` parameter in `leoajax.php`.
 
 ## Summary
 
