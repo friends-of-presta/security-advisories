@@ -29,7 +29,7 @@ An HTTP request can be manipulated using `type` or `q` GET parameters, in the `/
 
 Note : The version 2.X also includes an additional parameter `input_name`. See patch below for more details.
 
-**WARNING** : This exploit is actively used to deploy webskimmer to massively stole credit cards.
+**WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards.
 
 This exploit uses a PrestaShop front controller and most attackers can conceal the module controller’s path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
