@@ -10,7 +10,7 @@ author:
 
 [CWE-89](https://cwe.mitre.org/data/definitions/89.html) (SQL Injection) on Prestashop can force a super admin creation without difficulty. If your Prestashop suffer of a known backoffice's link (see list below), the attacker can use the "Forgotten password" functionnality after the creation of the super admin user by SQL Injection and then, will be able to connect to the Shop's backoffice.
 
-Be warned that your random table's prefix is completely useless against blackhat with senior DBA skill because of a design vulnerability in DBMS.
+Be warned that your random table's prefix is completely useless against blackhats with senior DBA skill because of a design vulnerability in DBMS.
 
 This logical weakness is shared by most popular CMS which prioritize accessibility to the detriment of security. No blame, it's a non-resolvable conjunctural antagonism due to CMS's target.
 

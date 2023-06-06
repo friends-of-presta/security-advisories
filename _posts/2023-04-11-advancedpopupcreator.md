@@ -28,7 +28,7 @@ In the module "Advanced Popup Creator" (advancedpopupcreator) from Idnovate for 
 
 The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-**WARNING** : Can be easily detected by blind sql injection pentest, so blackhat already know it - and will certainly bypass some WAF. For this reason, POC is not given as usual.
+**WARNING** : Can be easily detected by blind sql injection pentest, so blackhats already know it - and will certainly bypass some WAF. For this reason, POC is not given as usual.
 
 ## CVSS base metrics
 
@@ -83,7 +83,7 @@ The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be exec
 
 * It’s recommended to upgrade to the latest version of the module **advancedpopupcreator**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhat with DBA senior skill because of a design vulnerability in DBMS
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline
