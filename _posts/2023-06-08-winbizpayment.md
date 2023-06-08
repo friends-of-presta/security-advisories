@@ -47,7 +47,7 @@ Note: The author refuses to confirm the scope of the vulnerability for his modul
 
 * Stealing secrets to unlock admin controllers based on ajax script
 * Exfiltrate all modules with all versions to facilite pentesting
-* Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't known how exploit DBMS design's vulnerabilities or stealing database access to login in exposed PHPMyAdmin / Adminer / etc.
+* Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't know how exploit DBMS design's vulnerabilities or steal database access to login in exposed PHPMyAdmin / Adminer / etc.
 * Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictable paths of banks's modules inside /var/log/)
 
 
@@ -62,9 +62,9 @@ Note: The author refuses to confirm the scope of the vulnerability for his modul
 
 Be warned that this fix is perfectible. See recommandations below.
 
-## Other recommandations
+## Other recommendations
 
-* You should consider to restrict the access of modules/winbizpayment/downloads/ to a whitelist or delete the module
+* You should consider restricting the access of modules/winbizpayment/downloads/ to a whitelist or delete the module
 * NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
 * Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your PrestaShop
 
@@ -75,9 +75,9 @@ Be warned that this fix is perfectible. See recommandations below.
 | 2023-02-25 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-02-25 | Contact Author |
 | 2023-02-25 | Request a CVE ID |
-| 2023-02-27 | Author confirm alert's read |
+| 2023-02-27 | Author confirms alert's read |
 | 2023-04-24 | Received CVE ID |
-| 2023-05-02 | Author publish a new version which should fix the leak |
+| 2023-05-02 | Author publishs a new version which should fix the leak |
 | 2023-06-08 | Publish this security advisory |
 
 ## Links
