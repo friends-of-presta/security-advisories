@@ -78,7 +78,7 @@ Note : We are forced to tag it as a medium gravity due to the CWE type 22 but be
 | 2023-02-25 | Contact Author |
 | 2023-02-27 | Author confirms alert's read |
 | 2023-04-24 | Received CVE ID |
-| 2023-05-02 | Author publish a new version which fix the leak |
+| 2023-05-02 | Author publishes a new version which fix the leak |
 | 2023-05-30 | Publish this security advisory |
 
 ## Links

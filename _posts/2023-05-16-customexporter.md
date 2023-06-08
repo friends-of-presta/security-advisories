@@ -89,7 +89,7 @@ if(strpos($file,'?')!==false){
 | 2023-02-25 | Request a CVE ID |
 | 2023-02-27 | Author confirms alert's read |
 | 2023-04-24 | Received CVE ID |
-| 2023-05-02 | Author publish a new version which fix the leak |
+| 2023-05-02 | Author publishes a new version which fix the leak |
 | 2023-05-16 | Publish this security advisory |
 
 ## Links
