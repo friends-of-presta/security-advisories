@@ -45,7 +45,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ## Possible malicious usage
 
 * Stealing secrets to unlock admin controllers based on ajax script
-* Exfiltrate all modules with all versions to facilited pentesting
+* Exfiltrate all modules with all versions to facilite pentesting
 * Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't known how exploit DBMS design's vulnerabilities or stealing database access to login in exposed PHPMyAdmin / Adminer / etc.
 * Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictible paths of banks's modules inside /var/log/)
 
