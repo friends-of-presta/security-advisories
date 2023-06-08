@@ -47,7 +47,7 @@ Note : We are forced to tag it as a medium gravity due to the CWE type 22 but be
 
 * Stealing secrets to unlock admin controllers based on ajax script
 * Exfiltrate all modules with all versions to facilite pentesting
-* Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't know how exploit DBMS design's vulnerabilities or stealing database access to login in exposed PHPMyAdmin/Adminer/etc.
+* Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't know how to exploit DBMS design's vulnerabilities or stealing database access to login in exposed PHPMyAdmin/Adminer/etc.
 * Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictible paths of banks's modules inside /var/log/)
 
 
