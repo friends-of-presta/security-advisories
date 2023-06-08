@@ -67,7 +67,7 @@ Note : We are forced to tag it as a medium gravity due to the CWE type 22 but be
 ## Other recommandations
 
 * You should consider to restrict the access of modules/myinventory/ to a whitelist or delete the module
-* NEVER exposed a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
+* NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
 * Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
 
 ## Timeline

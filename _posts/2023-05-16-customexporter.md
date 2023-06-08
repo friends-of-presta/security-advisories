@@ -77,7 +77,7 @@ if(strpos($file,'?')!==false){
 
 * It’s recommended to upgrade to the latest version of the module **customexporter**.
 * You should consider to restrict the access of modules/customexporter/ to a whitelist
-* NEVER exposed a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
+* NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
 * Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
 
 ## Timeline
