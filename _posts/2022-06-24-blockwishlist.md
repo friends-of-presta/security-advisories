@@ -97,6 +97,6 @@ Please note, blockwishlist is often forked to be customized.
 ## Links
 
 * [PrestaShop product repository](https://github.com/PrestaShop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp)
-* [POC](http://packetstormsecurity.com/files/168003/PrestaShop-Blockwishlist-2.1.0-SQL-Injection.html)
+* [POC](http://packetstormsecurity.com/files/168003/Prestashop-Blockwishlist-2.1.0-SQL-Injection.html)
 * [Patch](https://github.com/PrestaShop/blockwishlist/commit/b3ec4b85af5fd73f74d55390b226d221298ca084)
 
