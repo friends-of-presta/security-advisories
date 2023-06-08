@@ -81,7 +81,7 @@ This vulnerability permits altering the shop’s database.
 | 2023-01-12 | Request CVE ID |
 | 2023-01-17 | Publish this security advisory |
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **smplredirectionsmanager**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

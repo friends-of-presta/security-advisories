@@ -23,7 +23,7 @@ Vulnerability by design applied on Your Channel's plugin. This will work on any 
 
 ## Description
 
-This publication is a summary of [TouchWeb](https://www.touchweb.fr)'s work studying the impact of XSS vulnerabilities in the context of the Wordpress CMS, following the [Prestashop related publication](https://friends-of-presta.github.io/security-advisories/modules/2023/02/07/stored-xss.html)
+This publication is a summary of [TouchWeb](https://www.touchweb.fr)'s work studying the impact of XSS vulnerabilities in the context of the Wordpress CMS, following the [PrestaShop related publication](https://friends-of-presta.github.io/security-advisories/modules/2023/02/07/stored-xss.html)
 
 To highlight the criticality of XSS and give us the means to mitigate their effects, TouchWeb conducted its research based on the vulnerability of the [Your Channel plugins](https://wpscan.com/vulnerability/93693d45-5217-4571-bae5-aab8878cfe62), which in versions prior to 1.2.2 has a stored XSS.
 

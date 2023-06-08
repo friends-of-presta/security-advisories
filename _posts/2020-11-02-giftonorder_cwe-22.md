@@ -26,10 +26,10 @@ The Module Olea Gift On Order module through 5.0.8 for PrestaShop enables an una
 
 Olea Gift On Order module through 5.0.8 for PrestaShop enable an unauthenticated user to read arbitrary files on the server via getfile.php?file=/.. directory traversal.
 
-As there is no access control over the getfile.php page, any unauthenticated user can call this file in their browser to retrieve the content of any page in any (sub)folder of the Prestashop folder.
+As there is no access control over the getfile.php page, any unauthenticated user can call this file in their browser to retrieve the content of any page in any (sub)folder of the PrestaShop folder.
 This is done by making a GET request to getfile.php with file parameter set to the file the user wants to retrieve.
 
-The _PS_ROOT_DIR (root of the Prestashop folder) variable is prepended to the file being retrieved. However, as there is no filtering on the input passed in file GET parameter, by prepending several ../ a user can retrieve files outside of the Prestashop directory.
+The _PS_ROOT_DIR (root of the PrestaShop folder) variable is prepended to the file being retrieved. However, as there is no filtering on the input passed in file GET parameter, by prepending several ../ a user can retrieve files outside of the Prestashop directory.
 
 ## Solutions
 

@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scquickaccounting"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "SC Quick Accounting" (scquickaccounting), a guest can download personnal informations without restriction.
+In the module "SC Quick Accounting" (scquickaccounting), a guest can download personal informations without restriction.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "SC Quick Accounting" (scquickaccounting), a guest can download pe
 
 ## Description
 
-Due to a lack of permissions's control, a guest can access exports from the module which can lead to leak of personnal informations from ps_customer table sush as name / surname / email
+Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal informations from ps_customer table sush as name / surname / email
 
 
 ## CVSS base metrics
@@ -43,9 +43,9 @@ Due to a lack of permissions's control, a guest can access exports from the modu
 
 ## Possible malicious usage
 
-* Steal personnal datas
+* Steal personal datas
 
-## Other recommandations
+## Other recommendations
 
 * It's recommended to delete the module if not used or contact Store Commander
 * You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist

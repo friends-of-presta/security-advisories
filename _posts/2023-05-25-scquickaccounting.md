@@ -49,7 +49,7 @@ In scquickaccounting module up to 3.7.3 for PrestaShop, multiple sensitive SQL c
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
-## Other recommandations
+## Other recommendations
 
 * It's recommended to delete the module if not used or contact Store Commander
 * You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist

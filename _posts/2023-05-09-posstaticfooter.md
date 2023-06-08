@@ -84,10 +84,10 @@ Version B seen :
 +WHERE m.`id_module` = ' . (int) $id_module);
 ```
 
-Be warn that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousand of injection SQL accessible to administrators on the Prestashop's ecosystem, these vulnerabilities are ignored until author provide a patch.
+Be warn that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousand of injection SQL accessible to administrators on the PrestaShop's ecosystem, these vulnerabilities are ignored until author provide a patch.
 
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to apply patch given or delete the module (NB : disabled it is useless)
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

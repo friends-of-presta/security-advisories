@@ -47,7 +47,7 @@ In scexportcustomers module up to 3.6.1 for PrestaShop, a sensitive SQL call can
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
-## Other recommandations
+## Other recommendations
 
 * It's recommended to delete the module if not used or contact Store Commander
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

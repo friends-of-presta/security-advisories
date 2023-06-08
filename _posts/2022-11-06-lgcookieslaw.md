@@ -97,7 +97,7 @@ For older versions set the `__lglaw cookie to 1,2,3,4) AND SLEEP(5)--`.
     }
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **lgcookieslaw**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

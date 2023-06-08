@@ -102,7 +102,7 @@ curl -v --cookie cookie.txt 'https://domain.tld/modules/totadministrativemandate
 
 202 ecommerce thanks TouchWeb for its courtesy and its help after the vulnerability disclosure.
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module up to 1.7.2.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

@@ -111,7 +111,7 @@ curl -v -X POST -d 'action=delete_from_cart&item_id=2_9%3Bdelete+from+0test+wher
      }
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module beyond 5.4.2.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

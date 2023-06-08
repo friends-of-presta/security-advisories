@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-33279] Improper neutralization of multiple SQL parameters in the SC Fix My Prestashop module for PrestaShop"
+title: "[CVE-2023-33279] Improper neutralization of multiple SQL parameters in the SC Fix My PrestaShop module for PrestaShop"
 categories: modules
 author:
 - Store Commander
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scfixmyprestashop"
 severity: "critical (9.8)"
 ---
 
-In the module "SC Fix My Prestashop" (scfixmyprestashop), an anonymous user can perform a SQL injection. **The module is obsolete and must be deleted.**
+In the module "SC Fix My PrestaShop" (scfixmyprestashop), an anonymous user can perform a SQL injection. **The module is obsolete and must be deleted.**
 
 ## Summary
 
@@ -48,7 +48,7 @@ In scfixmyprestashop module for PrestaShop (all versions, must be deleted as soo
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin’s ajax scripts of modules protected by token on the ecosystem
 
-## Other recommandations
+## Other recommendations
 
 * It's recommended to delete the module
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

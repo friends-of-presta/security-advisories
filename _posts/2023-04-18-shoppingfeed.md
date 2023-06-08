@@ -9,13 +9,13 @@ meta: "CVE,PrestaShop,shoppingfeed"
 severity: "critical (9.8)"
 ---
 
-SQL injection vulnerability found in the module "Shoppingfeed Prestashop Plugin (Feed&Order)" (aka shoppingfeed) for PrestaShop from 1.4.0 to 1.8.2. (1.8.3 fix the issue) allow a remote attacker to gain privileges.
+SQL injection vulnerability found in the module "Shoppingfeed PrestaShop Plugin (Feed&Order)" (aka shoppingfeed) for PrestaShop from 1.4.0 to 1.8.2. (1.8.3 fix the issue) allow a remote attacker to gain privileges.
 
 ## Summary
 
 * **CVE ID**: [CVE-2023-28839](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28839)
 * **Published at**: 2023-04-18
-* **Advisory source**: [Github repository of Shoppingfeed Prestashop Plugin](https://github.com/shoppingflux/module-prestashop/security/advisories/GHSA-vfmq-w777-qvcf)
+* **Advisory source**: [Github repository of Shoppingfeed PrestaShop Plugin](https://github.com/shoppingflux/module-prestashop/security/advisories/GHSA-vfmq-w777-qvcf)
 * **Platform**: Shoppingfeed
 * **Product**: shoppingfeed
 * **Impacted release**: from 1.4.0 to 1.8.2 (1.8.3 fix the issue).
@@ -66,7 +66,7 @@ From 1.4.0 to 1.8.2 (1.8.3 fix the issue), a sensitive SQL call in `Shoppingfeed
 [See also](https://github.com/shoppingflux/module-prestashop/pull/209/files)
 
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module beyond 1.8.3.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

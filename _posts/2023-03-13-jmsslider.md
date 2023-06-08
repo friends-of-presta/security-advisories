@@ -67,7 +67,7 @@ https://www.joommasters.com/index.php/blog/tutorials-and-case-studies/how-to-fix
 | 2023-02-17 | Contact the author |
 | 2023-03-13 | Publish this security advisory |
 
-## Other recommandations
+## Other recommendations
 
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS

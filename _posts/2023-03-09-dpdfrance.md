@@ -70,7 +70,7 @@ curl -v -X POST -d 'action_ajax_dpdfrance=setAddressOrder&order=1%27;select(0x73
          $response = json_encode($response);
 ```
 
-## Other recommandations
+## Other recommendations
 
 **WARNING** Be aware that the version 6.1.3 come with a new sensible problem so you must stay in alert to apply without delay future versions.
 

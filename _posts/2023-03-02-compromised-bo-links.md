@@ -8,7 +8,7 @@ author:
 - Friends-Of-Presta.org
 ---
 
-[CWE-89](https://cwe.mitre.org/data/definitions/89.html) (SQL Injection) on Prestashop can force a super admin creation without difficulty. If your Prestashop suffer of a known backoffice's link (see list below), the attacker can use the "Forgotten password" functionnality after the creation of the super admin user by SQL Injection and then, will be able to connect to the Shop's backoffice.
+[CWE-89](https://cwe.mitre.org/data/definitions/89.html) (SQL Injection) on PrestaShop can force a super admin creation without difficulty. If your Prestashop suffer of a known backoffice's link (see list below), the attacker can use the "Forgotten password" functionnality after the creation of the super admin user by SQL Injection and then, will be able to connect to the Shop's backoffice.
 
 Be warned that your random table's prefix is completely useless against blackhats with senior DBA skill because of a design vulnerability in DBMS.
 
@@ -230,7 +230,7 @@ Last refresh date : 2023-03-02
 /admines123/
 /adminevolve/
 /adminf/
-/adminFacilePrestashop/
+/adminFacilePrestaShop/
 /adminfide/
 /adminfinisterre/
 /admin-fKSAbJFxYB/

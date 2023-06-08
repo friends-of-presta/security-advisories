@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-27637][CVE-2023-27638][CWE-89] Improper neutralization of SQL parameters in module Prestashop Custom Product Designer (tshirtecommerce) for PrestaShop"
+title: "[CVE-2023-27637][CVE-2023-27638][CWE-89] Improper neutralization of SQL parameters in module PrestaShop Custom Product Designer (tshirtecommerce) for PrestaShop"
 categories: module
 author:
 - Profileo.com
@@ -26,7 +26,7 @@ In the module Custom Product Designer (tshirtecommerce), an anonymous user can p
 
 ## Description
 
-The following issues have been seen in the last version of the Prestashop Custom Product Designer (tshirtecommerce) module for PrestaShop, published on July 24, 2019 (not fixed up to date) :
+The following issues have been seen in the last version of the PrestaShop Custom Product Designer (tshirtecommerce) module for PrestaShop, published on July 24, 2019 (not fixed up to date) :
 - an HTTP request can be forged with a compromised product_id GET parameter in order to exploit an insecure parameter in front controller file `designer.php`, which could lead to a SQL injection.
 - and we also suspect that an HTTP request can be potentially forged with a compromised tshirtecommerce_design_cart_id GET parameter in order to exploit an insecure parameter in function `hookActionCartSave` and `updateCustomizationTable`, which could eventually lead to a SQL injection.
 
@@ -94,7 +94,7 @@ Patches listed below concerns the two SQL injections discovered.
                         `id_cart`                                               = '.(int)$id_cart.' AND
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to completely remove the tshirtecommerce module as long as the module is not updated
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

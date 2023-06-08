@@ -81,7 +81,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
  		}
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to apply patch without delay if your setup is vulnerable
 * You must not allowed PHP Interpreter on anything than files with an extension strictly equal to ".php".

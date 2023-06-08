@@ -57,7 +57,7 @@ curl -v 'http://website.com/module/blockwishlist/view?id_wishlist=1&order=produc
 
 ## Patch of release 2.1.0 to 2.1.1
 
-Issue is fixed in 2.1.1 in this [patch](https://github.com/PrestaShop/blockwishlist/commit/b3ec4b85af5fd73f74d55390b226d221298ca084)
+Issue is fixed in 2.1.1 in this [patch](https://github.com/Prestashop/blockwishlist/commit/b3ec4b85af5fd73f74d55390b226d221298ca084)
 
 ```diff
 --- a/src/Search/WishListProductSearchProvider.php
@@ -84,7 +84,7 @@ Issue is fixed in 2.1.1 in this [patch](https://github.com/PrestaShop/blockwishl
 ```
 
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **blockwishlist** up to 2.1.1.
 
@@ -96,7 +96,7 @@ Please note, blockwishlist is often forked to be customized.
 
 ## Links
 
-* [PrestaShop product repository](https://github.com/PrestaShop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp)
+* [PrestaShop product repository](https://github.com/Prestashop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp)
 * [POC](http://packetstormsecurity.com/files/168003/Prestashop-Blockwishlist-2.1.0-SQL-Injection.html)
 * [Patch](https://github.com/PrestaShop/blockwishlist/commit/b3ec4b85af5fd73f74d55390b226d221298ca084)
 

@@ -28,7 +28,7 @@ PrestaShop Ap Pagebuilder module versions 2.4.5 and below suffer from several re
 
 ## Description
 
-On AP PAGEBUILDER Prestashop module <= 2.4.5 contents many improper neutralization parameters including 'product_all_one_img' and 'image_product'.
+On AP PAGEBUILDER PrestaShop module <= 2.4.5 contents many improper neutralization parameters including 'product_all_one_img' and 'image_product'.
 
 **WARNING** : Be aware that versions from 2.0.0 to 2.4.3+ (exact release is not determined) own another sql injection which will certainly bypass your WAF (base64 payloads) so you should upgrade asap to 2.4.5.
 
@@ -379,7 +379,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
      }
 ```
 
-## Other recommandations
+## Other recommendations
 
 * We highly recommand to remove from your server this module if not used, or upgrade to the latest release of the module **appagebuilder** up to 2.4.5 and apply all fixes mentionned above.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

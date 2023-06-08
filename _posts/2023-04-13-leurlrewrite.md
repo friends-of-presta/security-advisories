@@ -81,7 +81,7 @@ A sensitive SQL call the overrided class `Dispatcher::getController()` can be ex
                  $controller = $rewrite['type'];
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module beyond 1.0.4.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
