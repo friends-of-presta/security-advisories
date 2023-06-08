@@ -86,7 +86,7 @@ Version B seen :
 +WHERE m.`id_module` = ' . (int) $id_module);
 ```
 
-Be warned that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousands of injection SQL accessible to administrators on the Prestashop's ecosystem, these vulnerabilities are ignored to avoid mind collapse.
+Be warned that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousands of injection SQL accessible to administrators on the PrestaShop's ecosystem, these vulnerabilities are ignored to avoid mind collapse.
 
 ## Other recommandations
 

@@ -25,7 +25,7 @@ In the Custom Product Designer (tshirtecommerce) module for PrestaShop, HTTP req
 
 ## Description
 
-The following issues have been seen in the latest version of the Prestashop Custom Product Designer (tshirtecommerce) module for PrestaShop, released on July 24, 2019 (These issues remain unresolved in the most recent version of the module) :
+The following issues have been seen in the latest version of the PrestaShop Custom Product Designer (tshirtecommerce) module for PrestaShop, released on July 24, 2019 (These issues remain unresolved in the most recent version of the module) :
 - an HTTP request can be manipulated using the GET parameter `type` in the `/tshirtecommerce/fonts.php` endpoint, enabling a remote attacker to perform directory traversal on the system and open files without restrictions on the extension and path. The content of the file will be returned in base64-encoded format.
 - an HTTP request can be manipulated using the POST parameter `file_name` in the `tshirtecommerce/ajax.php?type=svg` endpoint, enabling a remote attacker to perform directory traversal on the system and open files without restrictions on the extension and path. Note that only files that can be parsed in XML format can be opened.
 

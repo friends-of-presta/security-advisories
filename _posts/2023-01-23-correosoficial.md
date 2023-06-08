@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2022-46639] Directory traversal in the descarga_etiqueta.php component of Correos Prestashop"
+title: "[CVE-2022-46639] Directory traversal in the descarga_etiqueta.php component of Correos PrestaShop"
 categories: modules
 author:
 - Friends-Of-Presta.org
@@ -8,7 +8,7 @@ meta: "CVE,PrestaShop,correosoficial"
 severity: "high (7.5)"
 ---
 
-From version v1.1.0.0 and v1.2.x+ correosoficial Module for Prestashop 1.7.x allows remote attackers to read local files and attack intranet hosts.
+From version v1.1.0.0 and v1.2.x+ correosoficial Module for PrestaShop 1.7.x allows remote attackers to read local files and attack intranet hosts.
 
 ## Summary
 

@@ -69,7 +69,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 * Update the configuration SALESBOOSTER_TOKEN in your ps_configuration table with a string not predictible - **be warned that the patch provided by author still suffer of a predictible security token mecanism.**
 * You should consider to restrict the access of modules/salesbooster/ to a whitelist
 * NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
-* Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your Prestashop
+* Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your PrestaShop
 
 ## Timeline
 
