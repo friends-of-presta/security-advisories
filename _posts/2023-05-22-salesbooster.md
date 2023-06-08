@@ -78,7 +78,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 | 2023-02-25 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-02-25 | Contact Author |
 | 2023-02-25 | Request a CVE ID |
-| 2023-02-27 | Author confirm alert's read |
+| 2023-02-27 | Author confirms alert's read |
 | 2023-04-24 | Received CVE ID |
 | 2023-05-02 | Author publish a new version which fix the leak |
 | 2023-05-22 | Publish this security advisory |
