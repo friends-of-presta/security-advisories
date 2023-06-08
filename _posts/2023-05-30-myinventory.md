@@ -64,7 +64,7 @@ Note : We are forced to tag it as a medium gravity due to the CWE type 22 but be
 +}
 ```
 
-## Other recommandations
+## Other recommendations
 
 * You should consider restricting the access of modules/myinventory/ to a whitelist or delete the module
 * NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd

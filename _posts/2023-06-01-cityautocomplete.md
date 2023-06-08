@@ -120,7 +120,7 @@ https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;selec
              die(Tools::jsonEncode($result));
 ```
 
-## Other recommandations
+## Other recommendations
 
 * Upgrade the module to the most recent version
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

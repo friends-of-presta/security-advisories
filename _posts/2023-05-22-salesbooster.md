@@ -63,7 +63,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ...
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **salesbooster**.
 * Update the configuration SALESBOOSTER_TOKEN in your ps_configuration table with a string not predictible - **be warned that the patch provided by author still suffer of a predictible security token mecanism.**

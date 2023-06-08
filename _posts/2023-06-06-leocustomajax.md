@@ -104,7 +104,7 @@ https://example.test/modules/leocustomajax/leoajax.php?cat_list=10%29;select+0x7
      $result['pro_add'] = $leoProductInfo->hookProductOneImg($leoProAdd);
 ```
 
-## Other recommandations
+## Other recommendations
 
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS

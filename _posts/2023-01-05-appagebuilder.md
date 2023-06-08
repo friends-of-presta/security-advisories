@@ -379,7 +379,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
      }
 ```
 
-## Other recommandations
+## Other recommendations
 
 * We highly recommand to remove from your server this module if not used, or upgrade to the latest release of the module **appagebuilder** up to 2.4.5 and apply all fixes mentionned above.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

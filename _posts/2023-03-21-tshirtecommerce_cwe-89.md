@@ -94,7 +94,7 @@ Patches listed below concerns the two SQL injections discovered.
                         `id_cart`                                               = '.(int)$id_cart.' AND
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to completely remove the tshirtecommerce module as long as the module is not updated
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

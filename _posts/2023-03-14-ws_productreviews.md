@@ -175,7 +175,7 @@ curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_so
          } elseif ($sort == 'location') {
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module beyong 3.6.2.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

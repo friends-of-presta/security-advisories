@@ -73,7 +73,7 @@ if(strpos($file,'?')!==false){
 +}
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **customexporter**.
 * You should consider restricting the access of modules/customexporter/ to a whitelist

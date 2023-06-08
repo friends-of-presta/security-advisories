@@ -79,7 +79,7 @@ The method `AdvancedPopup::getPopups()` has sensitive SQL calls that can be exec
 
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **advancedpopupcreator**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

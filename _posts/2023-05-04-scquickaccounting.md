@@ -45,7 +45,7 @@ Due to a lack of permissions control, a guest can access exports from the module
 
 * Steal personal datas
 
-## Other recommandations
+## Other recommendations
 
 * It's recommended to delete the module if not used or contact Store Commander
 * You should restrict access to this URI pattern : modules/scquickaccounting/ to a given whitelist

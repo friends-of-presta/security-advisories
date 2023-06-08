@@ -66,7 +66,7 @@ From 1.4.0 to 1.8.2 (1.8.3 fix the issue), a sensitive SQL call in `Shoppingfeed
 [See also](https://github.com/shoppingflux/module-prestashop/pull/209/files)
 
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to upgrade the module beyond 1.8.3.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

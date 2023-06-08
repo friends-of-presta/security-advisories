@@ -71,7 +71,7 @@ WHERE c.`active` = 1
 +        '.($id_category !=  0 ? 'AND c.`id_category` = '.(int) $id_category.'':'').'
 ```
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to apply patch given or delete the module (NB : disabled it is useless)
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)

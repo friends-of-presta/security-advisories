@@ -83,7 +83,7 @@ An official patch is not yet published by the author of the module. Please note,
 
 ```
 
-## Other recommandations
+## Other recommendations
 
 * At the date of the CVE publication, the module is not fixed.
 * Remove this module if it is not useful.
