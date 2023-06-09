@@ -4,6 +4,7 @@ title: "[CVE-2023-30198] Improper Limitation of a Pathname to a Restricted Direc
 categories: modules
 author:
 - TouchWeb.fr
+- 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,winbizpayment"
 severity: "high (7.5), GDPR violation"
