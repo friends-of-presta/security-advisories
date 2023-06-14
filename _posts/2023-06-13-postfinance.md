@@ -27,7 +27,7 @@ SQL injection vulnerability found in the module "Postfinance" edited by Webbax f
 
 ## Description
 
-Before version 17.1.14, a sensitive SQL call in the class `PostfinanceValidationModuleFrontController::postProcess()` could be executed with a trivial HTTP call and exploited to forge a blind SQL injection by sending the `orderID` variable as a GET parameter. Its exploded version, `$get_id_cart` (a part of `orderID`), is then used in an SQL query.
+Before version 17.1.14, a sensitive SQL call in the class `PostfinanceValidationModuleFrontController::postProcess()` could be executed with a trivial HTTP call and exploited to forge a blind SQL injection by sending the `orderID` variable as a GET parameter. Its exploded version, `$get_id_cart` (a part of `orderID`), is then used in a SQL query.
 
 This vulnerability can be exploited by an attacker to manipulate the SQL query and potentially gain unauthorized access to the database. It is important to update to version 17.1.14 or later to address this issue and ensure the security of the system.
 
@@ -71,7 +71,7 @@ This vulnerability can be exploited by an attacker to manipulate the SQL query a
 
 ## Other recommendations
 
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
