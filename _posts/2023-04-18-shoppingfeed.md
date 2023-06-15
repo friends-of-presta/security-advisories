@@ -25,7 +25,7 @@ SQL injection vulnerability found in the module "Shoppingfeed PrestaShop Plugin 
 
 ## Description
 
-From 1.4.0 to 1.8.2 (1.8.3 fix the issue), a sensitive SQL call in `ShoppingfeedToken::findByToken()` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted variable `token`.
+From 1.4.0 to 1.8.2 (1.8.3 fix the issue), a sensitive SQL call in `ShoppingfeedToken::findByToken()` can be executed with a trivial http call and exploited to forge a blind SQL injection through the POST or GET submitted variable `token`.
 
 ## CVSS base metrics
 

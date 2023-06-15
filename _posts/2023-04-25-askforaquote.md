@@ -26,7 +26,7 @@ In the module "Ask for a Quote - Convert to order, messaging system" (askforaquo
 
 ## Description
 
-Up to 5.4.2, a sensitive SQL call in class `QuotesProduct::deleteProduct()` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "item_id" variable.
+Up to 5.4.2, a sensitive SQL call in class `QuotesProduct::deleteProduct()` can be executed with a trivial http call and exploited to forge a blind SQL injection through the POST or GET submitted "item_id" variable.
 
 
 ## CVSS base metrics
