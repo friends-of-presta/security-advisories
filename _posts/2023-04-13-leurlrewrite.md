@@ -26,7 +26,7 @@ In the module "LitExtension Url Plugin" (leurlrewrite) for PrestaShop, an attack
 
 ## Description
 
-A sensitive SQL call the overrided class `Dispatcher::getController()` can be executed with a trivial http call and exploited to forge a blind SQL injection throught by calling a not found page.
+A sensitive SQL call the overrided class `Dispatcher::getController()` can be executed with a trivial http call and exploited to forge a blind SQL injection through by calling a not found page.
 
 
 ## CVSS base metrics
