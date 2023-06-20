@@ -29,7 +29,7 @@ An HTTP request can be manipulated using the GET parameter `key` in the `/envoim
 
 The issue is present in the latest version of the module. As of the date of publication of this advisory, Boxtal has announced they will not be releasing a new version to fix the issue. However, a patch is available for version 3.3.8 if requested from Boxtal.
 
-Also, since the module is no longer maintained, it is strongly recommended to remove it and migrate to Boxtal Connect. In fact, the module has been deprecated since April 2019 and has been replaced with [Boxtal Connect](https://addons.prestashop.com/en/shipping-carriers/1755-boxtal-connect-turnkey-shipping-solution.html)
+Also, since the module is no longer maintained, **it is strongly recommended to remove it and migrate to Boxtal Connect**. In fact, the module has been deprecated since April 2019 and has been replaced with [Boxtal Connect](https://addons.prestashop.com/en/shipping-carriers/1755-boxtal-connect-turnkey-shipping-solution.html)
 
 Note that the vulnerability was not detected in version 3.1.10. However, Boxtal wasn't able to confirm the exact version from which the vulnerability started.
 
@@ -57,7 +57,8 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 ## Patch 
 
-Note that the module is no longer maintained, therefore this patch might not be sufficient to fix all known security vulnerabilities from this module. It's strongly advised to remove the module and migrate to Boxtal Connect.
+Note that the module is no longer maintained, therefore this patch might not be sufficient to fix all known security vulnerabilities from this module.
+**It's strongly advised to remove the module and migrate to Boxtal Connect.**
 
 ```diff
 --- a/includes/EnvoimoinscherModel.php
