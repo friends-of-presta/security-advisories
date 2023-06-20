@@ -88,7 +88,7 @@ Note that the module is no longer maintained, therefore this patch might not be 
 | 2022-09-20 | Discovery of the vulnerability by Profileo in version 3.3.7 |
 | 2022-09-20 | Contacting the editor (no reply) |
 | 2023-03-17 | Contacting the editor |
-| 2023-03-20 | The editor confirmed the vulnerability. No updates will be released. |
+| 2023-03-20 | The editor confirmed the vulnerability. No update will be released. |
 | 2023-03-22 | Auditing the version 3.3.8 (latest version), confirming the vulnerability |
 | 2023-04-02 | Requesting a CVE ID |
 | 2023-06-20 | Publish this security advisory |
