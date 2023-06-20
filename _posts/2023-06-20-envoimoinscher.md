@@ -55,12 +55,6 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 * Copy/past datas from sensibles tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijacked emails
 
-## Proof of concept
-
-```bash
-https://example.test/module/envoimoinscher/ajax?option=push&amp;key=1%22;SELECT%20SLEEP(10);
-```
-
 ## Patch 
 
 Note that the module is no longer maintained, therefore this patch might not be sufficient to fix all known security vulnerabilities from this module. It's strongly advised to remove the module and migrate to Boxtal Connect.
