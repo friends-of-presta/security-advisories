@@ -11,6 +11,8 @@ severity: "critical (9.8)"
 
 In the Boxtal (envoimoinscher) module from Boxtal for PrestaShop, after version 3.1.10, a SQL injection vulnerability allows remote attackers to execute arbitrary SQL commands via the `key` parameter in the `ajax.php` front controller.
 
+**DANGER : It is strongly recommended to remove the module and migrate to Boxtal Connect**
+
 ## Summary
 
 * **CVE ID**: [CVE-2023-30151](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30151)
