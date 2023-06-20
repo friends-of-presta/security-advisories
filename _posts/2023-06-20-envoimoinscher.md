@@ -18,7 +18,7 @@ In the Boxtal (envoimoinscher) module from Boxtal for PrestaShop, after version 
 * **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: envoimoinscher
-* **Impacted release**: > 3.1.10,<= 3.3.8 (latest version, not fixed, deprecated module to remove or to replace by BoxtalConnect)
+* **Impacted release**: > 3.1.10,<= 3.3.8 (latest version, not fixed, deprecated module to remove or to replace by Boxtal Connect)
 * **Product author**: Boxtal
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
@@ -63,16 +63,12 @@ Note that the module is no longer maintained, therefore this patch might not be 
 ```diff
 --- a/includes/EnvoimoinscherModel.php
 +++ b/includes/EnvoimoinscherModel.php
-@@ -2754,7 +2754,7 @@ class EnvoimoinscherModel
-         return $this->db->getValue(
-             'SELECT count(*) FROM ' . _DB_PREFIX_ . 'emc_orders eo
+@@ -2756,3 +2756,3 @@ class EnvoimoinscherModel
                  JOIN ' . _DB_PREFIX_ . 'orders o ON o.id_order = eo.' . _DB_PREFIX_ . 'orders_id_order
 -                WHERE eo.' . _DB_PREFIX_ . 'orders_id_order = ' . $order . ' AND eo.tracking_eor = "' . $key . '" '
 +                WHERE eo.' . _DB_PREFIX_ . 'orders_id_order = ' . (int)$order . ' AND eo.tracking_eor = "' . pSQL($key) . '" '
          ) > 0;
-     }
      public function orderWithTimeoutError($order)
-
 ```
 
 ## Other recommandations
