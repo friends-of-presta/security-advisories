@@ -63,7 +63,7 @@ Note : The author has deleted from its module the file that have been suffering 
 | 2023-04-01 | Request a CVE ID |
 | 2023-04-24 | Received CVE ID |
 | 2023-05-25 | PrestaShop Addons confirms versions scopes |
-| 2023-05-25 | Author provide a patch which auto-delete file from old versions |
+| 2023-05-25 | Author provide a patch which auto-delete files from old versions |
 | 2023-06-22 | Publish this security advisory |
 
 ## Links
