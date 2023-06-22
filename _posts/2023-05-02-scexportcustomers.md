@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,scexportcustomers"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "SC Export Customers" (scexportcustomers), a guest can download personal informations without restriction.
+In the module "SC Export Customers" (scexportcustomers), a guest can download personal information without restriction.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "SC Export Customers" (scexportcustomers), a guest can download pe
 
 ## Description
 
-Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal informations from ps_customer table sush as name / surname / email
+Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from ps_customer table sush as name / surname / email
 
 
 ## CVSS base metrics

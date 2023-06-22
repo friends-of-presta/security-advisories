@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,myinventory"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "My inventory" (myinventory) from Webbax for PrestaShop, a guest can download personal informations without restriction by performing a path traversal attack.
+In the module "My inventory" (myinventory) from Webbax for PrestaShop, a guest can download personal information without restriction by performing a path traversal attack.
 
 ## Summary
 
