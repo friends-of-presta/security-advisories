@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,lgdetailedorder"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Detailed Order" (lgdetailedorder) from Linea Grafica for PrestaShop, a guest can download personal informations without restriction formatted in json.
+In the module "Detailed Order" (lgdetailedorder) from Linea Grafica for PrestaShop, a guest can download personal information without restriction formatted in json.
 
 ## Summary
 
@@ -46,7 +46,7 @@ Note : The author has deleted from its module the file that have been suffering 
 
 ## Possible malicious usage
 
-* Steal personal datas
+* Steal personal data
 
 
 ## Other recommandations
