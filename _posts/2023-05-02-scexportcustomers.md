@@ -43,7 +43,7 @@ Due to a lack of permissions control, a guest can access exports from the module
 
 ## Possible malicious usage
 
-* Steal personal datas
+* Steal personal data
 
 ## Other recommendations
 
