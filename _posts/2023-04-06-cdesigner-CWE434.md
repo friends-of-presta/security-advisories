@@ -57,7 +57,7 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 * Steal data
 
 ## Patch
