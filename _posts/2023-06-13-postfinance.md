@@ -50,7 +50,7 @@ This vulnerability can be exploited by an attacker to manipulate the SQL query a
 * Obtain admin access
 * Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
+* Rewrite SMTP settings for hijacked emails
 
 
 ## Patch
