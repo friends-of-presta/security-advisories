@@ -25,7 +25,7 @@ In the module "Detailed Order" (lgdetailedorder) from Linea Grafica for PrestaSh
 
 ## Description
 
-Due to a lack of permissions control, a guest can access all customers dataset including its personal informations (postal address, email, phone), orders and products bought.
+Due to a lack of permissions control, a guest can access all customers dataset including personal information (postal address, email, phone), orders and products bought.
 
 Note : The author has deleted from its module the file that have been suffering from this leak for months, BUT did not set it to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules thinking they are safe. However, there is nothing safe about this since past upgrades do not auto-delete the implicated file. To ensure everyone has a "safe version", we decided to mark all versions up to 1.1.20 as impacted by this issue.
 
@@ -68,5 +68,5 @@ Note : The author has deleted from its module the file that have been suffering 
 
 ## Links
 
-* [PrestaShop addons product page](https://addons.prestashop.com/fr/gestion-commandes/18065-apercu-acces-rapide-aux-details-des-commandes.html)
+* [PrestaShop addons product page](https://addons.prestashop.com/en/order-management/18065-fast-access-to-order-details-quick-view-overview.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-30195)
