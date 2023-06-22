@@ -35,7 +35,7 @@ Also, since the module is no longer maintained, **it is strongly recommended to 
 
 Note that the vulnerability was not detected in version 3.1.10. However, Boxtal wasn't able to confirm the exact version from which the vulnerability started.
 
-This exploit uses a PrestaShop front controller and most attackers can conceal the module controller’s path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+This exploit uses a PrestaShop front controller, and most attackers can conceal the module controller’s path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
@@ -59,7 +59,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 ## Patch 
 
-Note that the module is no longer maintained, therefore this patch might not be sufficient to fix all known security vulnerabilities from this module.
+Note that the module is no longer maintained, therefore, this patch might not be sufficient to fix all known security vulnerabilities in this module.
 **It's strongly advised to remove the module and migrate to Boxtal Connect.**
 
 ```diff
@@ -75,10 +75,10 @@ Note that the module is no longer maintained, therefore this patch might not be 
 
 ## Other recommendations
 
-* Completely remove the module since the module is no longer maintained or migrate to the new "Boxtal Connect" module (link available below)
+* Completely remove the module since it is no longer maintained, or migrate to the new "Boxtal Connect" module (link available below)
 * Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
-* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+* Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
 ## Timeline
 
@@ -88,7 +88,7 @@ Note that the module is no longer maintained, therefore this patch might not be 
 | 2022-09-20 | Contacting the editor (no reply) |
 | 2023-03-17 | Contacting the editor |
 | 2023-03-20 | The editor confirmed the vulnerability. No update will be released. |
-| 2023-03-22 | Auditing the version 3.3.8 (latest version), confirming the vulnerability |
+| 2023-03-22 | Auditing version 3.3.8 (latest version), confirming the vulnerability |
 | 2023-04-02 | Requesting a CVE ID |
 | 2023-06-20 | Publish this security advisory |
 
