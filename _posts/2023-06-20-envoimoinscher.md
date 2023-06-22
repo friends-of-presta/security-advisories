@@ -73,7 +73,7 @@ Note that the module is no longer maintained, therefore this patch might not be 
      public function orderWithTimeoutError($order)
 ```
 
-## Other recommandations
+## Other recommendations
 
 * Completely remove the module since the module is no longer maintained or migrate to the new "Boxtal Connect" module (link available below)
 * Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)

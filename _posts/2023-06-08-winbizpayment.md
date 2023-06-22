@@ -61,7 +61,7 @@ Note: The author refuses to confirm the scope of the vulnerability for his modul
 + $file = basename(Tools::getValue('file'));
 ```
 
-Be warned that this fix is perfectible. See recommandations below.
+Be warned that this fix is perfectible. See recommendations below.
 
 ## Other recommendations
 
