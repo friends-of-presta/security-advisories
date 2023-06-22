@@ -49,7 +49,7 @@ Note : The author has deleted from its module the file that have been suffering 
 * Steal personal data
 
 
-## Other recommandations
+## Other recommendations
 
 * It’s recommended to delete the module or update it
 * You should restrict access to this URI pattern : modules/lgdetailedorder/ to a given whitelist
