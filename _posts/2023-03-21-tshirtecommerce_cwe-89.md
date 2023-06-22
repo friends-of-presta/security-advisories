@@ -30,7 +30,7 @@ The following issues have been seen in the last version of the PrestaShop Custom
 - an HTTP request can be forged with a compromised product_id GET parameter in order to exploit an insecure parameter in front controller file `designer.php`, which could lead to a SQL injection.
 - and we also suspect that an HTTP request can be potentially forged with a compromised tshirtecommerce_design_cart_id GET parameter in order to exploit an insecure parameter in function `hookActionCartSave` and `updateCustomizationTable`, which could eventually lead to a SQL injection.
 
-This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
@@ -48,9 +48,9 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
+* Rewrite SMTP settings for hijacked emails
 
 ## Proof of concept
 
@@ -98,7 +98,7 @@ Patches listed below concerns the two SQL injections discovered.
 
 * It’s recommended to completely remove the tshirtecommerce module as long as the module is not updated
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline

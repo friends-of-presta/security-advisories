@@ -31,7 +31,7 @@ Note : The version 2.X also includes an additional parameter `input_name`. See p
 
 **WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards.
 
-This exploit uses a PrestaShop front controller and most attackers can conceal the module controller’s path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller’s path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
@@ -49,9 +49,9 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
+* Rewrite SMTP settings for hijacked emails
 
 ## Proof of concept
 
@@ -124,7 +124,7 @@ https://example.test/module/cityautocomplete/autocompletion?q=39000&type=1;selec
 
 * Upgrade the module to the most recent version
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline

@@ -48,9 +48,9 @@ This vulnerability can be exploited by an attacker to manipulate the SQL query a
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
+* Rewrite SMTP settings for hijacked emails
 
 
 ## Patch
@@ -72,7 +72,7 @@ This vulnerability can be exploited by an attacker to manipulate the SQL query a
 ## Other recommendations
 
 * Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline

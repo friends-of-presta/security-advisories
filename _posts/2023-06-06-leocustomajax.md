@@ -45,9 +45,9 @@ In the Leo Custom Ajax (leocustomajax) module for PrestaShop, in version 1.0 and
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
+* Rewrite SMTP settings for hijacked emails
 
 ## Proof of concept
 
@@ -107,7 +107,7 @@ https://example.test/modules/leocustomajax/leoajax.php?cat_list=10%29;select+0x7
 ## Other recommendations
 
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skilled because of a design vulnerability in DBMS
+* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline

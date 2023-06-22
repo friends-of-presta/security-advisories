@@ -45,7 +45,7 @@ From version 1.2.1 published on 12 October 2012 to 1.7.2 published on 3 December
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
 
 
 ## Proof of concept
