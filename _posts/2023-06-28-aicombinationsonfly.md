@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,aicombinationsonfly"
 severity: "critical (9.8)"
 ---
 
-In the module "Combinations generated on fly for your store" (aicombinationsonfly) for PrestaShop, an atacker can perform SQL injection before 0.3.1. Release 0.3.1 fixed this security issue.
+In the module "Combinations generated on fly for your store" (aicombinationsonfly) for PrestaShop, an attacker can perform SQL injection before 0.3.1. Release 0.3.1 fixed this security issue.
 
 ## Summary
 
