@@ -26,7 +26,7 @@ In the module "Combinations generated on fly for your store" (aicombinationsonfl
 
 ## Description
 
-Up to 0.3.0, a sensitive SQL calls in file `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `attributes` variables.
+Up to 0.3.0, a sensitive SQL call in `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `attributes` variables.
 
 ## CVSS base metrics
 
