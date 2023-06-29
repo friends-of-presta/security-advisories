@@ -67,7 +67,6 @@ curl -v -X POST -d 'module_id=1%22;select(0x73656C65637420736C656570283432293B)I
 ## Patch from 1.0
 
 ```diff
-index c9f2b55..5b3590a 100644
 --- a/posstaticblocks.php
 +++ b/posstaticblocks.php
 @@ -311 +311 @@ class posstaticblocks extends Module {
