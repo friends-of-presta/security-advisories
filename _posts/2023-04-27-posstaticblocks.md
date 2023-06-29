@@ -66,24 +66,18 @@ curl -v -X POST -d 'module_id=1%22;select(0x73656C65637420736C656570283432293B)I
 
 ## Patch from 1.0
 
-Version A seen : 
-
 ```diff
---- 1.0A/modules/posstaticblocks/posstaticblocks.php
-+++ XXXX/modules/posstaticblocks/posstaticblocks.php
-...
--$sql = 'SELECT psb.`hook_module` FROM '._DB_PREFIX_.'pos_staticblock AS psb LEFT JOIN '._DB_PREFIX_.'pos_staticblock_shop AS pss ON psb.`id_posstaticblock`= pss.`id_posstaticblock` WHERE  psb.`name_module` ="'.$name_module.'" AND pss.`id_shop` = "'.$id_shop.'"';
-+$sql = 'SELECT psb.`hook_module` FROM '._DB_PREFIX_.'pos_staticblock AS psb LEFT JOIN '._DB_PREFIX_.'pos_staticblock_shop AS pss ON psb.`id_posstaticblock`= pss.`id_posstaticblock` WHERE  psb.`name_module` ="'.pSQL($name_module).'" AND pss.`id_shop` = "'.(int)$id_shop.'"';
-```
-
-Version B seen : 
-
-```diff
---- 1.0B/modules/posstaticblocks/posstaticblocks.php
-+++ XXXX/modules/posstaticblocks/posstaticblocks.php
-...
--WHERE m.`id_module` = ' . $id_module);
-+WHERE m.`id_module` = ' . (int) $id_module);
+--- a/posstaticblocks.php
++++ b/posstaticblocks.php
+@@ -311 +311 @@ class posstaticblocks extends Module {
+-            WHERE m.`id_module` = ' . $id_module);
++            WHERE m.`id_module` = ' . (int) $id_module);
+@@ -316 +316 @@ class posstaticblocks extends Module {
+-               $sql = 'SELECT * FROM '._DB_PREFIX_.'hook_module AS `ps` LEFT JOIN '._DB_PREFIX_.'hook AS `ph` ON `ps`.`id_hook` = `ph`.`id_hook`  WHERE `ps`.`id_module`='.$id_module.' AND `ps`.`id_shop` = '.$id_shop ;
++               $sql = 'SELECT * FROM '._DB_PREFIX_.'hook_module AS `ps` LEFT JOIN '._DB_PREFIX_.'hook AS `ph` ON `ps`.`id_hook` = `ph`.`id_hook`  WHERE `ps`.`id_module`='. (int) $id_module.' AND `ps`.`id_shop` = '. (int) $id_shop ;
+@@ -333 +333 @@ class posstaticblocks extends Module {
+-               $sql = 'SELECT psb.`hook_module` FROM '._DB_PREFIX_.'pos_staticblock AS psb LEFT JOIN '._DB_PREFIX_.'pos_staticblock_shop AS pss ON psb.`id_posstaticblock`= pss.`id_posstaticblock` WHERE  psb.`name_module` ="'.$name_module.'" AND pss.`id_shop` = "'.$id_shop.'"';
++               $sql = 'SELECT psb.`hook_module` FROM '._DB_PREFIX_.'pos_staticblock AS psb LEFT JOIN '._DB_PREFIX_.'pos_staticblock_shop AS pss ON psb.`id_posstaticblock`= pss.`id_posstaticblock` WHERE  psb.`name_module` ="'.pSQL($name_module).'" AND pss.`id_shop` = "'. (int) $id_shop.'"';
 ```
 
 Be warned that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousands of injection SQL accessible to administrators on the PrestaShop's ecosystem, these vulnerabilities are ignored to avoid mind collapse.
