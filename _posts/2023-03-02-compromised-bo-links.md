@@ -18,7 +18,7 @@ Security is constraint. The lower the constraint, the more accessibility but the
 
 ### Why my backoffice link is known ?
 
-As far as we know, we highly suspect S2 2022's attack campaign which exploit [appagebuilder](https://friends-of-presta.github.io/security-advisories/modules/2023/01/05/appagebuilder.html) and [stripejs](https://friends-of-presta.github.io/security-advisories/modules/2023/03/01/stripejs.html) vulnerabilities to be the source of this list.
+As far as we know, we highly suspect S2 2022's attack campaign which exploit [appagebuilder](https://security.friendsofpresta.org/modules/2023/01/05/appagebuilder.html) and [stripejs](https://security.friendsofpresta.org/modules/2023/03/01/stripejs.html) vulnerabilities to be the source of this list.
 
 ### What to do if my backoffice link is listed below ?
 
