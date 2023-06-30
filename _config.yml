@@ -19,7 +19,9 @@ header_pages:
 
 # Build settings
 theme: minima
+paginate: 10
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-paginate
