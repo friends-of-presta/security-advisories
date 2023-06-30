@@ -1,0 +1,23 @@
+---
+layout: null
+---
+
+{
+    "name": "FOP security",
+    "short_name": "FOP security",
+    "icons": [
+        {
+            "src": "{{ "/assets/img/android-chrome-192x192.png" | relative_url }}",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ "/assets/img/android-chrome-256x256.png" | relative_url }}",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
