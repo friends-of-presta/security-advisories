@@ -14,3 +14,5 @@ For more information, please contact: security/at/friendsofpresta.org
 Join us on [Friends Of Presta Slack](https://friends-of-presta.slack.com/)
 
 [Github repository](https://github.com/friends-of-presta/security-advisories)
+
+[Json api](https://security.friendsofpresta.org/search.json)
