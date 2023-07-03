@@ -47,7 +47,7 @@ In the Leo Custom Ajax (leocustomajax) module for PrestaShop, in version 1.0 and
 * Obtain admin access
 * Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings for hijacked emails
+* Rewrite SMTP settings to hijack emails
 
 ## Proof of concept
 
