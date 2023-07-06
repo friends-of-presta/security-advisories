@@ -18,7 +18,7 @@ In the module "KerAwen Omnichannel Stocks" (kerawen_ocs) for PrestaShop, an anon
 * **CVE ID**: [CVE-2023-27845](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27845)
 * **Published at**: 2023-07-06
 * **Advisory source**: Friends-Of-Presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: kerawen_ocs
 * **Impacted release**: < 1.4.1
 * **Product author**: KerAwen
