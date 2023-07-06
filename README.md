@@ -1,5 +1,10 @@
 # security-advisories
 
+## Api and feed
+
+You can access the data from:
+ - [the search api](https://security.friendsofpresta.org/search.json)
+ - [the rss feed](https://security.friendsofpresta.org/feed.xml)
 
 ## How to publish or update a new advisory
 
