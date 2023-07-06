@@ -21,6 +21,10 @@ header_pages:
 theme: minima
 paginate: 10
 
+# We want all post in the feed
+feed:
+  posts_limit: 999
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
