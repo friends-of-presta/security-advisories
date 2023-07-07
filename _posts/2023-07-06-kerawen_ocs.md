@@ -45,11 +45,13 @@ Up to 1.3.7.1, multiple sensitive SQL calls in class `KerawenHelper::setCartOper
 ## Possible malicious usage
 
 * Obtain admin access
-* Remove data on the associated PrestaShop
+* Remove data from the associated PrestaShop
+* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Rewrite SMTP settings to hijack emails
 
 ## Patch
 
-Sample of patch. We recommand to upgrade this module to fix all sensitive SQL calls.
+Sample of patch. We recommend to upgrade this module to fix all sensitive SQL calls.
 
 ```diff
 --- a/modules/kerawen_ocs/classes/KerawenHelper.php
