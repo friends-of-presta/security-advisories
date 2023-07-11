@@ -26,7 +26,7 @@ The deprecated module "vivawallet" (name of the directory) edited by Viva Wallet
 
 ## Description
 
-The deprecated PrestaShop [module VivaWallet removed on github](https://github.com/VivaPayments/API/commit/c1169680508c6e144d3e102ebdb257612e4cd84a) on Oct 19, 2022 has sensitive SQL calls that can be exploited to manage a blind SQL injection on frotn controller fail.php, success.php and webhook.php.
+The deprecated PrestaShop [module VivaWallet removed on github](https://github.com/VivaPayments/API/commit/c1169680508c6e144d3e102ebdb257612e4cd84a) on Oct 19, 2022 has sensitive SQL calls that can be exploited to manage a blind SQL injection on front controller fail.php, success.php and webhook.php.
 
 ## CVSS base metrics
 
