@@ -113,6 +113,7 @@ Advice: Remove vivawallet and install vivawalletsmartcheckout instead.
 
 
 ## Timeline
+
 | Date | Action |
 |--|--|
 | 2023-02-12 | Vulnerabity discovered during an audit by [Touch Web](https://www.touchweb.fr/) and [202 ecommerce](https://www.202-ecommerce.com/) |
