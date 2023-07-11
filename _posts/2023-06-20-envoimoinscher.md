@@ -76,7 +76,7 @@ Note that the module is no longer maintained, therefore, this patch might not be
 ## Other recommendations
 
 * Completely remove the module since it is no longer maintained, or migrate to the new "Boxtal Connect" module (link available below)
-* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 

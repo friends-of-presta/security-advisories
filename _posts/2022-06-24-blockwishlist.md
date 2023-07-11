@@ -90,7 +90,7 @@ Issue is fixed in 2.1.1 in this [patch](https://github.com/Prestashop/blockwishl
 
 Please note, blockwishlist is often forked to be customized.
 
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
