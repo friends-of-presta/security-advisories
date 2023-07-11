@@ -10,7 +10,7 @@ severity: "critical (9.8)"
 ---
 
 SQL injection vulnerability in the City Autocomplete (cityautocomplete) module from ebewe.net for PrestaShop, prior to version 1.8.12 (for PrestaShop version 1.5/1.6) or prior to 2.0.3 (for PrestaShop version 1.7), allows remote attackers to execute arbitrary SQL commands via the `type`, `input_name`. or `q`  parameter in the `autocompletion.php` front controller.
-
+Improper neutralization of a SQL parameter in aicombinationsonfly module for PrestaSho
 ## Summary
 
 * **CVE ID**: [CVE-2023-30149](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30149)
