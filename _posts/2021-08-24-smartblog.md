@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2021-37538] Improper neutralization of SQL parameter in SmartBlog module from SmartDataSoft for PrestaShop "
+title: "[CVE-2021-37538] Improper neutralization of SQL parameter in SmartBlog module from SmartDataSoft for PrestaShop"
 categories: module
 author:
 - Friends-Of-Presta.org
@@ -13,7 +13,7 @@ Multiple SQL injection vulnerabilities in SmartDataSoft SmartBlog for PrestaShop
 ## Summary
 
 * **CVE ID**: [CVE-2021-37538](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37538)
-* **Published at**: 2021-08-04
+* **Published at**: 2021-08-24
 * **Advisory source**: [sorcery.ie](https://blog.sorcery.ie/posts/smartblog_sqli/)
 * **Vendor**: PrestaShop
 * **Product**: SmartBlog
@@ -54,7 +54,7 @@ In controllers/front/archive.php we can see that the day, month and year paramet
 https://site.com/module/smartblog/archive?month=1&year=1&day=1 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,(SELECT group_concat(name) FROM ps_module),NULL,NULL,NULL,NULL,NULL,NULL,NULL-- -
 ```
 
-## Patch 
+## Patch
 
 * Quick [to fix the issue with this patch](https://github.com/smartdatasoft/smartblog/commit/dcec2f77d98841ec478ca678ee501606224961b4).
 
@@ -69,12 +69,12 @@ https://site.com/module/smartblog/archive?month=1&year=1&day=1 UNION ALL SELECT 
 
 | Date | Action |
 | -- | -- |
-| 22/06/2021 | Issue discovered during a pentest |
-| 13/07/2021 | Reported issue to SmartDataSoft |
-| 15/07/2021 | SmartDataSoft patched the issue in version 4.0.6 |
-| 26/07/2021 | Number CVE-2021-37538 assigned |
-| 21/08/2021 | Blog post released |
-| 24/08/2021 | pajoda made a Nuclei template for this CVE |
+| 22-06-2021 | Issue discovered during a pentest |
+| 13-07-2021 | Reported issue to SmartDataSoft |
+| 15-07-2021 | SmartDataSoft patched the issue in version 4.0.6 |
+| 26-07-2021 | Number CVE-2021-37538 assigned |
+| 21-08-2021 | Blog post released |
+| 24-08-2021 | pajoda made a Nuclei template for this CVE |
 
 ## Links
 
