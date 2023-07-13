@@ -4,8 +4,8 @@ title: "[CVE-2021-36748] Improper neutralization of SQL parameter in SimpleBlog 
 categories: module
 author:
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,simpleblog"
-severity: "critical (7.5)"
+meta: "CVE,PrestaShop,ph_simpleblog"
+severity: "critical (9.8)"
 ---
 
 A SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simpleblog) module before 1.7.8 for Prestashop allows a remote attacker to extract data from the database via the sb_category parameter.
@@ -16,7 +16,7 @@ A SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simp
 * **Published at**: 2021-08-20
 * **Advisory source**: [sorcery.ie](https://blog.sorcery.ie/posts/simpleblog_sqli/)
 * **Vendor**: PrestaShop
-* **Product**: SimpleBlog
+* **Product**: ph_simpleblog
 * **Impacted release**: < 1.7.8
 * **Product author**: Prestahome
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
@@ -43,7 +43,7 @@ This blog post details an SQLi sorcery.ie found in Blog for Prestashop (ph_simpl
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 ## Patch
