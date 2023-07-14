@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,ph_simpleblog"
 severity: "critical (9.8)"
 ---
 
-A SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simpleblog) module before 1.7.8 for Prestashop allows a remote attacker to extract data from the database via the sb_category parameter.
+An SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simpleblog) module before 1.7.8 for Prestashop allows a remote attacker to extract data from the database via the sb_category parameter.
 
 ## Summary
 
@@ -26,6 +26,10 @@ A SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simp
 ## Description
 
 This blog post details an SQLi sorcery.ie found in Blog for Prestashop (ph_simpleblog) by Prestahome.
+
+**WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards.
+
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller’s path during the exploit so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see “POST /” inside your conventional frontend logs**. Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
@@ -46,6 +50,12 @@ This blog post details an SQLi sorcery.ie found in Blog for Prestashop (ph_simpl
 * Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
+* 
+## Proof of concept
+
+```bash
+https://preprod.X/module/simpleblog/list?sb_category=1%27%29%3BSELECT+0x73656c65637420736c656570283130293b+INTO+%40var_name%3Bselect+%40var_name%3Bprepare+stmt+from+%40var_name%3B+execute+stmt;--
+```
 
 ## Patch for version 1.7.7
 ```diff
