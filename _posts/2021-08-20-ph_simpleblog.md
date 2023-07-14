@@ -47,11 +47,94 @@ This blog post details an SQLi sorcery.ie found in Blog for Prestashop (ph_simpl
 * Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
-## Patch
-
-Prestashop provide a built in function for sanitising strings to be used in SQL queries called pSQL. This is the quick fix in situations like this but one must be sure to surround the parameter with quotes or the query will still be vulnerable to SQLi
-
-The most correct way to patch this would be to use PDO as desribed in Prestashop’s [Best Practices for the DB Class](https://docs.prestashop-project.org/1-6-documentation/). PDO eliminates the risks of faulty parameter sanitisation and makes it hard to do things the wrong way.
+## Patch for version 1.7.7
+```diff
+diff --git a/classes/BlogPostsFinder.php b/classes/BlogPostsFinder.php
+index b753146..e58fe63 100644
+--- a/classes/BlogPostsFinder.php
++++ b/classes/BlogPostsFinder.php
+@@ -134 +134 @@ class BlogPostsFinder
+-        $this->customer = $customer;
++        $this->customer = $id_customer;
+@@ -271 +271 @@ class BlogPostsFinder
+-        $sql->innerJoin('simpleblog_post_lang', 'l', 'sbp.id_simpleblog_post = l.id_simpleblog_post AND l.id_lang = ' . $this->getIdLang());
++        $sql->innerJoin('simpleblog_post_lang', 'l', 'sbp.id_simpleblog_post = l.id_simpleblog_post AND l.id_lang = ' . (int) $this->getIdLang());
+@@ -273 +273 @@ class BlogPostsFinder
+-        $sql->innerJoin('simpleblog_post_shop', 'sbps', 'sbp.id_simpleblog_post = sbps.id_simpleblog_post AND sbps.id_shop = ' . $this->getIdShop());
++        $sql->innerJoin('simpleblog_post_shop', 'sbps', 'sbp.id_simpleblog_post = sbps.id_simpleblog_post AND sbps.id_shop = ' . (int) $this->getIdShop());
+@@ -284 +284 @@ class BlogPostsFinder
+-                    $child_categories[] = $child['id_simpleblog_category'];
++                    $child_categories[] = pSQL($child['id_simpleblog_category']);
+@@ -323 +323 @@ class BlogPostsFinder
+-                    $sql->where($this->getCustomWhere());
++                    $sql->where($condition);
+diff --git a/models/SimpleBlogCategory.php b/models/SimpleBlogCategory.php
+index 23badad..56d9c25 100644
+--- a/models/SimpleBlogCategory.php
++++ b/models/SimpleBlogCategory.php
+@@ -421 +421 @@ class SimpleBlogCategory extends ObjectModel
+-            $sql->where('l.link_rewrite = \'' . $rewrite . '\' AND l.id_lang = ' . (int) $id_lang);
++            $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\' AND l.id_lang = ' . (int) $id_lang);
+@@ -423 +423 @@ class SimpleBlogCategory extends ObjectModel
+-            $sql->where('l.link_rewrite = \'' . $rewrite . '\'');
++            $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\'');
+@@ -436 +436 @@ class SimpleBlogCategory extends ObjectModel
+-        $sql->where('l.id_simpleblog_category = ' . $id_simpleblog_category . ' AND l.id_lang = ' . (int) $id_lang);
++        $sql->where('l.id_simpleblog_category = ' . (int) $id_simpleblog_category . ' AND l.id_lang = ' . (int) $id_lang);
+@@ -461 +461 @@ class SimpleBlogCategory extends ObjectModel
+-        $tmp_location = _PS_TMP_IMG_DIR_ . 'ph_simpleblog_cat_' . $object->id . '.' . $object->cover;
++        $tmp_location = _PS_TMP_IMG_DIR_ . 'ph_simpleblog_cat_' . (int) $object->id . '.' . $object->cover;
+@@ -466 +466 @@ class SimpleBlogCategory extends ObjectModel
+-        $orig_location = _PS_MODULE_DIR_ . 'ph_simpleblog/covers_cat/' . $object->id . '.' . $object->cover;
++        $orig_location = _PS_MODULE_DIR_ . 'ph_simpleblog/covers_cat/' . (int) $object->id . '.' . $object->cover;
+diff --git a/models/SimpleBlogPost.php b/models/SimpleBlogPost.php
+index 0d140a3..77ee13e 100644
+--- a/models/SimpleBlogPost.php
++++ b/models/SimpleBlogPost.php
+@@ -291 +291 @@ class SimpleBlogPost extends ObjectModel
+-            $sql->where('sbp.id_simpleblog_post ' . $filter . ' (' . implode(',', $selected) . ')');
++            $sql->where('sbp.id_simpleblog_post ' . pSQL($filter) . ' (' . implode(',', $selected) . ')');
+@@ -413 +413 @@ class SimpleBlogPost extends ObjectModel
+-            $sql->where('sbp.id_simpleblog_post ' . $filter . ' (' . implode(',', $selected) . ')');
++            $sql->where('sbp.id_simpleblog_post ' . pSQL($filter) . ' (' . implode(',', $selected) . ')');
+@@ -428 +428 @@ class SimpleBlogPost extends ObjectModel
+-        $sql->limit($limit, $start);
++        $sql->limit((int) $limit, $start);
+@@ -504 +504 @@ class SimpleBlogPost extends ObjectModel
+-            $sql->where('l.link_rewrite = \'' . $rewrite . '\'');
++            $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\'');
+@@ -507 +507 @@ class SimpleBlogPost extends ObjectModel
+-            $sql->where('l.link_rewrite = \'' . $rewrite . '\'');
++            $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\'');
+@@ -521 +521 @@ class SimpleBlogPost extends ObjectModel
+-            $sql->where('l.link_rewrite = \'' . $rewrite . '\'');
++            $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\'');
+@@ -538 +538 @@ class SimpleBlogPost extends ObjectModel
+-                    $sql->where('l.link_rewrite = \'' . $rewrite . '\' AND l.id_lang = ' . (int) $id_lang);
++                    $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\' AND l.id_lang = ' . (int) $id_lang);
+@@ -540 +540 @@ class SimpleBlogPost extends ObjectModel
+-                    $sql->where('l.link_rewrite = \'' . $rewrite . '\'');
++                    $sql->where('l.link_rewrite = \'' . pSQL($rewrite) . '\'');
+@@ -820 +820 @@ class SimpleBlogPost extends ObjectModel
+-            $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `likes` = `likes` + 1 WHERE id_simpleblog_post = ' . $id_simpleblog_post;
++            $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `likes` = `likes` + 1 WHERE id_simpleblog_post = ' . (int) $id_simpleblog_post;
+@@ -822 +822 @@ class SimpleBlogPost extends ObjectModel
+-            $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `likes` = `likes` - 1 WHERE id_simpleblog_post = ' . $id_simpleblog_post;
++            $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `likes` = `likes` - 1 WHERE id_simpleblog_post = ' . (int) $id_simpleblog_post;
+@@ -829 +829 @@ class SimpleBlogPost extends ObjectModel
+-        $sql = 'SELECT `likes` FROM `' . _DB_PREFIX_ . 'simpleblog_post` WHERE id_simpleblog_post = ' . $id_simpleblog_post;
++        $sql = 'SELECT `likes` FROM `' . _DB_PREFIX_ . 'simpleblog_post` WHERE id_simpleblog_post = ' . (int) $id_simpleblog_post;
+@@ -838 +838 @@ class SimpleBlogPost extends ObjectModel
+-        $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `views` = `views` + 1 WHERE id_simpleblog_post = ' . $this->id_simpleblog_post;
++        $sql = 'UPDATE `' . _DB_PREFIX_ . 'simpleblog_post` SET `views` = `views` + 1 WHERE id_simpleblog_post = ' . (int) $this->id_simpleblog_post;
+diff --git a/models/SimpleBlogPostType.php b/models/SimpleBlogPostType.php
+index a4ce8e8..449efd6 100644
+--- a/models/SimpleBlogPostType.php
++++ b/models/SimpleBlogPostType.php
+@@ -68 +68 @@ class SimpleBlogPostType extends ObjectModel
+-        $sql->where('slug = \'' . $slug . '\'');
++        $sql->where('slug = \'' . pSQL($slug) . '\''
+```
 
 ## Other recommendations
 
