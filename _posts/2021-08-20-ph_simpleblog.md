@@ -3,6 +3,7 @@ layout: post
 title: "[CVE-2021-36748] Improper neutralization of SQL parameter in SimpleBlog module from Prestahome for PrestaShop"
 categories: module
 author:
+- Sorcery Ltd
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ph_simpleblog"
 severity: "critical (9.8)"
@@ -15,7 +16,7 @@ A SQL Injection issue in the list controller of the Prestahome Blog (aka ph_simp
 * **CVE ID**: [CVE-2021-36748](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36748)
 * **Published at**: 2021-08-20
 * **Advisory source**: [sorcery.ie](https://blog.sorcery.ie/posts/simpleblog_sqli/)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: ph_simpleblog
 * **Impacted release**: < 1.7.8
 * **Product author**: Prestahome
@@ -55,7 +56,7 @@ The most correct way to patch this would be to use PDO as desribed in Prestashop
 ## Other recommendations
 
 * Upgrade the module to the most recent version
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
