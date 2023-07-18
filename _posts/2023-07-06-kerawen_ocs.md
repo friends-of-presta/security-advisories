@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,kerawen_ocs"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
 In the module "KerAwen Omnichannel Stocks" (kerawen_ocs) for PrestaShop, an anonymous user can perform SQL injection before 1.4.1. Release 1.4.1 fixed this security issue.
@@ -23,7 +23,7 @@ In the module "KerAwen Omnichannel Stocks" (kerawen_ocs) for PrestaShop, an anon
 * **Impacted release**: < 1.4.1
 * **Product author**: KerAwen
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
