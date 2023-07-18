@@ -22,7 +22,7 @@ In the module "Advanced Reviews: Photos, Reminder, Google Snippets" (ws_productr
 * **Impacted release**: < 3.6.2
 * **Product author**: Anastasia
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -39,7 +39,7 @@ In ws_productreviews module for PrestaShop up to 3.6.2, multiple sensitives SQL 
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
