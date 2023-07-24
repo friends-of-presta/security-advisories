@@ -19,7 +19,7 @@ A SQL injection vulnerability in the height and width parameter in NdkAdvancedCu
 * **Product**: NdkAdvancedCustomizationFields
 * **Impacted release**: <= 3.5.0
 * **Product author**: 
-* **Weakness**: [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
+* **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: high (7.5)
 
 ## Description
