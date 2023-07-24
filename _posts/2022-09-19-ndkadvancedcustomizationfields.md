@@ -117,7 +117,7 @@ For the function getDimensionPrice, the two problematics parameters, width and h
  	}
 ```
 
-But the function getRangePrice is still the same :
+But the function getRangePrice is still the same as the function wasn't used :
 
 ```diff
 --- a/models/ndkCf.php
