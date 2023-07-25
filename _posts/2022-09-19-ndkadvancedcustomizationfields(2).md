@@ -19,7 +19,7 @@ ndk design NdkAdvancedCustomizationFields 3.5.0 is vulnerable to Cross Site Scri
 * **Product**: NdkAdvancedCustomizationFields
 * **Impacted release**: <= 3.5.0
 * **Product author**: 
-* **Weakness**: [CWE-    ](https://cwe.mitre.org/data/definitions/    .html)
+* **Weakness**: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
 * **Severity**: medium (6.1)
 
 ## Description
