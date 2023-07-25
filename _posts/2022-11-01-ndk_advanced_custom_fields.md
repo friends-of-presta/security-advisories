@@ -92,7 +92,7 @@ For the function getDimensionPrice, the two problematics parameters, width and h
 +			);
  			//var_dump($result);
  			$item_price = str_replace(',', '.', $result['price']);
-+
+
  			return $item_price;
 -		}
 -		else
@@ -118,15 +118,7 @@ For the function getDimensionPrice, the two problematics parameters, width and h
 +				' 
 +			LIMIT 1';
  			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
--			if($result)
--			{
-+			if ($result) {
- 				$item_price = str_replace(',', '.', $result[0]['price']);
-+
- 				return $item_price;
- 			}
- 		}
- 	}
+			if($result)
 ```
 
 But the function getRangePrice is still the same as the function wasn't used :
@@ -150,31 +142,20 @@ But the function getRangePrice is still the same as the function wasn't used :
 +                (int) $field->id.
 +                '
 +				AND width >= '.
-+                $width.
++                (float) $width.
 +                ' AND height >= '.
-+                $height.
++                (float) $height.
 +                '
 +				ORDER BY width ASC'
 +        );
- 
--		if($results)
--		{
-+        if ($results) {
- 			//var_dump($results[0]);
- 			$item_price = str_replace(',', '.', $results[0]['price']);
-+
- 			return $item_price;
- 		}
--
--
- 	}
+
 ```
 
 
 ## Other recommendations
 
-* Upgrade the module to the most recent version
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* It’s **highly recommended to upgrade the module** to the latest version or to **delete** the module if unused.
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
