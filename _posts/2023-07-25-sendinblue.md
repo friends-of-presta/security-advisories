@@ -57,8 +57,8 @@ In sendinblue module for PrestaShop up to 4.0.15, a sensitive SQL call on `ajaxO
 For PrestaShop 1.6, with sendingblue version 2.8.8, apply this patch:
 
 ```diff
---- a/sendinblue/ajaxOrderTracking.php
-+++ b/sendinblue/ajaxOrderTracking.php
+--- a/modules/sendinblue/ajaxOrderTracking.php
++++ b/modules/sendinblue/ajaxOrderTracking.php
 @@ -59,7 +59,7 @@ if ($sendin_order_track_status == 0) {
          $dateFormate = 'm-d-Y';
      }
