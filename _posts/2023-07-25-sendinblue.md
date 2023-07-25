@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,sendinblue"
 severity: "high (8.1)"
 ---
 
-In the module "Sendinblue - All-in-one marketing tool" (sendinblue), an anonymous user can perform SQL injection in affected versions if double optin is enabled. 4.0.15 fixed vulnerabilities.
+In the module "Sendinblue - All-in-one marketing tool" (sendinblue) up to versions 4.0.14 from Sendinblue for PrestaShop, an anonymous user can perform SQL injection in affected versions if double optin is enabled. 4.0.15 fixed vulnerabilities.
 
 ## Summary
 
@@ -19,7 +19,7 @@ In the module "Sendinblue - All-in-one marketing tool" (sendinblue), an anonymou
 * **Advisory source**: Friends-of-Presta.org
 * **Platform**: PrestaShop
 * **Product**: sendinblue
-* **Impacted release**: < 4.0.15
+* **Impacted release**: <= 4.0.14 (4.0.15 fixed the vulnerability)
 * **Product author**: Sendinblue
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: high (8.1)
@@ -27,7 +27,7 @@ In the module "Sendinblue - All-in-one marketing tool" (sendinblue), an anonymou
 
 ## Description
 
-In sendinblue module for PrestaShop up to 4.0.15, a sensitive SQL call on `ajaxOrderTracking.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught for instance the POST or GET submitted `id_shop_group` variable if the double optin option is set.
+In sendinblue module for PrestaShop up to 4.0.14, a sensitive SQL call on `ajaxOrderTracking.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught for instance the POST or GET submitted `id_shop_group` variable if the double optin option is set.
 
 
 ## CVSS base metrics
@@ -71,7 +71,7 @@ For PrestaShop 1.6, with sendingblue version 2.8.8, apply this patch:
 
 ```
 
-For PrestaShop 1.7, with sendingblue version 4.x, *remove all files ajaxXXX.php* espacially *ajaxOrderTracking.php*.
+For PrestaShop 1.7, with sendingblue version 4.x, *remove all files ajaxXXX.php* especially *ajaxOrderTracking.php*.
 
 
 ## Other recommandations
