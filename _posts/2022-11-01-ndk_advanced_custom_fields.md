@@ -15,7 +15,7 @@ In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymo
 * **CVE ID**: [CVE-2022-40839](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40839)
 * **Published at**: 2022-11-01
 * **Advisory source**: [@daaaalllii](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: ndk_advanced_custom_fields
 * **Impacted release**: <= 4.1.6 (4.1.7 fixed vulnerability)
 * **Product author**: ndk design
@@ -44,7 +44,7 @@ In NdkAdvancedCustomizationFields module for PrestaShop up to 4.1.6, a sensitive
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 ## Proof of concept
@@ -167,6 +167,7 @@ But the function getRangePrice is still the same as the function wasn't used :
 | Date | Action |
 | -- | -- |
 | 01-11-2022 | GitHub Poc |
+| 26-07-2023 | Publish this advisory on [security](https://security.friendsofpresta.org/) |
 
 ## Links
 
