@@ -8,7 +8,7 @@ meta: "CVE,PrestaShop,ndk_advanced_custom_fields"
 severity: "critical (9.8)"
 ---
 
-A SQL injection vulnerability in the height and width parameter in NdkAdvancedCustomizationFields v3.5.0 allows unauthenticated attackers to exfiltrate database data.
+In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymous user can perform a SQL injection in affected versions. 4.1.7 fixed vulnerabilities.
 
 ## Summary
 
@@ -17,12 +17,15 @@ A SQL injection vulnerability in the height and width parameter in NdkAdvancedCu
 * **Advisory source**: [@daaaalllii](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
 * **Vendor**: PrestaShop
 * **Product**: ndk_advanced_custom_fields
-* **Impacted release**: <= 3.5.0
+* **Impacted release**: <= 4.1.6 (4.1.7 fixed vulnerability)
 * **Product author**: ndk design
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
+
+In NdkAdvancedCustomizationFields module for PrestaShop up to 4.1.6, a sensitive SQL call on `NdkCf` class can be executed with a trivial http call and exploited to forge a blind SQL injection throught for instance the POST or GET submitted `height` and `width` variables.
+
 
 ## CVSS base metrics
 
