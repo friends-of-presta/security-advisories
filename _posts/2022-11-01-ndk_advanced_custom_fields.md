@@ -8,7 +8,7 @@ meta: "CVE,PrestaShop,ndk_advanced_custom_fields"
 severity: "critical (9.8)"
 ---
 
-In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymous user can perform a SQL injection in affected versions. 4.1.7 fixed vulnerabilities.
+In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymous user can perform a SQL injection in affected versions. 4.1.7 fixed the vulnerability.
 
 ## Summary
 
@@ -17,14 +17,14 @@ In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymo
 * **Advisory source**: [@daaaalllii](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
 * **Platform**: PrestaShop
 * **Product**: ndk_advanced_custom_fields
-* **Impacted release**: <= 4.1.6 (4.1.7 fixed vulnerability)
+* **Impacted release**: <= 4.1.6 (4.1.7 fixed the vulnerability)
 * **Product author**: ndk design
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-In NdkAdvancedCustomizationFields module for PrestaShop up to 4.1.6, a sensitive SQL call on `NdkCf` class can be executed with a trivial http call and exploited to forge a blind SQL injection throught for instance the POST or GET submitted `height` and `width` variables.
+In the NdkAdvancedCustomizationFields module for PrestaShop up to version 4.1.6, a sensitive SQL call in the NdkCf class can be executed via a trivial HTTP call. This vulnerability can be exploited to initiate a blind SQL injection, for instance, through the POST or GET submitted `height` and `width` variables.
 
 
 ## CVSS base metrics
@@ -72,54 +72,23 @@ For the function getDimensionPrice, the two problematics parameters, width and h
 
 	public static function getDimensionPrice($field, $width, $height)
 	{
--		$field = new NdkCf((int)$field);
--		if($field->type == 21 || $field->type == 19){
-+		$field = new NdkCf((int) $field);
-+		if (21 == $field->type || 19 == $field->type) {
+...
  			//on cherche la valeur exacte
  			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow(
 -				'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
 -						WHERE id_ndk_customization_field = '.(int)$field->id.'
 -						AND width = \''.$width.'\' AND height = \''.$height.'\'');
-+				'SELECT price FROM '.
-+					_DB_PREFIX_.
-+					'ndk_customization_field_csv
-+						WHERE id_ndk_customization_field = '.
-+					(int) $field->id.
-+					'
-+						AND width = \''.
-+					pSQL($width).
-+					'\' AND height = \''.
-+					pSQL($height).
-+					'\''
-+			);
- 			//var_dump($result);
++						AND width = \''.pSQL($width).'\' AND height = \''.pSQL($height).'\'');
  			$item_price = str_replace(',', '.', $result['price']);
 
  			return $item_price;
--		}
--		else
--		{
--			$sql = 'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
--					WHERE id_ndk_customization_field = '.(int)$field->id.'
+		}
+  	else
+		{
+ 		$sql = 'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
+					WHERE id_ndk_customization_field = '.(int)$field->id.'
 -					ORDER BY ABS(width-'.$width.') ASC, ABS(height-'.$height.') ASC LIMIT 1';
-+		} else {
-+			// $sql = 'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
-+			// 		WHERE id_ndk_customization_field = '.(int)$field->id.'
-+			// 		ORDER BY ABS(width-'.$width.') ASC, ABS(height-'.$height.') ASC LIMIT 1';
-+			$sql =
-+				'SELECT price FROM '.
-+				_DB_PREFIX_.
-+				'ndk_customization_field_csv
-+			WHERE id_ndk_customization_field = '.
-+				(int) $field->id.
-+				'
-+			AND width >= '.
-+				(float)$width.
-+				' AND height >= '.
-+				(float)$height.
-+				' 
-+			LIMIT 1';
++			    AND width >= '.(float)$width.' AND height >= '.(float)$height.' LIMIT 1';
  			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
 			if($result)
 ```
@@ -134,23 +103,12 @@ But the function getRangePrice is still the same as the function wasn't used :
  	public static function getRangePrice($field, $width, $height)
  	{
  		$results = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS(
--			'SELECT * FROM '._DB_PREFIX_.'ndk_customization_field_csv
--				WHERE id_ndk_customization_field = '.(int)$field->id.'
+			'SELECT * FROM '._DB_PREFIX_.'ndk_customization_field_csv
+				WHERE id_ndk_customization_field = '.(int)$field->id.'
 -				AND width >= '.$width.' AND height >= '.$height.'
 -				ORDER BY width ASC');
-+            'SELECT * FROM '.
-+                _DB_PREFIX_.
-+                'ndk_customization_field_csv
-+				WHERE id_ndk_customization_field = '.
-+                (int) $field->id.
-+                '
-+				AND width >= '.
-+                (float) $width.
-+                ' AND height >= '.
-+                (float) $height.
-+                '
-+				ORDER BY width ASC'
-+        );
++				AND width >= '.(float)$width.' AND height >= '.(float)$height.'
++				ORDER BY width ASC');
 
 ```
 
