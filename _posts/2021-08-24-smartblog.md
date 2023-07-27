@@ -45,7 +45,7 @@ In controllers/front/archive.php we can see that the day, month and year paramet
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 ## Proof of concept
@@ -61,7 +61,7 @@ https://site.com/module/smartblog/archive?month=1&year=1&day=1 UNION ALL SELECT 
 ## Other recommendations
 
 * Upgrade the module to the most recent version
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”) - be warned that this functionality WILL NOT protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
