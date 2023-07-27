@@ -54,7 +54,7 @@ In sendinblue module for PrestaShop up to 4.0.14, a sensitive SQL call on `ajaxO
 
 ## Patch
 
-For PrestaShop 1.6, with sendingblue version 2.8.8, apply this patch:
+For PrestaShop 1.6, with sendinblue version 2.8.8, apply this patch:
 
 ```diff
 --- a/modules/sendinblue/ajaxOrderTracking.php
@@ -71,7 +71,7 @@ For PrestaShop 1.6, with sendingblue version 2.8.8, apply this patch:
 
 ```
 
-For PrestaShop 1.7, with sendingblue version 4.x, *remove all files ajaxXXX.php* especially *ajaxOrderTracking.php*.
+For PrestaShop 1.7, with sendinblue version 4.x, *remove all files ajaxXXX.php* especially *ajaxOrderTracking.php*.
 
 
 ## Other recommandations
