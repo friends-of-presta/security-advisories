@@ -75,8 +75,8 @@ For the function getDimensionPrice, the two problematics parameters, width and h
 ...
  			//on cherche la valeur exacte
  			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow(
--				'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
--						WHERE id_ndk_customization_field = '.(int)$field->id.'
+				'SELECT price FROM '._DB_PREFIX_.'ndk_customization_field_csv
+						WHERE id_ndk_customization_field = '.(int)$field->id.'
 -						AND width = \''.$width.'\' AND height = \''.$height.'\'');
 +						AND width = \''.pSQL($width).'\' AND height = \''.pSQL($height).'\'');
  			$item_price = str_replace(',', '.', $result['price']);
