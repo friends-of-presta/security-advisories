@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,kerawen_ocs"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
 In the module "KerAwen Omnichannel Stocks" (kerawen_ocs) for PrestaShop, an anonymous user can perform SQL injection before 1.4.1. Release 1.4.1 fixed this security issue.
@@ -23,7 +23,7 @@ In the module "KerAwen Omnichannel Stocks" (kerawen_ocs) for PrestaShop, an anon
 * **Impacted release**: < 1.4.1
 * **Product author**: KerAwen
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -88,7 +88,7 @@ Sample of patch. We recommend to upgrade this module to fix all sensitive SQL ca
 
 ## Other recommandations
 
-* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 

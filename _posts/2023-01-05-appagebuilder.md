@@ -382,7 +382,7 @@ This advisory try to do its best to be useful for everyone who want to fix criti
 ## Other recommendations
 
 * We highly recommand to remove from your server this module if not used, or upgrade to the latest release of the module **appagebuilder** up to 2.4.5 and apply all fixes mentionned above.
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 

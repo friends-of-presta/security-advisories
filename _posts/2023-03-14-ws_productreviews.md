@@ -22,7 +22,7 @@ In the module "Advanced Reviews: Photos, Reminder, Google Snippets" (ws_productr
 * **Impacted release**: < 3.6.2
 * **Product author**: Anastasia
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
@@ -39,7 +39,7 @@ In ws_productreviews module for PrestaShop up to 3.6.2, multiple sensitives SQL 
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
@@ -178,7 +178,7 @@ curl -v 'https://domain.tld/module/ws_productreviews/default?action=getList&r_so
 ## Other recommendations
 
 * It’s recommended to upgrade the module beyong 3.6.2.
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 

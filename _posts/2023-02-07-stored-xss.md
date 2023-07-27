@@ -42,7 +42,7 @@ To highlight the criticality of XSS and give us the means to mitigate their effe
 
 ### How to know if a XSS is critical ?
 
-That's important to caracterize with strictness XSS. There is to many people which only tag this vulnerability as "XSS" which is dangerous since there will be misunderstood and often under valuation of gravity.
+That's important to caracterize with strictness XSS. There is too many people which only tag this vulnerability as "XSS" which is dangerous since there will be misunderstood and often under valuation of gravity.
 
 The most dangerous are XSS of type 2 according to their official CWE ([CWE-79](https://cwe.mitre.org/data/definitions/79.html)), meaning Stored-XSS (or persistent XSS) and more specialy those which can be injected from FRONT by guest or assimilated to target BACK.
 
