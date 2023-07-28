@@ -6,7 +6,7 @@ author:
 - Profileo.com
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ajaxmanager"
-severity: "critical (9.8)"
+severity: "critical (10)"
 ---
 
 An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the Ajaxmanager File and Database explorer (ajaxmanager) module, from RSI, for PrestaShop, for all versions (including latest version 2.3.0). This allows remote attackers to upload dangerous files without restrictions.
@@ -21,7 +21,7 @@ An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the
 * **Impacted release**: All versions (No fix provided. Still vulnerable in the latest version 2.3.0)
 * **Product author**: RSI
 * **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
-* **Severity**: critical (9.8)
+* **Severity**: critical (10)
 
 ## Description
 
@@ -31,7 +31,7 @@ It should be noted that the module provides users the ability to set a password 
 
 This vulnerability has been successfully reproduced in the versions 2.1.0, 2.2.0 and 2.3.0 (the last version to date). We believe that the issue is also existing in previous versions.
 
-**WARNING**: Disabling or uninstalling the module will not stop the vulnerability from being exploited.
+**WARNING**: Disabling or uninstalling the module will not stop the vulnerability from being exploited. You must delete it completely.
 
 ## CVSS base metrics
 
@@ -39,20 +39,20 @@ This vulnerability has been successfully reproduced in the versions 2.1.0, 2.2.0
 * **Attack complexity**: low
 * **Privilege required**: none
 * **User interaction**: none
-* **Scope**: unchanged
+* **Scope**: changed
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
 * Removing and altering files (without malware injection)
 * Removing and altering data in the database (without malware injection)
-* Optaining database password and cookie key (without malware injection)
+* Obtaining database password and cookie key (without malware injection)
 * Uploading malwares to the website
-* Obtaining complete admin access to the site
+* Obtaining complete admin access to the website
 
 ## Patch
 
