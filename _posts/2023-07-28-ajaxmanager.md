@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,ajaxmanager"
 severity: "critical (10)"
 ---
 
-An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the Ajaxmanager File and Database explorer (ajaxmanager) module, from RSI, for PrestaShop, for all versions (including latest version 2.3.0). This allows remote attackers to upload dangerous files without restrictions.
+An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the Ajaxmanager File and Database explorer (ajaxmanager) module, from RSI, for PrestaShop, for all versions (including latest version 2.3.0). This allows remote attackers to upload dangerous files without restriction.
 
 ## Summary
 
@@ -32,6 +32,8 @@ It should be noted that the module provides users the ability to set a password 
 This vulnerability has been successfully reproduced in the versions 2.1.0, 2.2.0 and 2.3.0 (the last version to date). We believe that the issue is also existing in previous versions.
 
 **WARNING**: Disabling or uninstalling the module will not stop the vulnerability from being exploited. You must delete it completely.
+
+Be warn that others modules from this creator are actively scanned, this one will probably be exploited soon.
 
 ## CVSS base metrics
 
