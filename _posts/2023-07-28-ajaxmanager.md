@@ -83,5 +83,5 @@ Make sure that the following directory is removed after uninstalling the module 
 
 ## Links
 
-* [Ajaxmanager File and Database explorer (ajaxmanager) Module - (Module currently disabled)]https://addons.prestashop.com/en/administrative-tools/5815-ajax-file-database-manager.html#specifications)
+* [Ajaxmanager File and Database explorer (ajaxmanager) Module - (Module currently disabled)](https://addons.prestashop.com/en/administrative-tools/5815-ajax-file-database-manager.html#specifications)
 * [National Vulnerability Database CVE-2023-33493](https://nvd.nist.gov/vuln/detail/CVE-2023-33493)
