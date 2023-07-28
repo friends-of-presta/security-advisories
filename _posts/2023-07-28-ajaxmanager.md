@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,ajaxmanager"
 severity: "critical (10)"
 ---
 
-An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the Ajaxmanager File and Database explorer (ajaxmanager) module, from RSI, for PrestaShop, for all versions (including latest version 2.3.0). This allows remote attackers to upload dangerous files without restriction.
+An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the Ajaxmanager File and Database explorer (ajaxmanager) module, from RSI, for PrestaShop,  in all versions (including the latest version 2.3.0). This allows remote attackers to upload dangerous files without restriction.
 
 ## Summary
 
@@ -25,15 +25,15 @@ An "Unrestricted Upload of File with Dangerous Type" vulnerability exists in the
 
 ## Description
 
-In the Ajaxmanager File and Database explorer (ajaxmanager) module for PrestaShop, remote attackers can access a file explorer without being logged in, enabling upload view and deletion of files. The file explorer tool is also providing access to a shell console, port scan and server information. Disabling or uninstalling the module is not removing the access to the tool. The issue is not fixed in the latest version.
+In the Ajaxmanager File and Database explorer (ajaxmanager) module for PrestaShop, remote attackers can access a file explorer without being logged in, enabling upload view and deletion of files. The file explorer tool is also providing access to a shell console, port scan and server information. Disabling or uninstalling the module does not remove access to the tool. The issue is not fixed in the latest version.
 
 It should be noted that the module provides users the ability to set a password to restrict access to the tool. However, the password is giving no protection. A bug allows users to access the file explorer without having to provide the password.
 
-This vulnerability has been successfully reproduced in the versions 2.1.0, 2.2.0 and 2.3.0 (the last version to date). We believe that the issue is also existing in previous versions.
+This vulnerability has been successfully reproduced in versions 2.1.0, 2.2.0 and 2.3.0 (the last version to date). We believe that the issue also existed in previous versions.
 
 **WARNING**: Disabling or uninstalling the module will not stop the vulnerability from being exploited. You must delete it completely.
 
-Be warn that others modules from this creator are actively scanned, this one will probably be exploited soon.
+Be warned that other modules from this creator are actively scanned, and this one will probably be exploited soon.
 
 ## CVSS base metrics
 
@@ -60,7 +60,7 @@ Be warn that others modules from this creator are actively scanned, this one wil
 
 This module contains multiple functional and technical vulnerabilities. No patch can be applied without redeveloping most of the module to introduce an authentication system.
 
-Also, even with proper authentication system, due to the nature of the module, its usage alone can qualify it as a backdoor. As this module is not essential for PrestaShop, it's recommended to uninstall the module (and to remove the module's files).
+Also, even with a proper authentication system, due to the nature of the module, its usage alone can qualify it as a backdoor. As this module is not essential for PrestaShop, it's recommended to uninstall the module (and to remove the module's files).
 
 Make sure that the following directory is removed after uninstalling the module : `/modules/ajaxmanager/`
 
