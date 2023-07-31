@@ -50,7 +50,7 @@ In the NdkAdvancedCustomizationFields module for PrestaShop up to version 4.1.6,
 
 
 ```bash
-http://localhost/modules/ndk_advanced_custom_fields/rotateimg.php?loc={{inject here}&rot=90&top=1000&left=1000&width=1000&height=1000&imgwidth=1000
+http://localhost/modules/ndk_advanced_custom_fields/rotateimg.php?loc=SSRF_PAYLOAD&rot=90&top=1000&left=1000&width=1000&height=1000&imgwidth=1000
 ```
 
 ## Patch
