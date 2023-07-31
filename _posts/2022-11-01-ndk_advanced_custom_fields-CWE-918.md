@@ -3,8 +3,6 @@ layout: post
 title: "[CVE-2022-40842] Server-Side Request Forgery (SSRF) NdkAdvancedCustomizationFields from ndk design a module for PrestaShop"
 categories: modules
 author:
-- TouchWeb.fr
-- 202-ecommerce.com
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ndk_advanced_custom_fields"
 severity: "critical (9.1)"
@@ -22,29 +20,30 @@ In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymo
 * **Impacted release**: <= 4.1.6 (4.1.7 fixed the vulnerability)
 * **Product author**: ndk design
 * **Weakness**: [CWE-918](https://cwe.mitre.org/data/definitions/918.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.1)
 
 ## Description
 
-In the NdkAdvancedCustomizationFields module for PrestaShop up to version 4.1.6, a improper validation of `loc` parameter in the `rotateimg.php` script can be executed via a trivial HTTP call to forge Server-Side Request. This vulnerability can be exploited to initiate a blind HTTP request, for instance, use the vulnerable website as proxy to attack others websites.
+In the NdkAdvancedCustomizationFields module for PrestaShop up to version 4.1.6, an improper validation of `loc` parameter in the `rotateimg.php` script can be executed via a trivial HTTP call to forge Server-Side Request. This vulnerability can be exploited to initiate a blind HTTP request, for instance, use the vulnerable website as proxy to attack others websites.
 
 
 ## CVSS base metrics
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
-* **Availability**: high
+* **Availability**: none
 
 **Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N)
 
 ## Possible malicious usage
 
 * Attack others websites via the vulnerability
+* Bypass WAF/.htaccess restrictions
 
 
 ## Proof of concept
@@ -69,7 +68,7 @@ Remove the file or apply this patch :
 ## Other recommandations
 
 * It’s recommended to upgrade the module beyong 4.1.7.
-
+* Activate OWASP 931's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline
 
