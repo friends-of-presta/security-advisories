@@ -29,6 +29,8 @@ In the module "Sendinblue - All-in-one marketing tool" (sendinblue) up to versio
 
 In sendinblue module for PrestaShop up to 4.0.14, a sensitive SQL call on `ajaxOrderTracking.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught for instance the POST or GET submitted `id_shop_group` variable if the double optin option is set.
 
+**WARNING** : be warn that this module construct its token on PS_SHOP_NAME which is a bad practice since we have at least one other module in the ecosystem which expose this token on front. This is why we consider "Privilege required" to NONE instead of LOW.
+
 
 ## CVSS base metrics
 
