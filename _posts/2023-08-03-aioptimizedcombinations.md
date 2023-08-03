@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,aioptimizedcombinations"
 severity: "critical (9.8)"
 ---
 
-In the module "Customization fields fee for your store" (aioptimizedcombinations) for PrestaShop, an atacker can perform SQL injection up to 0.1.3. Release 0.1.3 fixed this security issue.
+In the module "Customization fields fee for your store" (aioptimizedcombinations) for PrestaShop, an attacker can perform SQL injection up to 0.1.3. Release 0.1.3 fixed this security issue.
 
 ## Summary
 
@@ -26,13 +26,13 @@ In the module "Customization fields fee for your store" (aioptimizedcombinations
 
 ## Description
 
-Up to 0.1.3, a sensitive SQL calls in file `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `attributes` variables.
+Up to 0.1.3, a sensitive SQL call in file `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `attributes` variables.
 
 ## CVSS base metrics
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
