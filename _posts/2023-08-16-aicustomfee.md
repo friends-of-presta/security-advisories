@@ -26,7 +26,7 @@ In the module "Customization fields fee for your store" (aicustomfee) for Presta
 
 ## Description
 
-Before 0.2.1, a sensitive SQL calls in file `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `data` and `product` variables.
+Before 0.2.1, sensitives SQL calls in file `includes/ajax.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `data` and `product` variables.
 
 
 ## CVSS base metrics
