@@ -92,5 +92,5 @@ switch (Tools::getValue('action'))
 ## Links
 
 * [Author product page](https://www.boutique.ai-dev.fr/en/ergonomie/59-optimized-combinations.html)
-* [National Vulnerability Database](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33666)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-33666)
 
