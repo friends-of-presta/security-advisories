@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,aioptimizedcombinations"
 severity: "critical (9.8)"
 ---
 
-In the module "Customization fields fee for your store" (aioptimizedcombinations) for PrestaShop, an attacker can perform a SQL injection up to 0.1.2. Release 0.1.3 fixed this security issue.
+In the module "Opimized combinations" (aioptimizedcombinations) for PrestaShop, an attacker can perform a SQL injection up to 0.1.2. Release 0.1.3 fixed this security issue.
 
 ## Summary
 
