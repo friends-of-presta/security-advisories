@@ -25,7 +25,7 @@ In the module "SC Quick Accounting" (scquickaccounting), a guest can download pe
 
 ## Description
 
-Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from ps_customer table sush as name / surname / email
+Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from ps_customer table such as name / surname / email
 
 
 ## CVSS base metrics
