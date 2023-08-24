@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-39650] Improper neutralization of SQL parameter in Theme Volty CMS Blog module for PrestaShop"
+title: "[CVE-2023-39650] Improper neutralization of SQL parameters in Theme Volty CMS Blog module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -27,9 +27,9 @@ In the module "Theme Volty CMS Blog" (tvcmsblog) up to versions 4.0.1 from Theme
 
 ## Description
 
-The methods `TvcmsVideoTabConfirmDeleteModuleFrontController::run()` and `TvcmsVideoTabSaveVideoModuleFrontController::run()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+The methods `TvcmsVideoTabConfirmDeleteModuleFrontController::run()` and `TvcmsVideoTabSaveVideoModuleFrontController::run()` have sensitive SQL calls that can be executed with a trivial HTTP call and exploited to forge a SQL injection.
 
-If your server do not manage correctly these HTTP headers (which will be the case of all servers not manage by professional system administrator), you are concerned : 
+If your server do not manage correctly these HTTP headers (which will be the case for all servers not managed by a professional system administrator), you are concerned: 
 
 - CLIENT_IP
 - X_FORWARDED_FOR
@@ -104,7 +104,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * It’s recommended to upgrade to the latest version of the module **tvcmsblog**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
-* Theses HTTP headers are not supposed to be used on a final application, since they should be used only if REMOTE_ADDR is allowed to with modules like mod_remoteip for Apache2, so you should auto-delete them if you are not behind a well setup load-balancer or reverse proxy.
+* These HTTP headers are not supposed to be used on a final application, since they should be used only if `REMOTE_ADDR` is allowed with modules like mod_remoteip for Apache2, so you should auto-delete them if you are not behind a well setup load-balancer or reverse proxy.
 * Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
@@ -114,7 +114,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 |--|--|
 | 2023-02-10 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-02-10 | Contact PrestaShop Addons security Team to confirm versions scope by author |
-| 2023-02-15 | Author provide a patch which still own all criticals vulnerabilities |
+| 2023-02-15 | The author provided a patch, but it still contains all critical vulnerabilities. |
 | 2023-04-13 | Recontact PrestaShop Addons security Team to confirm versions scope by author |
 | 2023-04-13 | Request a CVE ID |
 | 2023-05-19 | Author provide patch |
