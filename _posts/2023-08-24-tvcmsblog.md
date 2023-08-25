@@ -27,7 +27,7 @@ In the module "Theme Volty CMS Blog" (tvcmsblog) up to versions 4.0.1 from Theme
 
 ## Description
 
-The methods `TvcmsVideoTabConfirmDeleteModuleFrontController::run()` and `TvcmsVideoTabSaveVideoModuleFrontController::run()` have sensitive SQL calls that can be executed with a trivial HTTP call and exploited to forge a SQL injection.
+The method `TvcmsBlogSingleModuleFrontController::run()` have a sensitive SQL call that can be executed with a trivial HTTP call and exploited to forge a SQL injection.
 
 If your server do not manage correctly these HTTP headers (which will be the case for all servers not managed by a professional system administrator), you are concerned: 
 
