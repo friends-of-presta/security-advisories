@@ -95,10 +95,10 @@ NB 2: Several PrestaShop core or modules configurations are stored in database a
 
 ### How to prevent this vulnerability?
 
-As you understand, `unserialize($_GET['param'])` (or `$_POST`, `$_COOKIE`, ...), each untrusted data unserialized is a critical vulnerability. 
+As you understand, `unserialize($_GET['param'])` (or `$_POST`, `$_COOKIE`, ...), each **untrusted data unserialized is a critical vulnerability**. 
 
 * A strict validation of input data is absolutely essential!
-* Use json serialization instead as soon as possible.
-* Disable the desarialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfect but better than nothing.
+* Use json serialization instead as soon as possible : `json_encode` and `json_decode`
+* Disable the deserialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfect but better than nothing.
 
 
