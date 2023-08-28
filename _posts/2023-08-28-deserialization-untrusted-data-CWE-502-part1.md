@@ -14,6 +14,8 @@ The deserialization of an instanciated objects in PHP involved the trigger of ma
 
 A Smarty, Monolog or Symfony library's [Gadget](https://en.wikipedia.org/wiki/Gadget_(computer_science)) hydratation with a malicious payload followed by its deserialization can be exploited in multiple malicious critical usages.
 
+Until this present research, we did not have any known gadget on our ecosystem that can justify a CVE against `unserialize` usage.
+
 ## Summary
 
 * **Published at**: 2023-08-28
@@ -36,11 +38,11 @@ Please read this article to know more about [unsafe unserialize() in PHP](https:
 
 In a similar way, the popular library `Monolog` can be hijacked to execute remote code. Let’s explain it on a POC.
 
-We created a simple module to demontrate the danger of a deserialization. Please note that any php script that include PrestaShop core file `config/config.inc.php` load vendors libraries and consequently `Monolog` (PS 1.7+) or others librairies.
+We created a simple module to demontrate the danger of a deserialization. Please note that any php script that include PrestaShop core file `config/config.inc.php` load vendors libraries and consequently `Monolog` (PS 1.7+) or others libraries.
 
 **FOR EDUCATIONAL PURPOSES ONLY. DO NOT USE THIS SCRIPT FOR ILLEGAL ACTIVITIES. THE AUTHOR IS NOT RESPONSIBLE FOR ANY MISUSE OR DAMAGE.**
 
-1. Create a little module
+1. Create a module
 
 ```php
 // modules/mymodule/mymodule.php
@@ -68,12 +70,12 @@ class Mymodule
 
 Mailicious usage in PrestaShop via commons libraries are :
 * remote code execution (RCE) to put a webshell
-* Server Side Request Forgery (SSRF) to agress other website with a clean IP, 
-* File Deletion (FD) to remove an htaccess and expose logs or sensitive data,
+* Server Side Request Forgery (SSRF) to aggress other website with a clean IP
+* File Deletion (FD) to remove an htaccess and expose logs or sensitive data
 * File Writer (WF) to put a webshell
-* Files read reader (RF) to read sensitive data like mysql password,
-* SQL injections (SQLi),
-* Technical data leaks (Info).
+* Files read reader (RF) to read sensitive data like mysql password
+* SQL injections (SQLi)
+* Technical data leaks (Info)
 
 |PrestaShop dependancy|Malicious usage|
 | ------|-----|
@@ -88,7 +90,7 @@ Source: [PHP Generic Gadget Chains](https://github.com/ambionics/phpggc/tree/mas
 
 NB 1: This list is not exhaustive. Modules dependancies can also include others hijackable classes.
 
-NB 2: Several PrestaShop core or modules configurations are stored in database as serialized strings. In chain, an SQL injection can also be exploited to inject malicious serialized string that will be triggered during the deserialization.
+NB 2: Several PrestaShop core or modules configurations are stored in database as serialized strings. In chain, a SQL injection can also be exploited to inject malicious serialized string that will be triggered during the deserialization.
 
 
 ### How to prevent this vulnerability?
@@ -97,6 +99,6 @@ As you understand, `unserialize($_GET['param'])` (or `$_POST`, `$_COOKIE`, ...),
 
 * A strict validation of input data is absolutly essential !
 * Use json serialization instead as soon as possible.
-* Disable the desarialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfert but better than nothing.
+* Disable the desarialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfect but better than nothing.
 
 
