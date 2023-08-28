@@ -19,7 +19,7 @@ Until this present research, we did not have any known gadget on our ecosystem t
 ## Summary
 
 * **Published at**: 2023-08-28
-* **Platform**: All CMS espacially PrestaShop.
+* **Platform**: All CMS especially PrestaShop.
 * **Weakness**: [CWE-502](https://cwe.mitre.org/data/definitions/502.html)
 * **Severity**: critical (10)
 
