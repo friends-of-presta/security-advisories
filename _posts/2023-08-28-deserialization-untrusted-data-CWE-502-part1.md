@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CWE-502] Exploring the perils of unsafe deserialize() in PrestaShop (part 1)"
+title: "[CWE-502] Exploring the perils of unsafe unserialize() in PrestaShop (part 1)"
 categories: research
 author:
 - 202-ecommerce.com
@@ -23,7 +23,7 @@ Until this present research, we did not have any known gadget on our ecosystem t
 * **Weakness**: [CWE-502](https://cwe.mitre.org/data/definitions/502.html)
 * **Severity**: critical (10)
 
-## Unsafe PHP method deserialize() (part 1)
+## Unsafe PHP method unserialize() (part 1)
 
 ### How it works?
 
