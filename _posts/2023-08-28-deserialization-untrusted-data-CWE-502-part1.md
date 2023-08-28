@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,CWE-502"
 severity: "critical (10)"
 ---
 
-The deserialization of an instanciated objects in PHP involved the trigger of magic methods `__construct()`, `__wakeup()` and `__destruct()`. 
+The deserialization of instantiated objects in PHP involved the trigger of the magic methods `__construct()`, `__wakeup()` and `__destruct()`. 
 
 A Smarty, Monolog or Symfony library's [Gadget](https://en.wikipedia.org/wiki/Gadget_(computer_science)) hydratation with a malicious payload followed by its deserialization can be exploited in multiple malicious critical usages.
 
@@ -36,7 +36,7 @@ Please read this article to know more about [unsafe unserialize() in PHP](https:
 
 ### Proof of concept
 
-In a similar way, the popular library `Monolog` can be hijacked to execute remote code. Let’s explain it on a POC.
+Similarly, the popular library `Monolog` can be hijacked to execute remote code. Let’s explain it in a POC.
 
 We created a simple module to demontrate the danger of a deserialization. Please note that any php script that include PrestaShop core file `config/config.inc.php` load vendors libraries and consequently `Monolog` (PS 1.7+) or others libraries.
 
@@ -63,12 +63,12 @@ class Mymodule
 
 2. Go to the configuration page of the module.
 
-3. This piece of code will put an `a.php` file in the designated directory of the PrestaShop.
+3. This piece of code will put an `a.php` file in the designated directory of PrestaShop.
 
 
-### Malicious usage through PrestaShop dependancies
+### Malicious usage through PrestaShop dependencies
 
-Mailicious usage in PrestaShop via commons libraries are :
+Malicious usages of PrestaShop via common libraries are:
 * remote code execution (RCE) to put a webshell
 * Server Side Request Forgery (SSRF) to aggress other website with a clean IP
 * File Deletion (FD) to remove an htaccess and expose logs or sensitive data
@@ -77,7 +77,7 @@ Mailicious usage in PrestaShop via commons libraries are :
 * SQL injections (SQLi)
 * Technical data leaks (Info)
 
-|PrestaShop dependancy|Malicious usage|
+|PrestaShop dependency|Malicious usage|
 | ------|-----|
 |Smarty|SSRF and FD|
 |Monolog|RCE and FW|
@@ -88,7 +88,7 @@ Mailicious usage in PrestaShop via commons libraries are :
 
 Source: [PHP Generic Gadget Chains](https://github.com/ambionics/phpggc/tree/master/gadgetchains)
 
-NB 1: This list is not exhaustive. Modules dependancies can also include others hijackable classes.
+NB 1: This list is not exhaustive. Module dependencies can also include other hijackable classes.
 
 NB 2: Several PrestaShop core or modules configurations are stored in database as serialized strings. In chain, a SQL injection can also be exploited to inject malicious serialized string that will be triggered during the deserialization.
 
@@ -97,7 +97,7 @@ NB 2: Several PrestaShop core or modules configurations are stored in database a
 
 As you understand, `unserialize($_GET['param'])` (or `$_POST`, `$_COOKIE`, ...), each untrusted data unserialized is a critical vulnerability. 
 
-* A strict validation of input data is absolutly essential !
+* A strict validation of input data is absolutely essential!
 * Use json serialization instead as soon as possible.
 * Disable the desarialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfect but better than nothing.
 
