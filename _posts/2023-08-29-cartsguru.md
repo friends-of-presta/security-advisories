@@ -28,7 +28,7 @@ In the module "Carts Guru | Marketing automation multicanal" (cartsguru) up to v
 
 The method `CartsGuruCatalogModuleFrontController::display()` and the ajax script controllers14/catalog.php has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Note : The author has deleted from its module the files that have been suffering from critical vulnerabilities for months, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules thinking they are safe. However, there is nothing safe about this since past upgrades do not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to 2.4.3 as impacted by this issue.
+Note : The author has deleted from its module the files that have been suffering from critical vulnerabilities for months, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about this, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to 2.4.3 as impacted by this issue.
 
 **WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards. 
 
@@ -65,7 +65,7 @@ curl -v 'https://preprod.XX/?fc=module&module=cartsguru&controller=catalog&carts
 
 ## Patch from 1.4.19
 
-These files does not exist if you started working with Cartsguru beyond 2.X versions BUT if you worked with them BEFORE 2.X versions - you should own it.
+These files do not exist if you started working with Cartsguru beyond version 2.X BUT if you worked with them BEFORE 2.X versions - you should own it.
 
 ```diff
 --- 1.4.19/controllers14/catalog.php
@@ -108,7 +108,7 @@ if ($isMultiStoreSupported) {
 | Date | Action |
 |--|--|
 | 2022-10-11 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2022-10-12 | Author contacted and provide a patch |
+| 2022-10-12 | Author contacted and provided a patch |
 | 2023-04-18 | Contact PrestaShop Addons security Team to confirm versions scope by author  |
 | 2023-04-19 | Request a CVE ID |
 | 2023-05-09 | PrestaShop Addons confirms versions scopes |
