@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-39642] Improper neutralization of SQL parameter in Carts Guru | Marketing automation multicanal module for PrestaShop"
+title: "[CVE-2023-39642] Improper neutralization of SQL parameter in Carts Guru - Marketing automation multicanal module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,cartsguru"
 severity: "critical (9.8)"
 ---
 
-In the module "Carts Guru | Marketing automation multicanal" (cartsguru) up to versions 2.4.2 from Carts Guru for PrestaShop, a guest can perform SQL injection in affected versions.
+In the module "Marketing automation multicanal" (cartsguru) up to versions 2.4.2 from Carts Guru for PrestaShop, a guest can perform SQL injection in affected versions.
 
 
 ## Summary
