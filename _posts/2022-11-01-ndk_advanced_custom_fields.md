@@ -44,7 +44,7 @@ In the NdkAdvancedCustomizationFields module for PrestaShop up to version 4.1.6,
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins' ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 ## Proof of concept

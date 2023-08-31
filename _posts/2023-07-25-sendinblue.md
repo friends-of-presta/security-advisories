@@ -50,7 +50,7 @@ In sendinblue module for PrestaShop up to 4.0.14, a sensitive SQL call on `ajaxO
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins' ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 

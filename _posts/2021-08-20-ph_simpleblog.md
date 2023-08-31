@@ -48,7 +48,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins' ajax scripts
 * Rewrite SMTP settings to hijack emails
 * 
 ## Proof of concept

@@ -45,7 +45,7 @@ In controllers/front/archive.php we can see that the day, month and year paramet
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to the FRONT to exposed tokens and unlock admins' ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 ## Proof of concept
