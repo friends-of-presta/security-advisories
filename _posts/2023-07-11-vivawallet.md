@@ -131,6 +131,6 @@ Advice: Remove vivawallet and install vivawalletsmartcheckout instead.
 
 * [GitHub addons product page](https://github.com/VivaPayments/API/)
 * [Viva Wallet developper page](https://developer.vivawallet.com/plugins/)
-* [Viva Wallet lastest updated module](https://addons.prestashop.com/fr/paiement/89363-viva-wallet-smart-checkout.html)
+* [Viva Wallet latest updated module](https://addons.prestashop.com/fr/paiement/89363-viva-wallet-smart-checkout.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-26861)
 
