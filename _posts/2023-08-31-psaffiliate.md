@@ -65,20 +65,9 @@ curl -v 'https://preprod.X/module/psaffiliate/getaffiliatesdetails?getHasBeenRev
 ```diff
 --- 1.9.7/modules/psaffiliate/controllers/front/getaffiliatesdetails.php
 +++ 1.9.8/modules/psaffiliate/controllers/front/getaffiliatesdetails.php
-class PsaffiliateGetaffiliatesdetailsModuleFrontController extends ModuleFrontController
-{
-    public function initContent()
-    {
-        parent::initContent();
-
-        if (Tools::getValue('getHasBeenReviewed') && Tools::getValue('ids_affiliate')) {
-            $ids_affiliate = Tools::getValue('ids_affiliate');
-            $data = array();
-            $data['success'] = true;
--           $result = Db::getInstance()->executeS('SELECT `id_affiliate` FROM `'._DB_PREFIX_.'aff_affiliates` WHERE `id_affiliate` IN ('.pSQL($ids_affiliate).') AND `has_been_reviewed`="0"');// phpcs:ignore
-+           $result = Db::getInstance()->executeS('SELECT `id_affiliate` FROM `'._DB_PREFIX_.'aff_affiliates` WHERE `id_affiliate` IN ('.implode(',', array_map('intval', explode(',', Tools::getValue('ids_affiliate')))).') AND `has_been_reviewed`="0"');
-            $data['result'] = $result;
-
+@@ -30 +30 @@ class PsaffiliateGetaffiliatesdetailsModuleFrontController extends ModuleFrontCo
+-            $result = Db::getInstance()->executeS('SELECT `id_affiliate` FROM `'._DB_PREFIX_.'aff_affiliates` WHERE `id_affiliate` IN ('.pSQL($ids_affiliate).') AND `has_been_reviewed`="0"');
++            $result = Db::getInstance()->executeS('SELECT `id_affiliate` FROM `'._DB_PREFIX_.'aff_affiliates` WHERE `id_affiliate` IN ('.implode(',', array_map('intval', explode(',', Tools::getValue('ids_affiliate')))).') AND `has_been_reviewed`="0"');
 ```
 
 ## Other recommendations
