@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,psaffiliate"
 severity: "critical (9.8)"
 ---
 
-In the module "Full Affiliates" (psaffiliate) up to versions 1.9.7 from Active Design for PrestaShop, a guest can perform SQL injection in affected versions.
+In the module "Full Affiliates" (psaffiliate) up to version 1.9.7 from Active Design for PrestaShop, a guest can perform SQL injection in affected versions.
 
 
 ## Summary
@@ -49,7 +49,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins' ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 
