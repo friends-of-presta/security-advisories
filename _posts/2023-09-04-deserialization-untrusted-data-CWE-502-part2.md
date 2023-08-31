@@ -27,7 +27,7 @@ severity: "critical (10)"
 
 This is a variant of the same malicious deserialization triggering previouly highlighted "[Exploring the perils of unsafe unserialize() in PrestaShop (part 1)](https://security.friendsofpresta.org/research/2023/08/28/deserialization-untrusted-data-CWE-502-part1.html)" with an other attack vector.
 
-This security issue is not new. In 2018, the [CVE-2018-19126](https://github.com/farisv/PrestaShop-CVE-2018-19126) touched the PrestaShop core. Fortunatly, the exploit was available only as administrator.
+This security issue is not new. In 2018, the [CVE-2018-19126](https://github.com/farisv/PrestaShop-CVE-2018-19126) touched the PrestaShop core. Fortunately, the exploit was available only as administrator.
 
 This CVE was the first alert send in 2018 that proves the execution of remote code through the deseralization of an untrusted files (here a phar uploaded instead of a pdf).
 
@@ -36,7 +36,7 @@ This CVE was the first alert send in 2018 that proves the execution of remote co
 
 We highly recommand to read carefully this blog post about [exploiting PHP Phar deserialization vulnerabilities](https://www.keysight.com/blogs/tech/nwvs/2020/07/23/exploiting-php-phar-deserialization-vulnerabilities-part-1) to understand it.
 
-In summary, following PHP method accept php wrappers http://, data://, file:// and also phar://. 
+In summary, the following PHP methods accept php wrappers http://, data://, file:// and also phar://.
 
 But the phar (PHp ARchive) particularity is the ability to implicitly unserialize each serialized string inside in a file.
 
@@ -52,9 +52,9 @@ Here is a list of [filesystem functions](https://www.php.net/manual/en/ref.files
 | `readfile` | `touch` | `unlink` | `stat` | 
 | `getimagesize` | `imagecreatefrom(jpeg|gif|png)` | | |
 
-This other article show how to [disguise a phar as a jpeg file](https://www.nc-lp.com/blog/disguise-phar-packages-as-images).
+This other article shows how to [disguise a phar as a jpeg file](https://www.nc-lp.com/blog/disguise-phar-packages-as-images).
 
-So, an attacker can craft a perfect image with mime type, extensions, ... validations and exploit the implicit deserialization by adding a malicious payload.
+So, an attacker can craft a perfect image with mime type, extensions, ... validations and exploit the implicit unserialization by adding a malicious payload.
 
 ### Proof of concept
 
@@ -76,7 +76,7 @@ class Mymodule
     }
 ...
 ```
-Note: For security reason, the phar.jpg file is not supplied in this POC.
+Note: For security reasons, the phar.jpg file is not supplied in this POC.
 
 2. Go to the configuration page of the module.
 
@@ -89,7 +89,7 @@ As you can see, to be exploited, you'll have a chain of vulnerabilities composed
 
 1. Firstly, the hacker should upload a static file like an image, a PDF, ... that content a malicious payload.
 
-PrestaShop core `ImageManager::validateUpload` class cannot filter this kind of fake "phar" espacially iamges. The upload of a phar as image in product page removed the payload (by resizing it), but not in CMS page WYSIWYG.
+PrestaShop core `ImageManager::validateUpload` class cannot filter this kind of fake "phar" especially images. The upload of a phar as an image on the product page removed the payload (by resizing it), but not in the CMS page WYSIWYG.
 
 We could classify this vulnerability as [CWE-646](https://cwe.mitre.org/data/definitions/646.html), but this weakness can only be exploited with a second weakness.
 
@@ -100,18 +100,17 @@ On the other hand, PrestaShop core methods `ImageManager::thumbnail($_GET['param
 Path traversal [CWE-22](https://cwe.mitre.org/data/definitions/22.html) and SSRF [CWE-918](https://cwe.mitre.org/data/definitions/918.html) could be exploited to trigger a phar deserialization.
 
 
-**BECAREFUL**: The probability to register in a single third part (module, dependancy) of PrestaShop both vulnerabilities is quite low. Moreover each weakness CWE-646 and CWE-918 (or CWE-22) in several modules third part be unusable separatly but a combination of both critical. That's why majority of exploits will fly under the radar.
-
+**BECAREFUL**: The probability to register in a single third part (module, dependency) of PrestaShop both vulnerabilities is quite low. Moreover, each weakness in CWE-646 and CWE-918 (or CWE-22) in several modules in the third part is unusable separately but a combination of both is critical. That's why the majority of exploits will fly under the radar.
 
 ### How to prevent this vulnerability?
 
 Phar wrapper cannot be disabled via a php.ini settings.
 
-As a developper:
-* A strict validation of input data is absolutly essential !
+As a developer:
+* A strict validation of input data is absolutely essential!
 * Use `basename()` PHP method to prevent path traversal `getimagesize(_PS_IMG_DIR_ . basename($_GET['param']))` and unwanted use of wrapper such as `phar://`
-* Use GD library to remove dummy serialized data on an image.
+* Use the GD library to remove dummy serialized data from an image.
 
-As an adminsys
+As an admin sys
 * Set your firewall with [OWASP rules to filter "phar://"](https://github.com/coreruleset/coreruleset/blob/e36f27e1429a841e91996f4a521d40c996ec74eb/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf#L213)
 
