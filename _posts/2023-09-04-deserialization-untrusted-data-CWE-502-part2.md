@@ -31,6 +31,7 @@ This security issue is not new. In 2018, the [CVE-2018-19126](https://github.com
 
 This CVE was the first alert send in 2018 that proves the execution of remote code through the deseralization of an untrusted files (here a phar uploaded instead of a pdf).
 
+**WARNING** : This is the most dangerous critical chain of our ecosystem and you will nearly never seen any CVE about it.
 
 ### How it works ?
 
