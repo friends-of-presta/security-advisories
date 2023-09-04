@@ -42,7 +42,8 @@ In summary, the following PHP methods accept php wrappers http://, data://, file
 But the phar (PHp ARchive) particularity is the ability to implicitly unserialize each serialized string inside in a file.
 
 Here is a list of [filesystem functions](https://www.php.net/manual/en/ref.filesystem.php) that trigger phar deserialization:
-| | |  | |
+
+| | | | |
 | ------|-----|-----|-----|
 | `copy` | `file_exists` | `file_get_contents` | `file_put_contents` |
 | `file` | `fileatime` | `filectime` | `filegroup` |
