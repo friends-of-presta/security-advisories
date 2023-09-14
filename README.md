@@ -10,7 +10,7 @@ You can access the data from:
 
 1. If the vulnerability is NOT already public, please contact security/at/friendsofpresta.org
 2. Fork this repository
-3. Create a new file in _post sub directory with teh nomenclature YYYY-MM-DD-explicit-short-name.md
+3. Create a new file in _post sub directory with the nomenclature YYYY-MM-DD-explicit-short-name.md
 
 Sample header of an advisory file.
 ```MD
