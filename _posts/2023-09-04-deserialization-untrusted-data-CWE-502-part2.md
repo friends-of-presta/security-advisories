@@ -110,7 +110,7 @@ Phar wrapper cannot be disabled via a php.ini settings.
 
 As a developer:
 * A strict validation of input data is absolutely essential!
-* Use `basename()` PHP method to prevent path traversal `getimagesize(_PS_IMG_DIR_ . basename($_GET['param']))` and unwanted use of wrapper such as `phar://`
+* Use `basename()` PHP method to prevent path traversal and unwanted use of wrapper such as `phar://` : `getimagesize(basename($_GET['param']))`
 * Use the GD library to remove dummy serialized data from an image.
 
 As an admin sys:
