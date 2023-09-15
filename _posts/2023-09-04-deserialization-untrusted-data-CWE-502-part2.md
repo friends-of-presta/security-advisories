@@ -115,7 +115,7 @@ As a developer:
 
 As an admin sys:
 * Set your firewall with [OWASP rules to filter "phar://"](https://github.com/coreruleset/coreruleset/blob/e36f27e1429a841e91996f4a521d40c996ec74eb/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf#L213)
-* Upgrade PHP up to 8.0
+* Upgrade PHP after 8.0
 
 
 | Date | Action |
