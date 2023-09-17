@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CWE-502] Exploring the perils of implicit deserialization of a phar in PrestaShop (part 2)"
+title: "[CWE-502] Exploring the perils of implicit deserialization of a phar in PrestaShop prior to PHP 8.0 (part 2)"
 categories: research
 author:
 - 202-ecommerce.com
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,CWE-502"
 severity: "critical (10)"
 ---
 
-"The PHP documentation reveals that PHAR manifest files contain serialized metadata. Crucially, if you perform any filesystem operations on a `phar://` stream, this metadata is implicitly deserialized. This means that a phar:// stream can potentially be a vector for exploiting insecure deserialization, provided that you can pass this stream into a filesystem method. 
+Prior to PHP 8.0, "The PHP documentation reveals that PHAR manifest files contain serialized metadata. Crucially, if you perform any filesystem operations on a `phar://` stream, this metadata is implicitly deserialized. This means that a `phar://` stream can potentially be a vector for exploiting insecure deserialization, provided that you can pass this stream into a filesystem method."
 
 [Source](https://portswigger.net/web-security/deserialization/exploiting#phar-deserialization)
 
@@ -115,4 +115,10 @@ As a developer:
 
 As an admin sys:
 * Set your firewall with [OWASP rules to filter "phar://"](https://github.com/coreruleset/coreruleset/blob/e36f27e1429a841e91996f4a521d40c996ec74eb/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf#L213)
+* Upgrade PHP after 8.0
 
+
+| Date | Action |
+|--|--|
+| 2023-09-04 | Publication of this security advisory |
+| 2023-09-15 | Edit this publication to reduce the scope of impacted PHP version prior to PHP 8.0 |

@@ -102,3 +102,4 @@ As you understand, `unserialize($_GET['param'])` (or `$_POST`, `$_COOKIE`, ...),
 * Disable the deserialization of classes via `unserialize($args, ['allowed_classes' => false])`. That's not perfect but better than nothing.
 
 
+Read the second part of this advisory: [[CWE-502] Exploring the perils of implicit deserialization of a phar in PrestaShop (part 2)](https://security.friendsofpresta.org/research/2023/09/04/deserialization-untrusted-data-CWE-502-part2.html)
