@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,opartsavecart"
 severity: "critical (9.8)"
 ---
 
-In the module "Opart Save Cart" (opartsavecart), a guest can perform SQL injection in affected versions.
+In the module "Opart Save Cart" (opartsavecart) up to version 2.0.7 from Opart for PrestaShop, a guest can perform SQL injection in affected versions.
 
 
 ## Summary
@@ -105,6 +105,7 @@ curl -v 'https://preprod.X/module/opartsavecart/default?action=delete&opartCartI
 | 2023-05-23 | Author confirms versions scope |
 | 2023-05-24 | Request CVE ID |
 | 2023-09-05 | Received CVE ID |
+| 2023-09-19 | Publish this security advisory |
 
 Opart thanks [TouchWeb](https://www.touchweb.fr) for its courtesy and its help after the vulnerability disclosure.
 
