@@ -11,7 +11,7 @@ meta: "CVE,PrestaShop,opartplannedpopup"
 severity: "critical (9.8)"
 ---
 
-In the module "Opart planned popup" (opartplannedpopup), a guest can perform SQL injection in affected versions.
+In the module "Opart planned popup" (opartplannedpopup) up to version 1.4.11 from Opart for PrestaShop, a guest can perform SQL injection in affected versions.
 
 
 ## Summary
@@ -95,6 +95,7 @@ private function prepareHook()
 | 2022-10-04 | Author confirm versions scope |
 | 2023-05-24 | Request CVE ID |
 | 2023-09-05 | Received CVE ID |
+| 2023-09-19 | Publish this security advisory |
 
 Opart thanks [TouchWeb.fr](https://www.touchweb.fr/) and [Creabilis.com](https://www.creabilis.com/) for their courtesies and their help after the vulnerability disclosure.
 
