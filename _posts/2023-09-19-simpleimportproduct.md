@@ -56,7 +56,7 @@ A patch has been released in august 2023.
 --- a/modules/simpleimportproduct/send.php
 +++ b/modules/simpleimportproduct/send.php
 - Db::getInstance()->delete('simpleimport_tasks', "import_settings=$key");
-+ Db::getInstance()->delete('simpleimport_tasks', "import_settings='".pSQL($key)."'");
++ Db::getInstance()->delete('simpleimport_tasks', "import_settings='$key'");
 ```
 
 
@@ -74,7 +74,7 @@ A patch has been released in august 2023.
 |--|--|
 | 2023-07-10 | Vunlnerability found during a audit by sorcery.ie |
 | 2023-08-28 | CVE-2023-39675 assigned |
-| 2023-09-08 | Blog post released by [sorcery.ie](https://blog.sorcery.ie/posts/simpleimportproduct_sqli_sqli/)|
+| 2023-09-07 | Blog post released by [sorcery.ie](https://blog.sorcery.ie/posts/simpleimportproduct_sqli_sqli/)|
 
 
 ## Links
