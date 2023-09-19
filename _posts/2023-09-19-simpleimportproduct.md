@@ -74,12 +74,12 @@ A patch has been released in august 2023.
 |--|--|
 | 2023-07-10 | Vunlnerability found during a audit by sorcery.ie |
 | 2023-08-28 | CVE-2023-39675 assigned |
-| 2023-09-07 | Blog post released by [sorcery.ie](https://blog.sorcery.ie/posts/simpleimportproduct_sqli_sqli/)|
+| 2023-09-07 | Blog post released by [sorcery.ie](https://blog.sorcery.ie/posts/simpleimportproduct_sqli/)|
 
 
 ## Links
 
-* [Blog post](https://blog.sorcery.ie/posts/simpleimportproduct_sqli_sqli/)
+* [Blog post](https://blog.sorcery.ie/posts/simpleimportproduct_sqli/)
 * [Author page](https://myprestamodules.com/)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-39675)
 
