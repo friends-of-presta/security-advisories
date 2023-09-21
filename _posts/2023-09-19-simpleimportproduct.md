@@ -55,8 +55,10 @@ A patch has been released in august 2023.
 ```diff
 --- a/modules/simpleimportproduct/send.php
 +++ b/modules/simpleimportproduct/send.php
-- Db::getInstance()->delete('simpleimport_tasks', "import_settings=$key");
-+ Db::getInstance()->delete('simpleimport_tasks', "import_settings='$key'");
+          $key = Tools::getValue('key');
+          $key = pSQL($key);
+-         Db::getInstance()->delete('simpleimport_tasks', "import_settings=$key");
++         Db::getInstance()->delete('simpleimport_tasks', "import_settings='".$key."'");
 ```
 
 
