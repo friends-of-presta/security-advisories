@@ -24,8 +24,8 @@ In the module "SimpleImportProduct " (simpleimportproduct) for PrestaShop, an at
 
 ## Description
 
-Before 0.2.1, sensitives SQL calls in file `send.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted `key` variables.
-A patch has been released in august 2023.
+Before 0.2.1, sensitive SQL calls in file `send.php` can be executed with a trivial http call and exploited to forge a blind SQL injection through the POST or GET submitted `key` variables.
+A patch was released in august 2023.
 
 
 ## CVSS base metrics
@@ -47,7 +47,7 @@ A patch has been released in august 2023.
 * Technical and personal data leaks
 * Obtain admin access
 * Remove all data of the linked PrestaShop
-* Display sensitives tables to front-office to unlock potential admin's ajax scripts of modules protected by token on the ecosystem
+* Display sensitive tables to front-office to unlock potential admin's ajax scripts of modules protected by token on the ecosystem
 
 
 ## Patch
@@ -62,7 +62,7 @@ A patch has been released in august 2023.
 ```
 
 
-## Other recommandations
+## Other recommendations
 
 * Upgrade PrestaShop to the latest version to disable multiquery execution (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
@@ -74,7 +74,7 @@ A patch has been released in august 2023.
 
 | Date | Action |
 |--|--|
-| 2023-07-10 | Vunlnerability found during a audit by sorcery.ie |
+| 2023-07-10 |  Vulnerability found during an audit by sorcery.ie |
 | 2023-08-28 | CVE-2023-39675 assigned |
 | 2023-09-07 | Blog post released by [sorcery.ie](https://blog.sorcery.ie/posts/simpleimportproduct_sqli/)|
 
