@@ -137,4 +137,4 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/legislation/15954-cookie-law-blocage-des-cookies-banniere.html)
-* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-WAITING)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-39640)
