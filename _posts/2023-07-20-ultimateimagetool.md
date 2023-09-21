@@ -50,7 +50,7 @@ Note : The author has deleted from its module the file that have been suffering 
 * Stealing secrets to unlock admin controllers based on ajax script
 * Exfiltrate all modules with all versions to facilite pentesting
 * Stealing table_prefix to greatly facilitate SQL injections for kiddies who don't know how to exploit DBMS design's vulnerabilities or steal database access to login in exposed PHPMyAdmin/Adminer/etc.
-* Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictible paths of banks's modules inside /var/log/)
+* Bypass WAF / htaccess restrictions to read forbidden files (such as logs on predictable paths of banks's modules inside /var/log/)
 
 ## Patch from 1.5.96
 
