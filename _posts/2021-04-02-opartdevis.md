@@ -8,7 +8,7 @@ author:
 - c0dejump
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,opartdevis"
-severity: "Medium (5.3)"
+severity: "high (7.5)"
 ---
 
 In the module "Opart Devis" (opartdevis) up to version 4.0.2 unauthenticated attackers can have access to any user's invoice and delivery address by exploiting an IDOR on the delivery_address and invoice_address fields.
@@ -23,7 +23,7 @@ In the module "Opart Devis" (opartdevis) up to version 4.0.2 unauthenticated att
 * **Impacted release**: < 4.0.2 
 * **Product author**: Opart
 * **Weakness**: [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
-* **Severity**: Medium (5.3)
+* **Severity**: high (7.5)
 
 ## Description
 
@@ -38,11 +38,11 @@ Note : We didn't do semver versionning before 2018 - so consider all versions wh
 * **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
-* **Confidentiality**: Low
+* **Confidentiality**: high
 * **Integrity**: None
 * **Availability**: None
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)
 
 ## Possible malicious usage
 
