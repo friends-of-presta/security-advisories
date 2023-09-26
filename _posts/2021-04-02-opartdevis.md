@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2020-16194] Authorization Bypass Through User-Controlled Key"
+title: "[CVE-2020-16194] Authorization Bypass Through User-Controlled Key in Opart Devis module (opartdevis)"
 categories: modules
 author:
 - Opart
