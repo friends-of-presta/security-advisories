@@ -27,7 +27,7 @@ In the module "Opart Devis" (opartdevis) up to version 4.0.2 unauthenticated att
 
 ## Description
 
-The ajax script updatepos.php has a sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection.
+Due to a broken access control, an unauthenticated attackers can exploit an IDOR to get delivery_address and invoice_address fields.
 
 Note : We didn't do semver versionning before 2018 - so consider all versions which matched this pattern : XX-XX-XX to be updated without delay.
 
