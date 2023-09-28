@@ -52,9 +52,9 @@ The method `TestSiteClass::TestSiteIsCreated()` has sensitive SQL calls that can
 
 ## Patch from 1.1.1
 
+```diff
 --- 1.1.1/modules/testsitecreator/classes/TestSiteClass.php
 +++ XXXXX/modules/testsitecreator/classes/TestSiteClass.php
-```diff
 ...
 		return (bool)Db::getInstance()->getRow('
 			SELECT * 
