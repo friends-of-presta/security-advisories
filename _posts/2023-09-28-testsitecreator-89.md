@@ -26,7 +26,7 @@ In the module "Test Site Creator" (testsitecreator) from Presto Changeo for Pres
 
 ## Description
 
-Ajax script disable_json.php has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+The method `TestSiteClass::TestSiteIsCreated()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
 **WARNING** : Author discontinue support of its module so you should no longer continue to use them and do not have time to confirm us the scope of impacted versions so it could impact newer versions than 1.1.1.
 
@@ -61,7 +61,7 @@ Ajax script disable_json.php has sensitive SQL calls that can be executed with a
 			FROM `'._DB_PREFIX_.'testsitecreator`
 			WHERE `test_site_created` = 1
 -			'.(is_null($id_testsitecreator) ? 'AND `name_testsitecreator` = "'.$name_testsitecreator.'"' : 'AND `id_testsitecreator` = '.$id_testsitecreator).'
-+			'.(is_null($id_testsitecreator) ? 'AND `name_testsitecreator` = "'.pSQL($name_testsitecreator).'"' : 'AND `id_testsitecreator` = '.$id_testsitecreator).'
++			'.(is_null($id_testsitecreator) ? 'AND `name_testsitecreator` = "'.pSQL($name_testsitecreator).'"' : 'AND `id_testsitecreator` = '.(int) $id_testsitecreator).'
 		');
 ```
 
