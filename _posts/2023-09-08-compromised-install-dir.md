@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Prestashop install directory compromised links"
-categories: core tags: brute-force
+categories: core
+tags: brute-force
 author:
 - 772424.com
 - Friends-Of-Presta.org
