@@ -79,7 +79,7 @@ The method `TestSiteClass::TestSiteIsCreated()` has sensitive SQL calls that can
 | 2023-08-02 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-08-02 | Contact Author to confirm versions scope by author |
 | 2023-08-27 | Recontact Author to confirm versions scope by author |
-| 2023-08-27 | Author replied us to stop communicated with him |
+| 2023-08-27 | Author replied us to stop communicating with him |
 | 2023-09-21 | Request a CVE ID |
 | 2023-09-27 | Received CVE ID |
 | 2023-09-28 | Publish this security advisory |
