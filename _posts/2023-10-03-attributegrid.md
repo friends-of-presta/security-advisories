@@ -80,6 +80,9 @@ Note : Author refuse to help us to fix the version scope since its module are no
 | 2023-08-01 | Author replied us that he do not have time since support is ended |
 | 2023-08-27 | Recontact Author to confirm versions scope by author |
 | 2023-08-27 | Author replied us to stop communicating with him |
+| 2023-09-21 | Request a CVE ID |
+| 2023-09-27 | Received CVE ID |
+| 2023-10-03 | Publish this security advisory |
 
 ## Links
 
