@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,testsitecreator"
 severity: "critical (10)"
 ---
 
-In the module "Test Site Creator" (testsitecreator) from Presto Changeo for PrestaShop, a guest can execute a remote code via un untrusted data deserialized.
+In the module "Test Site Creator" (testsitecreator) from Presto Changeo for PrestaShop, a guest can execute a remote code via an untrusted data deserialized.
 
 
 ## Summary
