@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-44024] Improper neutralization of SQL parameters in One Page Checkout, Social Login & Mailchimp module for PrestaShop"
+title: "[CVE-2023-44024] Improper neutralization of SQL parameters in KnowBand - One Page Checkout, Social Login & Mailchimp module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,supercheckout"
 severity: "critical (9.8)"
 ---
 
-In the module "Module One Page Checkout, Social Login & Mailchimp" (supercheckout) from KnowBand for PrestaShop, an anonymous user can perform a SQL injection.
+In the module "Module One Page Checkout, Social Login & Mailchimp" (supercheckout) up to version 8.0.3 from KnowBand for PrestaShop, an anonymous user can perform a SQL injection.
 
 
 ## Summary
