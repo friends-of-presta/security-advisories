@@ -69,7 +69,7 @@ private static function transactionExists(string
             $check_col = Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue($check_col_sql);
             if ($check_col == 1) {
 -               $sql = 'UPDATE ' . _DB_PREFIX_ . 'kb_checkout_behaviour_stats SET ' . pSQL($field_name) . ' = ' . (int) $filled . ' WHERE id_cart = ' . (int) $this->context->cart->id;
-+               $sql = 'UPDATE ' . _DB_PREFIX_ . 'kb_checkout_behaviour_stats SET `' . bqSQL($field_name) . ' = ' . (int) $filled . ' WHERE id_cart = ' . (int) $this->context->cart->id;
++               $sql = 'UPDATE ' . _DB_PREFIX_ . 'kb_checkout_behaviour_stats SET `' . bqSQL($field_name) . '` = ' . (int) $filled . ' WHERE id_cart = ' . (int) $this->context->cart->id;
                 Db::getInstance()->execute($sql);
                 if ((Tools::getValue('use_for_invoice') == 'true' || Tools::getValue('use_for_invoice') == true) && $field_name != 'email' && (strpos($field_name, '_invoice') == false)) {
 -                   $sql = 'UPDATE ' . _DB_PREFIX_ . 'kb_checkout_behaviour_stats SET ' . pSQL($field_name) . '_invoice = ' . (int) $filled . ' WHERE id_cart = ' . (int) $this->context->cart->id;
