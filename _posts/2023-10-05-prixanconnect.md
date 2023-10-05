@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,prixanconnect"
 severity: "critical (9.8)"
 ---
 
-In the module "Prixan connect" (prixanconnect) for PrestaShop, an attacker can perform a blind SQL injection before 1.62 witout restrictions. Release 1.62 fixed this security issue.
+In the module "Prixan connect" (prixanconnect) for PrestaShop, an attacker can perform a blind SQL injection before 1.62 without restrictions. Release 1.62 fixed this security issue.
 
 ## Summary
 
