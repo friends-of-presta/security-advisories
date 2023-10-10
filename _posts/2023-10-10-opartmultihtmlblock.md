@@ -19,7 +19,7 @@ Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opa
 * **Platform**: PrestaShop
 * **Product**: opartmultihtmlblock and multihtmlblock* sub-modules
 * **Impacted release**: For opartmultihtmlblock <= 2.0.11 (Fixed in 2.0.12), for multihtmlblock* : = 1.0.0
-* **Product author**: Olivier CLEMENCE / Réussir mon ecommerce
+* **Product author**: Opart
 * **Weakness**: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
 * **Severity**: medium (6.1)
 
