@@ -17,6 +17,7 @@ In the module "Module One Page Checkout, Social Login & Mailchimp" (supercheckou
 
 * **CVE ID**: [CVE-2023-44024](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44024)
 * **Published at**: 2023-10-05
+* **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: supercheckout
 * **Impacted release**: <= 8.0.3 (8.0.4 fixed the vulnerability)
