@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-30148] Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Olivier CLEMENCE / Réussir mon ecommerce for PrestaShop"
+title: "[CVE-2023-30148] Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Opart for PrestaShop"
 categories: modules
 author:
 - Profileo.com
@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,opartmultihtmlblock,multihtmlblock"
 severity: "medium (6.1)"
 ---
 
-Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Olivier CLEMENCE / Réussir mon ecommerce for PrestaShop for PrestaShop, prior to version 2.0.12, allows remote attackers to inject arbitrary web script or HTML via the `body_text` or `body_text_rude` field.
+Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Opart for PrestaShop, prior to version 2.0.12, allows remote attackers to inject arbitrary web script or HTML via the `body_text` or `body_text_rude` field.
 
 ## Summary
 
