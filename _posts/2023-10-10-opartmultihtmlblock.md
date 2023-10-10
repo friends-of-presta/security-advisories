@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,opartmultihtmlblock,multihtmlblock"
 severity: "medium (6.1)"
 ---
 
-Multiple cross-site scripting (XSS) vulnerabilities in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Opart for PrestaShop, prior to version 2.0.12, allows remote attackers to inject arbitrary web script or HTML via the `body_text` or `body_text_rude` field.
+Multiple cross-site scripting (XSS) vulnerabilities of Type 2 (Stored XSS) B2F (Back to front) in the Multi html block (opartmultihtmlblock) module and multihtmlblock* sub-modules from Opart for PrestaShop, prior to version 2.0.12, allows remote attackers to inject arbitrary web script or HTML via the `body_text` or `body_text_rude` field.
 
 ## Summary
 
