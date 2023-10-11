@@ -30,7 +30,11 @@ In sitologapplicationconnect module from Sitolog for PrestaShop in all versions,
 
 **WARNING** : This exploit is actively used to deploy a webskimmer to massively steal credit cards.
 
-**The module is obsolete since years and must be deleted.**
+**This obsolete module has been replaced since 2018 by the new module renamed "Sitolog Connector".**
+
+Note : the most recent version (currently V9.0) of "Sitolog Connector" is available to download for free for all Sitolog customers on www.sitolog.com. This up to date connector supports all our applications versions.
+
+As a reminder, the 3 older applications PrestaPricing, PrestaCategories and Merlin Backoffice standard are also obsolete (no more update either support) and must be replaced by Merlin Backoffice Flex using more recent technologies (http2 instead of http1, support of PHP8, MySQL above 7.5 ...).
 
 ## CVSS base metrics
 
@@ -54,7 +58,7 @@ In sitologapplicationconnect module from Sitolog for PrestaShop in all versions,
 
 ## Other recommendations
 
-* It's recommended to delete the module
+* It's recommended to delete this module and download the new module freely available on www.sitolog.com
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix ps_ by a new longer arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
 * Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
