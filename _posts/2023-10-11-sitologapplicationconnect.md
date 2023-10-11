@@ -1,6 +1,6 @@
 ---
 layout: post
-    title: "[CVE-2023-37824] Improper neutralization of SQL parameters in the Sitolog Application Connect module from Sitolog for PrestaShop"
+title: "[CVE-2023-37824] Improper neutralization of SQL parameters in the Sitolog Application Connect module from Sitolog for PrestaShop"
 categories: modules
 author:
 - Sitolog
