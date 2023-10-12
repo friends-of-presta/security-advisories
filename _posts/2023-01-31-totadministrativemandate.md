@@ -7,7 +7,7 @@ author:
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,totadministrativemandate"
-severity: "high (8.3)"
+severity: "high (8.8)"
 ---
 
 In the module "Administrative Mandate" (totadministrativemandate), an authenticated user can perform SQL injection in affected versions.
@@ -22,7 +22,7 @@ In the module "Administrative Mandate" (totadministrativemandate), an authentica
 * **Impacted release**: >= 1.2.1, < 1.7.2
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (8.3)
+* **Severity**: high (8.8)
 
 ## Description
 
@@ -38,9 +38,9 @@ From version 1.2.1 published on 12 October 2012 to 1.7.2 published on 3 December
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
-* **Availability**: low
+* **Availability**: high
 
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
