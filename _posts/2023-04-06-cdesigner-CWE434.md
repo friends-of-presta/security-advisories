@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,cdesigner"
-severity: "critical (9.8)"
+severity: "critical (10)"
 ---
 
 In the module "Cdesigner" (cdesigner) up to 3.2.1 (3.2.2 fix the issue), a guest can upload files with extensions \.php.+ (like .php7)
@@ -24,7 +24,7 @@ Note : .php extension is correctly block so it will be harmless for most servers
 * **Impacted release**: > 3.1.3, <= 3.2.1 (3.2.2 fix the issue)
 * **Product author**: Prestaeg
 * **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
-* **Severity**: critical (9.8)
+* **Severity**: critical (10)
 
 ## Description
 
@@ -47,12 +47,12 @@ The method `CdesignerSaverotateModuleFrontController::initContent()` misuses str
 * **Attack complexity**: low
 * **Privilege required**: none
 * **User interaction**: none
-* **Scope**: unchanged
+* **Scope**: changed
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
 
 ## Possible malicious usage
 
