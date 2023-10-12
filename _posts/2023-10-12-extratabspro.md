@@ -26,7 +26,7 @@ In the module "Product Extra Tabs Pro" (extratabspro) up to version 2.2.8 from M
 
 ## Description
 
-Methods `extratabspro::searchcategory()`, `extratabspro::searchproduct()` and `extratabspro::searchmanufacturer()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+Methods `extratabspro::searchcategory()`, `extratabspro::searchproduct()` and `extratabspro::searchmanufacturer()` have sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
 The exploit can be used even if the module is not activated.
 
