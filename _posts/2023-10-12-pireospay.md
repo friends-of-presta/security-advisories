@@ -26,7 +26,7 @@ In the module "PireosPay" (pireospay) up to version 1.7.9 from 01generator.com f
 
 ## Description
 
-The method `PireosPayValidationModuleFrontController::postProcess()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+The method `PireosPayValidationModuleFrontController::postProcess()` have sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
 **WARNING** : This exploit is actively used to deploy a webskimmer to massively steal credit cards. 
 
