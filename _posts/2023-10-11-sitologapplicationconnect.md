@@ -19,14 +19,14 @@ In the module "Sitolog Application Connect" (sitologapplicationconnect) from Sit
 * **Published at**: 2023-10-11
 * **Platform**: PrestaShop
 * **Product**: sitologapplicationconnect
-* **Impacted release**: ALL VERSIONS **DANGER**
+* **Impacted release**: <= 7.8.a (ALL VERSIONS)
 * **Product author**: Sitolog
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-In sitologapplicationconnect module from Sitolog for PrestaShop in all versions, a sensitive SQL call can be executed with a trivial http call and exploited to forge a blind SQL injection.
+In sitologapplicationconnect module from Sitolog for PrestaShop up to version 7.8.a (all versions), a sensitive SQL call can be executed with a trivial http call and exploited to forge a blind SQL injection.
 
 **WARNING** : This exploit is actively used to deploy a webskimmer to massively steal credit cards.
 
