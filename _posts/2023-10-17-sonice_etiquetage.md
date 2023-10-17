@@ -75,7 +75,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **sonice_etiquetage**.
-* You should consider restricting the access of modules/sonice_etiquetage/ to a whitelist
+* You should consider restricting the access of the pattern modules/sonice_etiquetage/functions/download to a whitelist
 * NEVER expose a PHPMyAdmin / Adminer / etc without, at least, a htpasswd
 * Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your PrestaShop
 
