@@ -10,6 +10,7 @@ You can access the data from:
 
 Reporting module vulnerabilities before they are discovered and exploited by cybercriminal networks helps reinforce the ecosystem’s security.
 Please report the security vulnerability to us at: report[@]security-presta.org.
+
 Visit https://security-presta.org for more information.
 
 ## How to publish or update a new advisory
