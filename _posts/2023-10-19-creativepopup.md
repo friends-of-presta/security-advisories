@@ -28,7 +28,7 @@ In the module "Creative Popup" (creativepopup) up to version 1.6.9 from WebshopW
 
 The function `cp_download_popup()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-**WARNING** : Be warn that this exploit will bypass some WAF.
+**WARNING** : Be warned that this exploit will bypass some WAF.
 
 ## CVSS base metrics
 
