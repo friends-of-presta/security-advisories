@@ -29,3 +29,6 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-paginate
+
+exclude:
+  - docker-compose.yml
