@@ -103,7 +103,7 @@ In the face of a Stored XSS vulnerability targeting the back office, it is impos
 You must check every tables within your database which could store guest's input, at least against common XSS injection. 
 You can find a list of potential hijacked events on [PrestaShop method Validate::isCleanHtml()](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L507)
 
-Be warn that you will probably face falses positives alerts which can be time consumming.
+Be warned that you will probably face falses positives alerts which can be time consumming.
 
 
 ### How CMS's core team can help ecosystem about CSP headers ?
