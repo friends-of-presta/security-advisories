@@ -50,16 +50,6 @@ The function `cp_download_popup()` has sensitive SQL calls that can be executed 
 * Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
-
-## Proof of concept
-
-
-```bash
-curl -v -X POST -d 'id=42 42' --cookie 'cpNewTitle=1%27%3Bdelete+from+0test+where+1%3B--' 'https://preprod.X/?action=download_popup'
-```
-
-Note : since we do not found any valid ID on the WebshopWorks's API, we tweak the id to force the webserver to trigger an error to output a non empty page and access the critical vulnerability. The reason why the POC own a space between 42 42 inside "id=42 42" which is forbidden by HTTP Protocol 'as it'.
-
 ## Patch from 1.6.9
 
 ```diff
