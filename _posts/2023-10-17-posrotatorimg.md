@@ -67,7 +67,7 @@ The script `ajax.php` has sensitive SQL calls that can be executed with a trivia
 +       $id = (int) $params['img_id']; 
 ```
 
-Be warn that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousand of injection SQL accessible to administrators on the PrestaShop's ecosystem, these vulnerabilities are ignored until author provide a patch.
+Be warned that there is other sensitives SQL calls inside this module accessible to administrators. Since there is thousand of injection SQL accessible to administrators on the PrestaShop's ecosystem, these vulnerabilities are ignored until author provide a patch.
 
 
 ## Other recommendations
