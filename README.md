@@ -115,3 +115,9 @@ If the CVE is published by Friends of Presta.
 
 4. Publish a Pull Request.
 5. Wait for the validation of our team.
+
+## How to work locally with  jekyll
+
+Use the provided docker-compose with: `docker-compose up`.
+
+The website will be available from [http://127.0.0.1:4000](http://127.0.0.1:4000).
