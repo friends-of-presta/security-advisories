@@ -55,9 +55,9 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 ## Patch from 4.9.3
 
+```diff
 --- 4.9.3/modules/configurator/classes/ConfiguratorAttachment.php
 +++ 4.9.4/modules/configurator/classes/ConfiguratorAttachment.php
-```diff
     public static function getAttachmentByToken($token)
     {
         $query = new DbQuery();
