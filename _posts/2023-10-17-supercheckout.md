@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-45384] Unrestricted Upload of File with Dangerous Type in One Page Checkout, Social Login & Mailchimp module for PrestaShop"
+title: "[CVE-2023-45384] Unrestricted Upload of File with Dangerous Type in KnowBand - One Page Checkout, Social Login & Mailchimp module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
