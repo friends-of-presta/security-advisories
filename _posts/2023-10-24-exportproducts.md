@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,exportproducts"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Product Catalog (CSV, Excel, XML) Export PRO" (exportproducts) up to 4.1.1 from MyPrestaModules for PrestaShop,, a guest can download personal informations without restriction by performing a path traversal attack.
+In the module "Product Catalog (CSV, Excel, XML) Export PRO" (exportproducts) up to 4.1.1 from MyPrestaModules for PrestaShop, a guest can download personal informations without restriction by performing a path traversal attack.
 
 ## Summary
 
@@ -29,7 +29,7 @@ Due to a lack of permissions control and a lack of control in the path name cons
 
 Note : We are forced to tag it as a high gravity due to the CWE type 22 but be warned that on our ecosystem, it must be considered critical since it unlocks hundreds admin's ajax script of modules due to [this](https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247)
 
-**WARNING** : Be informed that this vulnerability is exploited since October 16, 2023.
+**WARNING** : Be informed that this vulnerability is exploited.
 
 ## CVSS base metrics
 
@@ -54,7 +54,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ## Proof of concept
 
 ```bash
-curl -v -d 'url=../../config/settings.inc.php' 'https://preprod.XX/modules/exportproducts/download.php'
+curl -v -d 'url=../../config/settings.inc.php' 'https://preprod.X/modules/exportproducts/download.php'
 ```
 
 ## Patch from 4.1.1
