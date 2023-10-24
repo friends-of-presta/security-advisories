@@ -19,7 +19,7 @@ In the module "Referral and Affiliation Program" (referralbyphone) up to 3.5.1 (
 * **Published at**: 2023-10-24
 * **Platform**: PrestaShop
 * **Product**: referralbyphone
-* **Impacted release**: <= 3.5.1 (WARNING : author do not fixed the vulnerability)
+* **Impacted release**: <= 3.5.1 (WARNING : The author has not fixed the vulnerability)
 * **Product author**: Snegurka
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
@@ -73,7 +73,7 @@ curl -v -d 'fc=modulemodule=referralbyphone&controller=default&action=CartRuleVa
 
 ## Other recommendations
 
-* It’s recommended to upgrade to the latest version of the module **referralbyphone**.
+* It’s recommended to delete the module since author no longer maintain it.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
 * Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
@@ -85,9 +85,9 @@ curl -v -d 'fc=modulemodule=referralbyphone&controller=default&action=CartRuleVa
 | 2023-07-20 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-07-20 | Contact PrestaShop Addons security Team to confirm versions scope by author |
 | 2023-07-20 | PrestaShop Addons security Team confirm versions scope |
-| 2023-07-20 | Relaunch Author for fix |
-| 2023-10-19 | Relaunch Author for fix |
-| 2023-10-19 | PrestaShop Addons security Team confirm author do not patch yet |
+| 2023-07-20 | Contact the author again for a fix |
+| 2023-10-19 | Contact the author again for a fix |
+| 2023-10-19 | PrestaShop Addons security Team confirms that the author has not yet produced a patch |
 | 2023-10-20 | Request a CVE ID |
 | 2023-10-23 | Received CVE ID |
 | 2023-10-24 | Publish this security advisory |
