@@ -85,7 +85,7 @@ curl -v -d 'fc=modulemodule=referralbyphone&controller=default&action=CartRuleVa
 | 2023-07-20 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-07-20 | Contact PrestaShop Addons security Team to confirm versions scope by author |
 | 2023-07-20 | PrestaShop Addons security Team confirm versions scope |
-| 2023-07-20 | Contact the author again for a fix |
+| 2023-08-22 | Contact the author again for a fix |
 | 2023-10-19 | Contact the author again for a fix |
 | 2023-10-19 | PrestaShop Addons security Team confirms that the author has not yet produced a patch |
 | 2023-10-20 | Request a CVE ID |
