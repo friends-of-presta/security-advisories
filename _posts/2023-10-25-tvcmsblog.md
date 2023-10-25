@@ -23,7 +23,7 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty for Presta
 * **Product author**: Themevolty
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
-​
+
 ## Description
 
 Multiple sensitive SQL calls in many php classes can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "rewrite", "page_type", "recordsArray" variables.
