@@ -79,8 +79,8 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * It’s recommended to upgrade to the latest version of the module **opartlimitquantity**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”)
-* Change the default database prefix `ps_` by a new longer arbitrary prefix. Nethertheless, be warned that this is useless against blackhat with DBA senior skilled because of a design vulnerability in DBMS
-* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+* Change the default database prefix `ps_` with a new longer arbitrary prefix. However, be warned that this is useless against blackhat with DBA senior skills because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these sets of rules.
 
 ## Timeline
 
@@ -88,7 +88,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 |--|--|
 | 2022-12-12 | Issue discovered during a code review by [202-ecommerce.com](https://www.202-ecommerce.com/) |
 | 2022-12-12 | Contact Author to confirm version scope |
-| 2022-12-12 | Author confirm versions scope |
+| 2022-12-12 | Author confirms version scope |
 | 2023-05-26 | Send a Mitre Request ID |
 | 2023-10-25 | Publication of the security advisory |
 
