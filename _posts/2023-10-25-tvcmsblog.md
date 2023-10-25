@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[CVE-2023-27846] Improper neutralization of an SQL parameter in tvcmsblog module by themevolty for PrestaShop"
+title: "[CVE-2023-27846] Improper neutralization of SQL parameter in tvcmsblog module by themevolty for PrestaShop"
 categories: modules
 author:
 - 202 ecommerce.com
-- Touchweb.fr
+- TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,tvcmsblog"
 severity: "critical (9.8)"
@@ -17,9 +17,9 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty for Presta
 * **CVE ID**: [CVE-2023-27846](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27846)
 * **Published at**: 2023-10-25
 * **Advisory source**: Friends-Of-Presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: tvcmsblog
-* **Impacted release**: < 4.0.8 
+* **Impacted release**: < 4.0.8
 * **Product author**: Themevolty
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
@@ -31,9 +31,11 @@ Multiple sensitive SQL calls in many php classes can be executed with a trivial 
 WARNING : Be warned that one exploit will bypass some WAF (hijacked unconventional HTTP header) in this [CVE-2023-39650](https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html)
 
 Be warned that this module could own others vulnerabilities.
-​
+
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+
 ## CVSS base metrics
-​
+
 * **Attack vector**: network
 * **Attack complexity**: low
 * **Privilege required**: none
@@ -43,17 +45,17 @@ Be warned that this module could own others vulnerabilities.
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
-​
-## Possible malicious usage
-​
-* Remove data on the associated PrestaShop
-* Copy/past datas from sensibles tables to FRONT to exposed tokens and unlock admins's ajax scripts
-* Rewrite SMTP settings to hijacked emails
-​
-​
-## Patch
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
+## Possible malicious usage
+
+* Obtain admin access
+* Remove data from the associated PrestaShop
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
+* Rewrite SMTP settings to hijack emails
+
+
+## Patch
 
 ```diff
 --- 4.0.0/modules/tvcmsblogclasses/tvcmscategoryclass.php
@@ -322,16 +324,14 @@ Be warned that this module could own others vulnerabilities.
 ```
 
 ## Other recommendations
-​
-* It’s recommended to upgrade to the latest version of the module **tvcmsblog**.
-* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality WILL NOT protect your SHOP against injection SQL which uses the UNION clause to steal data.
-* These HTTP headers are not supposed to be used on a final application, since they should be used only if `REMOTE_ADDR` is allowed with modules like mod_remoteip for Apache2, so you should auto-delete them if you are not behind a well setup load-balancer or reverse proxy.
-* Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
-* Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
+* It’s recommended to upgrade to the latest version of the module **tvcmsblog**.
+* Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality **WILL NOT** protect your SHOP against injection SQL which uses the UNION clause to steal data.
+* Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
+* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
 ## Timeline
-​
+
 | Date | Action |
 |--|--|
 | 2023-02-10 | Issue discovered during a code review by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
@@ -343,7 +343,7 @@ Be warned that this module could own others vulnerabilities.
 | 2023-10-25 | Publish this advisory and the CVE |
 
 ## Links
-​
+
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/themes-electronique-high-tech/29992-electron-mega-electronique-high-tech-store.html)
 * [Author product page](https://themevolty.com/electron-mega-electronic-store)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-27846)
