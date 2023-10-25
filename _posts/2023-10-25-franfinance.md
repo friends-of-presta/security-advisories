@@ -59,7 +59,7 @@ This version is used by PrestaShop 1.7. The vulnerability can be exploited only 
 
 ## Patch and recommandations
 
-If `exec()` method is found in the module espacially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
+If `exec()` method is found in the module especially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
 
 ## Timeline
 
