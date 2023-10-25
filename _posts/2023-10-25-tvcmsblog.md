@@ -322,7 +322,7 @@ Be warn that this module could own others vulnerabilities.
          $sql .= ' LIMIT ' . (((int) $p - 1) * (int) $n) . ',' . (int) $n;
 ```
 
-## Other recommandations
+## Other recommendations
 ​
 * It’s recommended to upgrade to the latest version of the module **tvcmsblog**.
 * Upgrade PrestaShop to the latest version to disable multiquery executions (separated by “;”) - be warned that this functionality WILL NOT protect your SHOP against injection SQL which uses the UNION clause to steal data.
@@ -336,12 +336,12 @@ Be warn that this module could own others vulnerabilities.
 ​
 | Date | Action |
 |--|--|
-| 2023-02-10 | Issue discovered during a code reviews by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
-| 2023-02-10 | Contact PrestaShop Addons security Team to confirm versions scope by author |
-| 2023-02-15 | The author provided a patch, but it still contains all critical vulnerabilities. |
+| 2023-02-10 | Issue discovered during a code review by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
+| 2023-02-10 | Contact PrestaShop Addons security Team to confirm version scope by author |
+| 2023-02-15 | The author provided a patch, but it still contains all the critical vulnerabilities. |
 | 2023-03-05 | Request a CVE ID |
 | 2023-03-16 | Received CVE ID |
-| 2023-04-13 | Recontact PrestaShop Addons security Team to confirm versions scope by author |
+| 2023-04-13 | Recontact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-10-25 | Publish this advisory and the CVE |
 ​
 
