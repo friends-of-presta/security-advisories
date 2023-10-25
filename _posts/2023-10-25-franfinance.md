@@ -3,8 +3,8 @@ layout: post
 title: "[CVE-2023-43139] Improper Neutralization of Special Elements used in an OS Command in Franfinance module for PrestaShop"
 categories: modules
 author:
-- TouchWeb.fr
 - 202 ecommerce.com
+- TouchWeb.fr
 meta: "CVE,PrestaShop,franfinance"
 severity: "critical (10)"
 ---
@@ -33,11 +33,11 @@ A attacker can inject on this sequence an arbitrary executable script.
 
 ### version 1.x
 
-This version is used by PrestaShop 1.6-. The vunerability can be exploited even if the module is disabled.
+This version is used by PrestaShop 1.6-. The vulnerability can be exploited even if the module is disabled.
 
 ### version 2.x
 
-This version is used by PrestaShop 1.7. The vunerability can be exploited only if the module is enabled.
+This version is used by PrestaShop 1.7. The vulnerability can be exploited only if the module is enabled.
 
 
 ## CVSS base metrics
@@ -65,11 +65,11 @@ If `exec()` method is found in the module espacially in file `modules/franfinanc
 
 | Date | Action |
 |--|--|
-| 2023-01-13 | Issue discovered during a code reviews by [TouchWeb.fr](https://touchweb.fr) |
+| 2023-01-13 | Issue discovered during a code reviews by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
 | 2023-01-13 | Security issue report to Franfinance |
 | 2023-01-13 | Franfinance confirm the scope of release |
-| 2023-09-08 | Send a Mitre Request ID |
-| 2023-10-25 | Publication of teh security advisory |
+| 2023-09-08 | Request a CVE ID |
+| 2023-10-25 | Publication of the security advisory |
 
 
 ## Links
