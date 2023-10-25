@@ -6,8 +6,8 @@ author:
 - 202 ecommerce.com
 - Touchweb.fr
 - Friends-Of-Presta.org
-- meta: "CVE,PrestaShop,tvcmsblog"
-- severity: "critical (9.8)"
+meta: "CVE,PrestaShop,tvcmsblog"
+severity: "critical (9.8)"
 ---
 
 In tvcmsblog, dependancies of the theme Electron edited by Themevolty for PrestaShop, an attacker can perform a blind SQL injection.
