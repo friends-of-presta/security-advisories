@@ -7,7 +7,7 @@ author:
 - Touchweb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,tvcmsblog"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 ​
 In tvcmsblog, dependancies of the theme Electron edited by Themevolty, an attacker can perform a blind SQL injection.
@@ -22,7 +22,7 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty, an attack
 * **Impacted release**: < 4.0.8 
 * **Product author**: Themevolty
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 ​
 ## Description
 ​
@@ -37,14 +37,14 @@ Be warn that this module could own others vulnerabilities.
 ​
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
 ​
-**Vector string**: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
 ​
 ## Possible malicious usage
 ​
