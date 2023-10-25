@@ -17,7 +17,7 @@ The PrestaShop e-commerce platform module Franfinance contains a vulnerability t
 * **CVE ID**: [CVE-2023-43139](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43139)
 * **Published at**: 2023-10-25
 * **Advisory source**: Friends-of-presta.org
-* **Vendor**: PrestaShop
+* **Platform**: PrestaShop
 * **Product**: franfinance
 * **Impact release**: < 1.9.0 for Prestashop 1.6 OR < 2.0.27 for Prestashop 1.7+
 * **Product author**: 202 ecommerce until 2019 / an other developer after
