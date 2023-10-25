@@ -3,8 +3,8 @@ layout: post
 title: "[CVE-2023-27846] Improper neutralization of an SQL parameter in tvcmsblog module by themevolty for PrestaShop"
 categories: modules
 author:
-- Touchweb.fr
 - 202 ecommerce.com
+- Touchweb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,tvcmsblog"
 severity: "high (9.8)"
@@ -15,7 +15,7 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty, an attack
 ## Summary
 ​
 * **CVE ID**: [CVE-2023-27846](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27846)
-* **Published at**: 2023-10-xx
+* **Published at**: 2023-10-25
 * **Advisory source**: Friends-Of-Presta.org
 * **Vendor**: PrestaShop
 * **Product**: tvcmsblog
@@ -53,7 +53,7 @@ Be warn that this module could own others vulnerabilities.
 * Rewrite SMTP settings to hijacked emails
 ​
 ​
-## patch
+## Patch
 
 
 ```diff
@@ -336,7 +336,7 @@ Be warn that this module could own others vulnerabilities.
 ​
 | Date | Action |
 |--|--|
-| 2023-02-10 | Issue discovered during a code review by TouchWeb.fr |
+| 2023-02-10 | Issue discovered during a code reviews by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
 | 2023-02-10 | Contact PrestaShop Addons security Team to confirm versions scope by author |
 | 2023-02-15 | The author provided a patch, but it still contains all critical vulnerabilities. |
 | 2023-03-05 | Request a CVE ID |
