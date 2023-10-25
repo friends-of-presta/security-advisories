@@ -11,7 +11,7 @@ severity: "critical (9.8)"
 ---
 ​
 In tvcmsblog, dependancies of the theme Electron edited by Themevolty for PrestaShop, an attacker can perform a blind SQL injection.
-​
+
 ## Summary
 ​
 * **CVE ID**: [CVE-2023-27846](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27846)
@@ -25,8 +25,7 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty for Presta
 * **Severity**: critical (9.8)
 ​
 ## Description
-​
-​
+
 Multiple sensitive SQL calls in many php classes can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "rewrite", "page_type", "recordsArray" variables.
 
 WARNING : Be warned that one exploit will bypass some WAF (hijacked unconventional HTTP header) in this [CVE-2023-39650](https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html)
