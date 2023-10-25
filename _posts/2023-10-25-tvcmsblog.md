@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,tvcmsblog"
 severity: "critical (9.8)"
 ---
 ​
-In tvcmsblog, dependancies of the theme Electron edited by Themevolty, an attacker can perform a blind SQL injection.
+In tvcmsblog, dependancies of the theme Electron edited by Themevolty for PrestaShop, an attacker can perform a blind SQL injection.
 ​
 ## Summary
 ​
@@ -29,9 +29,9 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty, an attack
 ​
 Multiple sensitive SQL calls in many php classes can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "rewrite", "page_type", "recordsArray" variables.
 ​
-WARNING : Be warn that one exploit will bypass some WAF (hijacked unconventional HTTP header) in this [CVE-2023-39650](https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html)
+WARNING : Be warned that one exploit will bypass some WAF (hijacked unconventional HTTP header) in this [CVE-2023-39650](https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html)
 ​
-Be warn that this module could own others vulnerabilities.
+Be warned that this module could own others vulnerabilities.
 ​
 ## CVSS base metrics
 ​
@@ -43,7 +43,7 @@ Be warn that this module could own others vulnerabilities.
 * **Confidentiality**: high
 * **Integrity**: high
 * **Availability**: high
-​
+
 **Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
 ​
 ## Possible malicious usage
@@ -330,8 +330,7 @@ Be warn that this module could own others vulnerabilities.
 * Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skills because of a design vulnerability in DBMS
 * Activate OWASP 942’s rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
-​
-​
+
 ## Timeline
 ​
 | Date | Action |
@@ -343,8 +342,6 @@ Be warn that this module could own others vulnerabilities.
 | 2023-03-16 | Received CVE ID |
 | 2023-04-13 | Recontact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-10-25 | Publish this advisory and the CVE |
-​
-
 
 ## Links
 ​
