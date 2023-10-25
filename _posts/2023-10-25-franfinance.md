@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-43139] Improper Neutralization of Special Elements used in an OS Command in Franfinance module for PrestaShop"
+title: "[CVE-2023-43139] Improper Neutralization of Special Elements used in an OS Command in the Franfinance module for PrestaShop"
 categories: modules
 author:
 - 202 ecommerce.com
@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,franfinance"
 severity: "critical (10)"
 ---
 
-The PrestaShop e-commerce platform module Franfinance contains a vulnerability let an attaker to inject a malicious malware in release published before 2019.
+The PrestaShop e-commerce platform module Franfinance contains a vulnerability that lets an attaker inject a malicious malware in releases published before 2019.
 
 
 ## Summary
@@ -19,17 +19,17 @@ The PrestaShop e-commerce platform module Franfinance contains a vulnerability l
 * **Advisory source**: Friends-of-presta.org
 * **Vendor**: PrestaShop
 * **Product**: franfinance
-* **Impacted release**: < 1.9.0 for Prestashop 1.6 OR < 2.0.27 for Prestashop 1.7+
-* **Product author**: 202 ecommerce until 2019 / an other developper after
+* **Impact release**: < 1.9.0 for Prestashop 1.6 OR < 2.0.27 for Prestashop 1.7+
+* **Product author**: 202 ecommerce until 2019 / an other developer after
 * **Weakness**: [CWE-78](https://cwe.mitre.org/data/definitions/78.html)
 * **Severity**: critical (10)
 
 
 ## Description
 
-The validation of a payment with Franfinance solution use Atos SIPS v1 platform that return data to decrypt with a binary file to execute.
+The validation of a payment with the Franfinance solution uses Atos SIPS v1 platform which returns data to decrypt with a binary file to execute.
 
-A attacker can inject on this sequence an arbitrary executable script.
+An attacker can inject into this sequence an arbitrary executable script.
 
 ### version 1.x
 
@@ -57,17 +57,17 @@ This version is used by PrestaShop 1.7. The vulnerability can be exploited only 
 
 * Control and hijack a PrestaShop
 
-## Patch and recommandations
+## Patches and recommendations
 
-If `exec()` method is found in the module especially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
+If the `exec()` method is found in the module especially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
 
 ## Timeline
 
 | Date | Action |
 |--|--|
-| 2023-01-13 | Issue discovered during a code reviews by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
+| 2023-01-13 | Issue discovered during a code review by [TouchWeb.fr](https://touchweb.fr) and documented by [202-ecommerce.com](https://www.202-ecommerce.com/) |
 | 2023-01-13 | Security issue report to Franfinance |
-| 2023-01-13 | Franfinance confirm the scope of release |
+| 2023-01-13 | Franfinance confirms the scope of release |
 | 2023-09-08 | Request a CVE ID |
 | 2023-10-25 | Publication of the security advisory |
 
