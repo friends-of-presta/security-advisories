@@ -28,9 +28,9 @@ In tvcmsblog, dependancies of the theme Electron edited by Themevolty for Presta
 ​
 ​
 Multiple sensitive SQL calls in many php classes can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "rewrite", "page_type", "recordsArray" variables.
-​
+
 WARNING : Be warned that one exploit will bypass some WAF (hijacked unconventional HTTP header) in this [CVE-2023-39650](https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html)
-​
+
 Be warned that this module could own others vulnerabilities.
 ​
 ## CVSS base metrics
