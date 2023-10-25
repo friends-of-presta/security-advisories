@@ -53,14 +53,6 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 * Copy/past datas from sensibles tables to FRONT to exposed tokens and unlock admins's ajax scripts
 * Rewrite SMTP settings to hijacked emails
 
-
-## Proof of concept
-
-
-```bash
-curl -v 'https://preprod.X/module/opartlimitquantity/alertlimit?ajax=1&action=PushAlertMessage&productId=1;SELECT%20SLEEP(10)'
-```
-
 ## Patch from 1.4.6
 
 ```diff
