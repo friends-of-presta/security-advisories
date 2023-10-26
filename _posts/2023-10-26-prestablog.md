@@ -80,8 +80,8 @@ Note : The author has deleted from its module the files that have been suffering
 | 2022-09-08 | Friends of PrestaShop contact author to fix the vulnerability |
 | 2022-09-09 | Author provide a patch |
 | 2023-05-19 | Contact PrestaShop Addons security Team to confirm version scope by author |
-| 2023-05-25 | PrestaShop Addons security Team confirm versions scope by author |
 | 2023-05-19 | Request a CVE ID |
+| 2023-05-25 | PrestaShop Addons security Team confirm versions scope by author |
 | 2023-10-11 | Received CVE ID |
 | 2023-10-26 | Publish this security advisory |
 
