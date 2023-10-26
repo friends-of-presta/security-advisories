@@ -19,7 +19,7 @@ In the module "PrestaBlog" (prestablog) up to version 4.4.7 from HDclic for Pres
 * **Published at**: 2023-10-26
 * **Platform**: PrestaShop
 * **Product**: prestablog
-* **Impacted release**: <= 4.4.7  [considered to be "truly" fixed on 4.4.8 - see note below]
+* **Impacted release**: <= 4.4.7  (considered to be "truly" fixed on 4.4.8 - see note below)
 * **Product author**: HDclic
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
@@ -28,7 +28,7 @@ In the module "PrestaBlog" (prestablog) up to version 4.4.7 from HDclic for Pres
 
 The script ajax slider_positions.php has a sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Note : The author has deleted from its module the files that have been suffering from critical vulnerabilities for months, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about this, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to 4.4.7 as impacted by this issue.
+Note: While the code in version 4.4.7 addresses the issue by deleting the vulnerable file, it doesn't auto-delete the file during upgrades from earlier versions. Therefore, the upgrade doesn't ensure the automatic removal of the vulnerable file. Merchants who have updated from older versions might believe they are secure, yet the undeleted file poses a risk. For utmost clarity and safety, we consider that the vulnerability is fixed only in version 4.4.8. Merchants using the version 4.4.7 are urged to manually delete slider_positions.php
 
 ## CVSS base metrics
 
