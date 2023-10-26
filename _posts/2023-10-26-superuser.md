@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,superuser"
 severity: "high (7.5)"
 ---
 
-The module "idnovate" for PrestaShop restrict or incorrectly restricts access to the "connect as" feature from >= 2.3.5 and < 2.4.2 lets an attacker connect as any customer account. Release 2.4.2 fixed this security issue.
+The module "idnovate" for PrestaShop incorrectly restricts access to the "connect as" feature from >= 2.3.5 and < 2.4.2 lets an attacker connect as any customer account. Release 2.4.2 fixed this security issue.
 
 ## Summary
 
