@@ -38,10 +38,10 @@ Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModule
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: low
+* **Integrity**: none
 * **Availability**: none
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
 
 
 ## Possible malicious usage
