@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-45899] Improper Access Control in superuser module edited by idnovate for PrestaShop"
+title: "[CVE-2023-45899] Improper Access Control in the superuser module edited by idnovate for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
@@ -27,7 +27,7 @@ The module "idnovate" for PrestaShop incorrectly restricts access to the "connec
 
 ## Description
 
-Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModuleFrontController:init()` can be executed with a trivial http call and exploited to be connected as a customer.
+Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModuleFrontController:init()` could be executed with a trivial http call and exploited to be connected as a customer.
 
 
 ## CVSS base metrics
@@ -47,7 +47,7 @@ Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModule
 ## Possible malicious usage
 
 * Personal data leaks
-* Obtain customers access and potentially registered payment methods (if save credit cards enabled on a paymetn module)
+* Obtain customer access and potentially registered payment methods (if save credit cards enabled on a payment module)
 
 
 ## Patch
@@ -104,9 +104,9 @@ Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModule
 
 | Date | Action |
 |--|--|
-| 2022-10-11 | Vunlnerability found during a audit by [202 ecommerce](https://www.202-ecommerce.com/) |
-| 2023-10-12 | The author confirm the vulenrability |
-| 2023-10-13 | The author publish the release 2.4.2 |
+| 2022-10-11 | Vulnerability found during a audit by [202 ecommerce](https://www.202-ecommerce.com/) |
+| 2023-10-12 | The author confirms the vulnerability |
+| 2023-10-13 | The author publishes the release 2.4.2 |
 | 2023-10-09 | Request a CVE ID |
 | 2023-10-25 | Publication of this advisory |
 
