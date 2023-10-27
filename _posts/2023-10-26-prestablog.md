@@ -4,6 +4,7 @@ title: "[CVE-2023-45378] Improper neutralization of SQL parameter in PrestaBlog 
 categories: modules
 author:
 - TouchWeb.fr
+- Creabilis.com
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,prestablog"
@@ -77,7 +78,7 @@ Note: While the code in version 4.4.7 addresses the issue by deleting the vulner
 | Date | Action |
 |--|--|
 | 2022-09-08 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2022-09-08 | Friends of PrestaShop contact author to fix the vulnerability |
+| 2022-09-08 | Creabilis contact author to fix the vulnerability |
 | 2022-09-09 | Author provide a patch |
 | 2023-05-19 | Contact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-05-19 | Request a CVE ID |
