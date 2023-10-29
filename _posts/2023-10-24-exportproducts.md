@@ -62,10 +62,13 @@ curl -v -d 'url=../../config/settings.inc.php' 'https://preprod.X/modules/export
 The file has been comptely rewritten on 5.0.0.
 
 ```diff
---- a/modules/exportproducts/download.php
-+++ b/modules/exportproducts/download.php
+--- 4.1.1/modules/exportproducts/functions/download.php
++++ XXXXX/modules/exportproducts/functions/download.php
+...
 -$file = Tools::getValue('url');
 +$file = basename(Tools::getValue('url'));
+$file_info  = pathinfo($file);
+
 ```
 
 ## Other recommendations
