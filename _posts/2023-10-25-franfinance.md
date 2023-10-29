@@ -59,7 +59,8 @@ This version is used by PrestaShop 1.7. The vulnerability can be exploited only 
 
 ## Patches and recommendations
 
-If the `exec()` method is found in the module especially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
+* If the `exec()` method is found in the module especially in file `modules/franfinance/validation.php` or `modules/franfinance/controllers/front/validation.php`, your module used obsolete SIPS V1 and **must be removed**.
+* Activate OWASP 932's and 933's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
 ## Timeline
 
