@@ -10,9 +10,7 @@ meta: "CVE,PrestaShop,addifyfreegifts"
 severity: "high (8.8)"
 ---
 
-In the module "Free Gifts" (addifyfreegifts) from Addify for PrestaShop, a guest can perform SQL injection in affected versions.
-
-This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
+In the module "Free Gifts" (addifyfreegifts) up to version 1.0.2 from Addify for PrestaShop, a guest can perform SQL injection in affected versions.
 
 ## Summary
 
@@ -28,6 +26,8 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Description
 
 The method AddifyfreegiftsModel::getrulebyid() has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
