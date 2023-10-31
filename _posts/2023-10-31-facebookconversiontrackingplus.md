@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,facebookconversiontrackingplus"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook Module" (facebookconversiontrackingplus) up to version 2.4.9 from Smart Modules for PrestaShop, a guest can download personal informations without restriction.
+In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook Module" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal informations without restriction.
 
 ## Summary
 
