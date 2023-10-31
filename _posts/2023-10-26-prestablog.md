@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-45378] Improper neutralization of SQL parameter in PrestaBlog module for PrestaShop"
+title: "[CVE-2023-45378] Improper neutralization of SQL parameter in HDclic - PrestaBlog module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
