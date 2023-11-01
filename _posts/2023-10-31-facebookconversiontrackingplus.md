@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-46352] Exposure of Private Personal Information to an Unauthorized Actor in Smart Modules - Pixel Plus: Events + CAPI + Pixel Catalog for Facebook Module module for PrestaShop"
+title: "[CVE-2023-46352] Exposure of Private Personal Information to an Unauthorized Actor in Smart Modules - Pixel Plus: Events + CAPI + Pixel Catalog for Facebook module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,facebookconversiontrackingplus"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook Module" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal informations without restriction.
+In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal informations without restriction.
 
 ## Summary
 
