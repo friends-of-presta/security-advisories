@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-43982] Server-Side Request Forgery (SSRF) in Bon Presta - SocialFeed - Photos & Video/Reels using Instagram API for PrestaShop"
+title: "[CVE-2023-43982] Server-Side Request Forgery (SSRF) in Bon Presta - SocialFeed - Photos & Video/Reels using the Instagram API for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -25,11 +25,11 @@ In the module "SocialFeed - Photos & Video/Reels using Instagram API" (boninstag
 
 ## Description
 
-An improper validation of `url` parameter in the `insta_parser.php` script can be executed via a trivial HTTP call to forge Server-Side Request. 
+An improper validation of the `url` parameter in the `insta_parser.php` script can be executed via a trivial HTTP call to forge Server-Side Request. 
 
-This vulnerability can be exploited to initiate a HTTP request and get the return, for instance, use the vulnerable website as proxy to attack others websites, exfiltrate data in files under IP restriction or perform a path traversal attack.
+This vulnerability can be exploited to initiate an HTTP request and get the return, for instance, use the vulnerable website as a proxy to attack other websites, exfiltrate data in files under IP restriction or perform a path traversal attack.
 
-Since it's a design issue, we cannot provide patch, your should consider upgrading or deleting the module.
+Since it's a design issue, we cannot provide a patch, you should consider upgrading or deleting the module.
 
 
 ## CVSS base metrics
@@ -47,15 +47,15 @@ Since it's a design issue, we cannot provide patch, your should consider upgradi
 
 ## Possible malicious usage
 
-* Attack others websites via the vulnerability
+* Attack other websites via the vulnerability
 * Bypass WAF/.htaccess restrictions
-* Perform path traversal attack using the wrapper : file://
+* Perform a path traversal attack using the wrapper : file://
 
 ## Other recommendations
 
 * It’s recommended to upgrade the module to its latest version
 * You should restrict access to modules/boninstagramcarousell/controllers/back/ to a given whitelist
-* Activate OWASP 931's rules on your WAF (Web application firewall), be warned that you will probably break your frontoffice and your backoffice and you will need to pre-configure some bypasses against these set of rules.
+* Activate OWASP 931's rules on your WAF (Web application firewall), be warned that you will probably break your frontoffice and your backoffice and you will need to pre-configure some bypasses against these sets of rules.
 
 ## Timeline
 
