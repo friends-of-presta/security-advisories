@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-43982] Server-Side Request Forgery (SSRF) in Bon Presta - SocialFeed - Photos & Video/Reels using the Instagram API for PrestaShop"
+title: "[CVE-2023-43982] Server-Side Request Forgery (SSRF) in Bon Presta - SocialFeed - Photos & Video/Reels using Instagram API for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
