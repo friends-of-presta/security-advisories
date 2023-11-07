@@ -34,7 +34,7 @@ Be warned that this is not the only IDOR available in this module, patch it quic
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
