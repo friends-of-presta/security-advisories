@@ -20,7 +20,7 @@ In the module "Order Duplicator – Clone and Delete Existing Order" (orderdupli
 * **Product**: orderduplicate
 * **Impacted release**: <= 1.1.7 (1.1.8 fixed the vulnerability)
 * **Product author**: Silbersaiten
-* **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
+* **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html) [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
 * **Severity**: medium (7.5), GDPR violation
 
 ## Description
