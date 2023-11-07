@@ -32,7 +32,7 @@ Due to a lack of permissions control and predictable (or easily brute-forcable) 
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
