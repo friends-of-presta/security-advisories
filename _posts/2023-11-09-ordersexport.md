@@ -1,32 +1,32 @@
 ---
 layout: post
-title: "[CVE-2023-40923] Improper neutralization of an SQL parameter in ordersexport module for PrestaShop"
+title: "[CVE-2023-40923] Improper neutralization of an SQL parameter in MyPrestaModules - Orders (CSV, Excel) Export PRO module for PrestaShop"
 categories: modules
 author:
 - 202-ecommerce.com
 - TouchWeb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ordersexport"
-severity: "high (9.8)"
+severity: "critical (9.8)"
 ---
 
-In the module "Orders (CSV, Excel) Export PRO Module" (ordersexport) for PrestaShop, an anonymous user can perform SQL injection up to 5.0. Release 5.0 fixed this security issue.
+In the module "Orders (CSV, Excel) Export PRO" (ordersexport) from MyPrestaModules for PrestaShop, an anonymous user can perform SQL injection up to 5.0. Release 5.0 fixed this security issue.
 
 ## Summary
 
 * **CVE ID**: [CVE-2023-40923](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40923)
-* **Published at**: 2023-02-xx
+* **Published at**: 2023-11-09
 * **Advisory source**: Friends-Of-Presta.org
 * **Vendor**: PrestaShop
 * **Product**: ordersexport
-* **Impacted release**: < 5.0
+* **Impacted release**: < 5.0 (5.0 fixed the vulnerability)
 * **Product author**: MyPrestaModules
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-* **Severity**: high (9.8)
+* **Severity**: critical (9.8)
 
 ## Description
 
-Before 5.0, a sensitive SQL calls in class `send.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "key" or "save_setting" variable.
+Before 5.0, sensitives SQL calls in class `send.php` can be executed with a trivial http call and exploited to forge a blind SQL injection throught the POST or GET submitted "key" or "save_setting" variables.
 
 
 ## CVSS base metrics
