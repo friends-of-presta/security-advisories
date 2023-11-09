@@ -33,7 +33,7 @@ Up to 1.3.7.1, multiple sensitive SQL calls in class `KerawenHelper::setCartOper
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
