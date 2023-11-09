@@ -34,7 +34,7 @@ The method `NdkSpack::getPacks()` has sensitive SQL calls that can be executed w
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
