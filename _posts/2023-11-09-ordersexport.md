@@ -90,7 +90,7 @@ Before 5.0, sensitives SQL calls in class `send.php` can be executed with a triv
 | 2022-10-10 | Contact the author |
 | 2022-10-10 | The author confirm the latest release is already fixed |
 | 2023-08-15 | Request a CVE ID |
-| 2023-10-11 | Recieve the CVA ID |
+| 2023-10-11 | Received CVE ID |
 | 2023-11-09 | Publication of this security advisory |
 
 ## Links
