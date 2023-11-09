@@ -32,7 +32,7 @@ Up to 0.3.0, a sensitive SQL call in `includes/ajax.php` can be executed with a 
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
