@@ -35,7 +35,7 @@ The script `ajax.php` has sensitive SQL calls that can be executed with a trivia
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
