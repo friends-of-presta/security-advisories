@@ -33,7 +33,7 @@ A sensitive SQL call the overrided class `Dispatcher::getController()` can be ex
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
