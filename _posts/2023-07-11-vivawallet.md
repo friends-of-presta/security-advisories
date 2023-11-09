@@ -34,7 +34,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
