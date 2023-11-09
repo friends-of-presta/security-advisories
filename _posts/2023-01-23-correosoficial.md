@@ -35,7 +35,7 @@ The descarga_etiqueta.php component of Correos use the PHP function `readfile`, 
 
 * **Attack vector**: network
 * **Attack complexity**: low
-* **Privilege required**: low
+* **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
