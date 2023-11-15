@@ -50,9 +50,23 @@ This exposes PHPInfo information **which could be a little** [EDIT FOP] useful t
 
 ## Patch
 
+### simpleimportproduct
+
 ```diff
 --- a/modules/simpleimportproduct/send.php
 +++ b/modules/simpleimportproduct/send.php
+@@ -9,5 +8,0 @@ include(dirname(__FILE__).'/../../config/config.inc.php');
+-if ( Tools::getValue('phpinfo') ){
+-  phpinfo();
+-  die;
+-}
+```
+
+### updateproducts
+
+```diff
+--- a/modules/updateproducts/send.php
++++ b/modules/updateproducts/send.php
 @@ -9,5 +8,0 @@ include(dirname(__FILE__).'/../../config/config.inc.php');
 -if ( Tools::getValue('phpinfo') ){
 -  phpinfo();
