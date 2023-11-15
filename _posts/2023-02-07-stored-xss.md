@@ -91,7 +91,8 @@ Touchweb provides two benign JavaScript scripts that highlight the vulnerability
 In the face of a Stored XSS vulnerability targeting the back office, it is impossible to undo all the effects. However, the most dangerous exploits can be limited.
 
 * Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters : 
-> Smarty: `{$value.comment|escape:'html':'UTF-8'}`  Twig: `{\{value.comment|e\}}`(without backslashes)
+  - Smarty: `{$value.comment|escape:'html':'UTF-8'}`
+  - Twig:`{% raw %}{{value.comment|e}}{% endraw %}`
 * Limit to the strict minimum the length's value in database - a database field which allow 10 characters (`varchar(10)`) is far less dangerous than a field which allow 40+ characters (use cases which can exploit fragmented XSS payloads are very rare)
 * Configure CSP headers (content security policies) by listing  externals domains allowed to load assets (such as js files) or being called in XHR transactions (Ajax).
 * If applicable: check against all your frontoffice's uploaders, uploading files which will be served by your server with mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
