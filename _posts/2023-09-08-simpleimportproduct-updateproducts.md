@@ -5,7 +5,7 @@ categories: modules
 author:
 - Sorcery Ltd
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,MyPrestaModules"
+meta: "CVE,PrestaShop,SimpleImportProduct,UpdateProducts"
 severity: "medium (5.3)"
 ---
 
