@@ -33,7 +33,7 @@ if ( Tools::getValue('phpinfo') ){
 }
 ```
 
-This exposes PHPInfo information which is useful to an attacker and it requires no authentication to exploit. This was reported to MyPrestaModules and a patch was released.
+This exposes PHPInfo information **which could be a little** [EDIT FOP] useful to an attacker and it requires no authentication to exploit. This was reported to MyPrestaModules and a patch was released.
 
 ## CVSS base metrics
 
