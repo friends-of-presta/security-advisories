@@ -5,7 +5,7 @@ categories: modules
 author:
 - Sorcery Ltd
 - Friends-Of-Presta.org
-meta: "CVE,PrestaShop,SimpleImportProduct,UpdateProducts"
+meta: "CVE,PrestaShop,simpleimportproduct,updateproducts"
 severity: "medium (5.3)"
 ---
 
@@ -51,10 +51,8 @@ This exposes PHPInfo information **which could be a little** [EDIT FOP] useful t
 ## Patch
 
 ```diff
-diff --git a/send.php b/send.php
-index 2da6169..56b6de0 100644
---- a/send.php
-+++ b/send.php
+--- a/modules/simpleimportproduct/send.php
++++ b/modules/simpleimportproduct/send.php
 @@ -9,5 +8,0 @@ include(dirname(__FILE__).'/../../config/config.inc.php');
 -if ( Tools::getValue('phpinfo') ){
 -  phpinfo();
