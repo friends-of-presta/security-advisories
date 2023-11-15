@@ -6,7 +6,7 @@ author:
 - Sorcery Ltd
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,MyPrestaModules"
-severity: "High (7.5)"
+severity: "medium (5.3)"
 ---
 
 MyPrestaModules SimpleImportProduct Prestashop Module v6.2.9 and UpdateProducts Prestashop Module v3.6.9 were discovered to contain a PHPInfo information disclosure vulnerability via send.php.
@@ -42,11 +42,11 @@ This exposes PHPInfo information which is useful to an attacker and it requires 
 * **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
-* **Confidentiality**: high
+* **Confidentiality**: low
 * **Integrity**: none
 * **Availability**: none
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)
 
 ## Patch
 
