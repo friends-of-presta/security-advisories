@@ -42,7 +42,7 @@ public function newsletterRegistration($email) {
   }
 ```
 
-The callback GET parameter is printed to the page without sanitization which makes it susceptibvle to XSS. One might think the fact a POST parameter is used might mitigate this vulnerability but closer reading reveals this works when `$_POST['email']` isn’t set.
+The callback GET parameter is printed to the page without sanitization which makes it susceptible to XSS. One might think the fact a POST parameter is used might mitigate this vulnerability but closer reading reveals this works when `$_POST['email']` isn’t set.
 
 ## CVSS base metrics
 
