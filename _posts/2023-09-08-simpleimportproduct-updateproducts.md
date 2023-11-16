@@ -15,6 +15,7 @@ MyPrestaModules SimpleImportProduct Prestashop Module v6.2.9 and UpdateProducts 
 
 * **CVE ID**: [CVE-2023-39677](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39677)
 * **Published at**: 2023-09-07
+* **Discovery credit**: [Sorcery](https://sorcery.ie/)
 * **Platform**: PrestaShop
 * **Product**: SimpleImportProduct / UpdateProducts
 * **Impacted release**: < 6.4.0 / < v3.8.1
