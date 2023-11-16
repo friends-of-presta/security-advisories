@@ -20,7 +20,7 @@ An XSS was found within the FieldPopupNewsletter module, developed by [FieldThem
 * **Impacted release**: < 1.0.1 ?
 * **Product author**: [FieldThemes](https://themeforest.net/user/fieldthemes)
 * **Weakness**: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
-* **Severity**: {{ severity }}
+* **Severity**: {{ page.severity }}
 
 ## Description
 
