@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,sonice_retour"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "SoNice Retour" (sonice_retour) up to version 2.1.0 from Common-Services for PrestaShop, a guest can download personal informations without restriction by performing a path traversal attack.
+In the module "SoNice Retour" (sonice_retour) up to version 2.1.0 from Common-Services for PrestaShop, a guest can download personal information without restriction by performing a path traversal attack.
 
 ## Summary
 
