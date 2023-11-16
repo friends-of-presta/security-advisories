@@ -8,7 +8,7 @@ author:
 - Friends-Of-Presta.org
 ---
 
-Prestashop installation directory should be deleted after a successful installation.
+Prestashop installation directory **must** be deleted after a successful installation.
 It should not be renamed, as the remaining directory can contain code that is exploitable if publicly accessible, such as:
  - tool to sync information in database
  - tool to extract db information in xml files
