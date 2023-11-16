@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,advancedexport"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Advanced Export Products Orders Cron CSV Excel" (advancedexport) in versions up to 4.4.6 from Smart Soft for PrestaShop, a guest can download personal informations without restriction.
+In the module "Advanced Export Products Orders Cron CSV Excel" (advancedexport) in versions up to 4.4.6 from Smart Soft for PrestaShop, a guest can download personal information without restriction.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "Advanced Export Products Orders Cron CSV Excel" (advancedexport) 
 
 ## Description
 
-Due to a lack of permissions control and predictable (or easily brute-forcable) filename, a guest can access exports from the module which can lead to leak of personal informations from ps_customer table such as name / surname / email / postal address / phone number.
+Due to a lack of permissions control and predictable (or easily brute-forcable) filename, a guest can access exports from the module which can lead to leak of personal information from ps_customer table such as name / surname / email / postal address / phone number.
 
 
 ## CVSS base metrics
