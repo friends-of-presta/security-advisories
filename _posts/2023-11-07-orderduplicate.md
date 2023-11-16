@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,orderduplicate"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Order Duplicator – Clone and Delete Existing Order" (orderduplicate) in versions up to 1.1.7 from Silbersaiten for PrestaShop, a guest can download personal informations without restriction.
+In the module "Order Duplicator – Clone and Delete Existing Order" (orderduplicate) in versions up to 1.1.7 from Silbersaiten for PrestaShop, a guest can download personal information without restriction.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "Order Duplicator – Clone and Delete Existing Order" (orderdupli
 
 ## Description
 
-Due to a lack of permissions control, a guest can download personal informations from ps_customer/ps_address tables such as name / surname / phone number / full postal address.
+Due to a lack of permissions control, a guest can download personal information from ps_customer/ps_address tables such as name / surname / phone number / full postal address.
 
 Be warned that this is not the only IDOR available in this module, patch it quickly.
 

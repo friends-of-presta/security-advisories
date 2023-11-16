@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,ultimateimagetool"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Image: WebP, Compress, Zoom, Lazy load, Alt & More" (ultimateimagetool) in versions up to 2.1.02 from Advanced Plugins for PrestaShop, a guest can download personal informations without restriction by performing a path traversal attack.
+In the module "Image: WebP, Compress, Zoom, Lazy load, Alt & More" (ultimateimagetool) in versions up to 2.1.02 from Advanced Plugins for PrestaShop, a guest can download personal information without restriction by performing a path traversal attack.
 
 ## Summary
 

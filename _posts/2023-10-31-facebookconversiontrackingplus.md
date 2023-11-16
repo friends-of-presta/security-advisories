@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,facebookconversiontrackingplus"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal informations without restriction.
+In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal information without restriction.
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebook
 
 ## Description
 
-Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal informations from ps_customer table such as name / surname / email
+Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from ps_customer table such as name / surname / email
 
 
 ## CVSS base metrics
