@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Prestashop install directory compromised links"
+title: "Prestashop unremoved install directory risks"
 categories: core
 tags: brute-force
 author:
