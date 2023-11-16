@@ -13,8 +13,8 @@ It should not be renamed, as the remaining directory can contain code that is ex
 
 ### Why is my renamed install directory link is known ?
 
-We have seen scan from bots that try to access several CMS know sensible directory.
-The following list is not exhaustive but give an example of directory scanned
+We have seen scan from bots that try to access several CMS known sensible directories.
+The following list is not exhaustive but give an example of directories scanned
 
 ```
 __install
@@ -36,4 +36,4 @@ Enable a check on your monitoring platform to detect such directory
 or ask your hosting company to detect and notify you if an install directory is detected.
 
 If you have an install directory at the root of your Prestashop installation,
-you should grep your 2023 access log to check if the directory was accessed.
+you should grep your access log to check if the directory was accessed.
