@@ -15,6 +15,7 @@ An XSS was found within the FieldPopupNewsletter module, developed by [FieldThem
 
 * **CVE ID**: [CVE-2023-39676](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39676)
 * **Published at**: 2023-09-07
+* **Discovery credit**: [Sorcery](https://sorcery.ie/)
 * **Platform**: PrestaShop
 * **Product**: fieldpopupnewsletter
 * **Impacted release**: < 1.0.1 ?
