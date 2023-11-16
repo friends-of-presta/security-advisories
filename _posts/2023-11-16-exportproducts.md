@@ -62,7 +62,7 @@ This file has been deleted in newer versions, you should upgrade instead of patc
 ...
       if( Tools::getValue('id_task') ){
 -       $data['id_task'] = Tools::getValue('id_task');
-+       $data['id_task'] = pSQL(Tools::getValue('id_task'));
++       $data['id_task'] = (int) Tools::getValue('id_task');
       }
       else{
         $data['id_task'] = 0;
