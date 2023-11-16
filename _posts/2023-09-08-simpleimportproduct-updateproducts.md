@@ -20,7 +20,7 @@ MyPrestaModules SimpleImportProduct Prestashop Module v6.2.9 and UpdateProducts 
 * **Impacted release**: < 6.4.0 / < v3.8.1
 * **Product author**: MyPrestaModules
 * **Weakness**: [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
-* **Severity**: {{ severity }}
+* **Severity**: {{ page.severity }}
 
 ## Description
 
