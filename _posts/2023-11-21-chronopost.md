@@ -30,7 +30,7 @@ In the module "Chronopost Official" (chronopost) up to version 6.4.0 from Chrono
 
 The script PHP `cancelSkybill.php` own a sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Be informed that the partial access control affects other scripts on the module, you should apply "Other Recommendations"
+**WARNING**: Be informed that the partial access control affects other scripts on the module, you should apply "Other Recommendations"
 
 ## CVSS base metrics
 
