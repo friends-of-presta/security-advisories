@@ -87,7 +87,6 @@ $LTRequest = DB::getInstance()->executeS(
 | 2023-03-15 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-03-15 | Contact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-05-05 | Recontact PrestaShop Addons security Team to confirm version scope by author |
-| 2023-05-26 | Author seem to provide a patch |
 | 2023-10-06 | Request a CVE ID |
 | 2023-10-11 | Received CVE ID |
 | 2023-10-30 | Recontact PrestaShop Addons security Team to confirm version scope by author |
