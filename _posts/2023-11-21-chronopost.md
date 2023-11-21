@@ -91,7 +91,7 @@ $LTRequest = DB::getInstance()->executeS(
 | 2023-10-06 | Request a CVE ID |
 | 2023-10-11 | Received CVE ID |
 | 2023-10-30 | Recontact PrestaShop Addons security Team to confirm version scope by author |
-| 2023-10-30 | PrestaShop Addons security Team confirms version scope |
+| 2023-10-30 | PrestaShop Addons security Team confirms version scope and confirm the official patch |
 | 2023-11-21 | Publish this security advisory |
 
 ## Links
