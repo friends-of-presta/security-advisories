@@ -32,6 +32,8 @@ The script PHP `cancelSkybill.php` own a sensitive SQL calls that can be execute
 
 **WARNING**: Be informed that the partial access control affects other scripts on the module, you should apply "Other Recommendations"
 
+For those who actively listen weaks signals, this issue is not connected with [this very old critical issue](https://github.com/PrestaShopCorp/chronopost/commit/404cc2cd17e602bdd433b085c788c6c0492bf9e3) which will never have CVE (too old).
+
 ## CVSS base metrics
 
 * **Attack vector**: network
