@@ -19,7 +19,7 @@ In the module "Product Catalog (CSV, Excel) Export/Update" (updateproducts) up t
 * **Advisory source**: Friends-Of-Presta.org
 * **Platform**: PrestaShop
 * **Product**: updateproducts
-* **Impacted release**: <= 3.7.6 (3.8.5 fixed "all" vulnerabilities knowns - see Note below)
+* **Impacted release**: <= 3.7.6 (3.8.5 fixed "all" vulnerabilities known - see Note below)
 * **Product author**: MyPrestaModules
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
