@@ -28,7 +28,7 @@ In the module "Product Catalog (CSV, Excel, XML) Export PRO" (exportproducts) in
 
 The method `exportProduct::_addDataToDb()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Note : The author has deleted from its module the file that have been suffering from this leak for months, BUT did not set it to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules thinking they are safe. However, there is nothing safe about this since past upgrades do not auto-delete the implicated file. To ensure everyone has a "safe version", we decided to mark all versions up to 2.1.02 as impacted by this issue.
+Note : The author has deleted from its module the file that have been suffering from this leak for months, BUT did not set it to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules thinking they are safe. However, there is nothing safe about this since past upgrades do not auto-delete the implicated file. To ensure everyone has a "safe version", we decided to mark all versions up to 5.0.0 as impacted by this issue.
 
 **WARNING** : be warned that an old critical vulnerability is consistently being exploited in this module. If you have exportproducts-ajax.php in the root folder, it is strongly recommended to upgrade immediately.
 
