@@ -39,8 +39,8 @@ Note : The author has deleted from its module the file that have been suffering 
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: low
-* **Availability**: low
+* **Integrity**: none
+* **Availability**: none
 
 **Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
 
