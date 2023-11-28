@@ -68,21 +68,21 @@ if( $selected_manufacturers ){
       $justProducts = false;
       $selected_suppliers = implode(",", $selected_suppliers);
 -     $where .= " AND s.id_supplier IN (".pSQL($selected_suppliers).") ";
-+     $where .= " AND p.id_manufacturer IN (".implode(',', array_map('intval', explode(',', $selected_suppliers))).") ";
++     $where .= " AND s.id_supplier IN (".implode(',', array_map('intval', explode(',', $selected_suppliers))).") ";
     }
 
     if( $selected_categories ){
       $justProducts = false;
       $selected_categories = implode(",", $selected_categories);
 -     $where .= " AND cp.id_category IN (".pSQL($selected_categories).") ";
-+     $where .= " AND p.id_manufacturer IN (".implode(',', array_map('intval', explode(',', $selected_categories))).") ";
++     $where .= " AND cp.id_category IN (".implode(',', array_map('intval', explode(',', $selected_categories))).") ";
     }
 
     if( $products_check ){
       $products_check = implode(",", $products_check);
       $justProducts = $justProducts ? 'AND' : 'OR';
 -     $where .= " $justProducts p.id_product IN (".pSQL($products_check).") ";
-+     $where .= " AND p.id_manufacturer IN (".implode(',', array_map('intval', explode(',', $products_check))).") ";
++     $where .= " $justProducts p.id_product IN (".implode(',', array_map('intval', explode(',', $products_check))).") ";
     }
 ```
 
