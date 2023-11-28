@@ -87,7 +87,7 @@ Do not forget to check the installed override here :
 | Date | Action |
 |--|--|
 | 2022-11-29 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2022-11-29 | Contact Author to report it but was qualified CVSS 7.2/10 which is currently ignored |
+| 2022-11-29 | Contact Author to report it but was qualified CVSS 3.1 7.2/10 which is currently ignored |
 | 2023-10-31 | [202 ecommerce](https://www.202-ecommerce.com/) qualified it critical |
 | 2023-10-31 | Contact Author again to report that it's a critical issue and to get version scope |
 | 2023-11-08 | Author confirms version scope |
