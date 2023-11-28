@@ -25,9 +25,9 @@ In the module "Orders (CSV, Excel) Export PRO" (ordersexport) up to version 5.1.
 
 ## Description
 
-Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from ps_customer/ps_address tables such as name / surname / email / phone number / full postal address
+Due to a lack of permissions control, a guest can access exports from the module which can lead to leak of personal information from the ps_customer/ps_address tables such as firstname / lastname / email / phone number / full postal address
 
-Note : The vulnerability has been seen in a 4.7.1 version and the implicated file has been deleted on the version 5.2.0, so we consider all versions up to 5.1.6 as impacted.
+Note : The vulnerability has been seen in a 4.7.1 version and the implicated file has been deleted on version 5.2.0, so we consider all versions up to 5.1.6 as impacted.
 
 ## CVSS base metrics
 
@@ -56,7 +56,7 @@ Note : The vulnerability has been seen in a 4.7.1 version and the implicated fil
 |--|--|
 | 2023-05-28 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-05-28 | Contact PrestaShop Addons security Team to confirm version scope by author |
-| 2023-09-27 | PrestaShop Addons security Team confirm versions scope by author |
+| 2023-09-27 | PrestaShop Addons security Team confirms versions scope by author |
 | 2023-10-17 | Request a CVE ID |
 | 2023-10-23 | Received CVE ID |
 | 2023-11-28 | Publish this security advisory |
