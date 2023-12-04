@@ -76,9 +76,15 @@ Up to Release 1.63, multiple sensitive SQL calls in class `PrixanconnectUpdatePr
 -            $query .= ' AND prshop.`id_product` IN (' . join(',', $product_ids) . ') ';
 +            $query .= ' AND prshop.`id_product` IN (' . implode(',', array_map('intval', $product_ids)) . ') ';
          }
- 
--        $query .= " ORDER BY prshop.`id_product`  $limit";
-+        $query .= " ORDER BY prshop.`id_product` ". (int) $limit;
+
++        if(!empty($limit)) {
++             if (Tools::getValue('start') != null && Tools::getValue('limit') != null) {
++               $limit = ' LIMIT ' . (int) Tools::getValue('start') . ', ' . (int) Tools::getValue('limit');
++           } else if (Tools::getValue('limit') != null) {
++               $limit = ' LIMIT ' . (int) Tools::getValue('limit');
++           }
++       }
+        $query .= " ORDER BY prshop.`id_product`  $limit";
  
          return $query;
      }
