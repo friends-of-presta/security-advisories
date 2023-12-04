@@ -82,6 +82,8 @@ Up to Release 1.63, multiple sensitive SQL calls in class `PrixanconnectUpdatePr
 +               $limit = ' LIMIT ' . (int) Tools::getValue('start') . ', ' . (int) Tools::getValue('limit');
 +           } else if (Tools::getValue('limit') != null) {
 +               $limit = ' LIMIT ' . (int) Tools::getValue('limit');
++           } else {
++               $limit = '';
 +           }
 +       }
         $query .= " ORDER BY prshop.`id_product`  $limit";
