@@ -180,7 +180,7 @@ curl -v -d "fc=module&module=bavideotab&controller=savevideo&id_product=1%22;sel
 | 2023-11-11 | Contact Author to confirm version scope by author |
 | 2023-11-15 | Author confirms version scope and provide a patch |
 | 2023-11-15 | Request a CVE ID |
-| 2023-10-23 | Received CVE ID |
+| 2023-11-30 | Received CVE ID |
 | 2023-12-07 | Publish this security advisory |
 
 ## Links
