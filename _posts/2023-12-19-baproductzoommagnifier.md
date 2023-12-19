@@ -18,7 +18,7 @@ In the module "Best Zoom Magnifier Effect - BAZoom Magnifier" (baproductzoommagn
 * **Published at**: 2023-12-19
 * **Platform**: PrestaShop
 * **Product**: baproductzoommagnifier
-* **Impacted release**: <= 1.0.16 (1.1.17 fixed the vulnerability)
+* **Impacted release**: <= 1.0.16 (1.0.17 fixed the vulnerability)
 * **Product author**: Buy Addons
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
