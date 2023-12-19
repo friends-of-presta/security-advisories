@@ -14,7 +14,7 @@ In the module "Best Zoom Magnifier Effect - BAZoom Magnifier" (baproductzoommagn
 
 ## Summary
 
-* **CVE ID**: [CVE-2023-50027]
+* **CVE ID**: [CVE-2023-50027](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-50027)
 * **Published at**: 2023-12-19
 * **Platform**: PrestaShop
 * **Product**: baproductzoommagnifier
