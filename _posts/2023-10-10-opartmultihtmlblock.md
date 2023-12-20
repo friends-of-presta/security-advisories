@@ -34,7 +34,7 @@ Prior to version 2.0.12 of the Prestashop Multi html block (opartmultihtmlblock)
 * **Attack vector**: network
 * **Attack complexity**: low
 * **Privilege required**: high
-* **User interaction**: high
+* **User interaction**: required
 * **Scope**: unchanged
 * **Confidentiality**: high
 * **Integrity**: high
