@@ -99,5 +99,5 @@ curl -v -d "fc=module&module=baproductzoommagnifier&controller=zoom&id_langs=1';
 
 ## Links
 
-* [PrestaShop addons product page](https://buy-addons.com/store/prestashop/module/product-page/best-zoom-magnifier-effect-bazoom-magnifier.html)
+* [Author product page](https://buy-addons.com/store/prestashop/module/product-page/best-zoom-magnifier-effect-bazoom-magnifier.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-50027)
