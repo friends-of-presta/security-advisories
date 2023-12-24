@@ -185,5 +185,5 @@ curl -v -d "fc=module&module=bavideotab&controller=savevideo&id_product=1%22;sel
 
 ## Links
 
-* [PrestaShop addons product page](https://buy-addons.com/store/prestashop/module/product-video-youtube-vimeo-tab.html)
+* [Author product page](https://buy-addons.com/store/prestashop/module/product-video-youtube-vimeo-tab.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-48925)
