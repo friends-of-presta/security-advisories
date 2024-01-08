@@ -74,7 +74,7 @@ curl -v -d "fc=module&module=baproductzoommagnifier&controller=zoom&id_langs=1';
         $search .= _DB_PREFIX_ . "product.id_product WHERE ";
         $search .= _DB_PREFIX_ . "product_lang.name like '%".pSQL($name_product)."%'";
 -       $search .=" AND id_lang='$id_lang' AND id_shop = '".(int) $id_shop."'";
-+       $search .=" AND id_lang=' . (int) $id_lang . ' AND id_shop = '".(int) $id_shop."'";
++       $search .=" AND id_lang=' . (int) $id_lang . ' AND id_shop = ' . (int) $id_shop . '";
 ...
 ```
 
