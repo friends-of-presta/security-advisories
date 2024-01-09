@@ -59,17 +59,11 @@ Blind SQL Injection vulnerability in PrestaShow Google Integrator (pshowconversi
 
 | Date | Action |
 |--|--|
-| 2023-11-24 | Issue discovered during a code review by [202-ecommerce.com](https://www.202-ecommerce.com/) |
-| 2023-11-24 | Contact PrestaShop Addons security Team to confirm version scope by author |
-| 2023-11-xx | PrestaShop Addons security Team confirm versions scope by author |
-| 2023-12-xx | Author provide a patch which fix the remaining high severity issue |
-| 2023-xx-xx | Request a CVE ID |
-| 2023-xx-xx | Received CVE ID |
-| 2023-xx-xx | Publish this security advisory |
+| 2024-01-09 | Publish this security advisory |
 
 
 ## Links
 
-* [PrestaShop addons product page](https://addons.prestashop.com/fr/import-export-de-donnees/2063-rsi-presta-pdf-html-export-catalog.html)
+* [Product author page](https://prestashow.pl/pl/moduly-prestashop/28-prestashop-google-integrator-ga4-gtm-ads-remarketing.html)https://prestashow.pl/pl/moduly-prestashop/28-prestashop-google-integrator-ga4-gtm-ads-remarketing.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-6921)
 
