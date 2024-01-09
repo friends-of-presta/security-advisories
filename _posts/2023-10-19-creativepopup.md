@@ -19,7 +19,7 @@ In the module "Creative Popup" (creativepopup) up to version 1.6.9 from WebshopW
 * **Published at**: 2023-10-19
 * **Platform**: PrestaShop
 * **Product**: creativepopup
-* **Impacted release**: <=  1.6.9 (1.6.10 fixed the vulnerability)
+* **Impacted release**: <= 1.6.9 (1.6.10 fixed the vulnerability)
 * **Product author**: WebshopWorks
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
