@@ -64,6 +64,6 @@ Blind SQL Injection vulnerability in PrestaShow Google Integrator (pshowconversi
 
 ## Links
 
-* [Product author page](https://prestashow.pl/pl/moduly-prestashop/28-prestashop-google-integrator-ga4-gtm-ads-remarketing.html)https://prestashow.pl/pl/moduly-prestashop/28-prestashop-google-integrator-ga4-gtm-ads-remarketing.html)
+* [Product author page](https://prestashow.pl/pl/moduly-prestashop/28-prestashop-google-integrator-ga4-gtm-ads-remarketing.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-6921)
 
