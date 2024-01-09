@@ -38,6 +38,11 @@ Blind SQL Injection vulnerability in PrestaShow Google Integrator (pshowconversi
 
 **Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
+## Description
+
+The module versions below v2.1.4 released before 2023-03-09 are susceptible to the problem described in the report. All subsequent versions of the Google Integrator module have been properly secured - they are secure and have no vulnerabilities.
+
+[See also author notice](https://helpdesk.prestashow.pl/kb/faq.php?id=190&lang=en_US)
 
 ## Possible malicious usage
 
