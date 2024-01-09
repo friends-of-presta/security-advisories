@@ -19,7 +19,7 @@ In the module "Advanced Loyalty Program: Loyalty Points" (totloyaltyadvanced) fr
 * **Platform**: PrestaShop
 * **Product**:  totloyaltyadvanced
 * **Advisory source**: [202 ecommerce](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-jp2c-mj65-qpmw)
-* **Impacted release**: 2.3.3 (2.3.4 fix the issue)
+* **Impacted release**: >= 2.3.3, < 2.3.4 (2.3.4 fix the issue)
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
 * **Severity**: critical (7.5)
