@@ -17,7 +17,7 @@ Multiple SQL injection vulnerabilities in SmartDataSoft SmartBlog for PrestaShop
 * **Advisory source**: [sorcery.ie](https://blog.sorcery.ie/posts/smartblog_sqli/)
 * **Vendor**: PrestaShop
 * **Product**: SmartBlog
-* **Impacted release**: < 4.0.6
+* **Impacted release**: <4.0.6
 * **Product author**: SmartDataSoft
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
