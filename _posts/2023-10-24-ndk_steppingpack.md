@@ -19,7 +19,7 @@ In the module "Step by Step products Pack" (ndk_steppingpack) up to 1.5.6 from N
 * **Advisory source**: Friends-Of-Presta.org
 * **Platform**: PrestaShop
 * **Product**: ndk_steppingpack
-* **Impacted release**: <= 1.5.6 (1.5.7 fixed the vulnerability)
+* **Impacted release**: <=1.5.6 (1.5.7 fixed the vulnerability)
 * **Product author**: NdkDesign
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
