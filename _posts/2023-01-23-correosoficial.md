@@ -17,7 +17,7 @@ From version v1.1.0.0 and v1.2.x+ correosoficial Module for PrestaShop 1.7.x all
 * **Advisory source**: [ia-informatica.com](https://ia-informatica.com/it/CVE-2022-46639)
 * **Platform**: PrestaShop
 * **Product**: correosoficial
-* **Impacted release**: >= 1.1.0, < 1.2.0
+* **Impacted release**: >=1.1.0 and <1.2.0
 * **Product author**: Grupo Correos
 * **Weakness**: [CWE-23](https://cwe.mitre.org/data/definitions/23.html)
 * **Severity**: high (7.5)
