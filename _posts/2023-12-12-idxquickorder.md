@@ -18,7 +18,7 @@ In the module "Quick Order" (idxquickorder) all versions below 1.4.0 from Innova
 * **Published at**: 2023-12-12
 * **Platform**: PrestaShop
 * **Product**: idxquickorder
-* **Impacted release**: < 1.4.0 (1.4.0 fixed the vulnerability)
+* **Impacted release**: <1.4.0 (1.4.0 fixed the vulnerability)
 * **Product author**: Innovadeluxe
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
