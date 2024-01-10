@@ -18,7 +18,7 @@ In the module "SC Fix My PrestaShop" (scfixmyprestashop), an anonymous user can 
 * **Published at**: 2023-05-25
 * **Platform**: PrestaShop
 * **Product**: scfixmyprestashop
-* **Impacted release**: ALL VERSIONS **DANGER**
+* **Impacted release**: All versions **DANGER**
 * **Product author**: Store Commander
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
