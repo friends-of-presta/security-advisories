@@ -20,7 +20,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: jmsvermegamenu
-* **Impacted release**: at least 1.1.x and 2.0.x
+* **Impacted release**: All versions
 * **Product author**: Joommasters
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
