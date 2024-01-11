@@ -20,7 +20,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **Advisory source**: Joomasters
 * **Platform**: PrestaShop
 * **Product**: jmsslider
-* **Impacted release**: at least 1.6.0
+* **Impacted release**: All versions
 * **Product author**: Joommasters
 * **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
 * **Severity**: critical (9.8)
