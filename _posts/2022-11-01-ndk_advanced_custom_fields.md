@@ -17,7 +17,7 @@ In NdkAdvancedCustomizationFields module for PrestaShop before 4.1.7, an anonymo
 * **Advisory source**: [@daaaalllii](https://github.com/daaaalllii/cve-s/blob/main/CVE-2022-40839/poc.txt)
 * **Platform**: PrestaShop
 * **Product**: ndk_advanced_custom_fields
-* **Impacted release**: <= 4.1.6 (4.1.7 fixed the vulnerability)
+* **Impacted release**: <=4.1.6 (4.1.7 fixed the vulnerability)
 * **Product author**: ndk design
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
