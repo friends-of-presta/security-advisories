@@ -19,7 +19,7 @@ In the module "Administrative Mandate" (totadministrativemandate), an authentica
 * **Advisory source**: [202 ecommerce](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-hg7m-23j3-rf56)
 * **Platform**: PrestaShop
 * **Product**: totadministrativemandate
-* **Impacted release**: >= 1.2.1, < 1.7.2
+* **Impacted release**: >=1.2.1 and <1.7.2
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: high (8.8)
