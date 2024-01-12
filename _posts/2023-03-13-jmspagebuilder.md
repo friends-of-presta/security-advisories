@@ -20,7 +20,7 @@ This module is for the PrestaShop e-commerce platform and mainly provided with j
 * **Advisory source**: Friends-Of-Presta
 * **Platform**: PrestaShop
 * **Product**: jmspagebuilder
-* **Impacted release**: All versions
+* **Impacted release**: All versions (at least 3.x)
 * **Product author**: Joommasters
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
