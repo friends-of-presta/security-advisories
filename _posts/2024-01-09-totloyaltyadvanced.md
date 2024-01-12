@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,totloyaltyadvanced"
-severity: "critical (7.5)"
+severity: "high (7.5)"
 ---
 
 In the module "Advanced Loyalty Program: Loyalty Points" (totloyaltyadvanced) from 2.3.3 to version 2.3.4 from 202 ecommerce for PrestaShop, a guest can change an order status.
@@ -22,7 +22,7 @@ In the module "Advanced Loyalty Program: Loyalty Points" (totloyaltyadvanced) fr
 * **Impacted release**: >=2.3.3 and <2.3.4 (2.3.4 fix the issue)
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
-* **Severity**: critical (7.5)
+* **Severity**: high (7.5)
 
 ## Description
 
