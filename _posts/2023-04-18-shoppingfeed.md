@@ -18,7 +18,7 @@ SQL injection vulnerability found in the module "Shoppingfeed PrestaShop Plugin 
 * **Advisory source**: [Github repository of Shoppingfeed PrestaShop Plugin](https://github.com/shoppingflux/module-prestashop/security/advisories/GHSA-vfmq-w777-qvcf)
 * **Platform**: Shoppingfeed
 * **Product**: shoppingfeed
-* **Impacted release**: from 1.4.0 to 1.8.2 (1.8.3 fix the issue).
+* **Impacted release**: >1.4.0 and <=1.8.2 (1.8.3 fix the issue).
 * **Product author**: 202 ecommerce
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
