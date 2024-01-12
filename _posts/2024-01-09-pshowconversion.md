@@ -19,7 +19,7 @@ Blind SQL Injection vulnerability in PrestaShow Google Integrator (pshowconversi
 * **Advisory source**: [Piotr Zdunek](https://cert.pl/posts/2024/01/CVE-2023-6921/)
 * **Platform**: PrestaShop
 * **Product**: pshowconversion
-* **Impacted release**: < 2.1.4
+* **Impacted release**: <2.1.4
 * **Product author**: Presta Show
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
