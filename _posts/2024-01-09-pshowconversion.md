@@ -3,8 +3,8 @@ layout: post
 title: "[CVE-2023-6921] Improper neutralization of SQL parameter in PrestaShow Google Integrator module for PrestaShop"
 categories: modules
 author:
-- Touchweb.fr
 - 202 ecommerce.com
+- Touchweb.fr
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,pshowconversion"
 severity: "critical (9.8)"
