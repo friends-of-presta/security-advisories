@@ -92,3 +92,4 @@ curl -v "https://preprod.x/modules/jmssetting/initajax.php?productids[1]=1);sele
 ## Links
 
 * [Joom masters web site](https://www.joommasters.com/)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2023-50030)
