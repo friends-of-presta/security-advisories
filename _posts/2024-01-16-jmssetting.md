@@ -69,7 +69,7 @@ curl -v "https://preprod.x/modules/jmssetting/initajax.php?productids[1]=1);sele
 		$link = $this->context->link;
 		$id_lang = Context::getContext()->language->id;
 -		$where  = ' WHERE i.`id_product` IN ('.$productids.') AND i.`cover`=0';
-+		$where  = ' WHERE i.`id_product` IN ('.implode(',', array_map('intval', explode(',', $productids.'))) AND i.`cover`=0';
++       $where  = ' WHERE i.`id_product` IN ('.implode(',', array_map('intval', explode(',', $productids))).') AND i.`cover`=0';
 ...
 ```
 
