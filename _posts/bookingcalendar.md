@@ -114,7 +114,6 @@ The script PHP `ics_export.php` own a sensitive SQL calls that can be executed w
 | Date | Action |
 |--|--|
 | 2023-10-24 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2023-10-24 | Contact PrestaShop Addons security Team to confirm version scope |
 | 2023-10-24 | Contact PrestaShop Addons security Team confirms version scope |
 | 2024-02-05 | Received CVE ID |
 | 2024-02-06 | Publish this security advisory |
