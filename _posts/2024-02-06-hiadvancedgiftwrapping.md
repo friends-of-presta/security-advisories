@@ -14,8 +14,8 @@ In the module "Gift Wrapping Pro" (hiadvancedgiftwrapping) up to version 1.4.0 f
 
 ## Summary
 
-* **CVE ID**: [CVE-2024-24303]
-* **Published at**: 2023-02-06
+* **CVE ID**: [CVE-2024-24303](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24303)
+* **Published at**: 2024-02-06
 * **Platform**: PrestaShop
 * **Product**: hiadvancedgiftwrapping
 * **Impacted release**: <= 1.4.0 (1.4.1 fixed the vulnerability)
