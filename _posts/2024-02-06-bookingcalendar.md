@@ -28,9 +28,9 @@ In the module "Booking Calendar" (bookingcalendar) from RM RM for PrestaShop, a 
 
 *Foreword : we are forced to tag privilege NONE on the CVSS 3.1 score which make it a critical vulnerability since it will be critical if the module has never been installed OR (if the BOOKINGCALENDAR_ics_export configuration do not exist OR is empty), but keep in mind that for the majority of installations, the gravity is reduced to [CVSS 3.1 7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H)*
 
-The script PHP `ics_export.php` own a sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+The script PHP `ics_export.php` own sensitives SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-**WARNING** : Be warned that older versions own true criticals issues (still actively searched and exploited) and that this module is no longer maintain since years so you should delete it.
+**WARNING** : Be warned that older versions own true critical issues (still actively searched and exploited). This module is no longer maintain since years so you should delete it.
 
 ## CVSS base metrics
 
