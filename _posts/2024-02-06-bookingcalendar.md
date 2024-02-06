@@ -84,8 +84,8 @@ The script PHP `ics_export.php` own a sensitive SQL calls that can be executed w
 -		$enter=Tools::getValue('enter');
 +		$enter=pSQL(Tools::getValue('enter'));
 ...
-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.Tools::getValue('enter').' 00:00:00\'');
-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.pSQL(Tools::getValue('enter')).' 00:00:00\'');
+-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.Tools::getValue('enter').' 00:00:00\'');
++			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.pSQL(Tools::getValue('enter')).' 00:00:00\'');
 ...
 ```
 
@@ -97,8 +97,8 @@ The script PHP `ics_export.php` own a sensitive SQL calls that can be executed w
 -		$enter=Tools::getValue('enter');
 +		$enter=pSQL(Tools::getValue('enter'));
 ...
-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.Tools::getValue('enter').' 00:00:00\'');
-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.pSQL(Tools::getValue('enter')).' 00:00:00\'');
+-			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.Tools::getValue('enter').' 00:00:00\'');
++			$row = Db::getInstance()->getRow('select * from `'._DB_PREFIX_.'a_booking_plus` where id_product=\''.(int)Tools::getValue('id_product').'\' and debut=\''.pSQL(Tools::getValue('enter')).' 00:00:00\'');
 ...
 ```
 
