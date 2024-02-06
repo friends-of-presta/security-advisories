@@ -20,7 +20,7 @@ In the module "Booking Calendar" (bookingcalendar) from RM RM for PrestaShop, a 
 * **Platform**: PrestaShop
 * **Product**: bookingcalendar
 * **Impacted release**: <= 2.7.9 (WARNING : Author discontinue support since years - no fix)
-* **Product author**: Ether Création
+* **Product author**: RM RM
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
