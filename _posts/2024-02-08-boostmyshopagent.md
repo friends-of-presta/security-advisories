@@ -83,6 +83,16 @@ Be warned that this module own others sensitives issues like BLIND SSRF which ar
 +       $query->where('`key` = "' . pSQL($apiKey) . '"');
 ```
 
+```
+--- 1.1.7/modules/boostmyshopagent/webservice/pack.php
++++ XXXXX/modules/boostmyshopagent/webservice/pack.php
+     $query = new DbQuery();
+     $query->select('*');
+     $query->from('webservice_account');
+-    $query->where('`key` = "' . $apiKey . '"');
++    $query->where('`key` = "' . pSQL($apiKey) . '"');
+```
+
 ```diff
 --- 1.1.9/modules/boostmyshopagent/webservice/productData.php
 +++ XXXXX/modules/boostmyshopagent/webservice/productData.php
