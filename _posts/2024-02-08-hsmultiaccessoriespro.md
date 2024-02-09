@@ -53,9 +53,9 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 ## Patch from 5.2.0
 
+```diff
 --- 5.2.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupProductAbstract.php
 +++ 5.3.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupProductAbstract.php
-```diff
 ...
             $query->from('accessory_group_product', 'agp');
 -           $query->where('agp.`id_product` IN (' . implode(',', $id_products) . ')');
