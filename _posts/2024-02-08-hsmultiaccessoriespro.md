@@ -54,13 +54,51 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Patch from 5.2.0
 
 ```diff
+--- 5.2.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupAbstract.php
++++ 5.3.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupAbstract.php
+@@ -350,6 +350,6 @@ class HsAccessoriesGroupAbstract extends ObjectModel
+         if (!empty($id_groups)) {
+-            $sql_where[] = 'apg.`id_accessory_group` IN ('.implode(',', $id_groups).')';
++            $sql_where[] = 'apg.`id_accessory_group` IN ('.implode(',', array_map('intval', $id_groups)) . ')';
+         }
+-        $sql_where[] = 'apg.`id_product` IN('.implode(',', $id_products).')';
+-        $sql_where[] = 'p.`id_product` NOT IN ('.implode(',', $id_products).')';
++        $sql_where[] = 'apg.`id_product` IN('. implode(',', array_map('intval', $id_products)) . ')';
++        $sql_where[] = 'p.`id_product` NOT IN ('. implode(',', array_map('intval', $id_products)) . ')';
+         if (!Configuration::get('HSMA_SHOW_NW_VISIBILITY_PRODUCTS')) {
+@@ -710,3 +710,3 @@ class HsAccessoriesGroupAbstract extends ObjectModel
+         }
+-        $sql_where[] = 'apg.`id_product` IN('.implode(',', $id_products).')';
++        $sql_where[] = 'apg.`id_product` IN('. implode(',', array_map('intval', $id_products)) . ')';
+         $sql = 'SELECT
+```
+```diff
 --- 5.2.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupProductAbstract.php
 +++ 5.3.0/modules/hsmultiaccessoriespro/abstract/classes/HsAccessoriesGroupProductAbstract.php
-...
-            $query->from('accessory_group_product', 'agp');
--           $query->where('agp.`id_product` IN (' . implode(',', $id_products) . ')');
-+           $query->where('agp.`id_product` IN (' . implode(',', array_map('intval', $id_products)) . ')');
-            $query->where('ag.`active` = 1');
+@@ -285,3 +285,3 @@ class HsAccessoriesGroupProductAbstract extends ObjectModel
+             $query->from('accessory_group_product', 'agp');
+-            $query->where('agp.`id_product` IN (' . implode(',', $id_products) . ')');
++            $query->where('agp.`id_product` IN (' . implode(',', array_map('intval', $id_products)) . ')');
+             $query->where('ag.`active` = 1');
+@@ -477,3 +477,3 @@ class HsAccessoriesGroupProductAbstract extends ObjectModel
+             $query->from('customization_field', 'cf');
+-            $query->where('cf.`id_product` IN (' . implode(',', $id_accessories) . ')');
++            $query->where('cf.`id_product` IN (' . implode(',', array_map('intval', $id_accessories)) . ')');
+             $query->orderBy('cf.`id_customization_field` ASC');
+```
+```diff
+--- 5.2.0/modules/hsmultiaccessoriespro/abstract/classes/HsMaSearch.php
++++ 5.3.0/modules/hsmultiaccessoriespro/abstract/classes/HsMaSearch.php
+@@ -73,3 +73,3 @@ class HsMaSearch extends Search
+             $sql_where = array();
+-            $sql_where[] = 'p.`id_product` IN ('.implode(',', $eligible_products).')';
++            $sql_where[] = 'p.`id_product` IN ('.implode(',', array_map('intval', $eligible_products)) . ')';
+             if ($keyword !== null) {
+@@ -124,3 +124,3 @@ class HsMaSearch extends Search
+             $query->from('category_product', 'cp');
+-            $query->where(!empty($id_categories) ? 'cp.`id_category` IN ('.implode(',', $id_categories).')' : null);
++            $query->where(!empty($id_categories) ? 'cp.`id_category` IN ('. implode(',', array_map('intval', $id_categories)) .')' : null);
+             $products = Db::getInstance()->executeS($query);
 ```
 
 ## Other recommendations
