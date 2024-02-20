@@ -16,7 +16,7 @@ In the module "Generate barcode on invoice / delivery slip" (ecgeneratebarcode) 
 ## Summary
 
 * **CVE ID**: [CVE-2024-24310](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24310)
-* **Published at**: 2024-01-
+* **Published at**: 2024-02-20
 * **Platform**: PrestaShop
 * **Product**: ecgeneratebarcode
 * **Impacted release**: <= 1.2.0 (2.0.0 fixed the vulnerability)
