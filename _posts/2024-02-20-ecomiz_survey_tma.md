@@ -11,7 +11,7 @@ meta: "CVE,PrestaShop,ecomiz_survey_tma"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Survey TMA" (ecomiz_survey_tma) up to version 2.0.0 from Ecomiz for PrestaShop, a guest can download personal information without restriction.
+In the module "Survey TMA" (ecomiz_survey_tma) up to version 2.0.0 from Ecomiz for PrestaShop, a guest can download technical information without restriction.
 
 ## Summary
 
