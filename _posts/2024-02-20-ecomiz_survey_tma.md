@@ -49,9 +49,9 @@ Due to a predictable token, a guest can access multiple technical information su
 
 ## Patch from 1.2.0
 
+```diff
 --- 1.2.0/modules/ecomiz_survey_tma/controllers/front/survey.php
 +++ XXXXX/modules/ecomiz_survey_tma/controllers/front/survey.php
-```diff
 ...
 -      if($querytoken == "HARDCODED_TOKEN")
 +      if($querytoken == Tools::encrypt($this->module->name))
