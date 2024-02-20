@@ -28,7 +28,7 @@ In the module "Generate barcode on invoice / delivery slip" (ecgeneratebarcode) 
 
 *Foreword : we are forced to tag privilege LOW (need a valid order reference) on the CVSS 3.1 score which make it a high vulnerability since it will be high if the module has never been installed OR (if the ECO_TOKEN_BARCODE configuration do not exist OR is empty), but keep in mind that for the majority of installations, the gravity is reduced to [CVSS 3.1 7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H)*
 
-The script PHP `ajax.php` own a sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+The script PHP `ajax.php` own a sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection if a valid Order reference is known.
 
 ## CVSS base metrics
 
