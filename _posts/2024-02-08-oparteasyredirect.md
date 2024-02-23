@@ -59,86 +59,25 @@ WARNING : This vulnerability will bypass some WAF, for this reason, POC is not g
 ```diff
 --- 1.3.12/modules/oparteasyredirect/oparteasyredirect.php
 +++ 1.3.13/modules/oparteasyredirect/oparteasyredirect.php
-...
-                if (!Validate::isLoadedObject($product) || $product->active == 0) {
-                    if(stristr($request_uri, 'page=') === FALSE) {
--                         /* Db::getInstance()->execute(
--                        '
--                                            INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                        VALUES (\''.pSQL($request_uri).'\', \''.pSQL($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
--                    '
--                    ); */
-                    Db::getInstance()->execute(
-                        '
-                                            INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
+@@ -384,3 +384,3 @@ class Oparteasyredirect extends Module
+                                             INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
 -                        VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
 +                        VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-                    '
-                    );
-                }
-
-                }
-            }
-...
-                if (!Validate::isLoadedObject($category) || $category->active == 0) {
-
--                     /* Db::getInstance()->execute(
--                    '
--                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                    VALUES (\''.pSQL($request_uri).'\', \''.pSQL($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
--                '
--                ); */
-                Db::getInstance()->execute(
-                    '
-                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                        VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-+                        VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-                '
-                );
-
-                }
-            }
-            if($controller == "ManufacturerController"){
-
-                $id_manufacturer = (int) Tools::getValue('id_manufacturer');
-                $manufacturer = new Category($id_manufacturer, $this->context->language->id, $this->context->shop->id);
-                if (!Validate::isLoadedObject($manufacturer) || $manufacturer->active == 0) {
-
--                     /* Db::getInstance()->execute(
--                    '
--                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                    VALUES (\''.pSQL($request_uri).'\', \''.pSQL($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
--                ' 
--                );*/
-                Db::getInstance()->execute(
-                    '
-                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                        VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-+                        VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-                '
-                );
-
-                }
-            }
-
-            // test si le module de 404 est actif
-            $module = Module::getInstanceByName('pagesnotfound');
-            if ($module->active == 0 && $controller == "PageNotFoundController") {
--                       /* Db::getInstance()->execute(
--                    '
--                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                    VALUES (\''.pSQL($request_uri).'\', \''.pSQL($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
--                '
--                ); */
-                Db::getInstance()->execute(
-                    '
-                                        INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
--                        VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-+                        VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
-                '
-                );
-
-            }
+                     '
+@@ -406,3 +406,3 @@ class Oparteasyredirect extends Module
+                                         INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
+-                    VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
++                    VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
+                 '
+@@ -427,3 +427,3 @@ class Oparteasyredirect extends Module
+                                         INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
+-                    VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
++                    VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
+                 '
+@@ -446,3 +446,3 @@ class Oparteasyredirect extends Module
+                                         INSERT INTO `'._DB_PREFIX_.'pagenotfound` (`request_uri`, `http_referer`, `date_add`, `id_shop`, `id_shop_group`)
+-                    VALUES (\''.htmlentities($request_uri).'\', \''.htmlentities($http_referer).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
++                    VALUES (\''.pSQL(htmlentities($request_uri)).'\', \''.pSQL(htmlentities($http_referer)).'\', NOW(), '.(int)$this->context->shop->id.', '.(int)$this->context->shop->id_shop_group.')
 ```
 
 ## Other recommendations
