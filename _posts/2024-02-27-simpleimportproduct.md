@@ -30,7 +30,7 @@ The method `Send::__construct()` allows the upload of .zip files, which can be a
 
 **WARNING** : Be warned that this exploit will bypass the majority of WAF (zipped payload with htaccess auto-hijacked)
 
-Note : The author has moved its exposed ajax script which suffers a critical issue to the front controller under an unpredictable token. It's no longer a critical vulnerability issue but be warned that it remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
+Note : The author has moved its exposed ajax script which suffers a critical issue to the front controller under an unpredictable token. It remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
 
 ## CVSS base metrics
 
