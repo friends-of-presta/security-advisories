@@ -1,0 +1,73 @@
+---
+layout: post
+title: "[CVE-2024-25846] Unrestricted Upload of File with Dangerous Type in MyPrestaModules - Product Catalog (CSV, Excel) Import module for PrestaShop"
+categories: modules
+author:
+- TouchWeb.fr
+- 202 Ecommerce
+- Friends-Of-Presta.org
+meta: "CVE,PrestaShop,simpleimportproduct"
+severity: "critical (10)"
+---
+
+In the module "Product Catalog (CSV, Excel) Import" (simpleimportproduct) up to version 6.7.0 from MyPrestaModules for PrestaShop, a guest can upload files with extensions .php.
+
+
+## Summary
+
+* **CVE ID**: [CVE-2024-25846](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25846)
+* **Published at**: 2024-02-27
+* **Platform**: PrestaShop
+* **Product**: simpleimportproduct
+* **Impacted release**: <= 6.7.0 (6.7.1 ""fixed"" the vulnerability - See note below)
+* **Product author**: MyPrestaModules
+* **Weakness**: [CWE-434](https://cwe.mitre.org/data/definitions/434.html)
+* **Severity**: critical (10)
+
+## Description
+
+The method `Send::__construct()` allow upload of .zip files which can be auto uncompress in a predictable directory, author try to protect it with a .htaccess but since we can forge a zip with a custom .htaccess and a PHP payload, it will lead to a critical vulnerability [CWE-94](https://cwe.mitre.org/data/definitions/94.html).
+
+**WARNING** : Be warned that this exploit will bypass majority of WAF (zipped payload with htaccess auto-hijacked)
+
+Note : The author has moved its exposed ajax script which suffer critical issue to front controller under unpredictable token. It's no longer a critical vulnerability issue but be warned that it remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
+
+## CVSS base metrics
+
+* **Attack vector**: network
+* **Attack complexity**: low
+* **Privilege required**: none
+* **User interaction**: none
+* **Scope**: changed
+* **Confidentiality**: high
+* **Integrity**: high
+* **Availability**: high
+
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)
+
+## Possible malicious usage
+
+* Obtain admin access
+* Remove data from the associated PrestaShop
+* Steal data
+
+## Other recommendations
+
+* It’s recommended to upgrade to the latest version of the module **simpleimportproduct**.
+* Activate OWASP 933's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
+
+## Timeline
+
+| Date | Action |
+|--|--|
+| 2023-05-28 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
+| 2023-05-28 | Contact PrestaShop Addons security Team to confirm version scope |
+| 2023-06-01 | PrestaShop Addons security Team confirms version scope |
+| 2023-11-15 | Author provide a patch |
+| 2024-02-22 | Received CVE ID |
+| 2024-02-27 | Publish this security advisory |
+
+## Links
+
+* [PrestaShop addons product page](https://addons.prestashop.com/fr/import-export-de-donnees/19091-catalogue-de-produits-csv-excel-dimportation.html)
+* [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-25846)
