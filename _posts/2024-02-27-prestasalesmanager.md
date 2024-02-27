@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2024-25840] Improper Limitation of a Pathname to a Restricted Directory in Presta World - Account Manager | Sales Representative & Dealers | CRM module  for PrestaShop"
+title: "[CVE-2024-25840] Improper Limitation of a Pathname to a Restricted Directory in Presta World - Account Manager - Sales Representative & Dealers - CRM module  for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,prestasalesmanager"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Account Manager | Sales Representative & Dealers | CRM" (prestasalesmanager) up to version 8.0.0 from Presta World for PrestaShop, a guest can download personal information without restriction by performing a path traversal attack.
+In the module "Account Manager - Sales Representative & Dealers - CRM" (prestasalesmanager) up to version 8.0.0 from Presta World for PrestaShop, a guest can download personal information without restriction by performing a path traversal attack.
 
 ## Summary
 
