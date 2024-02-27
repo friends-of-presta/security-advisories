@@ -26,11 +26,11 @@ In the module "Product Catalog (CSV, Excel) Import" (simpleimportproduct) up to 
 
 ## Description
 
-The method `Send::__construct()` allow upload of .zip files which can be auto uncompress in a predictable directory, author try to protect it with a .htaccess but since we can forge a zip with a custom .htaccess and a PHP payload, it will lead to a critical vulnerability [CWE-94](https://cwe.mitre.org/data/definitions/94.html).
+The method `Send::__construct()` allows the upload of .zip files, which can be auto uncompress in a predictable directory, author tries to protect it with a.htaccess, but since we can forge a zip with a custom .htaccess and a PHP payload, it will lead to a critical vulnerability [CWE-94](https://cwe.mitre.org/data/definitions/94.html).
 
-**WARNING** : Be warned that this exploit will bypass majority of WAF (zipped payload with htaccess auto-hijacked)
+**WARNING** : Be warned that this exploit will bypass the majority of WAF (zipped payload with htaccess auto-hijacked)
 
-Note : The author has moved its exposed ajax script which suffer critical issue to front controller under unpredictable token. It's no longer a critical vulnerability issue but be warned that it remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
+Note : The author has moved its exposed ajax script which suffers a critical issue to the front controller under an unpredictable token. It's no longer a critical vulnerability issue but be warned that it remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
 
 ## CVSS base metrics
 
