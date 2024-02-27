@@ -31,7 +31,7 @@ The method `ba_importerAjaxSettingModuleFrontController::run()` has sensitive SQ
 
 This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
-Note : the author has deleted from its module the file which have been suffering from the critical vulnerability for years, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about this, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to X.X.X as impacted by this issue.
+Note : the author has deleted from his module the file which have been suffering from the critical vulnerability for years, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about that, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to 1.1.28 as impacted by this issue.
 
 
 ## CVSS base metrics
