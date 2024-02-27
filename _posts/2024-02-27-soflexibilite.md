@@ -33,7 +33,7 @@ Since there is a deletion of hooks with PS 1.7.7+, it does not concern all insta
 
 As all XSS type 2 (Stored XSS) F2B, there is two steps and a prerequisite.
 
-1/3 : The method `SoFlexibiliteDeliveryInfo::save()` do not properly clean the parameter `ceemail`. pSQL (herited from ObjectModel with configuration self::TYPE_STRING with no validator setup) is useless against XSS which exploit HTML tag attributes.
+1/3 : The method `SoFlexibiliteDeliveryInfo::save()` do not properly clean the parameter `ceemail`. pSQL (herited from ObjectModel with configuration self::TYPE_STRING with no validator setup) is useless against XSS of category 2.
 2/3 : The field `ceemail` within table colissimo_delivery_info suffer of a type varchar(64) which is large enough to allow dangerous XSS payloads.
 3/3 : The output in the backoffice is not escaped in the related smarty template which use it.
 
