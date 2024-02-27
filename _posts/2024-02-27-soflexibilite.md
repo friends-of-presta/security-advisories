@@ -69,7 +69,7 @@ As all XSS type 2 (Stored XSS) F2B, there is two steps and a prerequisite.
 
 ## Other recommendations
 
-* It’s recommended to upgrade to the latest version of the module **nkmgls**.
+* It’s recommended to upgrade to the latest version of the module **soflexibilite**.
 * Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters :
   - Smarty: `{$value.comment|escape:'html':'UTF-8'}`
   - Twig:`{% raw %}{{value.comment|e}}{% endraw %}`
