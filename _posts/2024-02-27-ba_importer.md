@@ -51,7 +51,7 @@ Note : the author has deleted from his module the file which have been suffering
 
 * Obtain admin access
 * Remove data from the associated PrestaShop
-* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admins's ajax scripts
+* Copy/paste data from sensitive tables to FRONT to expose tokens and unlock admin's ajax scripts
 * Rewrite SMTP settings to hijack emails
 
 
