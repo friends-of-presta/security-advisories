@@ -41,7 +41,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 * **Integrity**: high
 * **Availability**: high
 
-**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H)
 
 ## Possible malicious usage
 
