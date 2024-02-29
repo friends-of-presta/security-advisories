@@ -10,7 +10,8 @@ meta: "CVE,PrestaShop,supernewsletter"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Super Newsletter" (supernewsletter) up to version 1.4.21 (DANGER : all versions) from Webbax for PrestaShop, a guest can access to a secret of the PrestaShop.
+In the module "Super Newsletter" (supernewsletter) up to version 1.4.21 (DANGER : all versions) from Webbax for PrestaShop, a guest can access a secret of PrestaShop.
+
 
 ## Summary
 
@@ -25,11 +26,11 @@ In the module "Super Newsletter" (supernewsletter) up to version 1.4.21 (DANGER 
 
 ## Description
 
-Due to the use of a secret on the ecosystem PrestaShop, a guest can access hundreds of scripts on the PrestaShop ecosystem protected by this secret including modules which permit export of customers database.
+Due to the use of a secret on the PrestaShop ecosystem, a guest can access hundreds of scripts on the PrestaShop ecosystem protected by this secret, including modules that permit the export of customer databases.
 
-**WARNING** : This module is obsolete and must be deleted since author discontinue support.
+**WARNING** : This module is obsolete and must be deleted since the author has discontinued support.
 
-Note : We are forced to tag it as a high gravity due to the CWE type 200 but be warned that on our ecosystem, it must be considered critical since it unlocks hundreds admin's ajax script of modules due to [this](https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247)
+Note : We are forced to tag it as high gravity due to the CWE type 200 but be warned that on our ecosystem, it must be considered critical since it unlocks hundreds admin's ajax script of modules due to [this](https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247)
 
 ## CVSS base metrics
 
@@ -123,7 +124,7 @@ Note : We are forced to tag it as a high gravity due to the CWE type 200 but be 
 
 ## Other recommendations
 
-* It’s recommended to delete the module since support is discontinue.
+* It’s recommended to delete the module since support is discontinued.
 * You MUST update your secret COOKIE_KEY, be warned that this will invalidate all your customers passwords and most of your tokens
 
 ## Timeline
