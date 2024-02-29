@@ -30,6 +30,7 @@ In the Product Designer module from Tunis Soft for PrestaShop, an improper valid
 
 This vulnerability can be exploited to initiate a HTTP request and get the return, for instance, use the vulnerable website as proxy to attack others websites, exfiltrate data in files under IP restriction or perform a path traversal attack.
 
+This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
 ## CVSS base metrics
 
@@ -53,7 +54,7 @@ This vulnerability can be exploited to initiate a HTTP request and get the retur
 ## Other recommendations
 
 * It’s recommended to upgrade the module to its latest version
-* Activate OWASP 931's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
+* Activate OWASP 930 and 931's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against these set of rules.
 
 ## Timeline
 
