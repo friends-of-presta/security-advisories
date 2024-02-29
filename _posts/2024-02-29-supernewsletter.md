@@ -48,12 +48,6 @@ Note : We are forced to tag it as a high gravity due to the CWE type 200 but be 
 
 * Access scripts including admin scripts protected by token 
 
-## Proof of concept
-
-1. Register to the newsletter on the impacted website
-2. Extract the secret COOKIE_KEY from newsletters received
-3. Use it to unlock hundreds of scripts protected by token on the ecosystem including sensitives one which permit export of customers database.
-
 ## Patch from 1.4.21
 
 ```diff
