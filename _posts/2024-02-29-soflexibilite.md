@@ -58,6 +58,8 @@ Note : there is no version between 4.1.14 and 4.1.26.
 | 2023-08-09 | Contact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-09-14 | Author provide a patch |
 | 2024-01-24 | PrestaShop Addons security Team confirms version scope by author |
+| 2024-02-22 | Received CVE ID |
+| 2024-02-29 | Publish this security advisory |
 
 
 TouchWeb thanks Bryan Bouchut for his help with the impact analysis on the web platform https://www.colissimo.entreprise.laposte.fr/
