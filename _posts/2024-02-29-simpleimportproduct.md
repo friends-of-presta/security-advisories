@@ -28,7 +28,7 @@ In the module "Product Catalog (CSV, Excel) Import" (simpleimportproduct) up to 
 
 Methods `Send::__construct()` and `importProducts::_addDataToDb` has sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Note : The author has moved its exposed ajax script which suffer critical issue to front controller under unpredictable token. It's no longer a critical vulnerability issue but be warned that it reamins a high vulnerability issue with a CVSS 3.1 score [7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N)
+Note : The author has moved its exposed ajax script which suffer critical issue to front controller under unpredictable token. It's no longer a critical vulnerability issue but be warned that it remains a high vulnerability issue with a CVSS 3.1 score [7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H)
 
 
 ## CVSS base metrics
