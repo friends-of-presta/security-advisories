@@ -25,7 +25,7 @@ In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-
 
 ## Description
 
-Due to a lack of permissions control, a guest can access debug file (which own no extension so payload will bypass most WAF) from the module which leak the login / password of the web portal https://www.colissimo.entreprise.laposte.fr/, then export all customers data who used this carrier.
+Due to a lack of permissions control, a guest can access debug file (which has no extension so payload will bypass most WAF) from the module which leak the login / password of the web portal https://www.colissimo.entreprise.laposte.fr/, then export all customers data who used this carrier.
 
 Note : there is no version between 4.1.14 and 4.1.26.
 
