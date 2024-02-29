@@ -10,12 +10,12 @@ meta: "CVE,PrestaShop,soflexibilite"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-Services for PrestaShop, a guest can steal login / password to access web portal https://www.colissimo.entreprise.laposte.fr/ and download all customers datas such as name / surname / postal address / phone.
+In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-Services for PrestaShop, a guest can steal login / password to access the web portal https://www.colissimo.entreprise.laposte.fr/ and download all customer datas such as name / surname / postal address / phone.
 
 ## Summary
 
 * **CVE ID**: [CVE-2024-25844](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25844)
-* **Published at**: 2024-02-
+* **Published at**: 2024-02-29
 * **Platform**: PrestaShop
 * **Product**: soflexibilite
 * **Impacted release**: <= 4.1.14 (4.1.26 fixed the vulnerability)
@@ -25,7 +25,7 @@ In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-
 
 ## Description
 
-Due to a lack of permissions control, a guest can access debug file (which has no extension so payload will bypass most WAF) from the module which leak the login / password of the web portal https://www.colissimo.entreprise.laposte.fr/, then export all customers data who used this carrier.
+Due to a lack of permissions control, a guest can access the debug file (which has no extension so the payload will bypass most WAF) from the module that leaks the login / password of the web portal https://www.colissimo.entreprise.laposte.fr/, then export all customer data who used this carrier.
 
 Note : there is no version between 4.1.14 and 4.1.26.
 
