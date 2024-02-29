@@ -37,7 +37,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 * **Privilege required**: none
 * **User interaction**: none
 * **Scope**: unchanged
-* **Confidentiality**: low
+* **Confidentiality**: none
 * **Integrity**: high
 * **Availability**: high
 
@@ -69,9 +69,8 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Other recommendations
 
 * It’s recommended to upgrade to the latest version of the module **prestasalesmanager**.
-* To help improve the security of your PrestaShop installation, we recommend upgrading to the latest version. One of the benefits of upgrading is that it will disable the use of multiquery executions (separated by semicolons). However, please be aware that this **will not protect** your shop against SQL injection attacks that use the UNION clause to steal data. Additionally, it's important to note that PrestaShop includes a function called pSQL, which includes a strip_tags function. This helps protect your shop against [Stored XSS (also known as XSS T2) of Category 1](https://security.friendsofpresta.org/modules/2023/02/07/stored-xss.html). If a pSQL function is missing, it could potentially expose your project to critical Stored XSS vulnerabilities due to edge cases. Therefore, it's crucial to ensure that all relevant functions are properly implemented and used consistently throughout your project.
-* Change the default database prefix `ps_` with a new longer, arbitrary prefix. Nevertheless, be warned that this is useless against blackhats with DBA senior skill because of a design vulnerability in DBMS
-* Activate OWASP 942's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
+* Activate OWASP 930's rules on your WAF (Web application firewall) and adjust it for your PrestaShop
+
 
 ## Timeline
 
