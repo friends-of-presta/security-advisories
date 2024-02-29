@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2024-25842] External Control of File Name or Path in Presta World - Account Manager | Sales Representative & Dealers | CRM module for PrestaShop"
+title: "[CVE-2024-25842] External Control of File Name or Path in Presta World - Account Manager - Sales Representative & Dealers - CRM module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -10,7 +10,7 @@ meta: "CVE,PrestaShop,prestasalesmanager"
 severity: "critical (9.1)"
 ---
 
-In the module "Account Manager | Sales Representative & Dealers | CRM" (prestasalesmanager) up to version 8.0.0 from Presta World for PrestaShop, a guest can delete all files of the system.
+In the module "Account Manager - Sales Representative & Dealers - CRM" (prestasalesmanager) up to version 8.0.0 from Presta World for PrestaShop, a guest can delete all files of the system.
 
 
 ## Summary
