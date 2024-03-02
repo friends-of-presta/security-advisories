@@ -76,7 +76,7 @@ Steps :
 * It’s recommended to upgrade to the latest version of the module **soflexibilite**.
 * Systematically escape characters ' " < and > by replacing them with HTML entities and applying strip_tags - Smarty and Twig provide auto-escape filters :
   - Smarty: `{$value.comment|escape:'html':'UTF-8'}`
-  - Twig: `{% raw %}{{value.comment|e}}{% endraw %}`
+  - Twig:`{% raw %}{{value.comment|e}}{% endraw %}`
 * Limit to the strict minimum the length's value in database - a database field that allows 10 characters (`varchar(10)`) is far less dangerous than a field that allows 40+ characters (use cases that can exploit fragmented XSS payloads are very rare).
 * Configure CSP headers (content security policies) by listing external domains allowed to load assets (such as js files) or being called in XHR transactions (Ajax).
 * If applicable: check against all your frontoffice's uploaders, uploading files that will be served by your server that mime type application/javascript (like every .js natively) must be strictly forbidden as it must be considered as dangerous as PHP files.
