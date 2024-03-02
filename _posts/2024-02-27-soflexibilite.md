@@ -30,11 +30,16 @@ Since there is a deletion of hooks with PS 1.7.7+, it does not concern all insta
 * **Severity**: critical (9.0)
 
 ## Description
-As with all XSS type 2 (Stored XSS) F2B, there are two steps and a prerequisite.
 
-1/3 : The method `SoFlexibiliteDeliveryInfo::save()` does not properly clean the parameter `ceemail`. pSQL (herited from ObjectModel with configuration self::TYPE_STRING with no validator setup) is useless against XSS in category 2.
-2/3 : The field `ceemail` within table colissimo_delivery_info suffers from a type varchar(64), which is large enough to allow dangerous XSS payloads.
-3/3 : The output in the backoffice is not escaped in the related smarty template that uses it.
+
+As all [XSS type 2 (Stored XSS) F2B (Front to Back)](https://security.friendsofpresta.org/modules/2023/02/07/stored-xss.html), there are two steps and a prerequisite.
+
+Prerequisite : 
+- The field `ceemail` within table colissimo_delivery_info suffers from a type varchar(64), which is large enough to allow dangerous XSS payloads.
+
+Steps : 
+- The method `SoFlexibiliteDeliveryInfo::save()` does not properly clean the parameter `ceemail`. pSQL is useless against XSS which exploits HTML tag attributes (Category 2 according to OWASP - pSQL only neutralized Category 1 thanks to its strip_tags).
+- The output in the backoffice is not escaped in the related smarty template that uses it.
 
 ## CVSS base metrics
 
