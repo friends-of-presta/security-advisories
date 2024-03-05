@@ -31,6 +31,8 @@ The method `EverPsSeo::hookHeader()` has sensitive SQL calls that can be execute
 
 This exploit uses a PrestaShop Hook stappled on all pages and most attackers can conceal the attack during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
+USELESS EDIT TO FORCE REGENERATE.
+
 ## CVSS base metrics
 
 * **Attack vector**: network
