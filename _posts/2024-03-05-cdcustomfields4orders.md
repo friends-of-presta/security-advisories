@@ -28,7 +28,7 @@ In the module "CD Custom Fields 4 Orders" (cdcustomfields4orders) from Cleanpres
 
 Ajax scripts ajax.php has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Note : the author discontinue support of its module so you should consider uninstalling it. Be warned that it move this critical issue to a front controller in 2.3.0 and put it under an unpredictable token so last version always own a high issue with a CVSS 3.1 score of [7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H)
+Note : the author has discontinued support for its module, so you should consider uninstalling it. Be warned that it moved this critical issue to a front controller in 2.3.0 and put it under an unpredictable token, so the last version always has a high issue with a CVSS 3.1 score of [7.2/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H)
 
 ## CVSS base metrics
 
