@@ -1,3 +1,7 @@
+===
+This license applies to the entire repo except for subfolders that have their own license file. In such cases, the license file in the subfolder takes precedence.
+===
+
 The MIT License (MIT)
 
 Copyright (c) 2016-present Parker Moore and the minima contributors
