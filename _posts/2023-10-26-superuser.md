@@ -85,7 +85,7 @@ Before 2.4.2, an incorrect restriction of authentication `SuperUserSetuserModule
              $id_customer = $order->id_customer;
          }
          $customer = new Customer((int)$id_customer);
-+        $selected_customer_shop = new Shop((int)$customer->id_shop);
++        $superuser_shop = new Shop((int)$customer->id_shop);
 +        if (!$this->isBoLogged($superuser_shop)) {
 +            Tools::redirect(_PS_BASE_URL_.__PS_BASE_URI__);
 +        }
