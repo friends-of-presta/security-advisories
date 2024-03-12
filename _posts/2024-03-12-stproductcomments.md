@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2024-28388] Improper neutralization of SQL parameter in SunnyToo - Produt Comments module for PrestaShop"
+title: "[CVE-2024-28388] Improper neutralization of SQL parameter in SunnyToo - Product Comments module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
