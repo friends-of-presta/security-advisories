@@ -51,10 +51,9 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 
 ## Patch from 1.0.5
 
+```diff
 --- 1.0.5/modules/stproductcomments/classes/StProductCommentClass.php
 +++ XXXXX/modules/stproductcomments/classes/StProductCommentClass.php
-```diff
-
 -       if (!$order_by) {
 +       if (!Validate::isOrderBy($order_by)) {
             $order_by = 'pc.`featured`, `date_add`';
