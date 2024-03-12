@@ -70,4 +70,5 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/fr/visuels-produits/27669-image-webp-compression-regeneration.html)
+* [Author product page](https://advancedplugins.com/prestashop/modules/image-toolbox-compress-regenerate-more/)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-28390)
