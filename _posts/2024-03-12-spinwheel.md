@@ -75,7 +75,7 @@ private static function transactionExists(string
 | 2023-10-20 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-10-20 | Contact PrestaShop Addons security Team to confirm version scope |
 | 2023-10-20 | PrestaShop Addons security Team confirm version scope |
-| 2023-10-17 | Author provide a patch |
+| 2024-01-25 | Author provide a patch |
 | 2024-03-11 | Received CVE ID |
 | 2024-03-12 | Publish this security advisory |
 
