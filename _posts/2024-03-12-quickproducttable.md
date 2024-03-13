@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2024-28391] Improper neutralization of SQL parameter in FME Modules - Quick Order Form | Order Table module for PrestaShop"
+title: "[CVE-2024-28391] Improper neutralization of SQL parameter in FME Modules - Quick Order Form - Order Table module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
@@ -11,7 +11,7 @@ meta: "CVE,PrestaShop,quickproducttable"
 severity: "critical (9.8)"
 ---
 
-In the module "Quick Order Form | Order Table" (quickproducttable) up to version 1.2.1 from FME Modules for PrestaShop, a guest can perform SQL injection in affected versions.
+In the module "Quick Order Form - Order Table" (quickproducttable) up to version 1.2.1 from FME Modules for PrestaShop, a guest can perform SQL injection in affected versions.
 
 
 ## Summary
