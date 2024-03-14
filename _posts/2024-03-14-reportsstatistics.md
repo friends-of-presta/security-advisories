@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,reportsstatistics"
 severity: "critical (9.1)"
 ---
 
-In the module "Sales Reports, Statistics, Custom Fields & Export" (reportsstatistics) in versions up to XX from Advanced Plugins for PrestaShop, a guest can download and delete all files.
+In the module "Sales Reports, Statistics, Custom Fields & Export" (reportsstatistics) in versions up to 1.3.20 from Advanced Plugins for PrestaShop, a guest can download and delete all files.
 
 ## Summary
 
