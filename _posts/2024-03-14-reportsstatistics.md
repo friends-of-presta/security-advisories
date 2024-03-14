@@ -26,7 +26,7 @@ In the module "Sales Reports, Statistics, Custom Fields & Export" (reportsstatis
 
 Due to a broken access control, a guest can delete all files of the PrestaShop including .htaccess to access protected folders to steal sensitives data.
 
-**WARNING** : Be warned that the module still own sensitives issues which suffer a CVSS score 3.1 <= 7.2/10.
+**WARNING** : Be warned that the module still has sensitive issues that suffer a CVSS score 3.1 <= 7.2/10.
 
 ## CVSS base metrics
 
@@ -73,7 +73,7 @@ if(file_exists(dirname(__FILE__).'/'.$file))
 +++ XXXXXX/module/reportsstatistics/ajax_public.php
 ...
 -			$current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields), true);
-+			$current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields, ['allowed_classes' => false]), true); // Harmless until proven otherwise just for the principe.
++			$current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields, ['allowed_classes' => false]), true); // Harmless until proven otherwise just for the principle.
 ...
 ```
 
@@ -88,14 +88,14 @@ if(file_exists(dirname(__FILE__).'/'.$file))
 | Date | Action |
 |--|--|
 | 2023-09-22 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2023-09-22 | Contact PrestaShop Addons security Team to confirm versions scope |
-| 2023-09-27 | PrestaShop Addons security Team confirm versions scope by author |
-| 2024-01-25 | Author provided a patch for the critical issue but there is still high issues |
+| 2023-09-22 | Contact PrestaShop Addons security Team to confirm version scope |
+| 2023-09-27 | PrestaShop Addons security Team confirms version scope by author |
+| 2024-01-25 | Author provided a patch for the critical issue but there are still high issues |
 | 2024-03-11 | Received CVE ID |
 | 2024-03-14 | Publish this security advisory |
 
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/customer-administration/28379-sales-reports-statistics-custom-fields-export.html)
-* [Auhtor product page](https://advancedplugins.com/prestashop/modules/advanced-fields-statistics-customer-segmentation/)
+* [Author product page](https://advancedplugins.com/prestashop/modules/advanced-fields-statistics-customer-segmentation/)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-28394)
