@@ -63,5 +63,5 @@ Due to a unprotected txt file and an unprotected download.php script, a guest ca
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/data-import-export/17596-orders-csv-excel-export-pro.html)
-* [Auhtor product page](https://myprestamodules.com/data-import-export/orders-csv-excel-import.html)
+* [Author product page](https://myprestamodules.com/data-import-export/orders-csv-excel-import.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-28396)
