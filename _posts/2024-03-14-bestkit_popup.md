@@ -13,7 +13,7 @@ In the module "Pop-up / Schedule Popup / Splash window" (bestkit_popup) up to ve
 
 ## Summary
 
-* **CVE ID**: [[CVE-2024-28395](https://cve.mitre.org/cgi-bin/cvename.cgi?name=[CVE-2024-28395)
+* **CVE ID**: [CVE-2024-28395](https://cve.mitre.org/cgi-bin/cvename.cgi?name=[CVE-2024-28395)
 * **Published at**: 2024-03-14
 * **Platform**: PrestaShop
 * **Product**: bestkit_popup
