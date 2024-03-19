@@ -83,5 +83,5 @@ private static function transactionExists(string
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/promotions-gifts/28778-knowband-entryexit-and-subscription-popup-spin-and-win.html)
-* [Auhtor product page](https://www.knowband.com/fr/prestashop-spin-and-win)
+* [Author product page](https://www.knowband.com/fr/prestashop-spin-and-win)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-28389)
