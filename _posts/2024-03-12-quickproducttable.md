@@ -131,5 +131,5 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 ## Links
 
 * [PrestaShop addons product page](https://addons.prestashop.com/en/order-management/47933-quick-order-form-order-table.html)
-* [Auhtor product page](https://www.fmemodules.com/en/prestashop-modules/171-prestashop-quick-frontend-product-update-price-quantity-status.html)
+* [Author product page](https://www.fmemodules.com/en/prestashop-modules/171-prestashop-quick-frontend-product-update-price-quantity-status.html)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln/detail/CVE-2024-28391)
