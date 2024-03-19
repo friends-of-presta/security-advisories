@@ -69,7 +69,18 @@ if(file_exists(dirname(__FILE__).'/'.$file))
 
 
 ```diff
---- 1.3.12/module/reportsstatistics/reportsstatistics.php
+--- 1.3.12/module/reportsstatistics/ajax_public.php
++++ XXXXXX/module/reportsstatistics/ajax_public.php
+...
+-			$current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields), true);
++			$current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields, ['allowed_classes' => false]), true); // Harmless until proven otherwise just for the principle.
+...
+```
+
+Seen by a contributor in 1.3.20 :
+
+```diff
+--- 1.3.20/module/reportsstatistics/reportsstatistics.php
 +++ XXXXXX/module/reportsstatistics/reportsstatistics.php
 @@ -643 +643 @@ class reportsstatistics extends Module
 -            $current_value = Tools::jsonDecode(unserialize($context->cookie->apc_fields), true);
