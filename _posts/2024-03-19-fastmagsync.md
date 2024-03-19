@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,fastmagsync"
 severity: "critical (10)"
 ---
 
-In the module "Fast Mag Sync" (fastmagsync) up to version 1.7.51 from Home-Made.io for PrestaShop, a guest can inject into script an arbitrary executable script.
+In the module "Fast Mag Sync" (fastmagsync) up to version 1.7.52 from Home-Made.io for PrestaShop, a guest can inject into script an arbitrary executable script.
 
 
 ## Summary
@@ -19,7 +19,7 @@ In the module "Fast Mag Sync" (fastmagsync) up to version 1.7.51 from Home-Made.
 * **Advisory source**: Friends-of-presta.org
 * **Platform**: PrestaShop
 * **Product**: fastmagsync
-* **Impact release**: <= 1.7.51 (1.7.53 fixed the vulnerability)
+* **Impact release**: <= 1.7.52 (1.7.53 fixed the vulnerability)
 * **Product author**: Home-Made.io
 * **Weakness**: [CWE-78](https://cwe.mitre.org/data/definitions/78.html)
 * **Severity**: critical (10)
