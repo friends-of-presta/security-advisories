@@ -44,6 +44,10 @@ Due to a lack of permissions control, a guest can download data from ps_customer
 
 * Steal personal data
 
+## Other recommendations
+
+* It’s recommended to upgrade to the latest version of the module **eventsmanager**.
+
 ## Timeline
 
 | Date | Action |
