@@ -76,7 +76,7 @@ The script `product_search.php` has sensitive SQL calls that can be executed wit
 | Date | Action |
 |--|--|
 | 2023-11-19 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
-| 2023-11-19 | Contact Author to confirm version scope by author |s
+| 2023-11-19 | Contact Author to confirm version scope by author |
 | 2024-04-23 | Received CVE ID |
 | 2024-04-29 | Publish this security advisory |
 
