@@ -57,6 +57,7 @@ WARNING : We are forced to tag it as a medium gravity due to the CWE type 22 but
 
 -$filename = $_REQUEST['filename'];
 +$filename = basename($_REQUEST['filename']);
+```
 
 Be warned that this fix is perfectible. See recommendations below.
 
