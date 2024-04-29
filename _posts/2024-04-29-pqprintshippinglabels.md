@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CVE-2023-45385] Improper Limitation of a Pathname to a Restricted Directory in Print Shipping Labels Pro module for PrestaShop"
+title: "[CVE-2023-45385] Improper Limitation of a Pathname to a Restricted Directory in ProQuality - Print Shipping Labels Pro module for PrestaShop"
 categories: modules
 author:
 - TouchWeb.fr
