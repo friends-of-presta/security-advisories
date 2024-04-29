@@ -17,7 +17,7 @@ In the module "Super Newsletter" (supernewsletter) up to version 1.4.21 (DANGER 
 * **Published at**: 2024-04-29
 * **Platform**: PrestaShop
 * **Product**: supernewsletter
-* **Impacted release**: <= 1.4.21 [WAITING FOR SCOPE]
+* **Impacted release**: <= 1.4.21 (DANGER : all versions and author discontinue support)
 * **Product author**: Webbax
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
