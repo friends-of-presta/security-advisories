@@ -6,7 +6,7 @@ author:
 - TouchWeb.fr
 - 202 Ecommerce
 meta: "CVE,PrestaShop,jamarketplace"
-severity: "critical (9.8)"
+severity: "critical (10)"
 ---
 
 In the module "JA Marketplace" (jamarketplace) up to version 9.0.1 from JA Module for PrestaShop, a guest can upload files with extensions .php.
@@ -14,7 +14,7 @@ In the module "JA Marketplace" (jamarketplace) up to version 9.0.1 from JA Modul
 
 ## Summary
 
-* **CVE ID**: [CVE-2024-33836]
+* **CVE ID**: [CVE-2024-33836](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33836)
 * **Published at**: 2024-06-18
 * **Platform**: PrestaShop
 * **Product**: jamarketplace
