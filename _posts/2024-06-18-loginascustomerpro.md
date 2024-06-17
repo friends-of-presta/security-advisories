@@ -4,12 +4,12 @@ title: "[CVE-2024-36677] Exposure of Private Personal Information to an Unauthor
 categories: modules
 author:
 - TouchWeb.fr
-- 202 Ecommerce
+- 202-ecommerce.com
 meta: "CVE,PrestaShop,loginascustomerpro"
 severity: "high (7.5), GDPR violation"
 ---
 
-In the module "Login as customer PRO" (loginascustomerpro) from Weblir for PrestaShop, a guest can access direct link to connect to each customer account of the Shop if the module is not installed OR if a secret accessible to administrator is stolen..
+In the module "Login as customer PRO" (loginascustomerpro) from Weblir for PrestaShop, a guest can access direct link to connect to each customer account of the Shop if the module is not installed OR if a secret accessible to administrator is stolen.
 
 ## Summary
 
@@ -37,8 +37,8 @@ The script PHP ajax.php allow to exfiltrate links to connect to all customer's a
 * **User interaction**: none
 * **Scope**: unchanged
 * **Confidentiality**: high
-* **Integrity**: low
-* **Availability**: low
+* **Integrity**: none
+* **Availability**: none
 
 **Vector string**: [CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)
 
