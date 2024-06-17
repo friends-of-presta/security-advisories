@@ -18,7 +18,7 @@ In the module "Module Live Chat Pro (All in One Messaging)" (livechatpro), a gue
 * **Advisory source**: Friends-Of-Presta.org
 * **Platform**: PrestaShop
 * **Product**: livechatpro
-* **Impacted release**: <= 8.4.0 [WAITING FOR VERSION SCOPE BY AUHOR]
+* **Impacted release**: <= 8.4.0 (see WARNING below)
 * **Product author**: ProQuality
 * **Weakness**: [CWE-94](https://cwe.mitre.org/data/definitions/94.html)
 * **Severity**: critical (10.0)
@@ -27,7 +27,7 @@ In the module "Module Live Chat Pro (All in One Messaging)" (livechatpro), a gue
 
 Due to a predictable token, the method `Lcp::saveTranslations()` suffer of a white writer that can inject PHP code into a PHP file which will lead to critical RCE.
 
-Author refuse to patch the vulnerability so you should consider to uninstall it. There is strong design issue which cannot be fix by a hotfix.
+**WARNING** : Author refuse to patch the vulnerability so you should consider to uninstall it. There is strong design issue which cannot be fix by a hotfix. Version tagged as impacted is the only version we had time to produce a POC it, author has updated things in newer versions but its token is still predictible. So you should consider that all versions are impacted.
 
 ## CVSS base metrics
 
