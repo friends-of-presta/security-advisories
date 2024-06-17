@@ -27,7 +27,7 @@ In the module "Custom links" (pk_customlinks) from Promokit.eu for PrestaShop, a
 
 The script ajax.php have a sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-**WARNING 2** : Versions declared as impacted are versions where we confirmed critical issue. Author don't know which exacts versions are impacted, he only said us that it was a long time ago. Author refuse to provide the last version to let us check that all is fixed. So you should consider that all versions can be impacted.
+**WARNING** : Versions declared as impacted are versions where we confirmed critical issue. Author don't know which exacts versions are impacted, he only said us that it was a long time ago. Author refuse to provide the last version to let us check that all is fixed. So you should consider that all versions can be impacted.
 
 ## CVSS base metrics
 
