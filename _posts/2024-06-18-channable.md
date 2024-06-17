@@ -28,7 +28,7 @@ Due to a broken access control based on predictible token, the method `Channable
 
 This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
-**WARNING** : You MUST update the webservice key since it is predictable.
+**WARNING** : You MUST update the webservice key since it is predictible.
 
 ## CVSS base metrics
 
