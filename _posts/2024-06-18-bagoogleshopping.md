@@ -4,7 +4,7 @@ title: "[CVE-2024-34993] Improper neutralization of SQL parameter in Buy Addons 
 categories: modules
 author:
 - TouchWeb.fr
-- 202 Ecommerce
+- 202-ecommerce.com
 meta: "CVE,PrestaShop,bagoogleshopping"
 severity: "critical (9.8)"
 ---
@@ -13,7 +13,7 @@ In the module "Bulk Export products to Google Merchant-Google Shopping" (bagoogl
 
 ## Summary
 
-* **CVE ID**: [CVE-2024-34993]
+* **CVE ID**: [CVE-2024-34993](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34993)
 * **Published at**: 2024-06-18
 * **Platform**: PrestaShop
 * **Product**: bagoogleshopping
