@@ -4,7 +4,7 @@ title: "[CVE-2024-34994] Improper neutralization of SQL parameter in Channable m
 categories: modules
 author:
 - TouchWeb.fr
-- 202 Ecommerce
+- 202-ecommerce.com
 meta: "CVE,PrestaShop,channable"
 severity: "critical (9.8)"
 ---
@@ -13,7 +13,7 @@ In the module "Channable" (channable) up to version 3.2.1 from Channable for Pre
 
 ## Summary
 
-* **CVE ID**: [CVE-2024-34994]
+* **CVE ID**: [CVE-2024-34994](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34994)
 * **Published at**: 2024-06-18
 * **Platform**: PrestaShop
 * **Product**: channable
