@@ -27,7 +27,7 @@ In the module "Module Live Chat Pro (All in One Messaging)" (livechatpro), a gue
 
 Due to a predictable token, the method `Lcp::saveTranslations()` suffer of a white writer that can inject PHP code into a PHP file which will lead to critical RCE.
 
-**WARNING** : Author refuse to patch the vulnerability so you should consider to uninstall it. There is strong design issue which cannot be fix by a hotfix. Version tagged as impacted is the only version we had time to produce a POC it, author has updated things in newer versions but its token is still predictible. So you should consider that all versions are impacted.
+**WARNING** : Author refuse to patch the vulnerability so you should consider to uninstall it. There is strong design issue which cannot be fixed by a hotfix. Version tagged as impacted is the only version we had time to produce a POC for it, author has updated things in newer versions but its token is still predictible. So you should consider that all versions are impacted.
 
 ## CVSS base metrics
 
