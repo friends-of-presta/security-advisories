@@ -26,7 +26,7 @@ In the module "Flash Sales" (flashsales) up to version 1.9.7 from Prestaddons fo
 
 Due to a predictable hardcoded token, the method `FsModel::getFlashSales()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
 
-Be warned that this module still suffer of a predictible token that you should update on each installation.
+Be warned that this module still suffer of a predictable token that you should update on each installation.
 
 ## CVSS base metrics
 
