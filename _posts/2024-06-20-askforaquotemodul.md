@@ -28,7 +28,7 @@ Methods `AskforaquotemodulcustomernewquoteModuleFrontController::run()`, `Askfor
 
 This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
-**WARNING** : this version still own sensitives vulnerabilities such as IDOR.
+**WARNING** : this version still has sensitives vulnerabilities such as IDOR.
 
 ## CVSS base metrics
 
@@ -65,7 +65,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 | 2023-11-14 | Issue discovered during a code review by [TouchWeb.fr](https://www.touchweb.fr) |
 | 2023-11-14 | Contact PrestaShop Addons security Team to confirm version scope by author |
 | 2023-11-14 | PrestaShop Addons security Team confirms version scope |
-| 2024-01-11 | Auhtor provide a patch |
+| 2024-01-11 | Author provide a patch |
 | 2024-05-15 | Received CVE ID |
 | 2024-06-20 | Publish this security advisory |
 
