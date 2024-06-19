@@ -9,7 +9,7 @@ meta: "CVE,PrestaShop,pk_themesettings"
 severity: "medium (7.5), GDPR violation"
 ---
 
-In the module "Theme settings" (pk_themesettings) from Promokit.eu for PrestaShop, a guest can download all email collected while SHOP isin maintenance mode.
+In the module "Theme settings" (pk_themesettings) from Promokit.eu for PrestaShop, a guest can download all emails collected while SHOP is in maintenance mode.
 
 ## Summary
 
@@ -24,7 +24,7 @@ In the module "Theme settings" (pk_themesettings) from Promokit.eu for PrestaSho
 
 ## Description
 
-Due to a lack of permissions control, a guest can access the txt file which collect email when maintenance is enable which can lead to leak of personal information.
+Due to a lack of permission control, a guest can access the txt file which collect emails when maintenance is enable which can lead to leak of personal information.
 
 **WARNING** : Versions declared as impacted are versions where we confirmed critical issue. Author don't know which exacts versions are impacted, he only said us that it was a long time ago. Author refuse to provide the last version to let us check that all is fixed. So you should consider that all versions can be impacted.
 
