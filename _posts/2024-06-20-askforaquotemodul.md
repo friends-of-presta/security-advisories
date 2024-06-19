@@ -17,18 +17,18 @@ In the module "Complete for Create a Quote in Frontend + Backend Pro" (askforaqu
 * **Published at**: 2024-06-20
 * **Platform**: PrestaShop
 * **Product**: askforaquotemodul
-* **Impacted release**: <= 1.0.51 (1.0.52 fixed the vulnerability - WARNING : see note below)
+* **Impacted release**: <= 1.0.51 (1.0.52 fixed the vulnerability - see WARNING below)
 * **Product author**: Buy Addons
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
 
 ## Description
 
-Methods `AskforaquotemodulcustomernewquoteModuleFrontController::run()`, `AskforaquotemoduladdproductnewquoteModuleFrontController::run()`, `AskforaquotemodulCouponcodeModuleFrontController::run()`, `AskforaquotemodulgetshippingcostModuleFrontController::run()`, `AskforaquotemodulgetstateModuleFrontController::run()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.
+Methods `AskforaquotemodulcustomernewquoteModuleFrontController::run()`, `AskforaquotemoduladdproductnewquoteModuleFrontController::run()`, `AskforaquotemodulCouponcodeModuleFrontController::run()`, `AskforaquotemodulgetshippingcostModuleFrontController::run()`, `AskforaquotemodulgetstateModuleFrontController::run()` has sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection.
 
 This exploit uses a PrestaShop front controller and most attackers can conceal the module controller's path during the exploit, so you will never know within your conventional frontend logs that it exploits this vulnerability. **You will only see "POST /" inside your conventional frontend logs.** Activating the AuditEngine of mod_security (or similar) is the only way to get data to confirm this exploit.
 
-Note : this version still own sensitives vulnerabilities such as IDOR.
+**WARNING** : this version still own sensitives vulnerabilities such as IDOR.
 
 ## CVSS base metrics
 
