@@ -6,7 +6,7 @@ author:
 - TouchWeb.fr
 - 202-ecommerce.com
 meta: "CVE,PrestaShop,pk_themesettings"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Theme settings" (pk_themesettings) from Promokit.eu for PrestaShop, a guest can download all emails collected while SHOP is in maintenance mode.
@@ -20,7 +20,7 @@ In the module "Theme settings" (pk_themesettings) from Promokit.eu for PrestaSho
 * **Impacted release**: <= 1.8.8 (see WARNING below)
 * **Product author**: Promokit.eu
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
