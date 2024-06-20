@@ -6,7 +6,7 @@ author:
 - TouchWeb.fr
 - 202 ecommerce.com
 meta: "CVE,PrestaShop,eventsmanager"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Events Manager, Create events & Sell tickets Online" (eventsmanager) up to version 4.4.0 from FME Modules for PrestaShop, a guest can download personal information without restriction.
@@ -20,7 +20,7 @@ In the module "Events Manager, Create events & Sell tickets Online" (eventsmanag
 * **Impacted release**: <= 4.3.0 (4.4.0 fixed the vulnerability)
 * **Product author**: FME Modules
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
