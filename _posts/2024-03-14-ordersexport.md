@@ -6,7 +6,7 @@ author:
 - TouchWeb.fr
 - 202 Ecommerce
 meta: "CVE,PrestaShop,ordersexport"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Orders (CSV, Excel) Export PRO" (ordersexport) up to version 6.0.2 from MyPrestaModules for PrestaShop, a guest can download sensitive information without restriction.
@@ -20,7 +20,7 @@ In the module "Orders (CSV, Excel) Export PRO" (ordersexport) up to version 6.0.
 * **Impacted release**: <= 6.0.2 (6.0.3 fixed the vulnerability)
 * **Product author**: MyPrestaModules
 * **Weakness**: [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
