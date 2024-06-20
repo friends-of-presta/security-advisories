@@ -7,7 +7,7 @@ author:
 - 202 ecommerce.com
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,advancedexport"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Advanced Export Products Orders Cron CSV Excel" (advancedexport) in versions up to 4.4.6 from Smart Soft for PrestaShop, a guest can download personal information without restriction.
@@ -21,7 +21,7 @@ In the module "Advanced Export Products Orders Cron CSV Excel" (advancedexport) 
 * **Impacted release**: <= 4.4.6 (4.4.7 fixed the vulnerability)
 * **Product author**: Smart Soft
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
