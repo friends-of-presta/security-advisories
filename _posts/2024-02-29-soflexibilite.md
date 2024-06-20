@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,soflexibilite"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-Services for PrestaShop, a guest can steal login / password to access the web portal https://www.colissimo.entreprise.laposte.fr/ and download all customer datas such as name / surname / postal address / phone.
@@ -21,7 +21,7 @@ In the module "So Flexibilite" (soflexibilite) up to version 4.1.14 from Common-
 * **Impacted release**: <= 4.1.14 (4.1.26 fixed the vulnerability)
 * **Product author**: Common-Services
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
