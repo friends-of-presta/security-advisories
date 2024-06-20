@@ -7,7 +7,7 @@ author:
 - 202 ecommerce.com
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,facebookconversiontrackingplus"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebookconversiontrackingplus) up to version 2.4.8 from Smart Modules for PrestaShop, a guest can download personal information without restriction.
@@ -21,7 +21,7 @@ In the module "Pixel Plus: Events + CAPI + Pixel Catalog for Facebook" (facebook
 * **Impacted release**: <= 2.4.8 (2.4.9 fixed the vulnerability)
 * **Product author**: Smart Modules
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
