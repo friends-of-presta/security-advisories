@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ordersexport"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Orders (CSV, Excel) Export PRO" (ordersexport) up to version 5.1.6 from MyPrestaModules for PrestaShop, a guest can download personal information without restriction.
@@ -21,7 +21,7 @@ In the module "Orders (CSV, Excel) Export PRO" (ordersexport) up to version 5.1.
 * **Impacted release**: <= 5.1.6 (5.2.0 fixed the vulnerability - See note below)
 * **Product author**: MyPrestaModules
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
