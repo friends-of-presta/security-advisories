@@ -7,7 +7,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,orderduplicate"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Order Duplicator – Clone and Delete Existing Order" (orderduplicate) in versions up to 1.1.7 from Silbersaiten for PrestaShop, a guest can download personal information without restriction.
@@ -21,7 +21,7 @@ In the module "Order Duplicator – Clone and Delete Existing Order" (orderdupli
 * **Impacted release**: <= 1.1.7 (1.1.8 fixed the vulnerability)
 * **Product author**: Silbersaiten
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html) [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
