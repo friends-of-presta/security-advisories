@@ -6,7 +6,7 @@ author:
 - TouchWeb.fr
 - 202 ecommerce.com
 meta: "CVE,PrestaShop,fileuploads"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Customer File Upload-Attach File on Product,Cart pages" (fileuploads) up to version 2.0.3 from FME Modules for PrestaShop, a guest can download personal information without restriction.
@@ -20,7 +20,7 @@ In the module "Customer File Upload-Attach File on Product,Cart pages" (fileuplo
 * **Impacted release**: <= 2.0.3 (2.0.4 fixed the vulnerability)
 * **Product author**: FME Modules
 * **Weakness**: [CWE-359](https://cwe.mitre.org/data/definitions/359.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
