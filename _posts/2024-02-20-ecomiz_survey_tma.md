@@ -8,7 +8,7 @@ author:
 - 202 Ecommerce
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ecomiz_survey_tma"
-severity: "medium (7.5), GDPR violation"
+severity: "high (7.5), GDPR violation"
 ---
 
 In the module "Survey TMA" (ecomiz_survey_tma) up to version 2.0.0 from Ecomiz for PrestaShop, a guest can download technical information without restriction.
@@ -22,7 +22,7 @@ In the module "Survey TMA" (ecomiz_survey_tma) up to version 2.0.0 from Ecomiz f
 * **Impacted release**: <= 1.2.0 (2.0.0 fixed the vulnerability)
 * **Product author**: Ecomiz
 * **Weakness**: [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
-* **Severity**: medium (7.5), GDPR violation
+* **Severity**: high (7.5), GDPR violation
 
 ## Description
 
