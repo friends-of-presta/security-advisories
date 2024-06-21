@@ -17,7 +17,7 @@ In the module "Channable" (channable) up to version 3.2.1 from Channable for Pre
 * **Published at**: 2024-06-18
 * **Platform**: PrestaShop
 * **Product**: channable
-* **Impacted release**: < 3.2.1 (3.2.1 fixed the vulnerability - WARNING : see WARNING below)
+* **Impacted release**: < 3.2.1 (3.2.1 fixed the vulnerability - see WARNING below)
 * **Product author**: Channable
 * **Weakness**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 * **Severity**: critical (9.8)
