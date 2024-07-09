@@ -5,7 +5,6 @@ categories: modules
 author:
 - TouchWeb.fr
 - 202 Ecommerce
-- Friends-Of-Presta.org
 meta: "CVE,PrestaShop,simpleimportproduct"
 severity: "critical (10)"
 ---
@@ -30,7 +29,7 @@ The method `Send::__construct()` allows the upload of .zip files, which can be a
 
 **WARNING** : Be warned that this exploit will bypass the majority of WAF (zipped payload with htaccess auto-hijacked)
 
-Note : The author has moved its exposed ajax script which suffers a critical issue to the front controller under an unpredictable token. It remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
+Note : The author has moved its exposed ajax script which suffers a critical issue to a front controller under an unpredictable token. It remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H). For this reason, you should consider to delete this module.
 
 **Edit 2024-07-09 - WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards. Since POC is now exploited, it is considered public.
 
@@ -61,7 +60,7 @@ echo 'UEsDBBQAAAAIACmivFa0Sii9DgAAAA4AAAAJAAAALmh0YWNjZXNzS8zJyS9XSCvKz1UAMgFQSw
 
 ## Other recommendations
 
-* It’s recommended to upgrade to the latest version of the module **simpleimportproduct**.
+* It’s recommended to delete the module **simpleimportproduct** or at least, to upgrade it to its latest version.
 * Activate OWASP 933's rules on your WAF (Web application firewall), be warned that you will probably break your backoffice and you will need to pre-configure some bypasses against this set of rules.
 
 ## Timeline
