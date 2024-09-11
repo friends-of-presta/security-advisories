@@ -29,7 +29,7 @@ Ajax script ajax_email.php, all scripts in directory webservices/ and the method
 
 **WARNING** : One of exploits (against ajax_email.php) is actively used to deploy a webskimmer to massively steal credit cards.
 
-Note : the author has deleted from his module one of the files (ajax_email.php) which have been suffering from critical vulnerabilities for years, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about that, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to X.X.X as impacted by this issue.
+Note : the author has deleted from his module one of the files (ajax_email.php) which have been suffering from critical vulnerabilities for years, BUT did not set them to be "auto-deleted" during upgrades. Therefore, there are likely merchants out there with older versions who have updated their modules, thinking they are safe. However, there is nothing safe about that, since past upgrades did not auto-delete the implicated files. To ensure everyone has a "safe version", we decided to mark all versions up to 2.8.1 as impacted by this issue.
 
 **DANGER** : Patch provided are partial - since there is more than 100 critical issues inside the directory webservices/, we do not provide patch - put the directory under IP restriction without delay or upgrade the module.
 
