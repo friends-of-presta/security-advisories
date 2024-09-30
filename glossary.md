@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Glossary
+title: Cybersecurity Glossary
 permalink: /glossary/
 ---
 
