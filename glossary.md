@@ -17,6 +17,7 @@ Cybersecurity is the practice of protecting computers, networks, and data from u
 | Fix || A change to software to remediate, mitigate, or otherwise address a vulnerability. “Fix” is used broadly and includes terms such as patch, fix, hotfix, update, and upgrade.|
 | POC | proof of concept | A proof of concept is a prototype that demonstrates the viability of a vulnerabilty |
 | [CVSS](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) | Common Vulnerability Scoring System | A free and open industry standard for assessing the severity of computer system security vulnerabilities. |
+| SU | Super user | vulnerabilities accessible only under authentication (weak via unpredictable immutable token or strong via login / password or token with a limited lifespan) |
 
 # Type of vulnerability
 
