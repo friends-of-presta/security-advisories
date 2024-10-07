@@ -18,6 +18,31 @@ Cybersecurity is the practice of protecting computers, networks, and data from u
 | POC | proof of concept | A proof of concept is a prototype that demonstrates the viability of a vulnerabilty |
 | [CVSS](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) | Common Vulnerability Scoring System | A free and open industry standard for assessing the severity of computer system security vulnerabilities. |
 | SU | Super user | vulnerabilities accessible only under authentication (weak via unpredictable immutable token or strong via login / password or token with a limited lifespan) |
+| P1 / P2 / P3 | Phase 1 / 2 / 3 | [Different phases of a cyber-attack](#phases-of-a-cyber-attack) |
+
+## Phases of a cyber-attack [^1]
+
+In the context of a cybersecurity attack, there are generally three phases often referred to as **P1 (Pre-attack)**, **P2 (Attack/Exploit)**, and **P3 (Post-attack)**. Understanding these phases is critical for developers to better protect systems from attacks and respond effectively when they occur.
+
+### Phase 1: Pre-Attack (P1) - Reconnaissance and Preparation
+
+In this phase, the attacker gathers information about the target and prepares for the attack. The goal is to identify vulnerabilities or weaknesses in the system or network that can be exploited later.
+
+It consists of an innocent call on a static file - usually an image, a style sheet or a javascript file that allows a hacker to confirm the existence of a module / plugin on the E-Commerce site.
+
+### Phase 2: Attack/Exploit (P2) - Initial Compromise
+
+During this phase, the attacker attempts to exploit the identified vulnerability.
+
+It consists of a call with harmless payload - the hacker knows that you have the module / plugin he is looking for, he wants to know if it suffers from the critical security vulnerability he is looking for.
+
+### Phase 3: Post-Attack (P3) - Persistence, Covering Tracks, and Exfiltration
+
+The hacker goes on the attack, the hacker knows that you have the module / plugin he is looking for in the version that has the critical vulnerability he wants to exploit and therefore takes action.
+
+After gaining access, the attacker typically has long-term objectives such as maintaining access, stealing sensitive information, or causing damage. They also attempt to avoid detection and cover their tracks.
+
+[^1]: Adapted and translated from [section 4 of touchweb.fr information letter](https://www.touchweb.fr/lettre-information-24011)"
 
 # Type of vulnerability
 
