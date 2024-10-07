@@ -32,7 +32,7 @@ It consists of an innocent call on a static file - usually an image, a style she
 
 ### Phase 2: Attack/Exploit (P2) - Initial Compromise
 
-During this phase, the attacker attempts to exploit the identified vulnerabilitie.
+During this phase, the attacker attempts to exploit the identified vulnerability.
 
 It consists of a call with harmless payload - the hacker knows that you have the module / plugin he is looking for, he wants to know if it suffers from the critical security vulnerability he is looking for.
 
