@@ -20,7 +20,7 @@ Cybersecurity is the practice of protecting computers, networks, and data from u
 | SU | Super user | vulnerabilities accessible only under authentication (weak via unpredictable immutable token or strong via login / password or token with a limited lifespan) |
 | P1 / P2 / P3 | Phase 1 / 2 / 3 | [Different phases of a cyber-attack](#phases-of-a-cyber-attack) |
 
-## Phases of a cyber-attack
+## Phases of a cyber-attack [^1]
 
 In the context of a cybersecurity attack, there are generally three phases often referred to as **P1 (Pre-attack)**, **P2 (Attack/Exploit)**, and **P3 (Post-attack)**. Understanding these phases is critical for developers to better protect systems from attacks and respond effectively when they occur.
 
@@ -41,6 +41,8 @@ It consists of a call with harmless payload - the hacker knows that you have the
 The hacker goes on the attack, the hacker knows that you have the module / plugin he is looking for in the version that has the critical vulnerability he wants to exploit and therefore takes action.
 
 After gaining access, the attacker typically has long-term objectives such as maintaining access, stealing sensitive information, or causing damage. They also attempt to avoid detection and cover their tracks.
+
+[^1]: Adapted and translated from [section 4 of touchweb.fr information letter](https://www.touchweb.fr/lettre-information-24011)"
 
 # Type of vulnerability
 
