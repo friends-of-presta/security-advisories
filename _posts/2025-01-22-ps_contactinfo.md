@@ -43,7 +43,7 @@ No workarounds are currently available, other than applying the fix and ensuring
 * **Integrity**: low
 * **Availability**: low 
 
-**Vector string**: [CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:L/A:H](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:L/A:H)
+**Vector string**: [CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:L](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:L)
 
 ## Timeline
 
