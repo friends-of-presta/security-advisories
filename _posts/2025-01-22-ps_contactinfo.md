@@ -4,11 +4,12 @@ title: "[CVE-2025-24027] ps_contactinfo has potential XSS due to usage of the no
 categories: core
 author:
 - Friends-Of-Presta.org
+- TouchWeb.fr
 meta: "CVE,PrestaShop,core"
 severity: "low (4.1)"
 ---
 
-ps_contactinfo has a cross-site scripting (XSS) vulnerability in versions up to and including 3.3.2
+ps_contactinfo has a cross-site scripting (XSS) weakness (which is not a standalone vulnerability) in versions up to and including 3.3.2
 
 ## Summary
 
