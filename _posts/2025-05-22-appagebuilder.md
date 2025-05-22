@@ -15,7 +15,7 @@ Ap Page Builder is vulnerable to an absolute path traversal that allows the atta
 
 * **CVE ID**: [CVE-2024-6648](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6648)
 * **Published at**: 2025-05-08
-* **Advisory source**: PrestaShop
+* **Advisory source**: Incibe cert
 * **Platform**: PrestaShop
 * **Product**: Ap Page Builder
 * **Impacted release**: < 4.0.0
