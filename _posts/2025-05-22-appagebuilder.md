@@ -59,7 +59,7 @@ curl -v "https://preprod.X/modules/appagebuilder/apajax.php?config=eyJvcmRlcl9ie
 
 ## Patch
 
-See this : https://help-center.prestashop.com/hc/fr/articles/25492821315346-Mise-en-conformit%C3%A9-du-module-Ap-Page-Builder
+See this : [Help Center - PrestaShop](https://help-center.prestashop.com/hc/en-us/articles/25492821315346-Ap-Page-Builder-module-compliance)
 
 ## Timeline
 
