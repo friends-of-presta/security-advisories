@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CVE-2024-6648] Absolute Path Traversal vulnerability in AP Page Builder versions prior to 4.0.0"
-categories: core
+categories: modules
 author:
 - n0d0n
 - incibe.es
