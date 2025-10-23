@@ -3,7 +3,7 @@ layout: post
 title: "[CVE-2025-61922] Customer account takeover via email in PrestaShop Checkout module for PrestaShop"
 categories: modules
 author:
-- PrestaShopCorp
+- PrestaShop SA
 - Friends-Of-Presta.org
 meta: "CVE,PrestaShop,ps_checkout"
 severity: "critical (9.1)"
@@ -14,7 +14,7 @@ Missing validation on Express Checkout feature in the PrestaShop Checkout module
 ## Summary
 
 * **CVE ID**: [CVE-2025-61922](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61922)
-* **Published at**: 2025-10-23
+* **Published at**: 2025-10-16
 * **Advisory source**: [PrestaShopCorp GitHub Security Advisory](https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-54hq-mf6h-48xh)
 * **Platform**: PrestaShop
 * **Product**: ps_checkout
@@ -48,9 +48,7 @@ The issue was introduced in PrestaShop Checkout 1.3.0. A missing validation on t
 ## Possible malicious usage
 
 * Customer account takeover
-* Unauthorized access to customer personal information
 * Unauthorized order placement using compromised accounts
-* Data theft from customer accounts
 
 ## Patches
 
@@ -76,7 +74,7 @@ Read the [PrestaShop Checkout Versioning policy](https://github.com/PrestaShopCo
 | Date | Action |
 |--|--|
 | 2025-10-16 | Vulnerability patched and versions released |
-| 2025-10-23 | Publication of this security advisory |
+| 2025-10-16 | Publication of this security advisory |
 
 ## Credits
 
