@@ -58,7 +58,7 @@ This exploit uses a PrestaShop front controller and most attackers can conceal t
 +++ 3.1.1/modules/preorderandnotification/models/PreorderModel.php
         INNER JOIN `' . _DB_PREFIX_ . 'product_attribute` pa ON pa.id_product_attribute = pac.id_product_attribute
 -       WHERE id_product = ' . (int) $id_product . ' AND id_attribute IN (' . implode(',', $id_attributes) . ')
-+       WHERE id_product = ' . (int) $id_product . ' AND id_attribute IN (' . implode(',', array_may('intval', $id_attributes)) . ')
++       WHERE id_product = ' . (int) $id_product . ' AND id_attribute IN (' . implode(',', array_map('intval', $id_attributes)) . ')
         GROUP BY id_product_attribute
         HAVING COUNT(id_product) = ' . count($id_attributes));
 ```
